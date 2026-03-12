@@ -1,0 +1,16 @@
+views:
+  - type: table
+    name: 表格
+    filters:
+      and:
+        - file.tags.contains("系統/領域/事業/偵查")
+        - '!file.name.containsAny("README")'
+    order:
+      - file.name
+      - 主旨
+      - time_start
+      - time_create
+      - time_modifie
+      - tasks
+    columnSize:
+      file.name: 189

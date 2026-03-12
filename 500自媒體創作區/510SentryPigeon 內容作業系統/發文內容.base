@@ -1,0 +1,12 @@
+views:
+  - type: table
+    name: 表格
+    order:
+      - file.name
+      - status
+      - createTime
+      - modified time
+    sort:
+      - property: file.mtime
+        direction: ASC
+    columnSize: {}

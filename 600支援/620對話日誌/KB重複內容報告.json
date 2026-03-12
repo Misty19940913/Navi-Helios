@@ -1,0 +1,160 @@
+{
+    "scan_time": "2026-03-07 00:32:41",
+    "total_files_scanned": 271,
+    "potential_duplicates_count": 17,
+    "details": [
+        {
+            "similarity": 0.8,
+            "target_suggested": "H3.0-金錢三大等級.md",
+            "duplicate_candidate": "H3.0-三大等級.md",
+            "paths": [
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\H3.0-金錢三大等級.md",
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\H3.0-三大等級.md"
+            ]
+        },
+        {
+            "similarity": 1.0,
+            "target_suggested": "H3.0-元類型.md",
+            "duplicate_candidate": "元類型 (Metatypes).md",
+            "paths": [
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\H3.0-元類型.md",
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\元類型 (Metatypes).md"
+            ]
+        },
+        {
+            "similarity": 0.75,
+            "target_suggested": "H3.0-退行機制.md",
+            "duplicate_candidate": "回退機制 (Regression Mechanics).md",
+            "paths": [
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\H3.0-退行機制.md",
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\回退機制 (Regression Mechanics).md"
+            ]
+        },
+        {
+            "similarity": 0.77,
+            "target_suggested": "H3.0-金錢三大等級.md",
+            "duplicate_candidate": "金錢的三個等級.md",
+            "paths": [
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\H3.0-金錢三大等級.md",
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\金錢的三個等級.md"
+            ]
+        },
+        {
+            "similarity": 1.0,
+            "target_suggested": "人生指南針 (Life Compass).md",
+            "duplicate_candidate": "人生指南針.md",
+            "paths": [
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\人生指南針 (Life Compass).md",
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\人生指南針.md"
+            ]
+        },
+        {
+            "similarity": 0.77,
+            "target_suggested": "單人商業模式.md",
+            "duplicate_candidate": "個人商業模式圖 (Personal Business Model Canvas - BMY).md",
+            "paths": [
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\單人商業模式.md",
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\個人商業模式圖 (Personal Business Model Canvas - BMY).md"
+            ]
+        },
+        {
+            "similarity": 0.7,
+            "target_suggested": "四小時深度工作法則 (Deep Work Laws).md",
+            "duplicate_candidate": "四小時工作制的十個法則 (The 10 Laws of Deep Work).md",
+            "paths": [
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\四小時深度工作法則 (Deep Work Laws).md",
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\四小時工作制的十個法則 (The 10 Laws of Deep Work).md"
+            ]
+        },
+        {
+            "similarity": 1.0,
+            "target_suggested": "奧德賽計畫 (Odyssey Plan).md",
+            "duplicate_candidate": "奧德賽計畫.md",
+            "paths": [
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\奧德賽計畫 (Odyssey Plan).md",
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\奧德賽計畫.md"
+            ]
+        },
+        {
+            "similarity": 1.0,
+            "target_suggested": "工作觀 (Workview).md",
+            "duplicate_candidate": "工作觀(Workview).md",
+            "paths": [
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\工作觀 (Workview).md",
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\工作觀(Workview).md"
+            ]
+        },
+        {
+            "similarity": 1.0,
+            "target_suggested": "數位產品矩陣 (Digital Product Matrix).md",
+            "duplicate_candidate": "數位產品矩陣 (Product Ladder).md",
+            "paths": [
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\數位產品矩陣 (Digital Product Matrix).md",
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\數位產品矩陣 (Product Ladder).md"
+            ]
+        },
+        {
+            "similarity": 1.0,
+            "target_suggested": "棘手問題 (Wicked Problems in Life Design).md",
+            "duplicate_candidate": "棘手問題.md",
+            "paths": [
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\棘手問題 (Wicked Problems in Life Design).md",
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\棘手問題.md"
+            ]
+        },
+        {
+            "similarity": 0.83,
+            "target_suggested": "生活目標理論.md",
+            "duplicate_candidate": "生命目標理論.md",
+            "paths": [
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\生活目標理論.md",
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\生命目標理論.md"
+            ]
+        },
+        {
+            "similarity": 1.0,
+            "target_suggested": "生活觀 (Lifeview).md",
+            "duplicate_candidate": "生活觀(Lifeview).md",
+            "paths": [
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\生活觀 (Lifeview).md",
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\生活觀(Lifeview).md"
+            ]
+        },
+        {
+            "similarity": 0.89,
+            "target_suggested": "生涯設計.md",
+            "duplicate_candidate": "生涯設計 1.md",
+            "paths": [
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\生涯設計.md",
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\生涯設計 1.md"
+            ]
+        },
+        {
+            "similarity": 1.0,
+            "target_suggested": "競爭性動態(Rivalrous Dynamics).md",
+            "duplicate_candidate": "競爭性動態.md",
+            "paths": [
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\競爭性動態(Rivalrous Dynamics).md",
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\競爭性動態.md"
+            ]
+        },
+        {
+            "similarity": 1.0,
+            "target_suggested": "設計思考 (Design Thinking in Life Design).md",
+            "duplicate_candidate": "設計思考.md",
+            "paths": [
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\設計思考 (Design Thinking in Life Design).md",
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\設計思考.md"
+            ]
+        },
+        {
+            "similarity": 0.77,
+            "target_suggested": "金字塔原則 (The Pyramid Principle in Content).md",
+            "duplicate_candidate": "說服型金字塔原則 (The Persuasive Pyramid Principle).md",
+            "paths": [
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\金字塔原則 (The Pyramid Principle in Content).md",
+                "c:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios\\400知識\\410原子化知識庫\\說服型金字塔原則 (The Persuasive Pyramid Principle).md"
+            ]
+        }
+    ]
+}

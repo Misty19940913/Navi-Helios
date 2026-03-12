@@ -1,0 +1,220 @@
+{
+  "components": [
+    {
+      "id": "dccaa913-a5ee-4b4a-8fd0-1f03425e1368",
+      "type": "multi",
+      "titleAlign": "center",
+      "tabTitle": "",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showShadow": false,
+      "createAt": "2025-08-13T05:00:44.640Z",
+      "updateAt": "2026-02-06T17:10:57.167Z",
+      "components": [
+        {
+          "componentId": "90ce4210-e650-4851-9678-b7f451a4fc05",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 0,
+              "w": 4,
+              "h": 44
+            },
+            "laptop": {
+              "x": 0,
+              "y": 0,
+              "w": 12,
+              "h": 7
+            }
+          }
+        },
+        {
+          "componentId": "7a58e17a-f31a-459b-a5e9-7b793c6014f2",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 44,
+              "w": 4,
+              "h": 44
+            },
+            "laptop": {
+              "x": 0,
+              "y": 7,
+              "w": 12,
+              "h": 8
+            }
+          }
+        },
+        {
+          "componentId": "6ec240d6-b378-4b5a-89f6-a90a10e9ef99",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 88,
+              "w": 4,
+              "h": 44
+            },
+            "laptop": {
+              "x": 0,
+              "y": 15,
+              "w": 12,
+              "h": 8
+            }
+          }
+        },
+        {
+          "componentId": "bacea6ec-d6b5-480f-b7d8-00fc1d69c785",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 132,
+              "w": 4,
+              "h": 44
+            },
+            "laptop": {
+              "x": 0,
+              "y": 23,
+              "w": 12,
+              "h": 8
+            }
+          }
+        },
+        {
+          "componentId": "dcd8f735-11f4-49b4-b18d-7ce0ba14535f",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 176,
+              "w": 4,
+              "h": 44
+            },
+            "laptop": {
+              "x": 0,
+              "y": 31,
+              "w": 12,
+              "h": 8
+            }
+          }
+        },
+        {
+          "componentId": "c9ca2705-c9cd-4180-8621-a6df621a0afe",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 220,
+              "w": 4,
+              "h": 44
+            },
+            "laptop": {
+              "x": 0,
+              "y": 39,
+              "w": 12,
+              "h": 8
+            }
+          }
+        }
+      ],
+      "layoutType": "grid",
+      "locked": false,
+      "layoutOptions": {}
+    },
+    {
+      "id": "7a58e17a-f31a-459b-a5e9-7b793c6014f2",
+      "type": "dataview",
+      "titleAlign": "center",
+      "tabTitle": "Dataview",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": true,
+      "createAt": "2025-08-18T21:55:18.850Z",
+      "updateAt": "2025-11-15T04:44:59.785Z",
+      "query": "const today = dv.luxon.DateTime.now().startOf(\"day\");\nlet allTasks = dv.pages().file.tasks\n  .where(t => !t.completed && t.due && t.due.hasSame(today, \"day\"));\ndv.header(2, `${today.toFormat(\"yyyy-MM-dd\")}`);\nif (allTasks.length > 0) {\n  dv.taskList(allTasks, false);\n} else {\n  dv.paragraph(\"✅ 無代辦\");\n}",
+      "queryType": "dataviewjs",
+      "maxHeight": 1200,
+      "dynamicParamComponents": [],
+      "title": ""
+    },
+    {
+      "id": "90ce4210-e650-4851-9678-b7f451a4fc05",
+      "type": "dataview",
+      "titleAlign": "left",
+      "tabTitle": "逾期代辦清單",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": true,
+      "createAt": "2025-08-18T21:55:18.850Z",
+      "updateAt": "2025-11-15T04:44:59.784Z",
+      "query": "const today = dv.luxon.DateTime.now().startOf(\"day\");\nconst tomorrow = today.plus({ days: 1 });\n\nlet allTasks = dv.pages().file.tasks.where(t => !t.completed && t.due);\n\nlet overdue = allTasks.where(t => t.due < today);\nif (overdue.length > 0) {\n  dv.taskList(overdue, false);\n} else {\n  dv.paragraph(\"✅ 無逾期任務\");\n}",
+      "queryType": "dataviewjs",
+      "maxHeight": 1200,
+      "dynamicParamComponents": [],
+      "title": "逾期代辦清單"
+    },
+    {
+      "id": "6ec240d6-b378-4b5a-89f6-a90a10e9ef99",
+      "type": "dataview",
+      "titleAlign": "center",
+      "tabTitle": "Dataview",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": true,
+      "createAt": "2025-08-18T21:55:18.850Z",
+      "updateAt": "2025-11-15T04:44:59.785Z",
+      "query": "const tomorrow = dv.luxon.DateTime.now().startOf(\"day\").plus({ days: 1 });\nlet allTasks = dv.pages().file.tasks\n  .where(t => !t.completed && t.due && t.due.hasSame(tomorrow, \"day\"));\ndv.header(2, `${tomorrow.toFormat(\"yyyy-MM-dd\")}`);\nif (allTasks.length > 0) {\n  dv.taskList(allTasks, false);\n} else {\n  dv.paragraph(\"✅ 無代辦\");\n}",
+      "queryType": "dataviewjs",
+      "maxHeight": 1200,
+      "dynamicParamComponents": [],
+      "title": ""
+    },
+    {
+      "id": "bacea6ec-d6b5-480f-b7d8-00fc1d69c785",
+      "type": "dataview",
+      "titleAlign": "center",
+      "tabTitle": "Dataview",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": true,
+      "createAt": "2025-08-18T21:55:18.850Z",
+      "updateAt": "2025-11-15T04:44:59.785Z",
+      "query": "const afterTomorrow = dv.luxon.DateTime.now().startOf(\"day\").plus({ days: 2 });\nlet allTasks = dv.pages().file.tasks\n  .where(t => !t.completed && t.due && t.due.hasSame(afterTomorrow, \"day\"));\n\ndv.header(2, `${afterTomorrow.toFormat(\"yyyy-MM-dd \")}`);\nif (allTasks.length > 0) {\n  dv.taskList(allTasks, false);\n} else {\n  dv.paragraph(\"✅ 無代辦\");\n}\n",
+      "queryType": "dataviewjs",
+      "maxHeight": 1200,
+      "dynamicParamComponents": [],
+      "title": ""
+    },
+    {
+      "id": "dcd8f735-11f4-49b4-b18d-7ce0ba14535f",
+      "type": "dataview",
+      "titleAlign": "center",
+      "tabTitle": "Dataview",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": true,
+      "createAt": "2025-08-18T21:55:18.850Z",
+      "updateAt": "2025-11-15T04:44:59.785Z",
+      "query": "const afterTomorrow = dv.luxon.DateTime.now().startOf(\"day\").plus({ days: 3 });\nlet allTasks = dv.pages().file.tasks\n  .where(t => !t.completed && t.due && t.due.hasSame(afterTomorrow, \"day\"));\n\ndv.header(2, ` ${afterTomorrow.toFormat(\"yyyy-MM-dd \")}`);\nif (allTasks.length > 0) {\n  dv.taskList(allTasks, false);\n} else {\n  dv.paragraph(\"✅ 無代辦\");\n}\n",
+      "queryType": "dataviewjs",
+      "maxHeight": 1200,
+      "dynamicParamComponents": [],
+      "title": ""
+    },
+    {
+      "id": "c9ca2705-c9cd-4180-8621-a6df621a0afe",
+      "type": "dataview",
+      "titleAlign": "center",
+      "tabTitle": "Dataview",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": true,
+      "createAt": "2025-08-18T21:55:18.850Z",
+      "updateAt": "2025-11-15T04:44:59.785Z",
+      "query": "const afterTomorrow = dv.luxon.DateTime.now().startOf(\"day\").plus({ days: 4 });\nlet allTasks = dv.pages().file.tasks\n  .where(t => !t.completed && t.due && t.due.hasSame(afterTomorrow, \"day\"));\n\ndv.header(2, ` ${afterTomorrow.toFormat(\"yyyy-MM-dd \")}`);\nif (allTasks.length > 0) {\n  dv.taskList(allTasks, false);\n} else {\n  dv.paragraph(\"✅ 無代辦\");\n}\n",
+      "queryType": "dataviewjs",
+      "maxHeight": 1200,
+      "dynamicParamComponents": [],
+      "title": ""
+    }
+  ],
+  "rootComponentId": "dccaa913-a5ee-4b4a-8fd0-1f03425e1368",
+  "version": 3.1
+}

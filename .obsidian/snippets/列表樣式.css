@@ -1,0 +1,1 @@
+ol > li::marker,ul > li::marker,.cm-s-obsidian .cm-formatting-list {    color: ?色;    font-size: 大小;}.markdown-rendered.show-indentation-guide li > ul::before,.markdown-rendered.show-indentation-guide li > ol::before {    border-right: ?度 solid var(--indentation-guide-color);}

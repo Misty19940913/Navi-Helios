@@ -1,0 +1,29 @@
+.chip-card {
+  border-radius: 8px;
+  border: 2px solid var(--chip-color);
+  padding: 12px;
+  margin-bottom: 16px;
+  background: var(--background-primary);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.chip-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.health-chip { --chip-color: #4CAF50; }
+.family-chip { --chip-color: #FF9800; }
+.career-chip { --chip-color: #2196F3; }
+.finance-chip { --chip-color: #FFEB3B; }
+.social-chip { --chip-color: #9C27B0; }
+.learning-chip { --chip-color: #F44336; }
+.leisure-chip { --chip-color: #00BCD4; }
+.spirit-chip { --chip-color: #673AB7; }
+
+.level-1 { --chip-level-color: #BDBDBD; }
+.level-2 { --chip-level-color: #9E9E9E; }
+.level-3 { --chip-level-color: #FFC107; }
+.level-4 { --chip-level-color: #1976D2; }
+.level-5 { --chip-level-color: #7B1FA2; }

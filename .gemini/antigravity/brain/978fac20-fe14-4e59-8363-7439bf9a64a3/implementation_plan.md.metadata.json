@@ -1,0 +1,6 @@
+{
+  "artifactType":  "ARTIFACT_TYPE_IMPLEMENTATION_PLAN",
+  "summary":  "優化後的實作計畫，強化了「既有知識整合」邏輯。現在要求 `atomize-note` 必須主動掃描段落內的 Wikilinks，並為其與當前概念的互動撰寫敘事說明。這解決了畫布中新舊知識斷連的問題，實現了真正的全域網狀思考。",
+  "updatedAt":  "2026-03-03T13:22:34.679171900Z",
+  "version":  "2"
+}

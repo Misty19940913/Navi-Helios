@@ -1,0 +1,263 @@
+{
+  "components": [
+    {
+      "id": "cb8bee17-a1df-4ae2-950a-5d487637c6c1",
+      "type": "multi",
+      "titleAlign": "center",
+      "tabTitle": "",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showShadow": false,
+      "createAt": "2024-12-13T04:16:25.409Z",
+      "updateAt": "2025-11-16T01:57:57.543Z",
+      "components": [
+        {
+          "componentId": "678291bd-cd02-4b4b-b947-c8b68dc82d9a",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 0,
+              "w": 4,
+              "h": 4
+            },
+            "laptop": {
+              "x": 0,
+              "y": 0,
+              "w": 4,
+              "h": 2
+            }
+          }
+        },
+        {
+          "componentId": "ae33fc72-bbb2-4d58-8783-d4eb50190b00",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 4,
+              "w": 4,
+              "h": 4
+            },
+            "laptop": {
+              "x": 2,
+              "y": 4,
+              "w": 2,
+              "h": 2
+            }
+          }
+        },
+        {
+          "componentId": "07c5af35-afdc-4dae-89a1-e7b9851cf458",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 8,
+              "w": 4,
+              "h": 4
+            },
+            "laptop": {
+              "x": 0,
+              "y": 4,
+              "w": 2,
+              "h": 2
+            }
+          }
+        },
+        {
+          "componentId": "a58f8bd4-bc0f-48ff-a2bf-aaf65d0e9ca6",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 12,
+              "w": 4,
+              "h": 4
+            },
+            "laptop": {
+              "x": 2,
+              "y": 2,
+              "w": 2,
+              "h": 2
+            }
+          }
+        },
+        {
+          "componentId": "245e6141-e5bd-46e0-8a53-bac33f85077f",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 16,
+              "w": 4,
+              "h": 4
+            },
+            "laptop": {
+              "x": 0,
+              "y": 2,
+              "w": 2,
+              "h": 2
+            }
+          }
+        }
+      ],
+      "layoutType": "grid",
+      "locked": false,
+      "layoutOptions": {}
+    },
+    {
+      "id": "8721543a-ed04-422f-9f9c-c4c0b908c4ae",
+      "type": "quote",
+      "titleAlign": "center",
+      "tabTitle": "",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-05-13T07:06:57.589Z",
+      "updateAt": "2024-05-13T07:06:57.589Z",
+      "contentType": "page",
+      "coverType": "pageFirstImage",
+      "filter": {
+        "id": "811bd9bd-c0bb-4d18-9830-4d387c638588",
+        "type": "group",
+        "operator": "and",
+        "conditions": [
+          {
+            "id": "409b6073-1331-479d-b667-2d66d57a7c27",
+            "type": "filter",
+            "operator": "contains",
+            "property": "${file.tags}",
+            "value": "",
+            "conditions": []
+          }
+        ]
+      },
+      "maxHeight": 300
+    },
+    {
+      "id": "ae33fc72-bbb2-4d58-8783-d4eb50190b00",
+      "type": "card",
+      "titleAlign": "center",
+      "tabTitle": "新建項目",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-12-13T04:18:15.532Z",
+      "updateAt": "2025-11-16T01:57:11.197Z",
+      "title": "新建項目",
+      "description": "",
+      "coverFit": "cover",
+      "coverPosition": "left",
+      "clickAction": {
+        "type": "CreateFile",
+        "id": "349e556d-ad8c-4e54-bd91-f1a942563945",
+        "options": {
+          "commandId": "daily-notes",
+          "commandName": "日记: 打开/创建今天的日记",
+          "templateFilePath": "600支援/620Template/項目模板.md",
+          "fileName": "{{(\"value\")}}",
+          "targetFolder": "300專案",
+          "openPageIn": "split"
+        }
+      },
+      "icon": "LaptopMinimal"
+    },
+    {
+      "id": "07c5af35-afdc-4dae-89a1-e7b9851cf458",
+      "type": "card",
+      "titleAlign": "center",
+      "tabTitle": "新建日记",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-12-13T04:18:15.532Z",
+      "updateAt": "2025-11-16T01:57:11.197Z",
+      "title": "新建日记",
+      "description": "",
+      "coverFit": "cover",
+      "coverPosition": "left",
+      "clickAction": {
+        "type": "CallCommand",
+        "id": "349e556d-ad8c-4e54-bd91-f1a942563945",
+        "options": {
+          "commandId": "daily-notes",
+          "commandName": "日记: 打开/创建今天的日记"
+        }
+      },
+      "icon": "CalendarPlus"
+    },
+    {
+      "id": "a58f8bd4-bc0f-48ff-a2bf-aaf65d0e9ca6",
+      "type": "card",
+      "titleAlign": "center",
+      "tabTitle": "明暗切换",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-12-13T04:18:15.532Z",
+      "updateAt": "2025-11-16T01:57:11.197Z",
+      "title": "明暗切换",
+      "description": "",
+      "coverFit": "cover",
+      "coverPosition": "left",
+      "clickAction": {
+        "type": "RunScript",
+        "id": "349e556d-ad8c-4e54-bd91-f1a942563945",
+        "options": {
+          "commandId": "daily-notes",
+          "commandName": "日记: 打开/创建今天的日记",
+          "expression": "switchLightDark()"
+        }
+      },
+      "icon": "Lightbulb"
+    },
+    {
+      "id": "245e6141-e5bd-46e0-8a53-bac33f85077f",
+      "type": "card",
+      "titleAlign": "center",
+      "tabTitle": "新建捕獲",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-12-13T04:18:15.532Z",
+      "updateAt": "2025-11-16T01:57:11.197Z",
+      "title": "新建捕獲",
+      "description": "",
+      "coverFit": "cover",
+      "coverPosition": "left",
+      "clickAction": {
+        "type": "CreateFile",
+        "id": "349e556d-ad8c-4e54-bd91-f1a942563945",
+        "options": {
+          "commandId": "app:toggle-right-sidebar",
+          "commandName": "折叠/展开右侧边栏",
+          "expression": "switchLightDark()",
+          "templateFilePath": "resource/template/inbox.md",
+          "fileName": "{{date: YYYYMMDD}}",
+          "targetFolder": "000捕獲",
+          "openPageIn": "tab"
+        }
+      },
+      "icon": "Inbox"
+    },
+    {
+      "id": "678291bd-cd02-4b4b-b947-c8b68dc82d9a",
+      "type": "card",
+      "titleAlign": "center",
+      "tabTitle": "功能欄",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": true,
+      "createAt": "2024-12-27T05:12:50.842Z",
+      "updateAt": "2025-11-16T01:57:11.196Z",
+      "title": "功能欄",
+      "description": "",
+      "coverFit": "cover",
+      "coverPosition": "left",
+      "clickAction": {
+        "type": "None",
+        "id": "47ee9b62-252d-47db-9767-8bf2eedd4ce3",
+        "options": {}
+      },
+      "icon": "ListTree"
+    }
+  ],
+  "rootComponentId": "cb8bee17-a1df-4ae2-950a-5d487637c6c1",
+  "version": 3.1
+}

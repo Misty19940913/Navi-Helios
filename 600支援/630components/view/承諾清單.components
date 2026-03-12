@@ -1,0 +1,653 @@
+{
+  "components": [
+    {
+      "id": "e2b145d3-fd4b-43cf-b631-1bf7a192e1b6",
+      "type": "multi",
+      "titleAlign": "center",
+      "tabTitle": "",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showTitle": true,
+      "showShadow": false,
+      "createAt": "2026-02-06T17:14:14.666Z",
+      "updateAt": "2026-02-06T17:14:14.666Z",
+      "components": [
+        {
+          "componentId": "08dc8a86-11ff-49d0-9b57-3652c02557e2"
+        },
+        {
+          "componentId": "3ac17a64-8437-4f35-b2ef-bf19737a0b5f"
+        }
+      ],
+      "layoutType": "tab",
+      "locked": false,
+      "layoutOptions": {}
+    },
+    {
+      "id": "08dc8a86-11ff-49d0-9b57-3652c02557e2",
+      "type": "dynamicDataView",
+      "titleAlign": "center",
+      "tabTitle": "",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showTitle": true,
+      "showShadow": false,
+      "createAt": "2026-02-06T17:14:46.721Z",
+      "updateAt": "2026-02-06T18:17:02.702Z",
+      "viewType": "table",
+      "newPageNameFormat": "{{Vault:請輸入任務名}} ",
+      "properties": [
+        {
+          "id": "__componentsTitleProperty_0x7c00",
+          "name": "文件名",
+          "type": "text",
+          "isShow": true,
+          "wrap": false,
+          "options": {}
+        },
+        {
+          "id": "832c7751-8751-4d24-8d2c-e3e0fb5ab9bf",
+          "name": "象限",
+          "isShow": true,
+          "type": "multiSelect",
+          "options": {
+            "items": [
+              {
+                "id": "77bc704e-8a89-495b-8186-51aaf7bef45e",
+                "value": "心智",
+                "color": "components--color-green"
+              },
+              {
+                "id": "524fe765-eab6-4839-ba93-cf36945eb460",
+                "value": "職業",
+                "color": "components--color-orange"
+              },
+              {
+                "id": "a00a30e1-eda6-4e4d-ad47-1517fcd0dd17",
+                "value": "精神",
+                "color": "components--color-gray"
+              },
+              {
+                "id": "40bc43a3-f901-4ec8-88d3-5ad1e0a93151",
+                "value": "身體",
+                "color": "components--color-green"
+              }
+            ],
+            "showTaskList": false,
+            "showAllTasks": false,
+            "hideTaskFields": false,
+            "timeRecordStyle": "none",
+            "insertPosition": {
+              "position": "BottomOfNote",
+              "headingLine": ""
+            },
+            "width": "119"
+          }
+        },
+        {
+          "id": "6ebac92c-3984-479f-8885-f83f0024aa97",
+          "name": "矩陣",
+          "isShow": true,
+          "type": "multiSelect",
+          "options": {
+            "items": [
+              {
+                "id": "5df0dc80-ae42-49ad-83ba-05dac302d9b8",
+                "value": "緊急",
+                "color": "components--color-pink"
+              },
+              {
+                "id": "0a70ca90-136b-4285-a6e5-01bd55a504c2",
+                "value": "不緊急",
+                "color": "components--color-blue"
+              },
+              {
+                "id": "6cc74093-af7c-4fb9-8374-a55b51953abc",
+                "value": "重要",
+                "color": "components--color-gray"
+              },
+              {
+                "id": "c0ea09ef-afeb-403a-bf67-8d7d1fd94801",
+                "value": "不重要",
+                "color": "components--color-red"
+              }
+            ],
+            "width": "124"
+          }
+        },
+        {
+          "id": "17c94ece-8909-4bd5-b817-da0444960775",
+          "name": "status",
+          "isShow": true,
+          "type": "select",
+          "options": {
+            "items": [
+              {
+                "id": "97c8eae9-75f1-4f49-9599-c3b85665df56",
+                "value": "DONE",
+                "color": "components--color-yellow"
+              },
+              {
+                "id": "5c094c30-1c4c-4682-9bd1-58a5add1395a",
+                "value": "DOING",
+                "color": "components--color-yellow"
+              },
+              {
+                "id": "70d6bccc-739d-4dae-96f9-ac7539f8e213",
+                "value": "DRAFT",
+                "color": "components--color-yellow"
+              },
+              {
+                "id": "d06d12a5-9b60-4371-943b-22a3ca22b74b",
+                "value": "STOP",
+                "color": "components--color-blue"
+              }
+            ],
+            "width": "100"
+          }
+        },
+        {
+          "id": "324d2518-7042-49a3-af87-8973c24c6bb0",
+          "name": "time_stare",
+          "isShow": true,
+          "type": "date",
+          "options": {
+            "width": "128"
+          }
+        },
+        {
+          "id": "419ad7df-c54a-44bd-8195-b48785939c8a",
+          "name": "time_end",
+          "isShow": true,
+          "type": "date",
+          "options": {
+            "width": "130"
+          }
+        },
+        {
+          "id": "9c30d5ec-8839-41a1-9d43-d9fabd5af981",
+          "name": "拖延反思",
+          "isShow": true,
+          "type": "text",
+          "options": {}
+        }
+      ],
+      "templates": [
+        {
+          "id": "1864754e-cab7-4916-a2fa-36d9bb3ed21d",
+          "path": "600支援/620Template/任務模板.md",
+          "name": "任務模板.md",
+          "type": "normal"
+        }
+      ],
+      "groups": [],
+      "colorfulGroups": false,
+      "viewOptions": {
+        "openPageIn": "tab",
+        "openPageAfterCreate": true,
+        "items": [],
+        "pinFiltersToMenuBar": false,
+        "hideHeaderMenu": false,
+        "showGrid": false,
+        "heightType": "auto",
+        "heightValue": 600
+      },
+      "groupStates": {
+        "sort": "nameAsc",
+        "statics": [],
+        "orders": [],
+        "hiddens": [],
+        "collapseds": []
+      },
+      "filter": {
+        "id": "b510ba7c-6389-4bf7-8d1e-a1e257b02481",
+        "type": "group",
+        "operator": "and",
+        "conditions": [
+          {
+            "id": "9634e2d9-f6d2-4b37-aa11-98b4bb8c9c7d",
+            "type": "filter",
+            "operator": "contains",
+            "property": "${file.parent}",
+            "value": "200週期紀錄/240任務池",
+            "conditions": []
+          },
+          {
+            "id": "431b376b-0a04-46b4-996f-977c0a715d1d",
+            "type": "jsQuery",
+            "operator": "contains",
+            "property": "${file.tags}",
+            "value": "Number($item.frontmatter?.week) === Number($parentFile.frontmatter?.week)\n",
+            "conditions": []
+          }
+        ]
+      },
+      "newPageLocation": {
+        "location": "200週期紀錄/240任務池"
+      }
+    },
+    {
+      "id": "3ac17a64-8437-4f35-b2ef-bf19737a0b5f",
+      "type": "multi",
+      "titleAlign": "center",
+      "tabTitle": "",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showTitle": true,
+      "showShadow": false,
+      "createAt": "2026-02-06T17:45:08.511Z",
+      "updateAt": "2026-02-06T17:50:52.235Z",
+      "components": [
+        {
+          "componentId": "3cec58e3-eaeb-4d1e-982f-bf70e89a53b6",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 0,
+              "w": 4,
+              "h": 4
+            },
+            "laptop": {
+              "x": 0,
+              "y": 0,
+              "w": 6,
+              "h": 9
+            }
+          }
+        },
+        {
+          "componentId": "c25bddd4-fadc-456f-852a-88a9fda8ee1a",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 0,
+              "w": 4,
+              "h": 4
+            },
+            "laptop": {
+              "x": 6,
+              "y": 0,
+              "w": 6,
+              "h": 9
+            }
+          }
+        },
+        {
+          "componentId": "71b28cd3-93e0-4a97-8867-3483d25295fc",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 0,
+              "w": 4,
+              "h": 4
+            },
+            "laptop": {
+              "x": 6,
+              "y": 9,
+              "w": 6,
+              "h": 9
+            }
+          }
+        },
+        {
+          "componentId": "6673d788-3d20-482f-9510-7e0cee569a72",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 0,
+              "w": 4,
+              "h": 4
+            },
+            "laptop": {
+              "x": 0,
+              "y": 9,
+              "w": 6,
+              "h": 9
+            }
+          }
+        }
+      ],
+      "layoutType": "grid",
+      "locked": false,
+      "layoutOptions": {}
+    },
+    {
+      "id": "3cec58e3-eaeb-4d1e-982f-bf70e89a53b6",
+      "type": "dynamicDataView",
+      "titleAlign": "center",
+      "tabTitle": "",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showTitle": true,
+      "showShadow": false,
+      "createAt": "2026-02-06T17:45:40.686Z",
+      "updateAt": "2026-02-06T17:50:03.163Z",
+      "viewType": "table",
+      "newPageNameFormat": "{{date:YYYYMMDDHHmmss}} ",
+      "properties": [
+        {
+          "id": "__componentsTitleProperty_0x7c00",
+          "name": "文件名",
+          "type": "text",
+          "isShow": true,
+          "wrap": false,
+          "options": {}
+        }
+      ],
+      "templates": [],
+      "groups": [],
+      "colorfulGroups": false,
+      "viewOptions": {
+        "openPageIn": "tab",
+        "openPageAfterCreate": true,
+        "items": [],
+        "pinFiltersToMenuBar": false,
+        "hideHeaderMenu": false,
+        "showGrid": false,
+        "heightType": "auto",
+        "heightValue": 600
+      },
+      "groupStates": {
+        "sort": "nameAsc",
+        "statics": [],
+        "orders": [],
+        "hiddens": [],
+        "collapseds": []
+      },
+      "title": "重要、緊急",
+      "filter": {
+        "id": "b510ba7c-6389-4bf7-8d1e-a1e257b02481",
+        "type": "group",
+        "operator": "and",
+        "conditions": [
+          {
+            "id": "20d46f3f-3b35-4d0b-89a2-a68e023e5beb",
+            "type": "filter",
+            "operator": "contains",
+            "property": "${file.parent}",
+            "value": "200週期紀錄/240任務池",
+            "conditions": []
+          },
+          {
+            "id": "1ee09db7-bfe1-4a1d-ae33-730dd9d95f6f",
+            "type": "jsQuery",
+            "operator": "contains",
+            "property": "${file.tags}",
+            "value": "Number($item.frontmatter?.week) === Number($parentFile.frontmatter?.week)\n",
+            "conditions": []
+          },
+          {
+            "id": "768189ef-730f-43fb-820b-d032d3d40e16",
+            "type": "filter",
+            "operator": "contains",
+            "property": "矩陣",
+            "value": "重要",
+            "conditions": []
+          },
+          {
+            "id": "0274ca96-c9fb-46da-a544-3b1252c7192e",
+            "type": "filter",
+            "operator": "contains",
+            "property": "矩陣",
+            "value": "緊急",
+            "conditions": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "6673d788-3d20-482f-9510-7e0cee569a72",
+      "type": "dynamicDataView",
+      "titleAlign": "center",
+      "tabTitle": "",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showTitle": true,
+      "showShadow": false,
+      "createAt": "2026-02-06T17:45:40.686Z",
+      "updateAt": "2026-02-06T17:51:36.089Z",
+      "viewType": "table",
+      "newPageNameFormat": "{{date:YYYYMMDDHHmmss}} ",
+      "properties": [
+        {
+          "id": "__componentsTitleProperty_0x7c00",
+          "name": "文件名",
+          "type": "text",
+          "isShow": true,
+          "wrap": false,
+          "options": {}
+        }
+      ],
+      "templates": [],
+      "groups": [],
+      "colorfulGroups": false,
+      "viewOptions": {
+        "openPageIn": "tab",
+        "openPageAfterCreate": true,
+        "items": [],
+        "pinFiltersToMenuBar": false,
+        "hideHeaderMenu": false,
+        "showGrid": false,
+        "heightType": "auto",
+        "heightValue": 600
+      },
+      "groupStates": {
+        "sort": "nameAsc",
+        "statics": [],
+        "orders": [],
+        "hiddens": [],
+        "collapseds": []
+      },
+      "title": "不重要、緊急",
+      "filter": {
+        "id": "b510ba7c-6389-4bf7-8d1e-a1e257b02481",
+        "type": "group",
+        "operator": "and",
+        "conditions": [
+          {
+            "id": "20d46f3f-3b35-4d0b-89a2-a68e023e5beb",
+            "type": "filter",
+            "operator": "contains",
+            "property": "${file.parent}",
+            "value": "200週期紀錄/240任務池",
+            "conditions": []
+          },
+          {
+            "id": "1ee09db7-bfe1-4a1d-ae33-730dd9d95f6f",
+            "type": "jsQuery",
+            "operator": "contains",
+            "property": "${file.tags}",
+            "value": "Number($item.frontmatter?.week) === Number($parentFile.frontmatter?.week)\n",
+            "conditions": []
+          },
+          {
+            "id": "768189ef-730f-43fb-820b-d032d3d40e16",
+            "type": "filter",
+            "operator": "contains",
+            "property": "矩陣",
+            "value": "不緊急",
+            "conditions": []
+          },
+          {
+            "id": "0274ca96-c9fb-46da-a544-3b1252c7192e",
+            "type": "filter",
+            "operator": "contains",
+            "property": "矩陣",
+            "value": "緊急",
+            "conditions": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "c25bddd4-fadc-456f-852a-88a9fda8ee1a",
+      "type": "dynamicDataView",
+      "titleAlign": "center",
+      "tabTitle": "",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showTitle": true,
+      "showShadow": false,
+      "createAt": "2026-02-06T17:45:40.686Z",
+      "updateAt": "2026-02-06T17:51:42.779Z",
+      "viewType": "table",
+      "newPageNameFormat": "{{date:YYYYMMDDHHmmss}} ",
+      "properties": [
+        {
+          "id": "__componentsTitleProperty_0x7c00",
+          "name": "文件名",
+          "type": "text",
+          "isShow": true,
+          "wrap": false,
+          "options": {}
+        }
+      ],
+      "templates": [],
+      "groups": [],
+      "colorfulGroups": false,
+      "viewOptions": {
+        "openPageIn": "tab",
+        "openPageAfterCreate": true,
+        "items": [],
+        "pinFiltersToMenuBar": false,
+        "hideHeaderMenu": false,
+        "showGrid": false,
+        "heightType": "auto",
+        "heightValue": 600
+      },
+      "groupStates": {
+        "sort": "nameAsc",
+        "statics": [],
+        "orders": [],
+        "hiddens": [],
+        "collapseds": []
+      },
+      "title": "重要、不緊急",
+      "filter": {
+        "id": "b510ba7c-6389-4bf7-8d1e-a1e257b02481",
+        "type": "group",
+        "operator": "and",
+        "conditions": [
+          {
+            "id": "20d46f3f-3b35-4d0b-89a2-a68e023e5beb",
+            "type": "filter",
+            "operator": "contains",
+            "property": "${file.parent}",
+            "value": "200週期紀錄/240任務池",
+            "conditions": []
+          },
+          {
+            "id": "1ee09db7-bfe1-4a1d-ae33-730dd9d95f6f",
+            "type": "jsQuery",
+            "operator": "contains",
+            "property": "${file.tags}",
+            "value": "Number($item.frontmatter?.week) === Number($parentFile.frontmatter?.week)\n",
+            "conditions": []
+          },
+          {
+            "id": "768189ef-730f-43fb-820b-d032d3d40e16",
+            "type": "filter",
+            "operator": "contains",
+            "property": "矩陣",
+            "value": "不緊急",
+            "conditions": []
+          },
+          {
+            "id": "0274ca96-c9fb-46da-a544-3b1252c7192e",
+            "type": "filter",
+            "operator": "contains",
+            "property": "矩陣",
+            "value": "重要",
+            "conditions": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "71b28cd3-93e0-4a97-8867-3483d25295fc",
+      "type": "dynamicDataView",
+      "titleAlign": "center",
+      "tabTitle": "",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showTitle": true,
+      "showShadow": false,
+      "createAt": "2026-02-06T17:45:40.686Z",
+      "updateAt": "2026-02-06T17:51:12.787Z",
+      "viewType": "table",
+      "newPageNameFormat": "{{date:YYYYMMDDHHmmss}} ",
+      "properties": [
+        {
+          "id": "__componentsTitleProperty_0x7c00",
+          "name": "文件名",
+          "type": "text",
+          "isShow": true,
+          "wrap": false,
+          "options": {}
+        }
+      ],
+      "templates": [],
+      "groups": [],
+      "colorfulGroups": false,
+      "viewOptions": {
+        "openPageIn": "tab",
+        "openPageAfterCreate": true,
+        "items": [],
+        "pinFiltersToMenuBar": false,
+        "hideHeaderMenu": false,
+        "showGrid": false,
+        "heightType": "auto",
+        "heightValue": 600
+      },
+      "groupStates": {
+        "sort": "nameAsc",
+        "statics": [],
+        "orders": [],
+        "hiddens": [],
+        "collapseds": []
+      },
+      "title": "不重要、不緊急",
+      "filter": {
+        "id": "b510ba7c-6389-4bf7-8d1e-a1e257b02481",
+        "type": "group",
+        "operator": "and",
+        "conditions": [
+          {
+            "id": "20d46f3f-3b35-4d0b-89a2-a68e023e5beb",
+            "type": "filter",
+            "operator": "contains",
+            "property": "${file.parent}",
+            "value": "200週期紀錄/240任務池",
+            "conditions": []
+          },
+          {
+            "id": "1ee09db7-bfe1-4a1d-ae33-730dd9d95f6f",
+            "type": "jsQuery",
+            "operator": "contains",
+            "property": "${file.tags}",
+            "value": "Number($item.frontmatter?.week) === Number($parentFile.frontmatter?.week)\n",
+            "conditions": []
+          },
+          {
+            "id": "768189ef-730f-43fb-820b-d032d3d40e16",
+            "type": "filter",
+            "operator": "contains",
+            "property": "矩陣",
+            "value": "不緊急",
+            "conditions": []
+          },
+          {
+            "id": "0274ca96-c9fb-46da-a544-3b1252c7192e",
+            "type": "filter",
+            "operator": "contains",
+            "property": "矩陣",
+            "value": "不重要",
+            "conditions": []
+          }
+        ]
+      }
+    }
+  ],
+  "rootComponentId": "e2b145d3-fd4b-43cf-b631-1bf7a192e1b6",
+  "version": 3.1
+}

@@ -1,0 +1,11 @@
+{
+  "theme": "moonstone",
+  "enabledCssSnippets": [
+    "分隔線樣式",
+    "漸變粗體",
+    "標題底線",
+    "editor-full",
+    "rainbow-tree"
+  ],
+  "cssTheme": "Composer"
+}

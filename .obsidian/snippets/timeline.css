@@ -1,0 +1,22 @@
+.timeline-item {
+  margin: 1em 0;
+  position: relative;
+}
+
+.timeline-date {
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  color: var(--text-accent);
+}
+
+.timeline-item::before {
+  content: "●";
+  position: absolute;
+  left: -1.2em;
+  color: var(--text-accent);
+  font-size: 0.8em;
+}
+
+.timeline-content {
+  margin-left: 0.5em;
+}

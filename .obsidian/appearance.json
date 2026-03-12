@@ -1,0 +1,18 @@
+{
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "分隔線樣式",
+    "標題底線",
+    "editor-full",
+    "rainbow-tree",
+    "Timeline",
+    "timeline",
+    "無序列表樣式",
+    "漸變租體-style",
+    "漸變粗體"
+  ],
+  "cssTheme": "AnuPpuccin",
+  "accentColor": "#30aadf",
+  "baseFontSizeAction": true,
+  "baseFontSize": 22
+}

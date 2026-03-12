@@ -1,0 +1,772 @@
+{
+  "components": [
+    {
+      "id": "bde5561a-88e2-4da5-a3d4-351ec22bba2b",
+      "type": "multi",
+      "titleAlign": "center",
+      "tabTitle": "",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showShadow": false,
+      "createAt": "2024-12-13T04:44:07.769Z",
+      "updateAt": "2025-11-16T02:32:57.791Z",
+      "components": [
+        {
+          "componentId": "2d5833ae-2bf4-420f-bc61-79494db86038",
+          "layout": {
+            "mobile": {
+              "x": 2,
+              "y": 4,
+              "w": 1,
+              "h": 4
+            },
+            "laptop": {
+              "x": 0,
+              "y": 2,
+              "w": 2,
+              "h": 3
+            }
+          }
+        },
+        {
+          "componentId": "c2a7d53e-1a52-4605-ba8a-ef115692b7a7",
+          "layout": {
+            "mobile": {
+              "x": 3,
+              "y": 4,
+              "w": 1,
+              "h": 4
+            },
+            "laptop": {
+              "x": 2,
+              "y": 2,
+              "w": 2,
+              "h": 3
+            }
+          }
+        },
+        {
+          "componentId": "699e4171-afab-4268-9121-ba1531fe1184",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 8,
+              "w": 4,
+              "h": 36
+            },
+            "laptop": {
+              "x": 4,
+              "y": 0,
+              "w": 8,
+              "h": 20
+            }
+          }
+        },
+        {
+          "componentId": "3c121512-d53b-4d8e-b21c-cb592305d0d4",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 44,
+              "w": 4,
+              "h": 14
+            },
+            "laptop": {
+              "x": 0,
+              "y": 14,
+              "w": 2,
+              "h": 7
+            }
+          }
+        },
+        {
+          "componentId": "6171dd95-2bfc-4973-86e3-03ef12f86225",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 58,
+              "w": 4,
+              "h": 14
+            },
+            "laptop": {
+              "x": 2,
+              "y": 14,
+              "w": 2,
+              "h": 7
+            }
+          }
+        },
+        {
+          "componentId": "41a3fdab-c73f-45cb-ba8e-f0a4eff4b478",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 72,
+              "w": 4,
+              "h": 12
+            },
+            "laptop": {
+              "x": 0,
+              "y": 5,
+              "w": 4,
+              "h": 9
+            }
+          }
+        },
+        {
+          "componentId": "5dffca0e-8c58-4af6-b565-5c01bc89c274",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 0,
+              "w": 4,
+              "h": 4
+            },
+            "laptop": {
+              "x": 0,
+              "y": 0,
+              "w": 4,
+              "h": 2
+            }
+          }
+        }
+      ],
+      "layoutType": "grid",
+      "locked": false,
+      "layoutOptions": {}
+    },
+    {
+      "id": "05ddd46c-37eb-49a3-9a1e-071046b81cf0",
+      "type": "dynamicDataView",
+      "titleAlign": "center",
+      "tabTitle": "在读",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showShadow": false,
+      "createAt": "2024-12-13T04:44:31.582Z",
+      "updateAt": "2025-11-16T02:29:02.568Z",
+      "viewType": "gallary",
+      "newPageNameFormat": "{{date: YYMMDD}}",
+      "properties": [
+        {
+          "id": "__componentsTitleProperty_0x7c00",
+          "name": "文件名",
+          "type": "text",
+          "isShow": true,
+          "wrap": false,
+          "options": {}
+        },
+        {
+          "id": "1222f760-45cc-48df-9f61-91b46769f4b6",
+          "name": "tags",
+          "type": "multiSelect",
+          "isShow": true,
+          "wrap": false,
+          "options": {}
+        },
+        {
+          "id": "9ee7b3ac-34f5-4561-be3b-95832d22bb97",
+          "name": "createTime",
+          "type": "datetime",
+          "isShow": true,
+          "wrap": false,
+          "options": {}
+        },
+        {
+          "id": "56ac245c-23e8-434a-af59-fd31304d5a91",
+          "name": "author",
+          "type": "text",
+          "isShow": true,
+          "wrap": false,
+          "options": {}
+        },
+        {
+          "id": "1eea8ca7-0c09-4625-b549-8e48afc7848f",
+          "name": "isbn",
+          "type": "number",
+          "isShow": true,
+          "wrap": false,
+          "options": {}
+        },
+        {
+          "id": "5a755369-61a0-41bf-b046-7dfb1af68a85",
+          "name": "progress",
+          "type": "number",
+          "isShow": true,
+          "wrap": false,
+          "options": {
+            "prefix": "",
+            "suffix": "",
+            "totalValueType": "constant",
+            "color": "components--color-none",
+            "uiType": "progressBar",
+            "total": 100
+          }
+        }
+      ],
+      "templates": [
+        {
+          "id": "e23d1e2d-72ab-44e9-a414-4a80506f6e9c",
+          "path": "resource/template/book.md",
+          "name": "book.md",
+          "type": "normal"
+        }
+      ],
+      "groups": [],
+      "colorfulGroups": false,
+      "viewOptions": {
+        "openPageIn": "tab",
+        "openPageAfterCreate": true,
+        "itemSize": "components--page-card-medium",
+        "showPropertyName": false,
+        "showAllProperties": false,
+        "items": [],
+        "cover": {
+          "type": "image",
+          "source": "property",
+          "fit": "contains",
+          "layout": "components--page-card-cover-landscape",
+          "position": "top",
+          "sourceValue": "cover"
+        },
+        "showGrid": false,
+        "heightType": "auto",
+        "heightValue": 600,
+        "pinFiltersToMenuBar": true
+      },
+      "filter": {
+        "id": "6ab2ebdb-5617-4a77-98ec-748c09fc11bc",
+        "type": "group",
+        "operator": "and",
+        "conditions": [
+          {
+            "id": "25584918-829c-4de9-92fc-1118b4ad88e0",
+            "type": "filter",
+            "operator": "contains",
+            "property": "tags",
+            "value": "系統/知識/書籍",
+            "conditions": []
+          },
+          {
+            "id": "822c48a9-08c1-4581-83b1-0036988baa80",
+            "type": "filter",
+            "operator": "contains",
+            "property": "status",
+            "value": "DOING",
+            "conditions": []
+          }
+        ]
+      },
+      "newPageLocation": {
+        "location": "area/books"
+      },
+      "defaultTemplate": "e23d1e2d-72ab-44e9-a414-4a80506f6e9c",
+      "showTitle": false,
+      "title": "在讀"
+    },
+    {
+      "id": "2d5833ae-2bf4-420f-bc61-79494db86038",
+      "type": "count",
+      "titleAlign": "center",
+      "tabTitle": "📚 累計閱讀\n",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-12-13T04:47:59.487Z",
+      "updateAt": "2025-11-16T02:47:13.662Z",
+      "countValueAlign": "center",
+      "contentPrefix": "",
+      "contentSuffix": "",
+      "countType": "number",
+      "precision": 0,
+      "query": {
+        "valueType": "totalRecords",
+        "value": 100,
+        "filter": {
+          "id": "6ceceacf-02bb-47a0-8e15-ce7dbfff2050",
+          "type": "group",
+          "operator": "and",
+          "conditions": [
+            {
+              "id": "9cf73f94-2aa0-46ee-9c79-dd5af34a79f2",
+              "type": "filter",
+              "operator": "contains",
+              "property": "${file.parent}",
+              "value": "400知識/420書籍資料",
+              "conditions": []
+            }
+          ]
+        },
+        "sort": {
+          "orders": []
+        }
+      },
+      "totalQuery": {
+        "valueType": "constant",
+        "value": 100,
+        "filter": {
+          "id": "946fd8db-0b55-4c4c-b072-680f8ab726a8",
+          "type": "group",
+          "operator": "and",
+          "conditions": []
+        },
+        "sort": {
+          "orders": []
+        }
+      },
+      "title": "📚 累計閱讀\n"
+    },
+    {
+      "id": "c2a7d53e-1a52-4605-ba8a-ef115692b7a7",
+      "type": "count",
+      "titleAlign": "center",
+      "tabTitle": "🎉 已完成",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-12-13T04:47:59.487Z",
+      "updateAt": "2025-11-16T02:47:13.663Z",
+      "countValueAlign": "center",
+      "contentPrefix": "",
+      "contentSuffix": "",
+      "countType": "number",
+      "precision": 0,
+      "query": {
+        "valueType": "totalRecords",
+        "value": 100,
+        "filter": {
+          "id": "6ceceacf-02bb-47a0-8e15-ce7dbfff2050",
+          "type": "group",
+          "operator": "and",
+          "conditions": [
+            {
+              "id": "9cf73f94-2aa0-46ee-9c79-dd5af34a79f2",
+              "type": "filter",
+              "operator": "contains",
+              "property": "tags",
+              "value": "系統/知識/書籍",
+              "conditions": []
+            },
+            {
+              "id": "db8a1668-3a55-49ff-9122-2c95243f5e6e",
+              "type": "filter",
+              "operator": "contains",
+              "property": "status",
+              "value": "DONE",
+              "conditions": []
+            }
+          ]
+        },
+        "sort": {
+          "orders": []
+        }
+      },
+      "totalQuery": {
+        "valueType": "constant",
+        "value": 100,
+        "filter": {
+          "id": "946fd8db-0b55-4c4c-b072-680f8ab726a8",
+          "type": "group",
+          "operator": "and",
+          "conditions": []
+        },
+        "sort": {
+          "orders": []
+        }
+      },
+      "title": "🎉 已完成"
+    },
+    {
+      "id": "699e4171-afab-4268-9121-ba1531fe1184",
+      "type": "multi",
+      "titleAlign": "center",
+      "tabTitle": "组合",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showShadow": false,
+      "createAt": "2024-12-13T04:53:26.433Z",
+      "updateAt": "2025-11-16T02:47:13.663Z",
+      "components": [
+        {
+          "componentId": "05ddd46c-37eb-49a3-9a1e-071046b81cf0"
+        },
+        {
+          "componentId": "f497d4b0-fa99-40b2-92bf-3d98ecc8dc36"
+        },
+        {
+          "componentId": "21b4c0de-6b08-4006-a701-0c856b4f2812"
+        }
+      ],
+      "layoutType": "tab",
+      "locked": false,
+      "layoutOptions": {}
+    },
+    {
+      "id": "f497d4b0-fa99-40b2-92bf-3d98ecc8dc36",
+      "type": "dynamicDataView",
+      "titleAlign": "center",
+      "tabTitle": "书架",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showShadow": false,
+      "createAt": "2024-12-13T04:44:31.582Z",
+      "updateAt": "2025-11-16T02:29:13.771Z",
+      "viewType": "gallary",
+      "newPageNameFormat": "{{date: YYMMDD}}",
+      "properties": [
+        {
+          "id": "__componentsTitleProperty_0x7c00",
+          "name": "文件名",
+          "type": "text",
+          "isShow": true,
+          "wrap": false,
+          "options": {}
+        },
+        {
+          "id": "1222f760-45cc-48df-9f61-91b46769f4b6",
+          "name": "tags",
+          "type": "multiSelect",
+          "isShow": true,
+          "wrap": false,
+          "options": {}
+        },
+        {
+          "id": "9ee7b3ac-34f5-4561-be3b-95832d22bb97",
+          "name": "createTime",
+          "type": "datetime",
+          "isShow": true,
+          "wrap": false,
+          "options": {}
+        },
+        {
+          "id": "56ac245c-23e8-434a-af59-fd31304d5a91",
+          "name": "author",
+          "type": "text",
+          "isShow": true,
+          "wrap": false,
+          "options": {}
+        },
+        {
+          "id": "1eea8ca7-0c09-4625-b549-8e48afc7848f",
+          "name": "isbn",
+          "type": "number",
+          "isShow": true,
+          "wrap": false,
+          "options": {}
+        },
+        {
+          "id": "5a755369-61a0-41bf-b046-7dfb1af68a85",
+          "name": "progress",
+          "type": "number",
+          "isShow": false,
+          "wrap": false,
+          "options": {
+            "prefix": "",
+            "suffix": "",
+            "totalValueType": "constant",
+            "color": "components--color-none",
+            "uiType": "progressBar",
+            "total": 100
+          }
+        }
+      ],
+      "templates": [
+        {
+          "id": "06e93e21-e956-455e-a00b-5b5374169c7e",
+          "path": "resource/template/book.md",
+          "name": "book.md",
+          "type": "normal"
+        }
+      ],
+      "groups": [],
+      "colorfulGroups": false,
+      "viewOptions": {
+        "openPageIn": "tab",
+        "openPageAfterCreate": true,
+        "itemSize": "components--page-card-medium",
+        "showPropertyName": false,
+        "showAllProperties": false,
+        "items": [],
+        "cover": {
+          "type": "image",
+          "source": "property",
+          "fit": "contains",
+          "layout": "components--page-card-cover-landscape",
+          "position": "left",
+          "sourceValue": "cover"
+        },
+        "showGrid": false,
+        "heightType": "auto",
+        "heightValue": 600,
+        "pinFiltersToMenuBar": true
+      },
+      "filter": {
+        "id": "6ab2ebdb-5617-4a77-98ec-748c09fc11bc",
+        "type": "group",
+        "operator": "and",
+        "conditions": [
+          {
+            "id": "25584918-829c-4de9-92fc-1118b4ad88e0",
+            "type": "filter",
+            "operator": "contains",
+            "property": "tags",
+            "value": "系統/知識/書籍",
+            "conditions": []
+          }
+        ]
+      },
+      "defaultTemplate": "06e93e21-e956-455e-a00b-5b5374169c7e",
+      "newPageLocation": {
+        "location": "area/books"
+      },
+      "showTitle": false,
+      "title": "書架"
+    },
+    {
+      "id": "3c121512-d53b-4d8e-b21c-cb592305d0d4",
+      "type": "chart",
+      "titleAlign": "center",
+      "tabTitle": "📊 分類佔比",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-12-13T04:57:31.973Z",
+      "updateAt": "2025-11-16T02:47:13.665Z",
+      "chartType": "pie",
+      "filter": {
+        "id": "64442988-9cd9-420e-9a54-7cd323f6b5f3",
+        "type": "group",
+        "operator": "and",
+        "conditions": [
+          {
+            "id": "d61633c7-b64c-466b-b846-cda95353413c",
+            "type": "filter",
+            "operator": "contains",
+            "property": "${file.parent}",
+            "value": "area/books",
+            "conditions": []
+          }
+        ]
+      },
+      "labelProperty": "category",
+      "labelFormat": "$none",
+      "valueProperty": "$file_count",
+      "valuePrecision": 0,
+      "sortField": "xAxisValue",
+      "sortOrder": "asc",
+      "maxHeight": 300,
+      "chartColorSet": "default",
+      "chartLabelPosition": "top",
+      "showDataValue": true,
+      "valueScaleStartFromZero": true,
+      "smoothLine": false,
+      "options": {},
+      "title": "📊 分類佔比",
+      "categoryProperty": "主題",
+      "categoryFormatPattern": null,
+      "series": [
+        {
+          "id": "d1e9987e-1f3d-4a3c-8445-f99e17005a9b",
+          "name": "$file_count",
+          "precision": 0
+        }
+      ]
+    },
+    {
+      "id": "6171dd95-2bfc-4973-86e3-03ef12f86225",
+      "type": "chart",
+      "titleAlign": "center",
+      "tabTitle": "📊 今年分類佔比\n",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-12-13T04:57:31.973Z",
+      "updateAt": "2025-11-16T02:47:13.665Z",
+      "chartType": "pie",
+      "filter": {
+        "id": "64442988-9cd9-420e-9a54-7cd323f6b5f3",
+        "type": "group",
+        "operator": "and",
+        "conditions": [
+          {
+            "id": "d61633c7-b64c-466b-b846-cda95353413c",
+            "type": "filter",
+            "operator": "contains",
+            "property": "${file.parent}",
+            "value": "area/books",
+            "conditions": []
+          },
+          {
+            "id": "f4960a7b-04cf-4dee-aa6d-7d07be573ad9",
+            "type": "filter",
+            "operator": "time_after_or_equal",
+            "property": "createTime",
+            "value": {
+              "type": "$startOfYear",
+              "unit": "day",
+              "direction": "before",
+              "value": null
+            },
+            "conditions": []
+          }
+        ]
+      },
+      "labelProperty": "category",
+      "labelFormat": "$none",
+      "valueProperty": "$file_count",
+      "valuePrecision": 0,
+      "sortField": "xAxisValue",
+      "sortOrder": "asc",
+      "maxHeight": 300,
+      "chartColorSet": "default",
+      "chartLabelPosition": "top",
+      "showDataValue": true,
+      "valueScaleStartFromZero": true,
+      "smoothLine": false,
+      "options": {},
+      "title": "📊 今年分類佔比\n",
+      "categoryProperty": "主題",
+      "categoryFormatPattern": null,
+      "series": [
+        {
+          "id": "d4cbfaaf-b154-4d53-b9af-e15dc2174dc2",
+          "name": "$file_count",
+          "precision": 0
+        }
+      ]
+    },
+    {
+      "id": "41a3fdab-c73f-45cb-ba8e-f0a4eff4b478",
+      "type": "chart",
+      "titleAlign": "center",
+      "tabTitle": "閱讀趨勢",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-12-13T05:00:18.258Z",
+      "updateAt": "2025-11-16T02:47:13.665Z",
+      "chartType": "bar",
+      "filter": {
+        "id": "b8bd417d-3ba9-4301-b7ce-40fac155ccb3",
+        "type": "group",
+        "operator": "and",
+        "conditions": [
+          {
+            "id": "559b616e-72a9-4c9e-b8b0-f705f0536989",
+            "type": "filter",
+            "operator": "contains",
+            "property": "${file.parent}",
+            "value": "300知識庫/書籍資料",
+            "conditions": []
+          }
+        ]
+      },
+      "labelProperty": "createTime",
+      "labelFormat": "$timeFormat",
+      "valueProperty": "$file_count",
+      "valuePrecision": 0,
+      "sortField": "xAxisValue",
+      "sortOrder": "asc",
+      "maxHeight": 300,
+      "chartColorSet": "default",
+      "chartLabelPosition": "top",
+      "showDataValue": true,
+      "valueScaleStartFromZero": true,
+      "smoothLine": false,
+      "options": {},
+      "title": "閱讀趨勢",
+      "valueFormatPattern": "yyyy-MM",
+      "categoryProperty": "createTime",
+      "categoryFormatPattern": "yyyy-MM",
+      "series": [
+        {
+          "id": "817a6865-33d4-4956-9e7b-850e5ace74fd",
+          "name": "$file_count",
+          "precision": 2
+        }
+      ],
+      "enableMarkLine": false
+    },
+    {
+      "id": "21b4c0de-6b08-4006-a701-0c856b4f2812",
+      "type": "timeLine",
+      "titleAlign": "center",
+      "tabTitle": "時間軸",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-12-13T05:08:22.652Z",
+      "updateAt": "2025-11-16T02:29:31.953Z",
+      "filter": {
+        "id": "a78b3aea-cff4-4ccb-a7fa-6b3aa81e5d14",
+        "type": "group",
+        "operator": "and",
+        "conditions": [
+          {
+            "id": "d1153e14-0ccc-4562-a488-605688705246",
+            "type": "filter",
+            "operator": "contains",
+            "property": "tags",
+            "value": "系統/知識/書籍",
+            "conditions": []
+          }
+        ]
+      },
+      "sort": {
+        "orders": []
+      },
+      "nodeTitle": {
+        "property": "createTime",
+        "format": "yyyy-MM-dd"
+      },
+      "nodeCover": {
+        "type": "image",
+        "coverTypeLabel": "节点封面",
+        "source": "property",
+        "sourceValue": "cover"
+      },
+      "title": "",
+      "nodeStatus": {
+        "options": [],
+        "property": "readingStatus"
+      }
+    },
+    {
+      "id": "5dffca0e-8c58-4af6-b565-5c01bc89c274",
+      "type": "button",
+      "titleAlign": "center",
+      "tabTitle": "",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showTitle": true,
+      "showShadow": true,
+      "createAt": "2025-11-16T02:31:49.135Z",
+      "updateAt": "2025-11-16T02:47:13.665Z",
+      "text": "新建閱讀筆記",
+      "buttonType": "common",
+      "clickActions": [
+        {
+          "type": "CreateFile",
+          "id": "0e3583fd-9dc8-4723-b174-a6e9fad162a7",
+          "options": {
+            "filePath": "讀",
+            "fileName": "",
+            "templateFilePath": "600支援/620Template/讀書筆記模板.md",
+            "targetFolder": "400知識/420書籍資料",
+            "openPageIn": "split",
+            "commandId": "file-explorer:new-file-in-new-pane",
+            "commandName": "在右侧创建笔记"
+          }
+        }
+      ],
+      "checkActions": [],
+      "uncheckActions": [],
+      "isChecked": false,
+      "fullWidth": true,
+      "title": "按钮",
+      "icon": "BookPlus"
+    }
+  ],
+  "rootComponentId": "bde5561a-88e2-4da5-a3d4-351ec22bba2b",
+  "version": 3.1
+}

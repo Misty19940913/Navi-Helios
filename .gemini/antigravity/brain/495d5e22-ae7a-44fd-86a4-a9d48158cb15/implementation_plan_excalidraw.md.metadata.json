@@ -1,0 +1,5 @@
+{
+  "artifactType":  "ARTIFACT_TYPE_IMPLEMENTATION_PLAN",
+  "summary":  "繪圖格式轉換實施計畫：將 Canvas 轉換為 Excalidraw 格式，保留節點座標、連結與群組結構。",
+  "updatedAt":  "2026-02-27T15:07:07.425920100Z"
+}

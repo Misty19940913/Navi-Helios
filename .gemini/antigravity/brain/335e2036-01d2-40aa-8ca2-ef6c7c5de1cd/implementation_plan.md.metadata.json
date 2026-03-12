@@ -1,0 +1,6 @@
+{
+  "artifactType":  "ARTIFACT_TYPE_IMPLEMENTATION_PLAN",
+  "summary":  "Proposed refactoring plan to transform the scattered Gemini framework into a modular 'Intelligence Protocols' structure under the Agent/ directory. Focuses on converting fixed commands into flexible SOPs for better AI execution.",
+  "updatedAt":  "2026-02-27T07:36:02.002851400Z",
+  "version":  "4"
+}

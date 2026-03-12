@@ -1,0 +1,16 @@
+{
+  "alwaysUpdateLinks": true,
+  "promptDelete": false,
+  "showLineNumber": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "2",
+    "downscalePercent": 55
+  },
+  "showInlineTitle": false,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "600支援/690全域附件",
+  "showUnsupportedFiles": true
+}

@@ -1,0 +1,1583 @@
+{
+  "copyLinkToElemenetAnchorTo100": false,
+  "copyFrameLinkByName": false,
+  "disableDoubleClickTextEditing": false,
+  "folder": "600支援/640excalidraw",
+  "cropFolder": "600支援/640excalidraw",
+  "annotateFolder": "600支援/640excalidraw",
+  "embedUseExcalidrawFolder": false,
+  "templateFilePath": "600支援/640excalidraw/Template.excalidraw",
+  "scriptFolderPath": "600支援/640excalidraw/Scripts",
+  "fontAssetsPath": "600支援/640excalidraw/Font",
+  "loadChineseFonts": true,
+  "loadJapaneseFonts": false,
+  "loadKoreanFonts": false,
+  "compress": true,
+  "decompressForMDView": true,
+  "onceOffCompressFlagReset": true,
+  "onceOffGPTVersionReset": true,
+  "autosave": true,
+  "autosaveIntervalDesktop": 60000,
+  "autosaveIntervalMobile": 30000,
+  "drawingFilenamePrefix": "Drawing ",
+  "drawingEmbedPrefixWithFilename": true,
+  "drawingFilnameEmbedPostfix": " ",
+  "drawingFilenameDateTime": "YYYY-MM-DD HH.mm.ss",
+  "useExcalidrawExtension": true,
+  "cropSuffix": "",
+  "cropPrefix": "cropped_",
+  "annotateSuffix": "",
+  "annotatePrefix": "annotated_",
+  "annotatePreserveSize": false,
+  "previewImageType": "SVGIMG",
+  "renderingConcurrency": 3,
+  "allowImageCache": true,
+  "allowImageCacheInScene": true,
+  "displayExportedImageIfAvailable": false,
+  "previewMatchObsidianTheme": false,
+  "width": "400",
+  "height": "",
+  "overrideObsidianFontSize": false,
+  "dynamicStyling": "colorful",
+  "isLeftHanded": false,
+  "desktopUIMode": "tray",
+  "tabletUIMode": "compact",
+  "phoneUIMode": "mobile",
+  "iframeMatchExcalidrawTheme": true,
+  "matchTheme": true,
+  "matchThemeAlways": true,
+  "matchThemeTrigger": true,
+  "defaultMode": "normal",
+  "defaultPenMode": "never",
+  "penModeDoubleTapEraser": true,
+  "penModeSingleFingerPanning": true,
+  "penModeCrosshairVisible": true,
+  "panWithRightMouseButton": false,
+  "renderImageInMarkdownReadingMode": false,
+  "renderImageInHoverPreviewForMDNotes": false,
+  "renderImageInMarkdownToPDF": false,
+  "allowPinchZoom": false,
+  "allowWheelZoom": false,
+  "zoomToFitOnOpen": true,
+  "zoomToFitOnResize": true,
+  "zoomToFitMaxLevel": 2,
+  "zoomStep": 0.05,
+  "zoomMin": 0.1,
+  "zoomMax": 30,
+  "linkPrefix": "📍",
+  "urlPrefix": "🌐",
+  "parseTODO": false,
+  "todo": "☐",
+  "done": "🗹",
+  "hoverPreviewWithoutCTRL": false,
+  "linkOpacity": 1,
+  "openInAdjacentPane": true,
+  "showSecondOrderLinks": true,
+  "focusOnFileTab": true,
+  "openInMainWorkspace": true,
+  "showLinkBrackets": true,
+  "syncElementLinkWithText": false,
+  "allowCtrlClick": true,
+  "forceWrap": false,
+  "pageTransclusionCharLimit": 200,
+  "wordWrappingDefault": 0,
+  "removeTransclusionQuoteSigns": true,
+  "iframelyAllowed": true,
+  "pngExportScale": 1,
+  "exportWithTheme": true,
+  "exportWithBackground": true,
+  "exportPaddingSVG": 10,
+  "exportEmbedScene": false,
+  "keepInSync": false,
+  "autoexportSVG": true,
+  "autoexportPNG": false,
+  "autoExportLightAndDark": false,
+  "autoexportExcalidraw": false,
+  "embedType": "excalidraw",
+  "embedMarkdownCommentLinks": true,
+  "embedWikiLink": true,
+  "syncExcalidraw": false,
+  "experimentalFileType": false,
+  "experimentalFileTag": "✏️",
+  "experimentalLivePreview": true,
+  "fadeOutExcalidrawMarkup": false,
+  "loadPropertySuggestions": false,
+  "experimentalEnableFourthFont": true,
+  "experimantalFourthFont": "600支援/640excalidraw/Font/LXGWWenKaiTC-Light.ttf",
+  "addDummyTextElement": false,
+  "zoteroCompatibility": false,
+  "fieldSuggester": true,
+  "compatibilityMode": false,
+  "drawingOpenCount": 0,
+  "library": "deprecated",
+  "library2": {
+    "type": "excalidrawlib",
+    "version": 2,
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.20.6",
+    "libraryItems": [
+      {
+        "status": "unpublished",
+        "elements": [
+          {
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                -0.575977850758818,
+                3.882927267462719
+              ],
+              [
+                -1.5297756375996414,
+                7.690701476996082
+              ],
+              [
+                -2.8522077664365497,
+                11.386651681421199
+              ],
+              [
+                -4.530538492953838,
+                14.935183859857489
+              ],
+              [
+                -6.548604574786168,
+                18.30212370760171
+              ],
+              [
+                -8.886970932378517,
+                21.455045753363436
+              ],
+              [
+                -11.523117819426034,
+                24.363585634279502
+              ],
+              [
+                -14.431657700342157,
+                26.999732521327076
+              ],
+              [
+                -17.584579746103827,
+                29.338098878919425
+              ],
+              [
+                -19.807389066887936,
+                30.670399513770633
+              ],
+              [
+                -19.807389066887936,
+                36.0793143868176
+              ],
+              [
+                -439.80738906688794,
+                36.0793143868176
+              ],
+              [
+                -439.80738906688794,
+                30.670399513770576
+              ],
+              [
+                -442.03019838767204,
+                29.338098878919368
+              ],
+              [
+                -445.1831204334338,
+                26.99973252132702
+              ],
+              [
+                -448.09166031434984,
+                24.363585634279502
+              ],
+              [
+                -450.72780720139747,
+                21.45504575336338
+              ],
+              [
+                -453.0661735589898,
+                18.302123707601652
+              ],
+              [
+                -455.08423964082215,
+                14.935183859857432
+              ],
+              [
+                -456.76257036733944,
+                11.386651681421142
+              ],
+              [
+                -458.08500249617634,
+                7.690701476996026
+              ],
+              [
+                -459.03880028301717,
+                3.8829272674626623
+              ],
+              [
+                -459.61477813377587,
+                -5.684341886080802e-14
+              ],
+              [
+                -459.80738906688794,
+                -3.9206856131825134
+              ],
+              [
+                -459.61477813377576,
+                -7.841371226364913
+              ],
+              [
+                -459.03880028301717,
+                -11.724298493827632
+              ],
+              [
+                -458.08500249617623,
+                -15.532072703360996
+              ],
+              [
+                -456.7625703673393,
+                -19.228022907786112
+              ],
+              [
+                -455.08423964082203,
+                -22.7765550862224
+              ],
+              [
+                -453.0661735589897,
+                -26.143494933966565
+              ],
+              [
+                -450.72780720139735,
+                -29.296416979728292
+              ],
+              [
+                -448.0916603143497,
+                -32.20495686064436
+              ],
+              [
+                -445.1831204334337,
+                -34.84110374769193
+              ],
+              [
+                -442.03019838767193,
+                -37.17947010528428
+              ],
+              [
+                -439.80738906688794,
+                -38.511770740135375
+              ],
+              [
+                -439.80738906688794,
+                -43.9206856131824
+              ],
+              [
+                -19.807389066887936,
+                -43.9206856131824
+              ],
+              [
+                -19.807389066887936,
+                -38.51177074013532
+              ],
+              [
+                -17.584579746103827,
+                -37.179470105284224
+              ],
+              [
+                -14.431657700342157,
+                -34.84110374769193
+              ],
+              [
+                -11.523117819426034,
+                -32.20495686064436
+              ],
+              [
+                -8.886970932378517,
+                -29.296416979728292
+              ],
+              [
+                -6.548604574786168,
+                -26.143494933966565
+              ],
+              [
+                -4.530538492953838,
+                -22.7765550862224
+              ],
+              [
+                -2.8522077664365497,
+                -19.228022907786112
+              ],
+              [
+                -1.5297756375996414,
+                -15.532072703361052
+              ],
+              [
+                -0.575977850758818,
+                -11.724298493827689
+              ],
+              [
+                0,
+                -7.841371226365027
+              ],
+              [
+                0.19261093311206423,
+                -3.9206856131825703
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "lastCommittedPoint": null,
+            "startBinding": null,
+            "endBinding": null,
+            "startArrowhead": null,
+            "endArrowhead": null,
+            "id": "FI4N333r",
+            "type": "line",
+            "x": 1159.807389066888,
+            "y": -296.0793143868176,
+            "width": 460,
+            "height": 80,
+            "angle": 0,
+            "strokeColor": "#1e1e1e",
+            "backgroundColor": "transparent",
+            "fillStyle": "solid",
+            "strokeWidth": 2,
+            "strokeStyle": "solid",
+            "roughness": 0,
+            "opacity": 100,
+            "roundness": null,
+            "seed": 87920,
+            "version": 2,
+            "versionNonce": 1086108006,
+            "updated": 1772771834982,
+            "isDeleted": false,
+            "groupIds": [],
+            "boundElements": [],
+            "link": null,
+            "locked": false,
+            "frameId": null,
+            "hasTextLink": false,
+            "polygon": true,
+            "index": "a2"
+          }
+        ],
+        "id": "YBY9SmOTiMN2QCvo70zpf",
+        "created": 1772771850364
+      },
+      {
+        "id": "LC8U_h_6BmZ4InnmEfBzH",
+        "status": "unpublished",
+        "elements": [
+          {
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                -0.575977850758818,
+                3.882927267462719
+              ],
+              [
+                -1.5297756375996414,
+                7.690701476996082
+              ],
+              [
+                -2.8522077664365497,
+                11.386651681421199
+              ],
+              [
+                -4.530538492953838,
+                14.935183859857489
+              ],
+              [
+                -6.548604574786168,
+                18.30212370760171
+              ],
+              [
+                -8.886970932378517,
+                21.455045753363436
+              ],
+              [
+                -11.523117819426034,
+                24.363585634279502
+              ],
+              [
+                -14.431657700342157,
+                26.999732521327076
+              ],
+              [
+                -17.584579746103827,
+                29.338098878919425
+              ],
+              [
+                -19.807389066887936,
+                30.670399513770633
+              ],
+              [
+                -19.807389066887936,
+                36.0793143868176
+              ],
+              [
+                -439.80738906688794,
+                36.0793143868176
+              ],
+              [
+                -439.80738906688794,
+                30.670399513770576
+              ],
+              [
+                -442.03019838767204,
+                29.338098878919368
+              ],
+              [
+                -445.1831204334338,
+                26.99973252132702
+              ],
+              [
+                -448.09166031434984,
+                24.363585634279502
+              ],
+              [
+                -450.72780720139747,
+                21.45504575336338
+              ],
+              [
+                -453.0661735589898,
+                18.302123707601652
+              ],
+              [
+                -455.08423964082215,
+                14.935183859857432
+              ],
+              [
+                -456.76257036733944,
+                11.386651681421142
+              ],
+              [
+                -458.08500249617634,
+                7.690701476996026
+              ],
+              [
+                -459.03880028301717,
+                3.8829272674626623
+              ],
+              [
+                -459.61477813377587,
+                -5.684341886080802e-14
+              ],
+              [
+                -459.80738906688794,
+                -3.9206856131825134
+              ],
+              [
+                -459.61477813377576,
+                -7.841371226364913
+              ],
+              [
+                -459.03880028301717,
+                -11.724298493827632
+              ],
+              [
+                -458.08500249617623,
+                -15.532072703360996
+              ],
+              [
+                -456.7625703673393,
+                -19.228022907786112
+              ],
+              [
+                -455.08423964082203,
+                -22.7765550862224
+              ],
+              [
+                -453.0661735589897,
+                -26.143494933966565
+              ],
+              [
+                -450.72780720139735,
+                -29.296416979728292
+              ],
+              [
+                -448.0916603143497,
+                -32.20495686064436
+              ],
+              [
+                -445.1831204334337,
+                -34.84110374769193
+              ],
+              [
+                -442.03019838767193,
+                -37.17947010528428
+              ],
+              [
+                -439.80738906688794,
+                -38.511770740135375
+              ],
+              [
+                -439.80738906688794,
+                -43.9206856131824
+              ],
+              [
+                -19.807389066887936,
+                -43.9206856131824
+              ],
+              [
+                -19.807389066887936,
+                -38.51177074013532
+              ],
+              [
+                -17.584579746103827,
+                -37.179470105284224
+              ],
+              [
+                -14.431657700342157,
+                -34.84110374769193
+              ],
+              [
+                -11.523117819426034,
+                -32.20495686064436
+              ],
+              [
+                -8.886970932378517,
+                -29.296416979728292
+              ],
+              [
+                -6.548604574786168,
+                -26.143494933966565
+              ],
+              [
+                -4.530538492953838,
+                -22.7765550862224
+              ],
+              [
+                -2.8522077664365497,
+                -19.228022907786112
+              ],
+              [
+                -1.5297756375996414,
+                -15.532072703361052
+              ],
+              [
+                -0.575977850758818,
+                -11.724298493827689
+              ],
+              [
+                0,
+                -7.841371226365027
+              ],
+              [
+                0.19261093311206423,
+                -3.9206856131825703
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "lastCommittedPoint": null,
+            "startBinding": null,
+            "endBinding": null,
+            "startArrowhead": null,
+            "endArrowhead": null,
+            "id": "FI4N333r",
+            "type": "line",
+            "x": 1159.807389066888,
+            "y": -296.0793143868176,
+            "width": 460,
+            "height": 80,
+            "angle": 0,
+            "strokeColor": "#1e1e1e",
+            "backgroundColor": "transparent",
+            "fillStyle": "solid",
+            "strokeWidth": 2,
+            "strokeStyle": "solid",
+            "roughness": 0,
+            "opacity": 100,
+            "roundness": null,
+            "seed": 87920,
+            "version": 2,
+            "versionNonce": 1086108006,
+            "updated": 1772771834982,
+            "isDeleted": false,
+            "groupIds": [],
+            "boundElements": [],
+            "link": null,
+            "locked": false,
+            "frameId": null,
+            "hasTextLink": false,
+            "polygon": true,
+            "index": "a2"
+          }
+        ],
+        "created": 1772771845670
+      },
+      {
+        "id": "cWyRul5n6rg1oQIQ_twVu",
+        "status": "unpublished",
+        "elements": [
+          {
+            "id": "sRmNTwzq",
+            "type": "text",
+            "x": 302.22007008506205,
+            "y": -170.12980808968723,
+            "width": 140,
+            "height": 25,
+            "angle": 0,
+            "strokeColor": "#1e1e1e",
+            "backgroundColor": "transparent",
+            "fillStyle": "solid",
+            "strokeWidth": 2,
+            "strokeStyle": "dashed",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [
+              "C0hw80d09mtfwDxbxT5R4"
+            ],
+            "frameId": null,
+            "index": "aA",
+            "roundness": null,
+            "seed": 215678050,
+            "version": 149,
+            "versionNonce": 627055586,
+            "isDeleted": false,
+            "boundElements": [],
+            "updated": 1771591344746,
+            "locked": false,
+            "text": "數位叢林的狩獵",
+            "rawText": "數位叢林的狩獵",
+            "fontSize": 20,
+            "fontFamily": 6,
+            "textAlign": "left",
+            "verticalAlign": "top",
+            "containerId": null,
+            "originalText": "數位叢林的狩獵",
+            "autoResize": true,
+            "lineHeight": 1.25,
+            "hasTextLink": false,
+            "link": null
+          },
+          {
+            "id": "huG8FUuL",
+            "type": "text",
+            "x": 276.6734239382187,
+            "y": -140.9708395289882,
+            "width": 240,
+            "height": 40,
+            "angle": 0,
+            "strokeColor": "#1e1e1e",
+            "backgroundColor": "transparent",
+            "fillStyle": "solid",
+            "strokeWidth": 2,
+            "strokeStyle": "dashed",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [
+              "C0hw80d09mtfwDxbxT5R4"
+            ],
+            "frameId": null,
+            "index": "aB",
+            "roundness": null,
+            "seed": 2141909694,
+            "version": 137,
+            "versionNonce": 1965656894,
+            "isDeleted": false,
+            "boundElements": [],
+            "updated": 1771591344747,
+            "link": null,
+            "locked": false,
+            "text": "從「農夫」轉向「獵人」。資訊是\n獵物，注意力是子彈。",
+            "rawText": "從「農夫」轉向「獵人」。資訊是獵物，注意力是子彈。",
+            "fontSize": 16,
+            "fontFamily": 6,
+            "textAlign": "left",
+            "verticalAlign": "top",
+            "containerId": null,
+            "originalText": "從「農夫」轉向「獵人」。資訊是獵物，注意力是子彈。",
+            "autoResize": false,
+            "lineHeight": 1.25,
+            "hasTextLink": false
+          },
+          {
+            "id": "rMP50c4d",
+            "type": "rectangle",
+            "x": 260,
+            "y": -175.3113829098039,
+            "width": 269.93787653749587,
+            "height": 79.41674518808995,
+            "angle": 0,
+            "strokeColor": "#1e1e1e",
+            "backgroundColor": "transparent",
+            "fillStyle": "solid",
+            "strokeWidth": 2,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [
+              "4jX7FlndSirEUtyat4Gc5",
+              "C0hw80d09mtfwDxbxT5R4"
+            ],
+            "frameId": null,
+            "index": "aC",
+            "roundness": {
+              "type": 3
+            },
+            "seed": 2039645218,
+            "version": 171,
+            "versionNonce": 1953910690,
+            "isDeleted": false,
+            "boundElements": [],
+            "updated": 1771591344747,
+            "link": null,
+            "locked": false,
+            "hasTextLink": false
+          },
+          {
+            "id": "TUieoxTkMU-Ry_ZcKoTMn",
+            "type": "line",
+            "x": 275.43082215711263,
+            "y": -145.8153169797049,
+            "width": 187.7601468956107,
+            "height": 0.46878463685284105,
+            "angle": 0,
+            "strokeColor": "#1e1e1e",
+            "backgroundColor": "transparent",
+            "fillStyle": "solid",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [
+              "4jX7FlndSirEUtyat4Gc5",
+              "C0hw80d09mtfwDxbxT5R4"
+            ],
+            "frameId": null,
+            "index": "aD",
+            "roundness": {
+              "type": 2
+            },
+            "seed": 1579887842,
+            "version": 123,
+            "versionNonce": 1888580478,
+            "isDeleted": false,
+            "boundElements": [],
+            "updated": 1771591344747,
+            "link": null,
+            "locked": false,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                187.7601468956107,
+                -0.46878463685284105
+              ]
+            ],
+            "startBinding": null,
+            "endBinding": null,
+            "startArrowhead": null,
+            "endArrowhead": null,
+            "polygon": false,
+            "hasTextLink": false
+          }
+        ],
+        "created": 1771591349021
+      },
+      {
+        "id": "o70KWHpdlZCJJPxppthR8",
+        "status": "unpublished",
+        "elements": [
+          {
+            "id": "rMP50c4d",
+            "type": "rectangle",
+            "x": 300,
+            "y": -240,
+            "width": 420,
+            "height": 180,
+            "angle": 0,
+            "strokeColor": "#1e1e1e",
+            "backgroundColor": "transparent",
+            "fillStyle": "solid",
+            "strokeWidth": 2,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [
+              "4jX7FlndSirEUtyat4Gc5"
+            ],
+            "frameId": null,
+            "index": "aC",
+            "roundness": {
+              "type": 3
+            },
+            "seed": 2039645218,
+            "version": 27,
+            "versionNonce": 1207498046,
+            "isDeleted": false,
+            "boundElements": [],
+            "updated": 1771591267043,
+            "link": null,
+            "locked": false,
+            "hasTextLink": false
+          },
+          {
+            "id": "TUieoxTkMU-Ry_ZcKoTMn",
+            "type": "line",
+            "x": 321.26388896186836,
+            "y": -199.35400820749697,
+            "width": 258.73611103813164,
+            "height": 0.6459917925030254,
+            "angle": 0,
+            "strokeColor": "#1e1e1e",
+            "backgroundColor": "transparent",
+            "fillStyle": "solid",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [
+              "4jX7FlndSirEUtyat4Gc5"
+            ],
+            "frameId": null,
+            "index": "aD",
+            "roundness": {
+              "type": 2
+            },
+            "seed": 1579887842,
+            "version": 39,
+            "versionNonce": 137004450,
+            "isDeleted": false,
+            "boundElements": [],
+            "updated": 1771591267043,
+            "link": null,
+            "locked": false,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                258.73611103813164,
+                -0.6459917925030254
+              ]
+            ],
+            "startBinding": null,
+            "endBinding": null,
+            "startArrowhead": null,
+            "endArrowhead": null,
+            "polygon": false,
+            "hasTextLink": false
+          }
+        ],
+        "created": 1771591281611
+      }
+    ]
+  },
+  "imageElementNotice": true,
+  "mdSVGwidth": 500,
+  "mdSVGmaxHeight": 800,
+  "mdFont": "Virgil",
+  "mdFontColor": "Black",
+  "mdBorderColor": "Black",
+  "mdCSS": "",
+  "scriptEngineSettings": {},
+  "previousRelease": "2.20.6",
+  "showReleaseNotes": true,
+  "compareManifestToPluginVersion": true,
+  "showNewVersionNotification": true,
+  "latexBoilerplate": "\\color{blue}",
+  "latexPreambleLocation": "preamble.sty",
+  "taskboneEnabled": false,
+  "taskboneAPIkey": "",
+  "pinnedScripts": [
+    "600支援/640excalidraw/Scripts/Downloaded/Set Font Family.md",
+    "600支援/640excalidraw/Scripts/Downloaded/Set Dimensions.md",
+    "600支援/640excalidraw/Scripts/Downloaded/Golden Ratio.md",
+    "600支援/640excalidraw/Scripts/Downloaded/Boolean Operations.md"
+  ],
+  "sidepanelTabs": [],
+  "customPens": [
+    {
+      "type": "default",
+      "freedrawOnly": false,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 0,
+      "roughness": 0,
+      "penOptions": {
+        "highlighter": false,
+        "constantPressure": false,
+        "hasOutline": false,
+        "outlineWidth": 1,
+        "options": {
+          "thinning": 0.6,
+          "smoothing": 0.5,
+          "streamline": 0.5,
+          "easing": "easeOutSine",
+          "start": {
+            "cap": true,
+            "taper": 0,
+            "easing": "linear"
+          },
+          "end": {
+            "cap": true,
+            "taper": 0,
+            "easing": "linear"
+          }
+        }
+      }
+    },
+    {
+      "type": "highlighter",
+      "freedrawOnly": true,
+      "strokeColor": "#FFC47C",
+      "backgroundColor": "#FFC47C",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": null,
+      "penOptions": {
+        "highlighter": true,
+        "constantPressure": true,
+        "hasOutline": true,
+        "outlineWidth": 4,
+        "options": {
+          "thinning": 1,
+          "smoothing": 0.5,
+          "streamline": 0.5,
+          "easing": "linear",
+          "start": {
+            "taper": 0,
+            "cap": true,
+            "easing": "linear"
+          },
+          "end": {
+            "taper": 0,
+            "cap": true,
+            "easing": "linear"
+          }
+        }
+      }
+    },
+    {
+      "type": "finetip",
+      "freedrawOnly": false,
+      "strokeColor": "#3E6F8D",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 0.5,
+      "roughness": 0,
+      "penOptions": {
+        "highlighter": false,
+        "hasOutline": false,
+        "outlineWidth": 1,
+        "constantPressure": true,
+        "options": {
+          "smoothing": 0.4,
+          "thinning": -0.5,
+          "streamline": 0.4,
+          "easing": "linear",
+          "start": {
+            "taper": 5,
+            "cap": false,
+            "easing": "linear"
+          },
+          "end": {
+            "taper": 5,
+            "cap": false,
+            "easing": "linear"
+          }
+        }
+      }
+    },
+    {
+      "type": "fountain",
+      "freedrawOnly": false,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 2,
+      "roughness": 0,
+      "penOptions": {
+        "highlighter": false,
+        "constantPressure": false,
+        "hasOutline": false,
+        "outlineWidth": 1,
+        "options": {
+          "smoothing": 0.2,
+          "thinning": 0.6,
+          "streamline": 0.2,
+          "easing": "easeInOutSine",
+          "start": {
+            "taper": 150,
+            "cap": true,
+            "easing": "linear"
+          },
+          "end": {
+            "taper": 1,
+            "cap": true,
+            "easing": "linear"
+          }
+        }
+      }
+    },
+    {
+      "type": "marker",
+      "freedrawOnly": true,
+      "strokeColor": "#B83E3E",
+      "backgroundColor": "#FF7C7C",
+      "fillStyle": "dashed",
+      "strokeWidth": 2,
+      "roughness": 3,
+      "penOptions": {
+        "highlighter": false,
+        "constantPressure": true,
+        "hasOutline": true,
+        "outlineWidth": 4,
+        "options": {
+          "thinning": 1,
+          "smoothing": 0.5,
+          "streamline": 0.5,
+          "easing": "linear",
+          "start": {
+            "taper": 0,
+            "cap": true,
+            "easing": "linear"
+          },
+          "end": {
+            "taper": 0,
+            "cap": true,
+            "easing": "linear"
+          }
+        }
+      }
+    },
+    {
+      "type": "thick-thin",
+      "freedrawOnly": true,
+      "strokeColor": "#CECDCC",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 0,
+      "roughness": null,
+      "penOptions": {
+        "highlighter": true,
+        "constantPressure": true,
+        "hasOutline": false,
+        "outlineWidth": 1,
+        "options": {
+          "thinning": 1,
+          "smoothing": 0.5,
+          "streamline": 0.5,
+          "easing": "linear",
+          "start": {
+            "taper": 0,
+            "cap": true,
+            "easing": "linear"
+          },
+          "end": {
+            "cap": true,
+            "taper": true,
+            "easing": "linear"
+          }
+        }
+      }
+    },
+    {
+      "type": "thin-thick-thin",
+      "freedrawOnly": true,
+      "strokeColor": "#CECDCC",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 0,
+      "roughness": null,
+      "penOptions": {
+        "highlighter": true,
+        "constantPressure": true,
+        "hasOutline": false,
+        "outlineWidth": 1,
+        "options": {
+          "thinning": 1,
+          "smoothing": 0.5,
+          "streamline": 0.5,
+          "easing": "linear",
+          "start": {
+            "cap": true,
+            "taper": true,
+            "easing": "linear"
+          },
+          "end": {
+            "cap": true,
+            "taper": true,
+            "easing": "linear"
+          }
+        }
+      }
+    },
+    {
+      "type": "default",
+      "freedrawOnly": false,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 0,
+      "roughness": 0,
+      "penOptions": {
+        "highlighter": false,
+        "constantPressure": false,
+        "hasOutline": false,
+        "outlineWidth": 1,
+        "options": {
+          "thinning": 0.6,
+          "smoothing": 0.5,
+          "streamline": 0.5,
+          "easing": "easeOutSine",
+          "start": {
+            "cap": true,
+            "taper": 0,
+            "easing": "linear"
+          },
+          "end": {
+            "cap": true,
+            "taper": 0,
+            "easing": "linear"
+          }
+        }
+      }
+    },
+    {
+      "type": "default",
+      "freedrawOnly": false,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 0,
+      "roughness": 0,
+      "penOptions": {
+        "highlighter": false,
+        "constantPressure": false,
+        "hasOutline": false,
+        "outlineWidth": 1,
+        "options": {
+          "thinning": 0.6,
+          "smoothing": 0.5,
+          "streamline": 0.5,
+          "easing": "easeOutSine",
+          "start": {
+            "cap": true,
+            "taper": 0,
+            "easing": "linear"
+          },
+          "end": {
+            "cap": true,
+            "taper": 0,
+            "easing": "linear"
+          }
+        }
+      }
+    },
+    {
+      "type": "default",
+      "freedrawOnly": false,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 0,
+      "roughness": 0,
+      "penOptions": {
+        "highlighter": false,
+        "constantPressure": false,
+        "hasOutline": false,
+        "outlineWidth": 1,
+        "options": {
+          "thinning": 0.6,
+          "smoothing": 0.5,
+          "streamline": 0.5,
+          "easing": "easeOutSine",
+          "start": {
+            "cap": true,
+            "taper": 0,
+            "easing": "linear"
+          },
+          "end": {
+            "cap": true,
+            "taper": 0,
+            "easing": "linear"
+          }
+        }
+      }
+    }
+  ],
+  "numberOfCustomPens": 0,
+  "pdfScale": 4,
+  "pdfBorderBox": true,
+  "pdfFrame": false,
+  "pdfGapSize": 20,
+  "pdfGroupPages": false,
+  "pdfLockAfterImport": true,
+  "pdfNumColumns": 1,
+  "pdfNumRows": 1,
+  "pdfDirection": "right",
+  "pdfImportScale": 0.3,
+  "gridSettings": {
+    "DYNAMIC_COLOR": true,
+    "COLOR": "#000000",
+    "OPACITY": 50,
+    "GRID_DIRECTION": {
+      "horizontal": true,
+      "vertical": true
+    }
+  },
+  "laserSettings": {
+    "DECAY_LENGTH": 50,
+    "DECAY_TIME": 1000,
+    "COLOR": "#ff0000"
+  },
+  "embeddableMarkdownDefaults": {
+    "useObsidianDefaults": false,
+    "backgroundMatchCanvas": false,
+    "backgroundMatchElement": true,
+    "backgroundColor": "#fff",
+    "backgroundOpacity": 60,
+    "borderMatchElement": true,
+    "borderColor": "#fff",
+    "borderOpacity": 0,
+    "filenameVisible": false
+  },
+  "markdownNodeOneClickEditing": false,
+  "canvasImmersiveEmbed": true,
+  "startupScriptPath": "",
+  "aiEnabled": true,
+  "openAIAPIToken": "",
+  "openAIDefaultTextModel": "gpt-3.5-turbo-1106",
+  "openAIDefaultTextModelMaxTokens": 4096,
+  "openAIDefaultVisionModel": "gpt-4o",
+  "openAIDefaultImageGenerationModel": "dall-e-3",
+  "openAIURL": "https://api.openai.com/v1/chat/completions",
+  "openAIImageGenerationURL": "https://api.openai.com/v1/images/generations",
+  "openAIImageEditsURL": "https://api.openai.com/v1/images/edits",
+  "openAIImageVariationURL": "https://api.openai.com/v1/images/variations",
+  "modifierKeyConfig": {
+    "Mac": {
+      "LocalFileDragAction": {
+        "defaultAction": "image-import",
+        "rules": [
+          {
+            "shift": false,
+            "ctrl_cmd": false,
+            "alt_opt": false,
+            "meta_ctrl": false,
+            "result": "image-import"
+          },
+          {
+            "shift": true,
+            "ctrl_cmd": false,
+            "alt_opt": true,
+            "meta_ctrl": false,
+            "result": "link"
+          },
+          {
+            "shift": true,
+            "ctrl_cmd": false,
+            "alt_opt": false,
+            "meta_ctrl": false,
+            "result": "image-url"
+          },
+          {
+            "shift": false,
+            "ctrl_cmd": false,
+            "alt_opt": true,
+            "meta_ctrl": false,
+            "result": "embeddable"
+          }
+        ]
+      },
+      "WebBrowserDragAction": {
+        "defaultAction": "image-url",
+        "rules": [
+          {
+            "shift": false,
+            "ctrl_cmd": false,
+            "alt_opt": false,
+            "meta_ctrl": false,
+            "result": "image-url"
+          },
+          {
+            "shift": true,
+            "ctrl_cmd": false,
+            "alt_opt": true,
+            "meta_ctrl": false,
+            "result": "link"
+          },
+          {
+            "shift": false,
+            "ctrl_cmd": false,
+            "alt_opt": true,
+            "meta_ctrl": false,
+            "result": "embeddable"
+          },
+          {
+            "shift": true,
+            "ctrl_cmd": false,
+            "alt_opt": false,
+            "meta_ctrl": false,
+            "result": "image-import"
+          }
+        ]
+      },
+      "InternalDragAction": {
+        "defaultAction": "link",
+        "rules": [
+          {
+            "shift": false,
+            "ctrl_cmd": false,
+            "alt_opt": false,
+            "meta_ctrl": false,
+            "result": "link"
+          },
+          {
+            "shift": false,
+            "ctrl_cmd": false,
+            "alt_opt": false,
+            "meta_ctrl": true,
+            "result": "embeddable"
+          },
+          {
+            "shift": true,
+            "ctrl_cmd": false,
+            "alt_opt": false,
+            "meta_ctrl": false,
+            "result": "image"
+          },
+          {
+            "shift": true,
+            "ctrl_cmd": false,
+            "alt_opt": false,
+            "meta_ctrl": true,
+            "result": "image-fullsize"
+          }
+        ]
+      },
+      "LinkClickAction": {
+        "defaultAction": "new-tab",
+        "rules": [
+          {
+            "shift": false,
+            "ctrl_cmd": false,
+            "alt_opt": false,
+            "meta_ctrl": false,
+            "result": "active-pane"
+          },
+          {
+            "shift": false,
+            "ctrl_cmd": true,
+            "alt_opt": false,
+            "meta_ctrl": false,
+            "result": "new-tab"
+          },
+          {
+            "shift": false,
+            "ctrl_cmd": true,
+            "alt_opt": true,
+            "meta_ctrl": false,
+            "result": "new-pane"
+          },
+          {
+            "shift": true,
+            "ctrl_cmd": true,
+            "alt_opt": true,
+            "meta_ctrl": false,
+            "result": "popout-window"
+          },
+          {
+            "shift": false,
+            "ctrl_cmd": true,
+            "alt_opt": false,
+            "meta_ctrl": true,
+            "result": "md-properties"
+          }
+        ]
+      }
+    },
+    "Win": {
+      "LocalFileDragAction": {
+        "defaultAction": "image-import",
+        "rules": [
+          {
+            "shift": false,
+            "ctrl_cmd": false,
+            "alt_opt": false,
+            "meta_ctrl": false,
+            "result": "image-import"
+          },
+          {
+            "shift": false,
+            "ctrl_cmd": true,
+            "alt_opt": false,
+            "meta_ctrl": false,
+            "result": "link"
+          },
+          {
+            "shift": true,
+            "ctrl_cmd": false,
+            "alt_opt": false,
+            "meta_ctrl": false,
+            "result": "image-url"
+          },
+          {
+            "shift": true,
+            "ctrl_cmd": true,
+            "alt_opt": false,
+            "meta_ctrl": false,
+            "result": "embeddable"
+          }
+        ]
+      },
+      "WebBrowserDragAction": {
+        "defaultAction": "image-url",
+        "rules": [
+          {
+            "shift": false,
+            "ctrl_cmd": false,
+            "alt_opt": false,
+            "meta_ctrl": false,
+            "result": "image-url"
+          },
+          {
+            "shift": false,
+            "ctrl_cmd": true,
+            "alt_opt": false,
+            "meta_ctrl": false,
+            "result": "link"
+          },
+          {
+            "shift": true,
+            "ctrl_cmd": true,
+            "alt_opt": false,
+            "meta_ctrl": false,
+            "result": "embeddable"
+          },
+          {
+            "shift": true,
+            "ctrl_cmd": false,
+            "alt_opt": false,
+            "meta_ctrl": false,
+            "result": "image-import"
+          }
+        ]
+      },
+      "InternalDragAction": {
+        "defaultAction": "link",
+        "rules": [
+          {
+            "shift": false,
+            "ctrl_cmd": false,
+            "alt_opt": false,
+            "meta_ctrl": false,
+            "result": "link"
+          },
+          {
+            "shift": true,
+            "ctrl_cmd": true,
+            "alt_opt": false,
+            "meta_ctrl": false,
+            "result": "embeddable"
+          },
+          {
+            "shift": true,
+            "ctrl_cmd": false,
+            "alt_opt": false,
+            "meta_ctrl": false,
+            "result": "image"
+          },
+          {
+            "shift": false,
+            "ctrl_cmd": true,
+            "alt_opt": true,
+            "meta_ctrl": false,
+            "result": "image-fullsize"
+          }
+        ]
+      },
+      "LinkClickAction": {
+        "defaultAction": "new-tab",
+        "rules": [
+          {
+            "shift": false,
+            "ctrl_cmd": false,
+            "alt_opt": false,
+            "meta_ctrl": false,
+            "result": "active-pane"
+          },
+          {
+            "shift": false,
+            "ctrl_cmd": true,
+            "alt_opt": false,
+            "meta_ctrl": false,
+            "result": "new-tab"
+          },
+          {
+            "shift": false,
+            "ctrl_cmd": true,
+            "alt_opt": true,
+            "meta_ctrl": false,
+            "result": "new-pane"
+          },
+          {
+            "shift": true,
+            "ctrl_cmd": true,
+            "alt_opt": true,
+            "meta_ctrl": false,
+            "result": "popout-window"
+          },
+          {
+            "shift": false,
+            "ctrl_cmd": true,
+            "alt_opt": false,
+            "meta_ctrl": true,
+            "result": "md-properties"
+          }
+        ]
+      }
+    }
+  },
+  "slidingPanesSupport": false,
+  "areaZoomLimit": 1,
+  "longPressDesktop": 500,
+  "longPressMobile": 500,
+  "doubleClickLinkOpenViewMode": true,
+  "isDebugMode": false,
+  "rank": "Bronze",
+  "modifierKeyOverrides": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Enter"
+    },
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "k"
+    },
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "G"
+    }
+  ],
+  "showSplashscreen": false,
+  "pdfSettings": {
+    "pageSize": "A4",
+    "pageOrientation": "portrait",
+    "fitToPage": 1,
+    "paperColor": "white",
+    "customPaperColor": "#ffffff",
+    "alignment": "center",
+    "margin": "normal"
+  },
+  "disableContextMenu": false,
+  "defaultTrayMode": true
+}

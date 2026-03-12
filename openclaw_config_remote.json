@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.2",
+    "lastTouchedAt": "2026-03-08T17:34:16.118Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-08T16:59:02.125Z",
+    "lastRunVersion": "2026.3.2",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "google:default": {
+        "provider": "google",
+        "mode": "api_key"
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "google/gemini-2.5-pro"
+      },
+      "models": {
+        "google/gemini-2.5-pro": {}
+      },
+      "workspace": "/home/sentrypigeon/.openclaw/workspace",
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    }
+  },
+  "tools": {
+    "profile": "messaging"
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "allowlist",
+      "botToken": "8133421536:AAF3E7oRKT2NE86mWuJWMgBgNX9EvzoZnOQ",
+      "allowFrom": [
+        "7370037198"
+      ],
+      "groupPolicy": "allowlist",
+      "streaming": "partial"
+    },
+    "discord": {
+      "enabled": true,
+      "token": "MTQ3OTg1MTU5NjczNjIzNzY5Mg.GY8NW-.QIXhbUmn1VNMeFs5944cGtODm3cMFkStvqneks",
+      "groupPolicy": "allowlist",
+      "guilds": {
+        "1479852205774209046": {
+          "channels": {
+            "1479852206693023857": {
+              "allow": true
+            }
+          }
+        }
+      },
+      "streaming": "off"
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "4cb1041a9b5a5ed9fc46279e01980860eef86af77af7ff5c"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "plugins": {
+    "entries": {
+      "discord": {
+        "enabled": true
+      }
+    }
+  }
+}

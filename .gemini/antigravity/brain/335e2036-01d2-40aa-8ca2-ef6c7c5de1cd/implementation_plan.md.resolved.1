@@ -1,0 +1,62 @@
+# Phase 4: YAML 屬性框架校準與批次修復 (Implementation Plan)
+
+在我們進行前幾階段的實體資料夾重構（將專案狀態化、整合知識庫索引）後，系統的底層定義已經改變。目前的 `610-100YAML規範.md` 與 `YAML屬性建置指南.md` 存在部分過時與定義衝突，會導致未來的 Dataview 抓取不到正確的資料。
+
+## User Review Required
+
+> [!IMPORTANT]
+> **關於知識成熟度 (`status`) 的精簡：**
+> 您原本在 `610-100YAML規範` 中的狀態有 7 種 (inbox, todo, waiting, doing, done, canceled, archived)。
+> 但為了呼應我們剛剛建立的「數位花園」模式，我們需要確保知識點的狀態能與上述屬性兼容，或者直接擴充/改寫。
+> 
+> **提案：** 針對 `#系統/知識` 標籤的檔案，強制定義其 `status` 只能是以下三者之一：
+> 1. `seed` (知識種子，對應 inbox)
+> 2. `in-progress` (培育中，對應 doing)
+> 3. `evergreen` (長青知識，對應 done)
+> 
+> **請問您是否同意將這三種狀態正式寫入 YAML 規範中？**
+
+## Proposed Changes
+
+### 600支援/610管理協議
+
+#### [MODIFY] [610-100YAML規範.md](file:///d:\OneDrive\Obsidian\Navi%20Helios\600支援\610管理協議\gemini\610-100YAML規範.md)
+1. **更新資料夾定義**：
+   - 將 `#系統/任務` 的路徑從 `200.../240任務池` 修正為最新的 `230任務池`。
+   - 將 `#系統/專案` 的說明更新為「MOC 狀態分流 (310/320/330/340)」。
+2. **擴充知識狀態定義**：在 "3.5 狀態定義" 中，正式加入專屬於知識庫的狀態（seed, evergreen），確保定義與「量子知識庫索引」同步。
+
+#### [MODIFY] [YAML屬性建置指南.md](file:///d:\OneDrive\Obsidian\Navi%20Helios\600支援\610管理協議\YAML屬性建置指南.md)
+1. **修正專案模板範例**：
+   - 移除過於繁瑣的 project_phase 等不必要欄位，並將 `status` 對齊我們新建的狀態資料夾（planning, active, done, on-hold）。
+2. **修正知識庫模板範例**：
+   - 將原本舊的 `knowledge_level` 等級欄位（原子、分子等）捨棄，改為強制要求填寫 `parent: [[所屬專案或來源]]`，並將狀態換成 `seed` 等成熟度標籤。
+
+### 批次修復現有資料 (Batch Updates)
+
+在規範更新且獲您批准後，我們將撰寫 PowerShell 腳本或使用 Obsidian 工具，進行以下自動化修正：
+
+#### [UPDATE] 領域與專案檔 (320進行中)
+掃描 `320進行中` 的所有專案與領域主檔（如 `事業INDEX.md` 等），確保它們都具備以下標準 YAML：
+```yaml
+---
+tags: [系統/專案]
+status: active
+time_create: YYYY-MM-DD
+time_modifie: {{最新修改日}}
+parent: 
+related: 
+---
+```
+
+#### [UPDATE] 原子知識檔 (410原子化知識庫)
+掃描所有的知識筆記。
+1. 如果沒有 YAML，自動補上 7 行核心結構。
+2. 將所有知識點的 `tags` 加上 `系統/知識`。
+3. 若沒有 `status`，預設填入 `seed`，讓它們自動浮現在總索引的「待處理區」。
+
+## Verification Plan
+
+### Automated Tests
+1. 執行 Dataview 查詢 `TABLE status FROM "410原子化知識庫" WHERE !status`，確保結果筆數為 0。
+2. 開啟 `量子知識庫索引.md`，觀察三個數位花園看板是否成功抓取到所有對應的知識點。

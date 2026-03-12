@@ -1,0 +1,90 @@
+//+------------------------------------------------------------------+
+//|                                                第一階段.pine |
+//|                                  Copyright 2024, MetaQuotes Ltd. |
+//|                                             https://www.mql5.com |
+//+------------------------------------------------------------------+
+//@version=6
+strategy("第一階段交易策略", overlay=true, initial_capital=10000, default_qty_type=strategy.percent_of_equity, default_qty_value=100)
+
+// 輸入參數
+lotSize = input.float(0.1, "交易手數", minval=0.01, step=0.01)
+entryPoints = input.int(200, "入場點數（價格超過均線的點數）", minval=1) * syminfo.mintick
+stopLossPoints = input.int(100, "止損點數（均線的點數）", minval=1) * syminfo.mintick
+trailingStart = input.int(300, "開始移動止損的點數", minval=1) * syminfo.mintick
+timeFrame1 = input.timeframe("D", "時間週期1（日線）")
+timeFrame2 = input.timeframe("240", "時間週期2（4小時）")
+
+// 計算移動平均線
+ma1 = request.security(syminfo.tickerid, timeFrame1, ta.sma(close, 21))
+ma2 = request.security(syminfo.tickerid, timeFrame2, ta.sma(close, 21))
+
+// 繪製移動平均線
+plot(ma1, "日線均線", color=color.red, linewidth=2)
+plot(ma2, "4小時均線", color=color.green, linewidth=1)
+
+// 變量
+var float entryPrice = na
+var bool trailingActive = false
+
+// 檢查多頭入場條件
+isLongEntryCondition() =>
+    barstate.isconfirmed and
+    close > ma1 and (price - ma1) >= entryPoints and close > ma2
+
+// 檢查空頭入場條件
+isShortEntryCondition() =>
+    barstate.isconfirmed and
+    close < ma1 and (ma1 - price) >= entryPoints and close < ma2
+
+// 管理現有倉位
+managePositions() =>
+    var bool shouldUpdate = false
+    var float newSL = na
+    
+    if strategy.position_size > 0
+        // 多頭倉位
+        profitPips = close - entryPrice
+        if not trailingActive and profitPips >= trailingStart
+            shouldUpdateTrailing := true
+            newSL := entryPrice
+        else if trailingActive
+            newSL := ma1 - stopLossPoints
+            if newSL > strategy.position_avg_price
+                strategy.exit("Exit_Long_TS", from_entry="Long", stop=newSL)
+    else if strategy.position_size < 0
+        // 空頭倉位
+        profitPips = entryPrice - close
+        if not trailingActive and profitPips >= trailingStart
+            shouldUpdateTrailing := true
+            newSL := entryPrice
+        else if trailingActive
+            newSL := ma1 + stopLossPoints
+            if newSL < strategy.position_avg_price
+                strategy.exit("Exit_Short_TS", from_entry="Short", stop=newSL)
+    
+    [shouldUpdateTrailing, newSL]
+
+// 執行策略
+if strategy.position_size == 0
+    // 重置變量
+    entryPrice := na
+    trailingActive := false
+    
+    // 檢查多頭入場條件
+    if isLongEntryCondition()
+        strategy.entry("多單", strategy.long, qty=lotSize)
+        entryPrice := close
+    
+    // 檢查空頭入場條件
+    else if isShortEntryCondition()
+        strategy.entry("空單", strategy.short, qty=lotSize)
+        entryPrice := close
+else
+    // 管理現有倉位
+    [shouldUpdate, newSL] = managePositions()
+    if shouldUpdate
+        trailingActive := true
+        if strategy.position_size > 0
+            strategy.exit("Exit_Long_TS", from_entry="Long", stop=newSL)
+        else
+            strategy.exit("Exit_Short_TS", from_entry="Short", stop=newSL)

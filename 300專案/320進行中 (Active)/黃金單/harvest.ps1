@@ -1,0 +1,46 @@
+# PowerShell Harvest Script - Hardcoded Config (To avoid parsing issues)
+$token = "eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI5ZDgxNjM1MTFmNjNlMDg2MDAzOGM5ZWRlZmM0ZjE3NCIsImFjY2Vzc1J1bGVzIjpbeyJpZCI6InRyYWRpbmctYWNjb3VudC1tYW5hZ2VtZW50LWFwaSIsIm1ldGhvZHMiOlsidHJhZGluZy1hY2NvdW50LW1hbmFnZW1lbnQtYXBpOnJlc3Q6cHVibGljOio6KiJdLCJyb2xlcyI6WyJyZWFkZXIiLCJ3cml0ZXIiXSwicmVzb3VyY2VzIjpbIio6JFVTRVJfSUQkOioiXX0seyJpZCI6Im1ldGFhcGktcmVzdC1hcGkiLCJtZXRob2RzIjpbIm1ldGFhcGktYXBpOnJlc3Q6cHVibGljOio6KiJdLCJyb2xlcyI6WyJyZWFkZXIiLCJ3cml0ZXIiXSwicmVzb3VyY2VzIjpbIio6JFVTRVJfSUQkOioiXX0seyJpZCI6Im1ldGFhcGktcnBjLWFwaSIsIm1ldGhvZHMiOlsibWV0YWFwaS1hcGk6d3M6cHVibGljOio6KiJdLCJyb2xlcyI6WyJyZWFkZXIiLCJ3cml0ZXIiXSwicmVzb3VyY2VzIjpbIio6JFVTRVJfSUQkOioiXX0seyJpZCI6Im1ldGFhcGktcmVhbC10aW1lLXN0cmVhbWluZy1hcGkiLCJtZXRob2RzIjpbIm1ldGFhcGktYXBpOndzOnB1YmxpYzoqOioiXSwicm9sZXMiOlsicmVhZGVyIiwid3JpdGVyIl0sInJlc291cmNlcyI6WyIqOiRVU0VSX0lEJDoqIl19LHsiaWQiOiJtZXRhc3RhdHMtYXBpIiwibWV0aG9kcyI6WyJtZXRhc3RhdHMtYXBpOnJlc3Q6cHVibGljOio6KiJdLCJyb2xlcyI6WyJyZWFkZXIiLCJ3cml0ZXIiXSwicmVzb3VyY2VzIjpbIio6JFVTRVJfSUQkOioiXX0seyJpZCI6InJpc2stbWFuYWdlbWVudC1hcGkiLCJtZXRob2RzIjpbInJpc2stbWFuYWdlbWVudC1hcGk6cmVzdDpwdWJsaWM6KjoqIl0sInJvbGVzIjpbInJlYWRlciIsIndyaXRlciJdLCJyZXNvdXJjZXMiOlsiKjokVVNFUl9JRCQ6KiJdfSx7ImlkIjoiY29weWZhY3RvcnktYXBpIiwibWV0aG9kcyI6WyJjb3B5ZmFjdG9yeS1hcGk6cmVzdDpwdWJsaWM6KjoqIl0sInJvbGVzIjpbInJlYWRlciIsIndyaXRlciJdLCJyZXNvdXJjZXMiOlsiKjokVVNFUl9JRCQ6KiJdfSx7ImlkIjoibXQtbWFuYWdlci1hcGkiLCJtZXRob2RzIjpbIm10LW1hbmFnZXItYXBpOnJlc3Q6ZGVhbGluZzoqOioiLCJtdC1tYW5hZ2VyLWFwaTpyZXN0OnB1YmxpYzoqOioiXSwicm9sZXMiOlsicmVhZGVyIiwid3JpdGVyIl0sInJlc291cmNlcyI6WyIqOiRVU0VSX0lEJDoqIl19LHsiaWQiOiJiaWxsaW5nLWFwaSIsIm1ldGhvZHMiOlsiYmlsbGluZy1hcGk6cmVzdDpwdWJsaWM6KjoqIl0sInJvbGVzIjpbInJlYWRlciJdLCJyZXNvdXJjZXMiOlsiKjokVVNFUl9JRCQ6KiJdfV0sImlnbm9yZVJhdGVMaW1pdHMiOmZhbHNlLCJ0b2tlbklkIjoiMjAyMTAyMTMiLCJpbXBlcnNvbmF0ZWQiOmZhbHNlLCJyZWFsVXNlcklkIjoiOWQ4MTYzNTExZjYzZTA4NjAwMzhjOWVkZWZjNGYxNzQiLCJpYXQiOjE3NzMxMTM0NzZ9.VvV5QT83T14hlxtlZ1q_vxkzU9vmqm0o-5pJw2Ne01ucVy0Hzimz_KmjYky8WE_h0bHvLMt48e_HheUehjxxrU1iv8QBLkmmyAlVLxVaMNq9Uz4TAzAgxzSATHRP_ZfwsB6P-xl2Nq9e3Gtys-njiCnXsVyxKTFo-XR6Jym4V-nhEJabC8S3L_ji56RhH6gb2M7IuH04v8H2G_fMN-BzUilcdKKWjUA8HTG1Jvy5yni4qzM1Qrry6c8MRi0fu18LUbbTU1dXIxM8eDTXka3tUMJ09FIM_3-4P3iHd66mZLluVlnzMnVkVc5DV4o2JcJOlKv4z4kTjgaBEFQtoAcjZl-Pae_NGmRRElGLh7tUS162pXd_S_KLi2uIzxEkZuGE-5gioiyA2JEbM7JDVWxz2RiWAvuQP8eF4Ot0wEKs6F5FTV_ovz28oFmWBcvV-Nftr-lbFiNU-09hpCm2rfLsx9jOS_H-K9UAocsl0TVgz39Y5HVcLhZQBGrRijVtTEnYcT3zhK9ROD8M8ABSomULqKZKOkuxprmXcIJZhUUzDgxzJtBN73tX0tMPfLQELHdp6ClulZOHq0PsmZnB3r9CzFgXSpm3xlFkUUfSNCkbKBP3sU6Y7yietkERPe9rPQBjPq-goyBbkoxJhCvBnJj6yfV3dGsH_kbQ4TqaFzpLYmE"
+$accountId = "3d39912e-4ab7-419f-96f3-c1ca5cd19ae1"
+$region = "new-york"
+
+$baseUrl = "https://mt-market-data-client-api-v1.$region.agiliumtrade.ai/users/current/accounts/$accountId/historical-market-data/symbols/XAUUSD/timeframes/5m/candles"
+$endTime = [DateTime]::UtcNow
+$startTime = $endTime.AddDays(-365)
+$currentEnd = $endTime
+
+$allCandles = @()
+$filePath = "./data/history/XAUUSD_5m_1y.json"
+if (-not (Test-Path "./data/history")) { [void](New-Item -ItemType Directory -Force -Path "./data/history") }
+
+Write-Host "Starting Harvesting..."
+
+while ($currentEnd -gt $startTime) {
+    $timeStr = $currentEnd.ToString("yyyy-MM-ddTHH:mm:ss.000Z")
+    $url = "$baseUrl" + "?startTime=$timeStr&limit=1000"
+    $headers = @{ "auth-token" = "$token" }
+
+    try {
+        $response = Invoke-RestMethod -Uri $url -Headers $headers -Method Get
+        if ($null -eq $response -or $response.Count -eq 0) {
+            Write-Host "End reached"
+            break
+        }
+
+        $allCandles += $response
+        $oldest = $response[$response.Count - 1]
+        $oldestTimeStr = $oldest.time
+        $currentEnd = [DateTime]::Parse($oldestTimeStr).ToUniversalTime().AddMinutes(-5)
+
+        Write-Host "Fetched $($allCandles.Count) candles... Current: $oldestTimeStr"
+        
+        if ($response.Count -lt 1000) { break }
+        Start-Sleep -Milliseconds 100
+    }
+    catch {
+        Write-Host "Error: $($_.Exception.Message)"
+        break
+    }
+}
+
+$allCandles | ConvertTo-Json -Depth 10 | Out-File -FilePath $filePath -Encoding UTF8
+Write-Host "Completed! Total: $($allCandles.Count)"

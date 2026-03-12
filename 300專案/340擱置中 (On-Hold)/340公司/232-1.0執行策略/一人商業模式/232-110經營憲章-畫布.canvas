@@ -1,0 +1,39 @@
+{
+	"nodes":[
+		{"id":"pillar_1","type":"group","x":-1000,"y":-400,"width":800,"height":1200,"color":"1","label":"支柱 1：生存本質與世界觀"},
+		{"id":"pillar_2","type":"group","x":-100,"y":-400,"width":800,"height":1200,"color":"2","label":"支柱 2：主權心態與能力堆疊"},
+		{"id":"pillar_4","type":"group","x":800,"y":-400,"width":800,"height":1200,"color":"4","label":"支柱 4：系統槓桿與分銷"},
+		{"id":"pillar_5","type":"group","x":1700,"y":-400,"width":800,"height":1200,"color":"3","label":"支柱 5：變現實驗與生命平衡"},
+		{"id":"node_hunter_mindset","type":"text","text":"## [[獵人思維 (Hunter Mindset)]]\n主動出擊、對結果負 100% 責任，並不斷進化以適應快速變化的市場環境。","x":-50,"y":-350,"width":350,"height":180,"color":"2"},
+		{"id":"node_monetization_proto","type":"text","text":"## [[變現即實驗 (Monetization as Prototyping)]]\n將變現視為低成本的「體驗原型」測試，根據反饋快速迭代生活藍圖與未來路徑。","x":1750,"y":-350,"width":350,"height":180,"color":"3"},
+		{"id":"node_transcendence","type":"text","text":"## [[自我超越 (Self-Transcendence)]]\n解決個人問題後透過分享實現集體價值，將商業利潤轉化為生命意義的整合與選擇權。","x":1750,"y":520,"width":350,"height":200,"color":"3"},
+		{"id":"node_dyn_balance","type":"text","text":"## [[移動平衡 (Dynamic Balance)]]\n商業系統根據生命週期動態調整，確保工作節奏與個人發展階段始終保持一致。","x":1760,"y":80,"width":350,"height":180,"color":"3"},
+		{"id":"node_personal_monopoly","type":"text","text":"## [[個人壟斷 (Personal Monopoly)]]\n透過獨特興趣交集，在利基市場中創造出無競爭、無法被飽和的個人領地。","x":320,"y":320,"width":350,"height":180,"color":"2"},
+		{"id":"node_obsession","type":"text","text":"## [[痴迷燃料 (Obsession as Fuel)]]\n利用對特定領域的非理性痴迷，獲取無法被複製的特定知識，作為一人公司的價值輸出核心。","x":-60,"y":140,"width":350,"height":180,"color":"2"},
+		{"id":"node_skill_stack","type":"text","text":"## [[技能堆疊公式 (Skill Stacking Formula)]]\n唯一性 = 永續技能 (行銷/媒介) + 個人興趣 (獨特性) + 經驗細節 (細微差別辨識)。","x":-60,"y":580,"width":350,"height":180,"color":"2"},
+		{"id":"node_slavery","type":"text","text":"## [[現代奴役 (Modern Slavery)]]\n人類生物本能被數位平台利用，淪為對點讚、通知與消費的無止盡追求，喪失深度思考的主權。","x":-940,"y":-360,"width":350,"height":180,"color":"1"},
+		{"id":"node_anti_vision","type":"text","text":"## [[反願景 (Anti-Vision)]]\n透過定義「絕對不想要的生活」獲取強大的負向動力，以此避開平庸並精確推導目標。","x":-640,"y":-160,"width":350,"height":180,"color":"1"},
+		{"id":"node_hunting","type":"text","text":"## [[狩獵轉向 (The Hunting Shift)]]\n生存策略從工業時代的「穩定受僱」轉向主動的「狩獵想法、採集資訊與交易價值」。","x":-960,"y":580,"width":350,"height":180,"color":"1"},
+		{"id":"node_worldview","type":"text","text":"## [[數位叢林 (Digital Jungle)]]\n由指數級技術構成的現代生存環境，資訊在此取代了物理資源，成為生存與階級躍遷的核心。","x":-960,"y":280,"width":350,"height":180,"color":"1"},
+		{"id":"node_info_econ","type":"text","text":"## [[資訊價值論 (Information Economics)]]\n將隱性經驗產品化，利用其零邊際成本與全球分銷槓桿實現複利成長與財富躍遷。","x":860,"y":600,"width":350,"height":180,"color":"4"},
+		{"id":"node_efficiency_rev","type":"text","text":"## [[效率革命 (Efficiency Revolution)]]\n透過極致壓縮工時 (每日 2-4 小時)，強制大腦尋找高槓桿解決方案。","x":1080,"y":-320,"width":350,"height":160,"color":"4"},
+		{"id":"node_dist_sovereignty","type":"text","text":"## [[分銷主權 (Distribution Sovereignty)]]\n掌握媒體與程式碼即掌握分銷價值的最高權力，是從「工作換錢」跨越到「槓桿增長」的關鍵。","x":1200,"y":340,"width":350,"height":180,"color":"4"},
+		{"id":"node_efficiency_priority","type":"text","text":"## [[效率優先]]\n經營的核心不在於規模，而是透過效率支撐「主權生活」，追求時間財富與商業價值的平衡。","x":840,"y":0,"width":350,"height":160,"color":"4"}
+	],
+	"edges":[
+		{"id":"e_worldview_hunting","fromNode":"node_worldview","fromSide":"bottom","toNode":"node_hunting","toSide":"top","label":"環境決定策略"},
+		{"id":"e_slavery_mindset","fromNode":"node_slavery","fromSide":"right","toNode":"node_hunter_mindset","toSide":"left","label":"覺醒後轉向"},
+		{"id":"e_anti_vision_obsession","fromNode":"node_anti_vision","fromSide":"right","toNode":"node_obsession","toSide":"left","label":"排除錯誤，鎖定燃料"},
+		{"id":"e_hunting_info_econ","fromFloating":false,"toFloating":false,"fromNode":"node_hunting","fromSide":"bottom","toNode":"node_info_econ","toSide":"bottom","label":"從採集到資產化"},
+		{"id":"e_obsession_personal_monopoly","toFloating":false,"fromNode":"node_obsession","fromSide":"bottom","toNode":"node_personal_monopoly","toSide":"left","label":"挖掘特定知識，構建壟斷力"},
+		{"id":"e_skill_stack_monopoly","toFloating":false,"fromFloating":false,"fromNode":"node_skill_stack","fromSide":"right","toNode":"node_personal_monopoly","toSide":"bottom","label":"實現壟斷的技術路徑"},
+		{"id":"e_info_econ_dist","toFloating":false,"fromFloating":false,"fromNode":"node_info_econ","fromSide":"top","toNode":"node_dist_sovereignty","toSide":"left","label":"定義價值，追求主權"},
+		{"id":"e_monetization_balance","fromNode":"node_monetization_proto","fromSide":"bottom","toNode":"node_dyn_balance","toSide":"top","label":"透過變現反饋微調軌跡"},
+		{"id":"e_balance_transcendence","fromNode":"node_dyn_balance","fromSide":"bottom","toNode":"node_transcendence","toSide":"top","label":"系統穩定後，追求更高意義"},
+		{"id":"e_mindset_efficiency","fromNode":"node_hunter_mindset","fromSide":"right","toNode":"node_efficiency_priority","toSide":"left","label":"主權經營的具體實踐"},
+		{"id":"e_priority_rev","toFloating":false,"fromFloating":false,"fromNode":"node_efficiency_priority","fromSide":"top","toNode":"node_efficiency_rev","toSide":"left","label":"戰略轉化為行動"},
+		{"id":"e_dist_efficiency","toFloating":false,"fromFloating":false,"fromNode":"node_dist_sovereignty","fromSide":"top","toNode":"node_efficiency_priority","toSide":"right","label":"技術槓桿降低工時"},
+		{"id":"e_rev_balance","fromNode":"node_efficiency_rev","fromSide":"right","toNode":"node_dyn_balance","toSide":"left","label":"釋放時間，確保靈活性"}
+	],
+	"metadata":{"version":"1.0-1.1"}
+}

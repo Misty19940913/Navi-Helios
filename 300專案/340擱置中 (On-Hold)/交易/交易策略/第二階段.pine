@@ -1,0 +1,91 @@
+//+------------------------------------------------------------------+
+//|                                                第二階段.pine |
+//|                                  Copyright 2024, MetaQuotes Ltd. |
+//|                                             https://www.mql5.com |
+//+------------------------------------------------------------------+
+//@version=6
+strategy("第二階段交易策略", overlay=true, initial_capital=10000, default_qty_type=strategy.percent_of_equity, default_qty_value=100)
+
+// 輸入參數
+lotSize = input.float(0.01, "交易手數", minval=0.01, step=0.01)
+kdPeriod = input.int(14, "KD指標週期", minval=1)
+kdSlowing = input.int(3, "KD指標平滑", minval=1)
+maPeriod = input.int(21, "日線均線週期", minval=1)
+highLowPeriod = input.int(5, "高低點計算週期（天）", minval=1)
+trailingStart = input.int(300, "開始移動止損的點數", minval=1)
+
+// 計算KD指標
+[k, d] = ta.stoch(close, high, low, kdPeriod, kdSlowing, kdSlowing)
+
+// 計算移動平均線
+ma = ta.sma(close, maPeriod)
+
+// 計算高低點
+highestHigh = ta.highest(high, highLowPeriod)
+lowestLow = ta.lowest(low, highLowPeriod)
+
+// 繪製指標
+plot(ma, "21日均線", color=color.red, linewidth=2)
+plot(k, "K線", color=color.blue, linewidth=1)
+plot(d, "D線", color=color.green, linewidth=1)
+
+// 變量
+var float entryPrice = 0.0
+var bool trailingActive = false
+
+// 檢查空單入場條件
+isShortEntryCondition() =>
+    price = close
+    priceAboveMA = price > ma
+    kdAbove80 = k[1] > 80 and d[1] > 80
+    deathCross = k[1] > d[1] and k[2] < d[2]
+    priceAboveMA and kdAbove80 and deathCross
+
+// 檢查多單入場條件
+isLongEntryCondition() =>
+    price = close
+    priceBelowMA = price < ma
+    kdBelow20 = k[1] < 20 and d[1] < 20
+    deathCross = k[1] < d[1] and k[2] > d[2]
+    priceBelowMA and kdBelow20 and deathCross
+
+// 管理現有倉位
+managePositions() =>
+    if strategy.position_size > 0
+        // 多頭倉位
+        if strategy.position_size > 0
+            if not trailingActive and (close - entryPrice) >= trailingStart * syminfo.mintick
+                trailingActive := true
+                strategy.exit("移動止損", "多單", stop=entryPrice)
+            else if trailingActive
+                newSL = ma - 100 * syminfo.mintick
+                if newSL > strategy.position_avg_price
+                    strategy.exit("移動止損", "多單", stop=newSL)
+        // 空頭倉位
+        else if strategy.position_size < 0
+            if not trailingActive and (entryPrice - close) >= trailingStart * syminfo.mintick
+                trailingActive := true
+                strategy.exit("移動止損", "空單", stop=entryPrice)
+            else if trailingActive
+                newSL = ma + 100 * syminfo.mintick
+                if newSL < strategy.position_avg_price
+                    strategy.exit("移動止損", "空單", stop=newSL)
+
+// 執行策略
+if strategy.position_size == 0
+    // 重置變量
+    entryPrice := 0.0
+    trailingActive := false
+    
+    // 檢查空單入場條件
+    if isShortEntryCondition()
+        strategy.entry("空單", strategy.short, lotSize, stop=highestHigh, limit=ma)
+        entryPrice := close
+    
+    // 檢查多單入場條件
+    else if isLongEntryCondition()
+        strategy.entry("多單", strategy.long, lotSize, stop=lowestLow, limit=ma)
+        entryPrice := close
+else
+    // 管理現有倉位
+    managePositions() 

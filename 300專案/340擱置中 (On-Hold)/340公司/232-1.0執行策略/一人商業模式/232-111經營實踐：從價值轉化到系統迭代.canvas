@@ -1,0 +1,41 @@
+{
+	"nodes":[
+		{"id":"node_foundation","type":"text","text":"## [[一人公司經營基礎：三大賦能]]\n一人公司的底層支撐由互聯網槓桿（擴大頻寬）、生活方式優先（經營指南）與自主經營思維（核心動能）共同構成。","x":0,"y":0,"width":600,"height":220},
+		{"id":"node_leverage","type":"text","text":"## [[互聯網槓桿 (Internet Empowerment)]]\n透過社交媒體擴大觸及、建立無代碼數位資產並擁有分銷主權（如 Newsletter），以避免過度依賴外部演算法。","x":-600,"y":-400,"width":500,"height":220},
+		{"id":"node_autonomy","type":"text","text":"## [[自主經營思維 (Autonomy Mindset)]]\n採取獵人思維主動在數位叢林識別機會，並對所有關鍵經營決策負起絕對的全責意識。","x":600,"y":-400,"width":500,"height":220},
+		{"id":"node_productization","type":"text","text":"## [[經驗產品化 (Experience Productization)]]\n將個人戰勝痛苦的解決路徑包裝成可複製的方案，實現從個人經驗到市場價值的轉化。","x":1200,"y":0,"width":500,"height":220},
+		{"id":"node_optimization","type":"text","text":"## [[持續優化系統 (System Optimization)]]\n追蹤關鍵數據指標，根據市場真實反饋調整經營策略，確保系統不偏離目標。","x":-800,"y":400,"width":500,"height":220},
+		{"id":"node_lifestyle","type":"text","text":"## [[生活方式優先 (Lifestyle First)]]\n經營的核心目標是建立一個能服務於理想生活的商業模式，而非單純追求營收規模。","x":320,"y":1000,"width":500,"height":220},
+		{
+			"id":"694e1ef2ce33613e",
+			"type":"text",
+			"text":"## [[232-170專注力與工作系統]]",
+			"styleAttributes":{},
+			"x":560,
+			"y":1280,
+			"width":480,
+			"height":80
+		},
+		{"id":"node_communication","type":"text","text":"## [[敘事溝通即生產力 (Communication as Productivity)]]\n透過透明寫作展現真實性，將個人成長過程轉化為內容，建立具備說服力的信任護城河。","x":1400,"y":680,"width":500,"height":220},
+		{"id":"node_market","type":"text","text":"## [[永恆市場聚焦 (Evergreen Market Focus)]]\n確保解決方案落在健康、財富、關係、幸福等基本需求的交匯點，以維持商業模式的長效穩定。","x":680,"y":320,"width":500,"height":220},
+		{"id":"node_sop","type":"text","x":-400,"y":800,"width":600,"height":250,"text":"## [[實施四部曲 (SOP Roadmap)]]\n從基礎設施建立、內容分享、商業模式發展到系統優化，構成一個完整的循環迭代路徑。"}
+	],
+	"edges":[
+		{"id":"edge_found_leverage","fromNode":"node_foundation","fromSide":"left","toNode":"node_leverage","toSide":"bottom","label":"執行設施賦能，透過網路技術將產出放大至全球市場"},
+		{"id":"edge_found_lifestyle","fromNode":"node_foundation","fromSide":"bottom","toNode":"node_lifestyle","toSide":"top","label":"經營核心哲學，決定了系統演化過程中的最高優先級"},
+		{"id":"edge_found_autonomy","fromNode":"node_foundation","fromSide":"right","toNode":"node_autonomy","toSide":"bottom","label":"提供心理能量，確保系統在遇到困難時能自我校準"},
+		{"id":"edge_leverage_newsletter","fromNode":"node_leverage","fromSide":"left","toNode":"node_leverage","toSide":"left","label":"與 [[電子報優先策略]] 互動：具體落實分銷主權，降低平台風險"},
+		{"id":"edge_lifestyle_evergreen","fromNode":"node_lifestyle","fromSide":"right","toNode":"node_market","toSide":"left","label":"願景導向準則，確保自我實現不被異化為純粹變現壓力"},
+		{"id":"edge_autonomy_product","fromNode":"node_autonomy","fromSide":"bottom","toNode":"node_productization","toSide":"top","label":"驅動個體識別商機並啟動從經驗到產品的價值轉換鏈條"},
+		{"id":"edge_product_scar","fromNode":"node_productization","fromSide":"bottom","toNode":"node_productization","toSide":"bottom","label":"與 [[傷痕分析法]] 互動：透過分析痛苦精確對接市場需求"},
+		{"id":"edge_market_filter","fromNode":"node_market","fromSide":"top","toNode":"node_productization","toSide":"left","label":"與 [[232-220機會探索階段]] 互動：聚焦具備長效價值領域"},
+		{"id":"edge_comm_writing","fromNode":"node_communication","fromSide":"top","toNode":"node_communication","toSide":"top","label":"與 [[寫作：數位底層協議]] 互動：將成長路徑轉化為信任資產"},
+		{"id":"edge_sop_optimization","fromNode":"node_sop","fromSide":"left","toNode":"node_optimization","toSide":"bottom","label":"執行迭代路徑，將市場真實反饋回饋至系統優化環節"},
+		{"id":"edge_optimization_closed_loop","fromNode":"node_optimization","fromSide":"top","toNode":"node_foundation","toSide":"left","label":"與 [[PDCA]] / [[OODA循環]] 互動：優化經營策略並校準經營基礎"},
+		{"id":"edge_sop_system","toFloating":false,"fromFloating":false,"fromNode":"node_sop","fromSide":"bottom","toNode":"694e1ef2ce33613e","toSide":"bottom","label":"與 [[232-170專注力與工作系統]] 互動：提供底層架構支撐效率"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

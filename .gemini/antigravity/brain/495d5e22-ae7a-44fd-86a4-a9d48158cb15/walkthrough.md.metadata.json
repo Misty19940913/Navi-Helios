@@ -1,0 +1,6 @@
+{
+  "artifactType":  "ARTIFACT_TYPE_WALKTHROUGH",
+  "summary":  "資料復原與防護部署：OneDrive 恢復後的系統重建。詳細記錄了在 OneDrive 重置导致部分檔案遺失後，如何利用對話記錄與 Session 召回機制完整恢復 `Master MOC 3.0`、自適應訪談協議及 10 份原子筆記。同時正式部署了「資料清理與整合防護協議」，確保未來任何具破壞性的整合動作都具備顯式批准環節。",
+  "updatedAt":  "2026-02-27T12:54:33.246146800Z",
+  "version":  "5"
+}

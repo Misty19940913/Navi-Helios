@@ -1,0 +1,251 @@
+{
+  "components": [
+    {
+      "id": "2b9aa451-0869-4b8e-ad61-3570b269567b",
+      "type": "multi",
+      "titleAlign": "center",
+      "tabTitle": "",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showShadow": false,
+      "createAt": "2024-12-27T12:19:04.025Z",
+      "updateAt": "2026-02-05T09:28:09.393Z",
+      "components": [
+        {
+          "componentId": "f4cdad9c-83a2-46a8-a27b-35eab7dcaa8d",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 0,
+              "w": 4,
+              "h": 4
+            },
+            "laptop": {
+              "x": 0,
+              "y": 0,
+              "w": 7,
+              "h": 7
+            }
+          }
+        },
+        {
+          "componentId": "7b550dff-206f-4f0d-90bd-0a3f6a1f082b"
+        },
+        {
+          "componentId": "a111d020-953e-42f5-b2ff-830331578e11",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 0,
+              "w": 4,
+              "h": 4
+            },
+            "laptop": {
+              "x": 0,
+              "y": 7,
+              "w": 4,
+              "h": 4
+            }
+          }
+        }
+      ],
+      "layoutType": "tab",
+      "locked": false,
+      "layoutOptions": {}
+    },
+    {
+      "id": "a111d020-953e-42f5-b2ff-830331578e11",
+      "type": "dynamicDataView",
+      "titleAlign": "center",
+      "tabTitle": "画廊",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showShadow": false,
+      "createAt": "2024-12-27T12:19:07.833Z",
+      "updateAt": "2025-11-16T02:19:39.829Z",
+      "viewType": "gallary",
+      "newPageNameFormat": "{{date:YYYYMMDDHHmmss}} ",
+      "properties": [
+        {
+          "id": "__componentsTitleProperty_0x7c00",
+          "name": "文件名",
+          "type": "text",
+          "isShow": true,
+          "wrap": false,
+          "options": {}
+        }
+      ],
+      "templates": [],
+      "groups": [],
+      "colorfulGroups": false,
+      "viewOptions": {
+        "openPageIn": "tab",
+        "openPageAfterCreate": true,
+        "items": [],
+        "pinFiltersToMenuBar": true,
+        "showGrid": false,
+        "heightType": "auto",
+        "heightValue": 600
+      },
+      "filter": {
+        "id": "daab5c44-d1e9-438d-a287-a124582d5ad9",
+        "type": "group",
+        "operator": "and",
+        "conditions": [
+          {
+            "id": "ecfacb6c-d6dd-4516-be25-c2132db641cb",
+            "type": "filter",
+            "operator": "contains",
+            "property": "tags",
+            "value": "系統/夢想/日記",
+            "conditions": []
+          },
+          {
+            "id": "bedf8d70-e577-487c-984d-bdbd299fe7c4",
+            "type": "filter",
+            "operator": "has_value",
+            "property": "createTime",
+            "value": null,
+            "conditions": []
+          },
+          {
+            "id": "f5b48deb-b399-4c5c-b956-2266f68ca1f6",
+            "type": "jsQuery",
+            "operator": "contains",
+            "property": "${file.tags}",
+            "value": "DateTime.fromISO($item.frontmatter?.createTime).toFormat('yyyy-MM') === DateTime.fromISO($parentFile.frontmatter?.createTime).toFormat('yyyy-MM')",
+            "conditions": []
+          }
+        ]
+      },
+      "sort": {
+        "orders": [
+          {
+            "id": "2cfba55c-8f41-44c4-94be-362c1dacd757",
+            "property": "${file.basename}",
+            "direction": "desc",
+            "disabled": false
+          }
+        ]
+      },
+      "showTitle": false
+    },
+    {
+      "id": "f4cdad9c-83a2-46a8-a27b-35eab7dcaa8d",
+      "type": "dynamicDataView",
+      "titleAlign": "center",
+      "tabTitle": "表格",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showShadow": false,
+      "createAt": "2024-12-27T12:19:07.833Z",
+      "updateAt": "2026-02-06T18:19:38.520Z",
+      "viewType": "table",
+      "newPageNameFormat": "{{date:YYYYMMDDHHmmss}} ",
+      "properties": [
+        {
+          "id": "__componentsTitleProperty_0x7c00",
+          "name": "文件名",
+          "type": "text",
+          "isShow": true,
+          "wrap": false,
+          "options": {
+            "statisticType": "count"
+          }
+        },
+        {
+          "id": "a2cfa035-2bb3-4651-97fa-f937195d9a81",
+          "name": "${file.tags}",
+          "type": "multiSelect",
+          "isShow": true,
+          "wrap": false,
+          "options": {},
+          "alias": ""
+        },
+        {
+          "id": "6ce7e589-ee9d-4654-b529-44499e2737d5",
+          "name": "${file.words}",
+          "type": "text",
+          "isShow": true,
+          "wrap": false,
+          "options": {},
+          "alias": ""
+        }
+      ],
+      "templates": [],
+      "groups": [],
+      "colorfulGroups": false,
+      "viewOptions": {
+        "openPageIn": "tab",
+        "openPageAfterCreate": true,
+        "items": [],
+        "pinFiltersToMenuBar": true,
+        "showGrid": false,
+        "heightType": "auto",
+        "heightValue": 600
+      },
+      "filter": {
+        "id": "daab5c44-d1e9-438d-a287-a124582d5ad9",
+        "type": "group",
+        "operator": "and",
+        "conditions": [
+          {
+            "id": "ecfacb6c-d6dd-4516-be25-c2132db641cb",
+            "type": "filter",
+            "operator": "equals",
+            "property": "tags",
+            "value": "系統/紀錄",
+            "conditions": []
+          },
+          {
+            "id": "f5b48deb-b399-4c5c-b956-2266f68ca1f6",
+            "type": "jsQuery",
+            "operator": "contains",
+            "property": "${file.tags}",
+            "value": "Number($item.frontmatter?.week) === Number($parentFile.frontmatter?.week)\n",
+            "conditions": []
+          },
+          {
+            "id": "98168d46-1f20-4767-906d-02739640a1e7",
+            "type": "filter",
+            "operator": "equals",
+            "property": "type",
+            "value": "daily",
+            "conditions": []
+          }
+        ]
+      },
+      "sort": {
+        "orders": [
+          {
+            "id": "2cfba55c-8f41-44c4-94be-362c1dacd757",
+            "property": "${file.basename}",
+            "direction": "desc",
+            "disabled": false
+          }
+        ]
+      },
+      "showTitle": false,
+      "title": "日記列表"
+    },
+    {
+      "id": "7b550dff-206f-4f0d-90bd-0a3f6a1f082b",
+      "type": "dataview",
+      "titleAlign": "center",
+      "tabTitle": "",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showTitle": true,
+      "showShadow": false,
+      "createAt": "2026-02-05T09:28:57.421Z",
+      "updateAt": "2026-02-05T09:29:30.972Z",
+      "query": "const text = dv.current().file.text;\n\nif (!text) {\n  dv.paragraph(\"⚠️ 無法讀取檔案內容\");\n} else {\n  const match = text.match(/覆盤日期[：:]\\s*(\\d{4}-\\d{2}-\\d{2})\\s*至\\s*(\\d{4}-\\d{2}-\\d{2})/);\n\n  if (match) {\n    const weekStart = dv.date(match[1]);\n    const weekEnd   = dv.date(match[2]);\n\n    dv.list(\n      dv.pages('\"200週期紀錄/230任務池\"')\n        .where(p =>\n          p.status === \"completed\" &&\n          p.time?.complete &&\n          dv.date(p.time.complete) >= weekStart &&\n          dv.date(p.time.complete) <= weekEnd\n        )\n    );\n  } else {\n    dv.paragraph(\"⚠️ 找不到覆盤日期，請確認格式為：YYYY-MM-DD 至 YYYY-MM-DD\");\n  }\n}\n",
+      "queryType": "dataviewjs",
+      "maxHeight": 300,
+      "dynamicParamComponents": [],
+      "title": "完成任務\n"
+    }
+  ],
+  "rootComponentId": "2b9aa451-0869-4b8e-ad61-3570b269567b",
+  "version": 3.1
+}

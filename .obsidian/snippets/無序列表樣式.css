@@ -1,0 +1,45 @@
+ol > li::marker,
+ul > li::marker,
+.cm-s-obsidian .cm-formatting-list {
+    color: #5FC8E0;
+    font-size: 20px;
+}
+
+body {
+    --list-marker-color: #5FC8E0;
+    --indentation-guide-color: rgba(var(--mono-rgb-100), 0.3);
+}
+
+/* ===== 渲染视图：始终显示缩进线 ===== */
+/* 为嵌套列表添加左侧缩进线（只针对第二层及以下的列表） */
+.markdown-rendered ul ul,
+.markdown-rendered ol ol,
+.markdown-rendered ul ol,
+.markdown-rendered ol ul {
+    border-left: 2px solid var(--indentation-guide-color);
+    padding-left: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* ===== 源码视图：始终显示缩进线 ===== */
+/* 为所有列表行添加相对定位 */
+.markdown-source-view.mod-cm6 .HyperMD-list-line {
+    position: relative;
+}
+
+/* 隐藏第一层的 Obsidian 默认缩进线（避免重复） */
+.markdown-source-view.mod-cm6 .HyperMD-list-line-1 .cm-indent::before {
+    display: none !important;
+}
+
+/* 使用 border-left 创建缩进线（从第2层开始），用 margin-left 补偿避免影响布局 */
+.markdown-source-view.mod-cm6 .HyperMD-list-line-2,
+.markdown-source-view.mod-cm6 .HyperMD-list-line-3,
+.markdown-source-view.mod-cm6 .HyperMD-list-line-4,
+.markdown-source-view.mod-cm6 .HyperMD-list-line-5,
+.markdown-source-view.mod-cm6 .HyperMD-list-line-6 {
+    border-left: 2px solid var(--indentation-guide-color);
+    margin-left: -2px;
+    padding-left: 0.5em;
+}

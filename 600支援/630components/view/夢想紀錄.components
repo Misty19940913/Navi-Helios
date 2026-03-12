@@ -1,0 +1,435 @@
+{
+  "components": [
+    {
+      "id": "d74392b3-4118-4c33-9f75-1dd958678f62",
+      "type": "multi",
+      "titleAlign": "center",
+      "tabTitle": "",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showShadow": false,
+      "createAt": "2024-05-13T07:28:49.882Z",
+      "updateAt": "2025-11-18T09:55:56.512Z",
+      "components": [
+        {
+          "componentId": "1ea33ce0-9296-44f0-8791-13eb743f80ce",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 15,
+              "w": 4,
+              "h": 55
+            },
+            "laptop": {
+              "x": 0,
+              "y": 2,
+              "w": 12,
+              "h": 32
+            }
+          }
+        },
+        {
+          "componentId": "685f4dc9-9e1c-4a64-a42c-72be9001ca95",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 0,
+              "w": 2,
+              "h": 3
+            },
+            "laptop": {
+              "x": 0,
+              "y": 0,
+              "w": 2,
+              "h": 2
+            }
+          }
+        },
+        {
+          "componentId": "0a8a61bb-03eb-4ff4-b8da-12a01e6b1308",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 3,
+              "w": 2,
+              "h": 3
+            },
+            "laptop": {
+              "x": 4,
+              "y": 0,
+              "w": 2,
+              "h": 2
+            }
+          }
+        },
+        {
+          "componentId": "fd5fff4d-69a9-4e8a-a4b8-ef861b29ed88",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 6,
+              "w": 2,
+              "h": 3
+            },
+            "laptop": {
+              "x": 6,
+              "y": 0,
+              "w": 2,
+              "h": 2
+            }
+          }
+        },
+        {
+          "componentId": "9b3a715a-ab60-4b12-99e0-32ec9f0d95bd",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 9,
+              "w": 2,
+              "h": 3
+            },
+            "laptop": {
+              "x": 8,
+              "y": 0,
+              "w": 2,
+              "h": 2
+            }
+          }
+        },
+        {
+          "componentId": "14cd23e5-7332-49a7-bfc6-7031fde41d65",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 12,
+              "w": 2,
+              "h": 3
+            },
+            "laptop": {
+              "x": 2,
+              "y": 0,
+              "w": 2,
+              "h": 2
+            }
+          }
+        }
+      ],
+      "layoutType": "grid"
+    },
+    {
+      "id": "e76df3b6-de40-410d-ac41-14855dd22297",
+      "type": "dynamicDataView",
+      "titleAlign": "center",
+      "tabTitle": "日记",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showShadow": false,
+      "createAt": "2024-05-13T07:29:05.317Z",
+      "updateAt": "2025-11-16T02:34:36.166Z",
+      "viewType": "calendar",
+      "properties": [],
+      "templates": [
+        {
+          "id": "771db49c-6fdf-46a4-b03f-eca7f0a26710",
+          "path": "600支援/620Template/Daily.md",
+          "name": "Daily.md",
+          "type": "templater"
+        }
+      ],
+      "groups": [],
+      "viewOptions": {
+        "openPageIn": "split",
+        "openPageAfterCreate": true,
+        "itemSize": "components--page-card-medium",
+        "showPropertyName": false,
+        "showAllProperties": false,
+        "items": [],
+        "cover": {
+          "type": "none",
+          "value": "",
+          "fit": "contains",
+          "layout": "components--page-card-cover-landscape",
+          "pageContentPreview": true
+        },
+        "hideFileName": false,
+        "wrapFileName": true,
+        "dateProperty": "${file.basename}",
+        "firstDayOfWeek": "7",
+        "calendarViewType": "month",
+        "cardColorFrom": "property",
+        "cardColorProperty": "tags"
+      },
+      "filter": {
+        "id": "bc9afa86-0c6d-4468-8401-583c2f7074d6",
+        "type": "group",
+        "operator": "or",
+        "conditions": [
+          {
+            "id": "aa3621bf-2f95-4e99-a233-453713a73f8a",
+            "type": "filter",
+            "operator": "contains",
+            "property": "tags",
+            "value": "系統/夢想",
+            "conditions": []
+          }
+        ]
+      },
+      "sort": {
+        "orders": [
+          {
+            "id": "9c48cfc7-910e-4258-872e-be506f9d9944",
+            "property": "${file.basename}",
+            "direction": "desc"
+          }
+        ]
+      },
+      "defaultTemplate": "771db49c-6fdf-46a4-b03f-eca7f0a26710",
+      "newPageNameFormat": "{{date: YYYY-MM-DD}}",
+      "newPageLocation": {
+        "location": "100夢想/120日誌"
+      },
+      "showTitle": false,
+      "title": "日记"
+    },
+    {
+      "id": "1ea33ce0-9296-44f0-8791-13eb743f80ce",
+      "type": "multi",
+      "titleAlign": "center",
+      "tabTitle": "组合",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showShadow": false,
+      "createAt": "2024-12-27T06:03:25.806Z",
+      "updateAt": "2025-11-16T02:34:40.627Z",
+      "components": [
+        {
+          "componentId": "e76df3b6-de40-410d-ac41-14855dd22297"
+        },
+        {
+          "componentId": "3195ad0d-285f-42ae-88fd-b7661d2c53b0"
+        }
+      ],
+      "layoutType": "tab",
+      "locked": false,
+      "layoutOptions": {}
+    },
+    {
+      "id": "3195ad0d-285f-42ae-88fd-b7661d2c53b0",
+      "type": "dynamicDataView",
+      "titleAlign": "center",
+      "tabTitle": "去年今月日记",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showShadow": false,
+      "createAt": "2024-05-13T07:29:05.317Z",
+      "updateAt": "2025-11-16T02:34:36.167Z",
+      "viewType": "gallary",
+      "properties": [],
+      "templates": [
+        {
+          "id": "8f1f5965-4c89-40cb-bf4a-876dbbea82c7",
+          "path": "resource/template/journal.md",
+          "name": "journal.md",
+          "type": "normal"
+        }
+      ],
+      "groups": [],
+      "viewOptions": {
+        "openPageIn": "tab",
+        "openPageAfterCreate": false,
+        "itemSize": "components--page-card-medium",
+        "showPropertyName": false,
+        "showAllProperties": false,
+        "items": [],
+        "cover": {
+          "type": "textContent",
+          "value": "",
+          "fit": "contains",
+          "layout": "components--page-card-cover-landscape",
+          "pageContentPreview": true
+        },
+        "hideFileName": false,
+        "wrapFileName": true,
+        "dateProperty": "${file.basename}",
+        "pinFiltersToMenuBar": true
+      },
+      "filter": {
+        "id": "bc9afa86-0c6d-4468-8401-583c2f7074d6",
+        "type": "group",
+        "operator": "and",
+        "conditions": [
+          {
+            "id": "fc1a9378-b61f-47ba-a382-e7e7acbf4c8f",
+            "type": "filter",
+            "operator": "contains",
+            "property": "${file.parent}",
+            "value": "area/journal/day",
+            "conditions": []
+          },
+          {
+            "id": "be9e0458-8161-407a-93ee-b1710e9d419d",
+            "type": "jsQuery",
+            "operator": "contains",
+            "property": "${file.tags}",
+            "value": "$item.fileBaseName.includes(now().minus({ year: 1}).toFormat('yyyy-MM-'))",
+            "conditions": []
+          }
+        ]
+      },
+      "sort": {
+        "orders": [
+          {
+            "id": "9c48cfc7-910e-4258-872e-be506f9d9944",
+            "property": "${file.basename}",
+            "direction": "desc"
+          }
+        ]
+      },
+      "defaultTemplate": "8f1f5965-4c89-40cb-bf4a-876dbbea82c7",
+      "newPageNameFormat": "{{date: YYYY-MM-DD}}",
+      "newPageLocation": {
+        "location": "area/journal"
+      },
+      "showTitle": false,
+      "title": "去年今月日记"
+    },
+    {
+      "id": "685f4dc9-9e1c-4a64-a42c-72be9001ca95",
+      "type": "card",
+      "titleAlign": "center",
+      "tabTitle": "今日日记",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-12-27T12:14:48.052Z",
+      "updateAt": "2025-11-16T02:34:40.627Z",
+      "title": "今日日记",
+      "description": "",
+      "coverFit": "cover",
+      "coverPosition": "left",
+      "clickAction": {
+        "type": "CallCommand",
+        "id": "75e665e8-b597-40d3-9a76-746ad5f4629f",
+        "options": {
+          "commandId": "daily-notes",
+          "commandName": "日记: 打开/创建今天的日记"
+        }
+      },
+      "icon": "Calendar"
+    },
+    {
+      "id": "0a8a61bb-03eb-4ff4-b8da-12a01e6b1308",
+      "type": "card",
+      "titleAlign": "center",
+      "tabTitle": "本月月記",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-12-27T12:14:48.052Z",
+      "updateAt": "2025-11-16T02:34:40.628Z",
+      "title": "本月月記",
+      "description": "",
+      "coverFit": "cover",
+      "coverPosition": "left",
+      "clickAction": {
+        "type": "CreateFile",
+        "id": "75e665e8-b597-40d3-9a76-746ad5f4629f",
+        "options": {
+          "commandId": "daily-notes",
+          "commandName": "日记: 打开/创建今天的日记",
+          "targetFolder": "200週期紀錄/220覆盤",
+          "fileName": "{{date: YYYY-MM}}",
+          "openPageIn": "split",
+          "templateFilePath": "600支援/620Template/Monthly.md"
+        }
+      },
+      "icon": "Calendar"
+    },
+    {
+      "id": "14cd23e5-7332-49a7-bfc6-7031fde41d65",
+      "type": "card",
+      "titleAlign": "center",
+      "tabTitle": "本週週記",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-12-27T12:14:48.052Z",
+      "updateAt": "2025-11-16T02:34:40.628Z",
+      "title": "本週週記",
+      "description": "",
+      "coverFit": "cover",
+      "coverPosition": "left",
+      "clickAction": {
+        "type": "CreateFile",
+        "id": "75e665e8-b597-40d3-9a76-746ad5f4629f",
+        "options": {
+          "commandId": "daily-notes",
+          "commandName": "日记: 打开/创建今天的日记",
+          "targetFolder": "200週期紀錄/220覆盤",
+          "fileName": "{{date: YY-WW}}",
+          "openPageIn": "split",
+          "templateFilePath": "600支援/620Template/Weekly.md"
+        }
+      },
+      "icon": "Calendar"
+    },
+    {
+      "id": "fd5fff4d-69a9-4e8a-a4b8-ef861b29ed88",
+      "type": "card",
+      "titleAlign": "center",
+      "tabTitle": "本季季記",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-12-27T12:14:48.052Z",
+      "updateAt": "2025-11-16T02:34:40.628Z",
+      "title": "本季季記",
+      "description": "",
+      "coverFit": "cover",
+      "coverPosition": "left",
+      "clickAction": {
+        "type": "CreateFile",
+        "id": "75e665e8-b597-40d3-9a76-746ad5f4629f",
+        "options": {
+          "commandId": "daily-notes",
+          "commandName": "日记: 打开/创建今天的日记",
+          "targetFolder": "200週期紀錄/220覆盤",
+          "fileName": "{{date: YYYY-[Q]Q}}",
+          "openPageIn": "split",
+          "templateFilePath": "600支援/620Template/FutureLog-Quarter.md"
+        }
+      },
+      "icon": "Calendar"
+    },
+    {
+      "id": "9b3a715a-ab60-4b12-99e0-32ec9f0d95bd",
+      "type": "card",
+      "titleAlign": "center",
+      "tabTitle": "本年記",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-12-27T12:14:48.052Z",
+      "updateAt": "2025-11-16T02:34:40.628Z",
+      "title": "本年記",
+      "description": "",
+      "coverFit": "cover",
+      "coverPosition": "left",
+      "clickAction": {
+        "type": "CreateFile",
+        "id": "75e665e8-b597-40d3-9a76-746ad5f4629f",
+        "options": {
+          "commandId": "daily-notes",
+          "commandName": "日记: 打开/创建今天的日记",
+          "targetFolder": "200週期紀錄/220覆盤",
+          "fileName": "{{date: YYYY}}",
+          "openPageIn": "split",
+          "templateFilePath": "600支援/620Template/FutureLog-Year.md"
+        }
+      },
+      "icon": "Calendar"
+    }
+  ],
+  "rootComponentId": "d74392b3-4118-4c33-9f75-1dd958678f62",
+  "version": 3.1
+}

@@ -1,0 +1,61 @@
+//@version=5
+indicator('SWING', overlay=true, max_lines_count=500)
+
+//-----Input-------
+GroupSWING = "SWING"
+showSWING = input.bool(true, 'Show SWING', group = GroupSWING, inline = "SWING")
+widthSWING = input.int(defval=1, title="", minval=1, step=1, group = GroupSWING, inline = "Color/Width", display=display.none)
+// ----- Input for Style and Color -----
+GroupStyle = "Style/Color"
+UPlineStyle = input.string(title="Line Style", options=["solid", "dotted", "dashed"], defval="solid", group=GroupStyle)
+DOWNlineStyle = input.string(title="Line Style", options=["solid", "dotted", "dashed"], defval="solid", group=GroupStyle)
+UPlineColor = input.color(#f32144, title="Line Color", group=GroupStyle)
+DOWNlineColor = input.color(#21f360, title="Line Color", group=GroupStyle)
+
+
+// 初始化存储时间和价格的数组
+var arrayXSWING = array.new_int(5, na)
+var arrayYSWING = array.new_float(5, na)
+var arrayLineSWING = array.new_line()
+var arrayType =  array.new_int(1, 0)
+var bool runStart = true
+int drawLineSWING = 0
+
+
+// 判斷趨勢
+if close > open  // 看漲K棒
+    array.set(arrayType, 0 , 1) //1為上漲，2為下跌
+    if close[1] > open[1] //如果前1K棒也是看漲K棒
+        drawLineSWING := 1 //1趨勢延續；2趨勢改變
+        if high > array.get(arrayYSWING, 0 ) //新高是否高於前一個最高點
+            array.set(arrayYSWING, 0 , high )
+            array.set(arrayXSWING, 0 , time )  //更新新高之價格與時間
+        else
+            array.set(arrayYSWING, 0 , array.get(arrayYSWING, 0 ) )
+            array.set(arrayXSWING, 0 , array.get(arrayXSWING, 0 ) )  //維持舊高之價格與時間
+    else
+        drawLineSWING := 2
+        array.unshift(arrayYSWING, high ) //如果前1K棒為看跌K棒，插入新高之價格與時間
+        array.unshift(arrayXSWING, time )
+
+else  // 看跌K棒
+    array.set(arrayType, 0, 2) //1為上漲，2為下跌
+    if close[1] < open[1] //如果前1K棒也是看跌K棒
+        drawLineSWING := 1 //1趨勢延續；2趨勢改變
+        if low < array.get(arrayYSWING, 0) //新低是否低於前一個最低點
+            array.set(arrayYSWING, 0, low )
+            array.set(arrayXSWING, 0, time )  //更新新低之價格與時間
+        else
+            array.set(arrayYSWING, 0 , array.get(arrayYSWING, 0 ) )
+            array.set(arrayXSWING, 0 , array.get(arrayXSWING, 0 ) )  //維持舊低之價格與時間
+    else
+        array.unshift(arrayYSWING, low ) //如果前1K棒為看漲K棒，插入新高之價格與時間
+        array.unshift(arrayXSWING, time )
+        drawLineSWING := 2
+
+// 绘制趋势线
+if showSWING and array.size(arrayXSWING) >= 2 and array.size(arrayYSWING) >= 2
+    if drawLineSWING == 1
+        line.set_xy2(array.get(arrayLineSWING, 0), array.get(arrayXSWING, 0) , array.get(arrayYSWING, 0))
+    else
+        array.unshift(arrayLineSWING, line.new(array.get(arrayXSWING, 1), array.get(arrayYSWING, 1),array.get(arrayXSWING, 0), array.get(arrayYSWING, 0),color = (array.get(arrayType, 0) == 1 ? UPlineColor : DOWNlineColor), xloc = xloc.bar_time, width = widthSWING))

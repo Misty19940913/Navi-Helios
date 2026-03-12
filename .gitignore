@@ -1,0 +1,12 @@
+# 排除 Obsidian 視窗佈局與快取（避免不同裝置解析度衝突）
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspace-*.json
+.obsidian/cache/
+.obsidian/indexed*
+
+# 排除系統與 OneDrive 暫存檔
+*.DS_Store
+Thumbs.db
+desktop.ini
+~$*

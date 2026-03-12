@@ -1,0 +1,57 @@
+# AI 提示詞整合 - 執行報告
+
+## 整合前 vs 整合後
+
+| | 整合前 | 整合後 |
+|--|--|--|
+| **主規範** | gemini/610-000GEMINI.md（僅 Gemini 適用）| **Agent/AGENTS.md v2.0**（所有工具通用）|
+| **系統架構說明** | 3 份各自維護（Gemini、Cursor、Agent）| **1 份**，其他指向 |
+| **使用者身份** | 散落在 3 個文件 | **整合進 AGENTS.md** |
+| **角色矩陣** | Gemini 專有 | **整合進 AGENTS.md** |
+| **cursor/ 草稿** | 4 個過時文件 | **歸檔至 700存檔/** |
+
+---
+
+## 執行的具體變更
+
+### ✅ 建立：Agent/AGENTS.md v2.0（核心主文件）
+[Agent/AGENTS.md](file:///d:/OneDrive/Obsidian/Navi%20Helios/600%E6%94%AF%E6%8F%B4/610%E7%AE%A1%E7%90%86%E5%8D%94%E8%AD%B0/Agent/AGENTS.md)
+
+整合了以下內容：
+- 系統架構（000-700 目錄說明）
+- 使用者身份 & 語氣規範（Misty 身份）
+- 核心主權原則（權力下行、知識聯網、YAML 最小化）
+- YAML 規範快速參考（指向主規範文件）
+- 動態角色矩陣（6 種角色切換規則）
+- AI 工具特殊指令（各工具的工具專屬注記）
+
+### ✅ 精簡：Cursor project-structure.mdc
+[project-structure.mdc](file:///d:/OneDrive/Obsidian/Navi%20Helios/.cursor/rules/project-structure.mdc)
+
+從 179 行壓縮為精簡版，只保留 Cursor 專屬內容（MQL5/Pine 文件處理）和快速目錄查詢表。
+
+### ✅ 歸檔：cursor/ 草稿目錄
+`610管理協議/cursor/` → `700存檔/610管理協議-cursor-草稿-20260227/`
+
+### ✅ 標記：gemini/610-000GEMINI.md
+加入跨工具指向說明（告知 Gemini CLI 用戶真正的主文件在 AGENTS.md）。
+
+---
+
+## 現在的架構（整合後）
+
+```
+Agent/AGENTS.md                ← 唯一主文件（所有工具讀這裡）
+  
+.cursor/rules/
+  ├── project-structure.mdc   ← 精簡版 pointer
+  ├── yaml-rules.mdc          ← pointer（不動）
+  ├── invest-rules.mdc        ← Cursor 專屬，保留
+  └── postig.mdc              ← 內容角色提示詞，保留
+
+gemini/610-000GEMINI.md       ← Gemini CLI 專屬（// 指令、日誌協議）
+  └── 已加入指向 AGENTS.md 的提示
+
+copilot/copilot-custom-prompts/  ← 獨立任務提示詞，保留現狀
+Agent/Prompts/                   ← 深度角色提示詞（Human-3.0-Expert 等）
+```
