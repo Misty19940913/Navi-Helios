@@ -1,4 +1,7 @@
 {
+  "terminal:find-in-terminal": [],
+  "terminal:clear-terminal": [],
+  "terminal:close-terminal": [],
   "obsidian-excalidraw-plugin:toggle-excalidraw-view": [
     {
       "modifiers": [

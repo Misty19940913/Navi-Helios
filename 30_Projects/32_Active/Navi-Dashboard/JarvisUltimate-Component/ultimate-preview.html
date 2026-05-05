@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARVIS Ultimate HUD - Engineering Preview</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        :root {
+            --jarvis-blue: #00d4ff;
+            --jarvis-blue-dim: rgba(0, 148, 255, 0.4);
+            --bg-deep: #050810;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg-deep);
+            color: #fff;
+            font-family: 'OCR-A', 'Consolas', monospace;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Dashboard Layout */
+        .dashboard-container {
+            position: relative;
+            width: 1200px;
+            height: 800px;
+            background: radial-gradient(circle at center, rgba(0, 148, 255, 0.05) 0%, transparent 70%);
+            display: grid;
+            grid-template-areas: 
+                "top top top"
+                "left center right"
+                "bottom bottom bottom";
+            grid-template-columns: 350px 1fr 350px;
+            grid-template-rows: 100px 1fr 100px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* 1. Core Sphere Styles */
+        .core-section {
+            grid-area: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 2. Stats Section */
+        .side-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .left-side { grid-area: left; }
+        .right-side { grid-area: right; align-items: flex-end; }
+
+        /* Component Inlines */
+        /* JarvisCore.css */
+        .jarvis-core-container { position: relative; width: 500px; height: 500px; display: flex; align-items: center; justify-content: center; }
+        .rotator-layer { position: absolute; width: 340px; height: 340px; background-size: contain; background-repeat: no-repeat; background-position: center; mix-blend-mode: screen; filter: drop-shadow(0 0 5px var(--jarvis-blue)); }
+        .central-sphere-wrapper { position: absolute; top: 50%; left: 50%; z-index: 10; transform: translate(-50%, -50%); }
+        
+        /* JarvisSphere.css */
+        .sphere-container { position: relative; width: 251px; height: 81px; }
+        .sphere-core { position: absolute; top: 20px; left: 25px; width: 48px; height: 48px; background-repeat: no-repeat; z-index: 2; }
+
+        /* JarvisStats.css */
+        .stats-panel { width: 300px; background: rgba(0, 20, 40, 0.4); border: 1px solid rgba(0, 148, 255, 0.3); padding: 15px; border-radius: 4px; border-left: 4px solid var(--jarvis-blue); }
+        .stat-bar-bg { height: 8px; background: rgba(0,0,0,0.5); position: relative; border: 1px solid rgba(0, 148, 255, 0.2); }
+        .stat-bar-fill { height: 100%; background: var(--jarvis-blue); box-shadow: 0 0 10px var(--jarvis-blue); transition: width 0.5s; }
+
+        /* Global HUD Effects */
+        .hud-scanline { position: fixed; inset: 0; background: linear-gradient(to bottom, transparent 50%, rgba(0, 212, 255, 0.01) 50%); background-size: 100% 4px; pointer-events: none; }
+        .hud-noise { position: fixed; inset: 0; opacity: 0.03; pointer-events: none; background-image: url('https://grain-y.com/images/film-grain.png'); }
+        
+        .header-info { grid-area: top; display: flex; justify-content: space-between; align-items: center; color: var(--jarvis-blue); border-bottom: 2px solid var(--jarvis-blue-dim); }
+        .system-id { font-size: 24px; letter-spacing: 5px; }
+        .clock-display { font-size: 32px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        const JarvisSphere = () => {
+            const [frame, setFrame] = useState(0);
+            useEffect(() => {
+                const i = setInterval(() => setFrame(p => (p + 1) % 20), 50);
+                return () => clearInterval(i);
+            }, []);
+            return (
+                <div className="sphere-container">
+                    <img src="assets/Sphere/sphere background.png" style={{position:'absolute', inset:0}} />
+                    <div className="sphere-core" style={{ backgroundImage: `url('assets/Sphere/small sphere.png')`, backgroundPosition: `-${frame * 48}px 0px` }} />
+                    <img src="assets/Sphere/overlay.png" style={{position:'absolute', top:19, left:17}} />
+                </div>
+            );
+        };
+
+        const JarvisCore = ({ rotation }) => {
+            return (
+                <div className="jarvis-core-container">
+                    <div className="rotator-layer" style={{ transform: `scale(1.5) rotate(${-rotation * 0.5}deg)`, backgroundImage: 'url(assets/RotatorX/JOC.png)' }} />
+                    <div className="rotator-layer" style={{ transform: `scale(1.5) rotate(${rotation * 0.8}deg)`, backgroundImage: 'url(assets/RotatorX/JSP.png)' }} />
+                    <div className="rotator-layer" style={{ transform: `scale(1.5) rotate(${-rotation * 1.2}deg)`, backgroundImage: 'url(assets/RotatorX/JCE.png)' }} />
+                    <div className="rotator-layer" style={{ transform: `scale(1.5) rotate(${rotation * 1}deg)`, backgroundImage: 'url(assets/RotatorX/JCC.png)' }} />
+                    <div className="central-sphere-wrapper"><JarvisSphere /></div>
+                </div>
+            );
+        };
+
+        const StatsPanel = ({ title, value }) => (
+            <div className="stats-panel">
+                <div style={{fontSize: 10, marginBottom: 5, color: '#aaa'}}>{title}</div>
+                <div className="stat-bar-bg"><div className="stat-bar-fill" style={{width: `${value}%`}} /></div>
+                <div style={{textAlign: 'right', fontSize: 12, marginTop: 4, color: '#00d4ff'}}>{Math.round(value)}%</div>
+            </div>
+        );
+
+        const App = () => {
+            const [rotation, setRotation] = useState(0);
+            const [time, setTime] = useState(new Date());
+            const [metrics, setMetrics] = useState({ cpu: 34, ram: 56, net: 12, hdd: 45 });
+
+            useEffect(() => {
+                const i = setInterval(() => {
+                    setRotation(p => (p + 2) % 360);
+                    setTime(new Date());
+                    setMetrics(m => ({
+                        cpu: Math.max(10, Math.min(95, m.cpu + (Math.random() - 0.5) * 5)),
+                        ram: Math.max(40, Math.min(80, m.ram + (Math.random() - 0.5) * 1)),
+                        net: Math.max(5, Math.min(99, m.net + (Math.random() - 0.5) * 10)),
+                        hdd: 45
+                    }));
+                }, 100);
+                return () => clearInterval(i);
+            }, []);
+
+            return (
+                <div className="dashboard-container">
+                    <div className="header-info">
+                        <div className="system-id">NAVOS v2.4.1 // CORE STATUS: ACTIVE</div>
+                        <div className="clock-display">{time.toLocaleTimeString()}</div>
+                    </div>
+                    
+                    <div className="side-section left-side">
+                        <StatsPanel title="CPU-01 LOAD" value={metrics.cpu} />
+                        <StatsPanel title="MEMORY ANALYTICS" value={metrics.ram} />
+                        <img src="assets/System/SysBG.png" style={{width: 250, opacity: 0.2}} />
+                    </div>
+
+                    <div className="core-section">
+                        <JarvisCore rotation={rotation} />
+                    </div>
+
+                    <div className="side-section right-side">
+                        <StatsPanel title="NETWORK TRAFFIC" value={metrics.net} />
+                        <StatsPanel title="PHYSICAL STORAGE" value={metrics.hdd} />
+                        <div style={{width: 150, height: 150, position: 'relative', marginTop: 50}}>
+                            <img src="assets/D.U. Radar/s.png" style={{position:'absolute', inset:0, width:'100%'}} />
+                            <img src="assets/D.U. Radar/radarlight.png" style={{position:'absolute', inset:0, width:'100%', transform: `rotate(${rotation*4}deg)`}} />
+                        </div>
+                    </div>
+
+                    <div className="hud-scanline" />
+                    <div className="hud-vignette" />
+                </div>
+            );
+        };
+
+        ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+    </script>
+</body>
+</html>

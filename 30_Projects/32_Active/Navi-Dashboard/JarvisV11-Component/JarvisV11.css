@@ -1,0 +1,26 @@
+.jarvis-v11-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, rgba(0, 148, 255, 0.05) 0%, transparent 70%);
+}
+
+.v11-canvas {
+  filter: drop-shadow(0 0 15px rgba(0, 212, 255, 0.6));
+  mix-blend-mode: screen;
+}
+
+.v11-glow-ring {
+  position: absolute;
+  inset: -10%;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 212, 255, 0.1);
+  animation: v11Pulse 4s infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes v11Pulse {
+  from { opacity: 0.3; transform: scale(0.9); }
+  to { opacity: 0.6; transform: scale(1.1); }
+}

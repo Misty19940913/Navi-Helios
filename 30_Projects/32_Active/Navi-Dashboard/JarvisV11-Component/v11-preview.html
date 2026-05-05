@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARVIS Ver 1.1 - Ultimate Layered HUD</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body { margin: 0; background: #010205; color: #fff; font-family: 'Consolas', monospace; padding: 40px; }
+        .preview-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(650px, 1fr)); gap: 40px; margin-top: 50px; }
+        .widget-item { border: 1px solid rgba(0, 212, 255, 0.1); padding: 20px; display: flex; flex-direction: column; align-items: center; background: rgba(0,0,0,0.4); }
+        .widget-label { color: #00d4ff; font-size: 14px; letter-spacing: 2px; margin-top: 20px; }
+        .hud-layer { mix-blend-mode: screen; filter: drop-shadow(0 0 10px rgba(0, 212, 255, 0.4)); }
+        .controls { margin-top: 20px; display: flex; gap: 20px; color: #00d4ff; font-size: 12px; }
+        .status-header { width: 100%; padding: 20px; border-bottom: 1px solid rgba(0, 212, 255, 0.2); font-size: 14px; letter-spacing: 5px; text-align: center; }
+        .loading-overlay { position: fixed; inset: 0; background: #000; z-index: 1000; display: flex; flex-direction: column; justify-content: center; align-items: center; transition: opacity 1s; }
+        .loading-bar { width: 300px; height: 2px; background: rgba(0,212,255,0.1); margin-top: 10px; }
+        .loading-fill { height: 100%; background: #00d4ff; box-shadow: 0 0 10px #00d4ff; transition: width 0.3s; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect, useRef } = React;
+
+        const AnimatedLayer = ({ type, frames, frameWidth, frameHeight, interval, zIndex, opacity = 1, scale = 1 }) => {
+            const [frame, setFrame] = useState(0);
+            const canvasRef = useRef(null);
+            const imageRef = useRef(null);
+            const [loaded, setLoaded] = useState(false);
+
+            useEffect(() => {
+                const img = new Image();
+                img.src = `assets/${type}/${type}.png`;
+                img.onload = () => {
+                    imageRef.current = img;
+                    setLoaded(true);
+                    window.dispatchEvent(new CustomEvent('layerLoaded', { detail: type }));
+                };
+            }, [type]);
+
+            useEffect(() => {
+                const timer = setInterval(() => setFrame(f => (f + 1) % frames), interval);
+                return () => clearInterval(timer);
+            }, [frames, interval]);
+
+            useEffect(() => {
+                if (canvasRef.current && imageRef.current) {
+                    const ctx = canvasRef.current.getContext('2d');
+                    ctx.clearRect(0, 0, frameWidth, frameHeight);
+                    ctx.drawImage(imageRef.current, frame * frameWidth, 0, frameWidth, frameHeight, 0, 0, frameWidth, frameHeight);
+                }
+            }, [frame, loaded, frameWidth, frameHeight]);
+
+            return (
+                <div className="hud-layer">
+                    <canvas ref={canvasRef} width={frameWidth} height={frameHeight} style={{ width: frameWidth, height: frameHeight }} />
+                </div>
+            );
+        };
+
+        const App = () => {
+            const [loadedLayers, setLoadedLayers] = useState([]);
+            const [isReady, setIsReady] = useState(false);
+            const totalLayers = 4;
+
+            useEffect(() => {
+                const handleLoad = (e) => {
+                    setLoadedLayers(prev => [...new Set([...prev, e.detail])]);
+                };
+                window.addEventListener('layerLoaded', handleLoad);
+                return () => window.removeEventListener('layerLoaded', handleLoad);
+            }, []);
+
+            useEffect(() => {
+                if (loadedLayers.length === totalLayers) {
+                    setTimeout(() => setIsReady(true), 1000);
+                }
+            }, [loadedLayers]);
+
+            return (
+                <>
+                    {!isReady && (
+                        <div className="loading-overlay" style={{ opacity: isReady ? 0 : 1 }}>
+                            <div style={{color: '#00d4ff'}}>INITIALIZING MULTI-LAYER ENTITY...</div>
+                            <div className="loading-bar">
+                                <div className="loading-fill" style={{ width: `${(loadedLayers.length / totalLayers) * 100}%` }} />
+                            </div>
+                            <div style={{marginTop: 10, fontSize: 10, opacity: 0.5}}>LOADED: {loadedLayers.join(', ')}</div>
+                        </div>
+                    )}
+
+                    <div className="status-header">J.A.R.V.I.S. VER_1.1 // INDEPENDENT_MODULES</div>
+
+                    <div className="preview-grid">
+                        <div className="widget-item">
+                            <AnimatedLayer type="model" frames={161} frameWidth={600} frameHeight={600} interval={50} />
+                            <div className="widget-label">CORE_MODEL.INI</div>
+                        </div>
+
+                        <div className="widget-item">
+                            <AnimatedLayer type="rotaters" frames={161} frameWidth={600} frameHeight={600} interval={50} />
+                            <div className="widget-label">ROTATERS.INI</div>
+                        </div>
+
+                        <div className="widget-item">
+                            <AnimatedLayer type="sliders" frames={161} frameWidth={600} frameHeight={600} interval={50} />
+                            <div className="widget-label">SLIDERS.INI</div>
+                        </div>
+
+                        <div className="widget-item">
+                            <AnimatedLayer type="circle" frames={201} frameWidth={500} frameHeight={500} interval={33} />
+                            <div className="widget-label">CIRCLE.INI</div>
+                        </div>
+                    </div>
+                </>
+            );
+        };
+
+        ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+    </script>
+</body>
+</html>

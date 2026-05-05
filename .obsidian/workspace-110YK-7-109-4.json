@@ -1,0 +1,235 @@
+{
+  "main": {
+    "id": "045c9e8b9fc1143b",
+    "type": "split",
+    "children": [
+      {
+        "id": "5abd76053eea7e15",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d11098b67e76a4fa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "020領域/230事業/偵查/1140319744.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1140319744"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a71c8a1625de110d",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd6ad2172b26161b",
+        "type": "tabs",
+        "dimension": 36.16118769883351,
+        "children": [
+          {
+            "id": "645ad61097858c13",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "metadataCache",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜尋"
+            }
+          },
+          {
+            "id": "07346a58080ce9bc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "書籤"
+            }
+          }
+        ]
+      },
+      {
+        "id": "15cd81aeb62591ca",
+        "type": "tabs",
+        "dimension": 63.83881230116649,
+        "children": [
+          {
+            "id": "5bec902d6a23fcf2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "檔案瀏覽器"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7d77eee59c687e8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "f25adc9aab9d2afc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f80f37e459bbe404",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "000捕獲/ChatGPT - Mia AI, your new best friend and life coach.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "ChatGPT - Mia AI, your new best friend and life coach 的反向链接列表"
+            }
+          },
+          {
+            "id": "55bc4d46c850f041",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "000捕獲/ChatGPT - Mia AI, your new best friend and life coach.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "ChatGPT - Mia AI, your new best friend and life coach 的出链列表"
+            }
+          },
+          {
+            "id": "67c8b8d3f58e6076",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "b06e659f57ca6dd7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "000捕獲/ChatGPT - Mia AI, your new best friend and life coach.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "ChatGPT - Mia AI, your new best friend and life coach 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obligator:Open today's obligator note": false,
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "command-palette:開啟命令面板": false,
+      "templates:插入模板": false,
+      "zk-prefixer:建立新唯一筆記": false,
+      "workspaces:管理工作區配置": false,
+      "remotely-save:Remotely Save": false,
+      "obsidian-excalidraw-plugin:新建繪圖檔案": false,
+      "ledger-obsidian:Add to Ledger": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "d11098b67e76a4fa",
+  "lastOpenFiles": [
+    "050資源/未命名",
+    "060支援系統/540Excaildraw/Scripts/Downloaded",
+    "060支援系統/540Excaildraw/Drawing 2025-03-29 18.18.26.excalidraw.md",
+    "060支援系統/540Excaildraw/Drawing 2025-04-16 22.18.41.md",
+    "060支援系統/540Excaildraw/Scripts",
+    "060支援系統/540Excaildraw",
+    "060支援系統/520components/view/未命名.components",
+    "060支援系統/520components/area/日记.components",
+    "060支援系統/520components/area/日记-月复盘.components",
+    "060支援系統/520components/ogs/logs",
+    "060支援系統/520components/area/旅游.components",
+    "060支援系統/520components/area/工作统计.components",
+    "060支援系統/520components/area/书库.components",
+    "060支援系統/510Template/通用项目模板.md",
+    "060支援系統/510Template/日誌模板-110YK-7-109.md",
+    "060支援系統/510Template/個人ABCDE練習模板.md",
+    "060支援系統/510Template/項目.README.md",
+    "060支援系統/510Template/防彈筆記模板.md",
+    "060支援系統/510Template/讀書筆記模板.md",
+    "060支援系統/510Template/社群貼文模板.md",
+    "060支援系統/510Template/知識矩陣模板.md",
+    "060支援系統/510Template/知識晶片模板.md",
+    "060支援系統/510Template/個人冰山分析模板.md",
+    "060支援系統/510Template/{{裝甲}}協議.md",
+    "060支援系統/510Template/旅游项目模板.md",
+    "060支援系統/510Template/復盤模板.md",
+    "060支援系統/510Template/工作项目模板.md",
+    "060支援系統/510Template/Monthly.md",
+    "060支援系統/510Template/交易策略.md",
+    "060支援系統/510Template/Headcount.md",
+    "060支援系統/510Template/Weekly.md",
+    "060支援系統/510Template/inbox.md",
+    "060支援系統/510Template/FutureLog-5Year.md",
+    "060支援系統/510Template/FutureLog-Year.md",
+    "060支援系統/510Template/Excalidraw模板.md",
+    "060支援系統/510Template/Excali.md",
+    "060支援系統/儀表板系統/代辦清單.svg",
+    "030項目/031東黎有限公司/0315產品研發/產品路線圖.svg",
+    "030項目/031東黎有限公司-110YK-7-109/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "030項目/031東黎有限公司-110YK-7-109/0311公司制度/一人公司AI整理資料/0.0一人公司變現路徑MOC.svg",
+    "030項目/031東黎有限公司/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "030項目/031東黎有限公司/0311公司制度/一人公司AI整理資料/0.0一人公司變現路徑MOC.svg",
+    "030項目/東黎有限公司/公司制度.一人公司/一人公司AI整理資料/0.0一人公司變現路徑MOC.svg",
+    "未命名.canvas",
+    "030項目/東黎有限公司/設計人生.主軸/1.0資料/知識框架.canvas",
+    "030項目/設計人生/1.0資料/知識框架.canvas"
+  ]
+}

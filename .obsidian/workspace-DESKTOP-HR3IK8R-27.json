@@ -1,0 +1,361 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "69e03797c90ebe50",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ff894b048de776f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "300專案/320個人實現框架設計/H 3.0/Navi 3.0.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Navi 3.0"
+            }
+          }
+        ]
+      },
+      {
+        "id": "abba4f8c630897a2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "59c17adab42f489e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "300專案/320個人實現框架設計/H 3.0/001-HUMAN 3.0 – A Map To Reach The Top 1%.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "001-HUMAN 3.0 – A Map To Reach The Top 1%"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a71c8a1625de110d",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd6ad2172b26161b",
+        "type": "tabs",
+        "dimension": 27.62557077625571,
+        "children": [
+          {
+            "id": "645ad61097858c13",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "短文",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜尋"
+            }
+          },
+          {
+            "id": "1364bf78ec7df443",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "200週期紀錄/210日誌/2026-01-12.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.4769829140582017,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "2026-01-12 的關聯圖"
+            }
+          },
+          {
+            "id": "123eeed01fb575bf",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "關聯圖檢視"
+            }
+          }
+        ]
+      },
+      {
+        "id": "15cd81aeb62591ca",
+        "type": "tabs",
+        "dimension": 72.37442922374429,
+        "children": [
+          {
+            "id": "5bec902d6a23fcf2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "檔案瀏覽器"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 438
+  },
+  "right": {
+    "id": "7d77eee59c687e8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "f25adc9aab9d2afc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "55bc4d46c850f041",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "對外連結"
+            }
+          },
+          {
+            "id": "de728c0da9752a0d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "200領域/232公司/232-1.0執行策略/一人商業模式/232-110經營憲章.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "232-110經營憲章 的反向链接列表"
+            }
+          },
+          {
+            "id": "67c8b8d3f58e6076",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "標籤"
+            }
+          },
+          {
+            "id": "e8873d62e5c258d9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "所有屬性"
+            }
+          },
+          {
+            "id": "8a4c3cd15bb5cab7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "600支援/610管理協議/gemini/610-000GEMINI.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "610-000GEMINI 的大綱"
+            }
+          },
+          {
+            "id": "22654c695b630783",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "terminal:terminal",
+              "state": {
+                "terminal:terminal": {
+                  "cwd": "C:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios",
+                  "focus": false,
+                  "profile": {
+                    "args": [],
+                    "executable": "C:\\Windows\\System32\\cmd.exe",
+                    "name": "",
+                    "platforms": {
+                      "win32": true
+                    },
+                    "pythonExecutable": "python3",
+                    "restoreHistory": false,
+                    "rightClickAction": "copyPaste",
+                    "successExitCodes": [
+                      "0",
+                      "SIGINT",
+                      "SIGTERM"
+                    ],
+                    "terminalOptions": {
+                      "documentOverride": null
+                    },
+                    "type": "integrated",
+                    "useWin32Conhost": true
+                  },
+                  "serial": null
+                }
+              },
+              "pinned": true,
+              "icon": "terminal",
+              "title": "终端：cmd"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 580.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "command-palette:開啟命令面板": false,
+      "workspaces:管理工作區配置": false,
+      "publish:發佈變動內容": false,
+      "bases:建立新的 base": false,
+      "obsidian-excalidraw-plugin:新建繪圖檔案": false,
+      "templates:插入模板": false,
+      "callout-manager:Insert Callout": false,
+      "obligator:Open today's obligator note": false,
+      "remotely-save:Remotely Save": false,
+      "templater-obsidian:Templater": false,
+      "note-to-red:打开小红书图片预览": false,
+      "homepage:Open homepage": false,
+      "terminal:Open terminal": false,
+      "copilot:Open Copilot Chat": false,
+      "obsidian-to-notion:Share to notion": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "ff894b048de776f7",
+  "lastOpenFiles": [
+    "300專案/320個人實現框架設計/H 3.0/001-HUMAN 3.0 – A Map To Reach The Top 1%.md",
+    "300專案/320個人實現框架設計/H 3.0/Navi 3.0.md",
+    "Phases.jpg",
+    "尚未確認的 437225.crdownload",
+    "HUMAN 3.0.jpg",
+    "尚未確認的 6937.crdownload",
+    "300專案/320個人實現框架設計/H 3.0/003-A Complete Knowledge Base Of HUMAN 3.0.md",
+    "c875a11c-dd46-48ad-b6ab-acef3b576d0e_1277x1000.webp",
+    "500自媒體創作區/510SentryPigeon 內容作業系統/511SentryPigeon 內容作業系統MOC.md",
+    "Pasted image 20260130222028.jpg",
+    "Pasted image 20251109232230.png",
+    "000捕獲/G-ebHTubsAEsAee.jpeg",
+    "400知識/晶片矩陣/自我超越.md",
+    "200八域項目/280精神/網頁資料",
+    "200八域項目/280精神",
+    "200八域項目",
+    "000捕獲/G-ebHTubsAEsAee.jfif",
+    "000捕獲/尚未確認的 614176.crdownload",
+    "100夢想/2年封面故事.md",
+    "000捕獲/How to fix your entire life in 1 day.md",
+    "600支援/610管理協議/gemini/610-010個人核心形象清單.md",
+    "100夢想/自我定位.md",
+    "600支援/610管理協議/gemini/610-020系統架構.md",
+    "500自媒體創作區/520文章/233-111Threads/1.沒人可以騙一個輸得起的人.md",
+    "500自媒體創作區/520文章/233-111Threads/當你玩得起，世界就只是一場大型沙盤推演。.md",
+    "500自媒體創作區/520文章/233-111Threads/看了最近頻繁的社會新聞，我只覺得面對瘋子，身上的防彈衣不一定救得了命，但「覺察力」可以。.md",
+    "500自媒體創作區/520文章/233-111Threads/防身邏輯.md",
+    "500自媒體創作區/520文章/233-111Threads/沙盤，是運氣問題？.md",
+    "500自媒體創作區/520文章/233-111Threads/生命的失衡.md",
+    "500自媒體創作區/520文章/233-111Threads/反面願景.md",
+    "500自媒體創作區/510SentryPigeon 內容作業系統/516-短文框架-權威建立、高價值轉化.md",
+    "500自媒體創作區/510SentryPigeon 內容作業系統/515-短頻模組-高頻率、低摩擦.md",
+    "500自媒體創作區/510SentryPigeon 內容作業系統/514平台發布策略.md",
+    "500自媒體創作區/510SentryPigeon 內容作業系統/短影音腳本規範.md",
+    "500自媒體創作區/510SentryPigeon 內容作業系統/短文模板.md",
+    "500自媒體創作區/510SentryPigeon 內容作業系統/內容生產流程.md",
+    "500自媒體創作區/510SentryPigeon 內容作業系統/513內容視覺規範.md",
+    "500自媒體創作區/510SentryPigeon 內容作業系統/512品牌核心價值體系.md",
+    "500自媒體創作區/510SentryPigeon 內容作業系統/發文內容.base",
+    "500自媒體創作區/520文章/自媒體.base",
+    "600支援/660copilot/system-prompts",
+    "300專案/340公司/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "300專案/340公司/0315產品研發/產品路線圖.svg",
+    "600支援/640excaildraw/Drawing 2026-01-08 19.06.57.excalidraw.svg",
+    "600支援/640excaildraw/Drawing 2025-03-29 18.18.26.excalidraw.svg",
+    "400知識/課程資料/221超級個體工作術/05｜圖片/陸地模式3特點.jpg",
+    "200項目/230事業/232東黎有限公司/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "200領域/232公司/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "200八域項目/230事業/232東黎有限公司/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "200領域/230事業/310東黎有限公司/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "200領域/310東黎有限公司/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "300知識庫/310東黎有限公司/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "030項目/031東黎有限公司-110YK-7-109/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "030項目/031東黎有限公司/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "未命名.canvas"
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "55ae98144ac9441c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cddb0fb607c5fd29",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "60-AI-Protocols/61-管理協議/Agent/AGENTS 1.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "AGENTS 1"
+            }
+          },
+          {
+            "id": "6f667663ec28a330",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "60-AI-Protocols/61-管理協議/gemini/610-200工作流指令.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "610-200工作流指令"
+            }
+          },
+          {
+            "id": "0975315785ed3941",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Home.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Home"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a71c8a1625de110d",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd6ad2172b26161b",
+        "type": "tabs",
+        "dimension": 21.097046413502106,
+        "children": [
+          {
+            "id": "645ad61097858c13",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "file:金錢",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜尋"
+            }
+          },
+          {
+            "id": "1364bf78ec7df443",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Home.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.4769829140582017,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Home 的關聯圖"
+            }
+          },
+          {
+            "id": "123eeed01fb575bf",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "關聯圖檢視"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "15cd81aeb62591ca",
+        "type": "tabs",
+        "dimension": 78.90295358649789,
+        "children": [
+          {
+            "id": "5bec902d6a23fcf2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "檔案瀏覽器"
+            }
+          },
+          {
+            "id": "6d6f2ed141a7ef30",
+            "type": "leaf",
+            "state": {
+              "type": "notebook-navigator",
+              "state": {},
+              "icon": "notebook-navigator",
+              "title": "筆記本導覽器"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 276
+  },
+  "right": {
+    "id": "7d77eee59c687e8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "f25adc9aab9d2afc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "55bc4d46c850f041",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "對外連結"
+            }
+          },
+          {
+            "id": "de728c0da9752a0d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "200週期紀錄/210規劃與覆盤/2026-W06.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "2026-W06 的反向連結"
+            }
+          },
+          {
+            "id": "67c8b8d3f58e6076",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "標籤"
+            }
+          },
+          {
+            "id": "e8873d62e5c258d9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": true,
+                "searchQuery": "ti"
+              },
+              "icon": "lucide-archive",
+              "title": "所有屬性"
+            }
+          },
+          {
+            "id": "8a4c3cd15bb5cab7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "300專案/310偵查/001偵查README.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "001偵查README 的大綱"
+            }
+          },
+          {
+            "id": "4834443bba0f581a",
+            "type": "leaf",
+            "state": {
+              "type": "gemini-agent-view",
+              "state": {},
+              "icon": "sparkles",
+              "title": "Agent Mode"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 745,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "templates:插入模板": false,
+      "workspaces:管理工作區配置": false,
+      "publish:發佈變動內容": false,
+      "bases:建立新的 base": false,
+      "obsidian-excalidraw-plugin:新建繪圖檔案": false,
+      "notebook-navigator:筆記本導覽器": false,
+      "remotely-save:Remotely Save": false,
+      "note-to-red:打开小红书图片预览": false,
+      "templater-obsidian:Templater": false,
+      "callout-manager:Insert Callout": false,
+      "terminal:Open terminal": false,
+      "gemini-scribe:Gemini Scribe: Agent Mode": false,
+      "obsidian-git:Open Git source control": false,
+      "components:AI 對話（新標籤頁）": false
+    }
+  },
+  "active": "0975315785ed3941",
+  "lastOpenFiles": [
+    "60-AI-Protocols/61-管理協議/gemini/610-200工作流指令.md",
+    "60-AI-Protocols/61-管理協議/Agent/skills/self-improving-agent/SKILL.md",
+    "60-AI-Protocols/61-管理協議/gemini/610-230系統架構員.md",
+    "60-AI-Protocols/61-管理協議/gemini/610-220內容主編.md",
+    "60-AI-Protocols/61-管理協議/gemini/610-210Navi Helios.md",
+    "Home.md",
+    "60-AI-Protocols/61-管理協議/Agent/AGENTS 1.md",
+    "60-AI-Protocols/61-管理協議/Agent/AGENTS.md",
+    "60-AI-Protocols/61-管理協議/gemini/610-240系統平衡者.md",
+    "60-AI-Protocols/61-管理協議/gemini/610-250代理人角色庫.md",
+    "60-AI-Protocols/61-管理協議/gemini/610-300自動化指令規範.md",
+    "80-System/81-Template/知識模板.md",
+    "80-System/System.Readme.md",
+    "60-AI-Protocols/61-管理協議/Agent/Prompts/系統架構師.md",
+    "60-AI-Protocols/61-管理協議/Agent/Prompts/example-expert.md",
+    "60-AI-Protocols/61-管理協議/Agent/Prompts/Human-3.0-Expert.md",
+    "60-AI-Protocols/61-管理協議/Agent/Prompts/五歲小孩也能懂的解釋.md",
+    "60-AI-Protocols/61-管理協議/Agent/Prompts/YouTube 逐字稿擷取.md",
+    "60-AI-Protocols/670提示詞/HUMAN.3.0_中文版.md",
+    "70-AI-Protocols/71-管理協議/Agent/Agent-Sessions/Misty，你好！ 關於你提出的問題，我認為目前的通用架構（假設其為Obsidian的基礎筆記管理.md",
+    "70-AI-Protocols/71-管理協議/Agent/Agent-Sessions",
+    "70-AI-Protocols/71-管理協議/Agent",
+    "70-AI-Protocols/71-管理協議",
+    "70-AI-Protocols",
+    "70-AI-Protocols/desktop.ini",
+    "60-AI-Protocols/61-管理協議/Agent/Agent-Sessions/Misty，你好！ 關於你提出的問題，我認為目前的通用架構（假設其為Obsidian的基礎筆記管理.md",
+    "60-AI-Protocols/61-管理協議/cursor/Cursor AI 自定規則包.md",
+    "70_Archives",
+    "60_Daily_Logs",
+    "60-AI-Protocols/61-管理協議/gemini/610-030HUMAN_3.0核心框架.md",
+    "70-AI-Protocols/71-管理協議/gemini/610-000GEMINI.md",
+    "50_Content_Creation",
+    "40_Knowledge",
+    "30_Projects",
+    "60-AI-Protocols/61-管理協議/Agent/SOUL.md",
+    "agent-memory/README.md",
+    "600支援/儀表板系統/代辦清單.svg",
+    "600支援/690全域附件/Pasted image 20260310025639.png",
+    "一人企業節點邏輯分析圖.canvas",
+    "232-100一人企業 MOC：產品化自己 (Productize Yourself)MOC.canvas",
+    "600支援/610管理協議/Agent/awesome-llm-apps-main/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/beifong/static/images/ponyo.png",
+    "600支援/610管理協議/Agent/awesome-llm-apps-main/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/web/public/favicon-32x32.png",
+    "600支援/610管理協議/Agent/awesome-llm-apps-main/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/web/public/favicon-16x16.png",
+    "600支援/610管理協議/Agent/awesome-llm-apps-main/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/web/public/apple-touch-icon.png",
+    "600支援/610管理協議/Agent/awesome-llm-apps-main/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/web/public/android-chrome-512x512.png",
+    "600支援/610管理協議/Agent/awesome-llm-apps-main/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/web/public/android-chrome-192x192.png",
+    "600支援/610管理協議/Agent/awesome-llm-apps-main/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/web/build/favicon-32x32.png",
+    "600支援/610管理協議/Agent/awesome-llm-apps-main/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/web/build/favicon-16x16.png",
+    "232-100一人企業 MOC.canvas",
+    "300專案/340公司/232-1.0執行策略/一人商業模式/一人商業模式全景圖.canvas",
+    "300專案/340公司/232-1.0執行策略/一人商業模式/一人商業模式完整全景圖.canvas",
+    "300專案/340公司/232-1.0執行策略/一人商業模式/232-100一人企業 MOC.canvas",
+    "300專案/340公司/232-1.0執行策略/一人商業模式/232-100一人企業 MOC：產品化自己 (Productize Yourself)MOC.canvas",
+    "400知識/410原子化知識庫/HUMAN 3.0 系統核心全景圖.canvas",
+    "400知識/410原子化知識庫/HUMAN 3.0 系統全景圖-json-canvas.canvas",
+    "300專案/340公司/232-1.0執行策略/一人商業模式/232-110經營憲章-畫布.canvas"
+  ]
+}

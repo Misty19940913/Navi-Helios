@@ -1,6 +1,0 @@
-{
-  "artifactType":  "ARTIFACT_TYPE_WALKTHROUGH",
-  "summary":  "Final walkthrough for the Gemini-to-Agent Framework Refactoring. Documents the transition from fragmented cmd-based logic to a modular 'Intelligence Protocols' system. Highlights the single source of truth (AGENTS.md) and the new SOP library in Protocols/.",
-  "updatedAt":  "2026-02-27T07:43:11.115123600Z",
-  "version":  "2"
-}

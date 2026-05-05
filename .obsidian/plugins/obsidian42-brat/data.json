@@ -1,10 +1,15 @@
 {
   "pluginList": [
-    "RAIT-09/obsidian-agent-client"
+    "Misty19940913/navi-calendar",
+    "oscampo/obsidian-neural-composer"
   ],
   "pluginSubListFrozenVersion": [
     {
-      "repo": "RAIT-09/obsidian-agent-client",
+      "repo": "Misty19940913/navi-calendar",
+      "version": "latest"
+    },
+    {
+      "repo": "oscampo/obsidian-neural-composer",
       "version": "latest"
     }
   ],

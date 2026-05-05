@@ -1,0 +1,311 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "ba2999251eb49cb6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "37d42efc8e207f13",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "200領域/260財務/261個人金融知識庫/261-5.3投資規劃系統.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "261-5.3投資規劃系統"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a71c8a1625de110d",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd6ad2172b26161b",
+        "type": "tabs",
+        "dimension": 31.36150234741784,
+        "children": [
+          {
+            "id": "07346a58080ce9bc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          },
+          {
+            "id": "645ad61097858c13",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#＃＃",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜尋"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "15cd81aeb62591ca",
+        "type": "tabs",
+        "dimension": 68.63849765258216,
+        "children": [
+          {
+            "id": "5bec902d6a23fcf2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "檔案瀏覽器"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 352.5110321044922
+  },
+  "right": {
+    "id": "7d77eee59c687e8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "f25adc9aab9d2afc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "55bc4d46c850f041",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "050資源/510Template/讀書筆記模板.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "讀書筆記模板 的對外連結"
+            }
+          },
+          {
+            "id": "67c8b8d3f58e6076",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "f8110ee3863088b1",
+            "type": "leaf",
+            "state": {
+              "type": "note-to-red",
+              "state": {},
+              "icon": "image",
+              "title": "小红书预览"
+            }
+          },
+          {
+            "id": "2107f14d47b04da1",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新分頁"
+            }
+          },
+          {
+            "id": "4932c5b9cae871fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "600支援系統/儀表板系統/代辦清單.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "代辦清單"
+            }
+          },
+          {
+            "id": "de728c0da9752a0d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "300知識/待分類知識/時間財富.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "時間財富 的反向链接列表"
+            }
+          },
+          {
+            "id": "a2b12e84ebb1bb2c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "300知識/待分類知識/時間財富.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "時間財富 的大纲"
+            }
+          },
+          {
+            "id": "031177956c8d6234",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "72430a489fd678cb",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
+          }
+        ],
+        "currentTab": 8
+      }
+    ],
+    "direction": "horizontal",
+    "width": 458.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "command-palette:開啟命令面板": false,
+      "zk-prefixer:建立新唯一筆記": false,
+      "workspaces:管理工作區配置": false,
+      "publish:發佈變動內容": false,
+      "bases:建立新的 base": false,
+      "obsidian-excalidraw-plugin:新建繪圖檔案": false,
+      "obligator:Open today's obligator note": false,
+      "templates:插入模板": false,
+      "remotely-save:Remotely Save": false,
+      "ledger-obsidian:Add to Ledger": false,
+      "templater-obsidian:Templater": false,
+      "note-to-red:打开小红书图片预览": false,
+      "homepage:Open homepage": false,
+      "copilot:Open Copilot Chat": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "37d42efc8e207f13",
+  "lastOpenFiles": [
+    "200領域/260財務/261個人金融知識庫/261-5.4風險管理與保險.md",
+    "200領域/260財務/261個人金融知識庫/261-5.3投資規劃系統.md",
+    "200領域/260財務/261個人金融知識庫/261-5.2儲蓄與債務管理.md",
+    "200領域/260財務/261個人金融知識庫/投資實踐指南.md",
+    "200領域/260財務/261個人金融知識庫/ETF投資策略.md",
+    "200領域/260財務/261個人金融知識庫/投資工具選擇.md",
+    "200領域/260財務/261個人金融知識庫/261-5.0第三章：系統核心——財務規劃的五大支柱.md",
+    "200領域/260財務/261個人金融知識庫/261-4.0第二章：思維基石——建立你的財務哲學.md",
+    "200領域/260財務/261個人金融知識庫/261-2快速入門指南.md",
+    "200領域/260財務/261個人金融知識庫/261-1建構個人財務知識系統MOC.md",
+    "200領域/260財務/261個人金融知識庫/財富自由公式.md",
+    "200領域/260財務/261個人金融知識庫/財務蓄水池.md",
+    "200領域/260財務/261個人金融知識庫/261-4.1財務哲學與價值觀.md",
+    "200領域/260財務/261個人金融知識庫/261-3第一章：理財核心理念.md",
+    "200領域/260財務/261個人金融知識庫/261-4.3習慣工程學.md",
+    "200領域/260財務/261個人金融知識庫/261-4.2理財偏誤識別與克服.md",
+    "200領域/260財務/261個人金融知識庫/261-5.1現金流管理系統.md",
+    "200領域/260財務/261個人金融知識庫/261-6.0第四章：行動策略——實用工具與應用法則.md",
+    "200領域/260財務/261個人金融知識庫/自動化實踐指南.md",
+    "200領域/260財務/261個人金融知識庫/現金流分析關鍵指標.md",
+    "200領域/260財務/261個人金融知識庫/支出優化策略.md",
+    "200領域/260財務/261個人金融知識庫/收入優化策略.md",
+    "未命名.md",
+    "200領域/260財務/261個人金融知識庫/收入管道.md",
+    "300知識/已整理/收入管道.md",
+    "200領域/260財務/261個人金融知識庫/六罐子理財法.md",
+    "copilot/copilot-conversations/desktop.ini",
+    "copilot/copilot-conversations",
+    "copilot/copilot-custom-prompts/desktop.ini",
+    "copilot/desktop.ini",
+    "copilot/copilot-custom-prompts",
+    "copilot",
+    "000捕獲/2024 digital tools 數位工具地圖.pdf",
+    "500資源/510Template/511Script Note/desktop.ini",
+    "500資源/510Template/511Script Note",
+    "500資源/560提示詞",
+    "600支援系統/儀表板系統/代辦清單.svg",
+    "300知識/書籍資料/人生管理筆記/高效率人生管理筆記.svg",
+    "200領域/230事業/232東黎有限公司/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "200領域/230事業/232東黎有限公司/0311公司制度/一人公司AI整理資料/0.0一人公司變現路徑MOC.svg",
+    "300知識/課程資料/221超級個體工作術/05｜圖片/海洋模式特點3.jpg",
+    "300知識/課程資料/221超級個體工作術/05｜圖片/陸地模式3特點.jpg",
+    "300知識/課程資料/221超級個體工作術/05｜圖片/陸地模式.jpg",
+    "300知識/課程資料/221超級個體工作術/05｜圖片/累積能力的方向.jpg",
+    "300知識/課程資料/221超級個體工作術/05｜圖片/現代職業發展路徑.jpg",
+    "300知識/課程資料/221超級個體工作術/05｜圖片/海洋模式特點2.jpg",
+    "300知識/課程資料/221超級個體工作術/05｜圖片/海洋模式.jpg",
+    "200八域項目/230事業/232東黎有限公司/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "200領域/230事業/310東黎有限公司/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "200領域/310東黎有限公司/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "300知識庫/310東黎有限公司/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "030項目/031東黎有限公司-110YK-7-109/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "030項目/031東黎有限公司/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "未命名.canvas",
+    "030項目/東黎有限公司/設計人生.主軸/1.0資料/知識框架.canvas",
+    "030項目/設計人生/1.0資料/知識框架.canvas"
+  ]
+}

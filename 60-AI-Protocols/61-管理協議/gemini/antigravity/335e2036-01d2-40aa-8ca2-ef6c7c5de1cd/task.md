@@ -1,0 +1,43 @@
+---
+children: []
+description: ''
+folder: area
+parent: []
+related: []
+status: draft
+tags: []
+time_created: '2026-04-09'
+time_modified: '2026-04-09'
+type: content
+---
+
+# Cursor → Agent 遷移任務
+
+## 步驟 1：遷移角色提示詞
+- [x] 1.1 `postig.mdc` → `Agent/Prompts/SentryPigeon-內容戰略官.md`
+- [x] 1.2 `invest-rules.mdc` → `Agent/Prompts/財務交易策略-開發規範.md`
+
+## 步驟 2：吸收已 pointer 化的規則（無需遷移，內容已在 AGENTS.md）
+- [x] 2.1 `project-structure.mdc` → 已整合進 AGENTS.md
+- [x] 2.2 `yaml-rules.mdc` → 已整合進 AGENTS.md
+
+## 步驟 3：歸檔 Cursor 規則目錄
+- [x] 3.1 歸檔整個 `.cursor/rules/` 至 `700存檔/`
+- [x] 3.2 更新 AGENTS.md：移除 Cursor 工具章節，改為自身記載
+## Phase 5: Copilot 提示詞遷移與繁中化 (Prompts)
+- [x] 1. 逐一翻譯並寫入至 `Agent/Prompts/`
+    - [x] 擷取系列 (Web, YouTube)
+    - [x] 處理系列 (Summary, Longer, Shorter, Simplify, explain like I am 5)
+    - [x] 格式系列 (Tweet, Thread, Glossary, TOC)
+    - [x] 校閱系列 (Grammar, Emojify, Remove URLs)
+- [x] 2. 更新 `AGENTS.md` 的 Prompts 索引表
+
+## Phase 6: Gemini 框架重構為智能協議 (Protocols)
+- [/] 1. 擬定重構方案與目錄結構 (implementation_plan.md)
+- [ ] 2. 建立 `Agent/Protocols/` 目錄並產出核心協議
+    - [ ] 自媒體審計協議 (整合審計、內容主編)
+    - [ ] 敘事極致化重構協議 (整合 tweak、rb)
+    - [ ] 原子任務捕獲協議 (整合 CAPTURE_TASK)
+    - [ ] 對話日誌存檔協議 (整合 log)
+- [ ] 3. 歸檔舊有 `gemini/` 編號文件至 `700存檔/`
+- [ ] 4. 更新 `AGENTS.md` 以連結 Protocols 庫

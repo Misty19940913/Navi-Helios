@@ -1,0 +1,56 @@
+{
+  "id": "944094a2-257f-43e6-a094-9e8418e656ba",
+  "title": "這個檔案可以與哪個知識相互關聯",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "這個檔案可以與哪個知識相互關聯",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n這個檔案可以與哪個知識相互關聯\n\n"
+        }
+      ],
+      "id": "3715db78-2b6f-4bed-a10b-61c4a5766eb4",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "40_Knowledge/41_原子知識/K-SYS-036_防彈筆記與知識演化規範.md"
+        }
+      ]
+    }
+  ],
+  "createdAt": 1777559866258,
+  "updatedAt": 1777559866258,
+  "schemaVersion": 1
+}

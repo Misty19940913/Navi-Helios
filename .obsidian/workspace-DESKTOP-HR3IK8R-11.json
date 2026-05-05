@@ -1,0 +1,243 @@
+{
+  "main": {
+    "id": "045c9e8b9fc1143b",
+    "type": "split",
+    "children": [
+      {
+        "id": "5abd76053eea7e15",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d11098b67e76a4fa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "040創作區/041文章/生命之輪-人生平衡評估工具.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "生命之輪-人生平衡評估工具"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a71c8a1625de110d",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd6ad2172b26161b",
+        "type": "tabs",
+        "dimension": 36.16118769883351,
+        "children": [
+          {
+            "id": "645ad61097858c13",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "metadataCache",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜尋"
+            }
+          },
+          {
+            "id": "07346a58080ce9bc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "書籤"
+            }
+          }
+        ]
+      },
+      {
+        "id": "15cd81aeb62591ca",
+        "type": "tabs",
+        "dimension": 63.83881230116649,
+        "children": [
+          {
+            "id": "5bec902d6a23fcf2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "檔案瀏覽器"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7d77eee59c687e8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "f25adc9aab9d2afc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f80f37e459bbe404",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "020領域/280成長/待分類知識/時間財富.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "時間財富 的反向連結"
+            }
+          },
+          {
+            "id": "55bc4d46c850f041",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "000捕獲/ChatGPT - Mia AI, your new best friend and life coach.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "ChatGPT - Mia AI, your new best friend and life coach 的出链列表"
+            }
+          },
+          {
+            "id": "67c8b8d3f58e6076",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "b06e659f57ca6dd7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "020領域/280成長/待分類知識/時間財富.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "時間財富 的大綱"
+            }
+          },
+          {
+            "id": "f8110ee3863088b1",
+            "type": "leaf",
+            "state": {
+              "type": "note-to-red",
+              "state": {},
+              "icon": "image",
+              "title": "小红书预览"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 557.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "command-palette:開啟命令面板": false,
+      "templates:插入模板": false,
+      "zk-prefixer:建立新唯一筆記": false,
+      "workspaces:管理工作區配置": false,
+      "remotely-save:Remotely Save": false,
+      "obsidian-excalidraw-plugin:新建繪圖檔案": false,
+      "ledger-obsidian:Add to Ledger": false
+    }
+  },
+  "active": "d11098b67e76a4fa",
+  "lastOpenFiles": [
+    "020領域/280成長/待分類知識/時間財富.md",
+    "040創作區/041文章/規則/社群貼文模板.md",
+    "040創作區/041文章/模板/方法組合型模板.md",
+    "040創作區/041文章/模板/知識分享型模板.md",
+    "040創作區/041文章/模板/行動指南型模板.md",
+    "040創作區/041文章/模板/工具介紹型模板.md",
+    "040創作區/041文章/曼陀羅九宮格-創意思考工具.md",
+    "020領域/230事業/231偵查/000公文範本.md",
+    "040創作區/041文章/生命之輪-人生平衡評估工具.md",
+    "020領域/230事業/231偵查/001公文一覽表.md",
+    "020領域/230事業/231偵查/1140510200.md",
+    "020領域/230事業/231偵查/1140509847.md",
+    "020領域/230事業/231偵查/1130450269.md",
+    "020領域/230事業/231偵查/1140319744.md",
+    "020領域/230事業/231偵查/1130419841.md",
+    "020領域/230事業/231偵查/1130274855.md",
+    "040創作區/041文章/規則/Instagram 知識分享模板.md",
+    "010夢想筆記/012日誌/2025/Daily/08/2025-08-05.md",
+    "050資源/520components/view/公文一覽.components",
+    "010夢想筆記/012日誌/2025/Daily/2025-08-12.md",
+    "050資源/520components/view/每日代辦清單.components",
+    "040創作區/041文章/規則",
+    "040創作區/041文章/模板",
+    "020領域/230事業/231偵查",
+    "020領域/280成長/待分類知識/重力問題.md",
+    "020領域/280成長/待分類知識/反脆弱.md",
+    "020領域/280成長/待分類知識/生命之輪.md",
+    "020領域/280成長/待分類知識/內外平衡原則.md",
+    "020領域/280成長/待分類知識/人生指南針.md",
+    "020領域/280成長/待分類知識/二八法則.md",
+    "020領域/280成長/待分類知識/生命歷程探索.md",
+    "050資源/財務",
+    "020領域/260財務/指標-110YK-7-109/小波.mq5",
+    "020領域/260財務/指標-110YK-7-109/小波.pine",
+    "020領域/260財務/交易策略-110YK-7-109/均線.mq5",
+    "020領域/260財務/交易策略-110YK-7-109/第三階.mq5",
+    "060支援系統/儀表板系統/代辦清單.svg",
+    "030項目/031東黎有限公司/0315產品研發/產品路線圖.svg",
+    "030項目/031東黎有限公司-110YK-7-109/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "030項目/031東黎有限公司-110YK-7-109/0311公司制度/一人公司AI整理資料/0.0一人公司變現路徑MOC.svg",
+    "030項目/031東黎有限公司/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "030項目/031東黎有限公司/0311公司制度/一人公司AI整理資料/0.0一人公司變現路徑MOC.svg",
+    "030項目/東黎有限公司/公司制度.一人公司/一人公司AI整理資料/0.0一人公司變現路徑MOC.svg",
+    "未命名.canvas",
+    "030項目/東黎有限公司/設計人生.主軸/1.0資料/知識框架.canvas",
+    "030項目/設計人生/1.0資料/知識框架.canvas"
+  ]
+}

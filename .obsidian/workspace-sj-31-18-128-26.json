@@ -1,0 +1,368 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "eb8af882272d5bb0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8ada43688c54fa70",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "TaskNotes/Views/calendar-default.base",
+                "viewName": "Calendar"
+              },
+              "icon": "lucide-layout-list",
+              "title": "calendar-default"
+            }
+          },
+          {
+            "id": "b108f2b8c3b08fc2",
+            "type": "leaf",
+            "state": {
+              "type": "navi-calendar-main",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Navi Calendar"
+            }
+          },
+          {
+            "id": "d4de87e96c4b3e1b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "30_Projects/32_Active/Navi-Calendar-Plugin/console.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "console"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a71c8a1625de110d",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd6ad2172b26161b",
+        "type": "tabs",
+        "dimension": 38.945578231292515,
+        "children": [
+          {
+            "id": "645ad61097858c13",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:偵查",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜尋"
+            }
+          },
+          {
+            "id": "1364bf78ec7df443",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "30_Projects/32_Active/Navi-Calendar-Plugin/console.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.4769829140582017,
+                  "close": false
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "console 的關聯圖"
+            }
+          },
+          {
+            "id": "123eeed01fb575bf",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "關聯圖檢視"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "15cd81aeb62591ca",
+        "type": "tabs",
+        "dimension": 61.05442176870748,
+        "children": [
+          {
+            "id": "5bec902d6a23fcf2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "檔案瀏覽器"
+            }
+          },
+          {
+            "id": "6d6f2ed141a7ef30",
+            "type": "leaf",
+            "state": {
+              "type": "notebook-navigator",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "notebook-navigator"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 496
+  },
+  "right": {
+    "id": "7d77eee59c687e8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "f25adc9aab9d2afc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "55bc4d46c850f041",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "對外連結"
+            }
+          },
+          {
+            "id": "de728c0da9752a0d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "200週期紀錄/210規劃與覆盤/2026-W06.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "2026-W06 的反向連結"
+            }
+          },
+          {
+            "id": "67c8b8d3f58e6076",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "標籤"
+            }
+          },
+          {
+            "id": "e8873d62e5c258d9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "所有屬性"
+            }
+          },
+          {
+            "id": "8a4c3cd15bb5cab7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "30_Projects/32_Active/Arena/產出結果/Arena_AI_Agent_JOB_DESC.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Arena_AI_Agent_JOB_DESC 的大綱"
+            }
+          },
+          {
+            "id": "4834443bba0f581a",
+            "type": "leaf",
+            "state": {
+              "type": "gemini-agent-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "gemini-agent-view"
+            }
+          },
+          {
+            "id": "ecac71cb404e37b2",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "calendar"
+            }
+          },
+          {
+            "id": "c5492c04bd9fd20f",
+            "type": "leaf",
+            "state": {
+              "type": "planner-timeline",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "planner-timeline"
+            }
+          }
+        ],
+        "currentTab": 7
+      }
+    ],
+    "direction": "horizontal",
+    "width": 745,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "navi-calendar:Open Calendar": false,
+      "obsidian-excalidraw-plugin:新建繪圖檔案": false,
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "templates:插入模板": false,
+      "workspaces:管理工作區配置": false,
+      "publish:發佈變動內容": false,
+      "bases:建立新的 base": false,
+      "notebook-navigator:筆記本導覽器": false,
+      "remotely-save:Remotely Save": false,
+      "note-to-red:打开小红书图片预览": false,
+      "templater-obsidian:Templater": false,
+      "callout-manager:Insert Callout": false,
+      "gemini-scribe:Gemini Scribe: Agent Mode": false,
+      "obsidian-git:Open Git source control": false,
+      "components:AI 對話（新標籤頁）": false,
+      "command-palette:開啟命令面板": false,
+      "obsidian42-brat:BRAT": false
+    }
+  },
+  "active": "d4de87e96c4b3e1b",
+  "lastOpenFiles": [
+    "30_Projects/32_Active/Navi-Calendar-Plugin/新增資料夾",
+    "30_Projects/32_Active/Navi-Calendar-Plugin/progress.md",
+    "30_Projects/32_Active/Navi-Calendar-Plugin/console.md",
+    "50_Content_Creation/99_歷史廢墟/233-100f.e.misty內容作業系統/生命之輪-人生平衡評估工具介紹.md",
+    "60-AI-Protocols/Hermes/skills/software-development/obsidian-plugin-dev/SKILL.md",
+    "60-AI-Protocols/Hermes/skills/software-development/obsidian-plugin-dev",
+    "50_Content_Creation/99_歷史廢墟/233-100f.e.misty內容作業系統/生命之輪圖卡/preview.html",
+    "50_Content_Creation/99_歷史廢墟/233-100f.e.misty內容作業系統/生命之輪圖卡/05-cta.html",
+    "50_Content_Creation/99_歷史廢墟/233-100f.e.misty內容作業系統/生命之輪圖卡/04-content.html",
+    "50_Content_Creation/99_歷史廢墟/233-100f.e.misty內容作業系統/生命之輪圖卡/03-content.html",
+    "50_Content_Creation/99_歷史廢墟/233-100f.e.misty內容作業系統/生命之輪圖卡/02-content.html",
+    "50_Content_Creation/99_歷史廢墟/233-100f.e.misty內容作業系統/生命之輪圖卡/01-cover.html",
+    "50_Content_Creation/99_歷史廢墟/233-100f.e.misty內容作業系統/生命之輪圖卡",
+    "30_Projects/32_Active/Navi-Calendar-Plugin/task_plan.md",
+    "30_Projects/32_Active/Navi-Calendar-Plugin",
+    "20_Life_Planning/23_Goal/Goal_MOC.md",
+    "20_Life_Planning/23_Goal/2026-Q2-季度目標.md",
+    "80-System/81-Template/EXAMPLE CASE.md",
+    "30_Projects/31_Planning/Navi-Calendar-Plugin",
+    "30_Projects/32_Active/31_偵查/調閱交易明細.md",
+    "30_Projects/32_Active/31_偵查/1150032808.md",
+    "20_Life_Planning/Task/調閱交易明細.md",
+    "30_Projects/32_Active/31_偵查/EXAMPLE TASK.md",
+    "20_Life_Planning/21_Journsal/2026-04-26.md",
+    "60-AI-Protocols/Hermes/skills/planning/full-planning/SKILL.md",
+    "Day Planners/Day Planner-20260426.md",
+    "40_Knowledge/41_原子知識/K-SELF-自我成長/K-SELF-004-1_系統化成功原則.md",
+    "60-AI-Protocols/Hermes/skills/knowledge-triage/SKILL-sj-31-18-128.md",
+    "10_Inbox/Ali Abdaal五大系統.md",
+    "10_Inbox/魚缸底沙、混養探討.md",
+    "20_Life_Planning/21_Journsal/2026-04-01.md",
+    "60-AI-Protocols/690全域附件/個人商業體系的本質.jpg",
+    "20_Life_Planning/21_Journsal/2026-04-07.md",
+    "80-System/83-excalidraw/一人企業節點邏輯分析圖.excalidraw.svg",
+    "80-System/83-excalidraw/Drawing 2025-03-29 18.18.26.excalidraw.md",
+    "20_Life_Planning/21_Journsal/2026-04-04.md",
+    "20_Life_Planning/21_Journsal/2026-04-03.md",
+    "30_Projects/32_Active/34_AI應用規劃師講義閱讀筆記/人工智慧基礎概論.md",
+    "30_Projects/32_Active/32_多AGENTS架構研究/research/mission-control-main/mission-control-main/src/app/icon.png",
+    "30_Projects/32_Active/32_多AGENTS架構研究/research/mission-control-main/mission-control-main/docs/mission-control-activity.png",
+    "30_Projects/32_Active/32_多AGENTS架構研究/research/mission-control-main/mission-control-main/public/office-sprites/kenney/chairDesk.png",
+    "30_Projects/32_Active/32_多AGENTS架構研究/research/mission-control-main/mission-control-main/public/office-sprites/kenney/desk.png",
+    "30_Projects/32_Active/32_多AGENTS架構研究/research/mission-control-main/mission-control-main/public/office-sprites/kenney/plantSmall2.png",
+    "30_Projects/32_Active/32_多AGENTS架構研究/research/mission-control-main/mission-control-main/public/office-sprites/kenney/plantSmall1.png",
+    "30_Projects/32_Active/32_多AGENTS架構研究/research/mission-control-main/mission-control-main/public/office-sprites/cc0-hero/player_full_animation.png",
+    "30_Projects/32_Active/32_多AGENTS架構研究/research/mission-control-main/mission-control-main/public/office-sprites/kenney/floorFull.png",
+    "30_Projects/33_Done/HUMAN_3.0-DESKTOP-Misty/產出結果/HUMAN_3.0.canvas",
+    "30_Projects/33_Done/設計人生-DESKTOP-Misty/產出結果/人生設計概念卡片.canvas",
+    "30_Projects/33_Done/商業模式圖-DESKTOP-Misty/產出結果/商業模式畫布.canvas",
+    "30_Projects/33_Done/商業模式圖/產出結果/商業模式畫布.canvas",
+    "30_Projects/33_Done/設計人生/產出結果/人生設計概念卡片.canvas",
+    "30_Projects/33_Done/HUMAN_3.0/產出結果/HUMAN_3.0.canvas",
+    "30_Projects/32_Active/34_設計人生/產出結果/人生設計概念卡片.canvas",
+    "30_Projects/32_Active/34_設計人生/產出結果/010_理論基礎.canvas",
+    "30_Projects/232-111經營實踐：從價值轉化到系統迭代.canvas",
+    "30_Projects/33_Done/31_設計人生/產出結果/人生設計MOC.canvas"
+  ]
+}

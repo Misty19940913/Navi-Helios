@@ -1,0 +1,362 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "79f3ad99081d512a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "24efae882a5b2e8d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "500自媒體創作區/530/532 平台載具庫 (The Posts)/Threads/20260307-OB架構分享.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "20260307-OB架構分享"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a71c8a1625de110d",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd6ad2172b26161b",
+        "type": "tabs",
+        "dimension": 38.88888888888889,
+        "children": [
+          {
+            "id": "645ad61097858c13",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "file:金錢",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜尋"
+            }
+          },
+          {
+            "id": "1364bf78ec7df443",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "200週期紀錄/210規劃與覆盤/2026-W06.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.4769829140582017,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "2026-W06 的關聯圖"
+            }
+          },
+          {
+            "id": "123eeed01fb575bf",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "關聯圖檢視"
+            }
+          }
+        ]
+      },
+      {
+        "id": "15cd81aeb62591ca",
+        "type": "tabs",
+        "dimension": 61.111111111111114,
+        "children": [
+          {
+            "id": "5bec902d6a23fcf2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "檔案瀏覽器"
+            }
+          },
+          {
+            "id": "6d6f2ed141a7ef30",
+            "type": "leaf",
+            "state": {
+              "type": "notebook-navigator",
+              "state": {},
+              "icon": "notebook-navigator",
+              "title": "筆記本導覽器"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 423.5110321044922
+  },
+  "right": {
+    "id": "7d77eee59c687e8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "f25adc9aab9d2afc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "55bc4d46c850f041",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "對外連結"
+            }
+          },
+          {
+            "id": "de728c0da9752a0d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "200週期紀錄/210規劃與覆盤/2026-W06.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "2026-W06 的反向連結"
+            }
+          },
+          {
+            "id": "67c8b8d3f58e6076",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "標籤"
+            }
+          },
+          {
+            "id": "e8873d62e5c258d9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": true,
+                "searchQuery": "ti"
+              },
+              "icon": "lucide-archive",
+              "title": "所有屬性"
+            }
+          },
+          {
+            "id": "8a4c3cd15bb5cab7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "300專案/310偵查/001偵查README.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "001偵查README 的大綱"
+            }
+          },
+          {
+            "id": "4834443bba0f581a",
+            "type": "leaf",
+            "state": {
+              "type": "gemini-agent-view",
+              "state": {},
+              "icon": "sparkles",
+              "title": "Agent Mode"
+            }
+          },
+          {
+            "id": "151f6a69e45fd236",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "terminal:terminal",
+              "state": {
+                "terminal:terminal": {
+                  "cwd": "C:\\Users\\安泰\\OneDrive\\Obsidian\\Navi Helios",
+                  "focus": false,
+                  "profile": {
+                    "args": [],
+                    "executable": "C:\\Windows\\System32\\cmd.exe",
+                    "followTheme": true,
+                    "name": "",
+                    "platforms": {
+                      "win32": true
+                    },
+                    "pythonExecutable": "python3",
+                    "restoreHistory": false,
+                    "rightClickAction": "copyPaste",
+                    "successExitCodes": [
+                      "0",
+                      "SIGINT",
+                      "SIGTERM"
+                    ],
+                    "terminalOptions": {
+                      "documentOverride": null
+                    },
+                    "type": "integrated",
+                    "useWin32Conhost": true
+                  },
+                  "serial": null
+                }
+              },
+              "pinned": true,
+              "icon": "terminal",
+              "title": "終端：cmd"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 780.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "templates:插入模板": false,
+      "command-palette:開啟命令面板": false,
+      "workspaces:管理工作區配置": false,
+      "publish:發佈變動內容": false,
+      "bases:建立新的 base": false,
+      "obsidian-excalidraw-plugin:新建繪圖檔案": false,
+      "notebook-navigator:筆記本導覽器": false,
+      "remotely-save:Remotely Save": false,
+      "note-to-red:打开小红书图片预览": false,
+      "templater-obsidian:Templater": false,
+      "homepage:Open homepage": false,
+      "callout-manager:Insert Callout": false,
+      "terminal:Open terminal": false,
+      "gemini-scribe:Gemini Scribe: Agent Mode": false,
+      "obsidian42-brat:BRAT": false,
+      "agent-client:Open agent client": false
+    }
+  },
+  "active": "24efae882a5b2e8d",
+  "lastOpenFiles": [
+    "600支援/690全域附件/Pasted image 20260308003039.png",
+    "300專案/310偵查/001偵查README.md",
+    "200週期紀錄/230任務池/EXAMPLE TASK.md",
+    "300專案/310偵查/EXAMPLE CASE.md",
+    "600支援/610管理協議/Dataview 查詢範例.md",
+    "300專案/310偵查/案件一覽表.base",
+    "200週期紀錄/230任務池/任務一覽.base",
+    "200週期紀錄/230任務池/未命名.md",
+    "200週期紀錄/230任務池/精煉價值主張與使命.md",
+    "200週期紀錄/230任務池/啟動追蹤系統.md",
+    "200週期紀錄/230任務池/情緒與覺察紀錄.md",
+    "200週期紀錄/230任務池/執行「深度連結」練習.md",
+    "200週期紀錄/230任務池/230-20260301-自媒體素材提煉-Navi Helios診斷.md",
+    "300專案/310偵查/1141210173.md",
+    "500自媒體創作區/530/532 平台載具庫 (The Posts)/Threads/20260307-OB架構分享.md",
+    "500自媒體創作區/530/532 平台載具庫 (The Posts)/Threads/20260211-害怕行動.md",
+    "600支援/610管理協議/gemini/610-020系統架構.md",
+    "600支援/610管理協議/Agent/Agent-Sessions/Threads 系統架構分享與變現策略範本.md",
+    "600支援/610管理協議/gemini/610-030HUMAN_3.0核心框架.md",
+    "600支援/610管理協議/Agent/AGENTS.md",
+    "500自媒體創作區/530/532 平台載具庫 (The Posts)/Threads/工具實作與Navi系統.md",
+    "500自媒體創作區/530/532 平台載具庫 (The Posts)/Threads/底層邏輯與人生故障點.md",
+    "500自媒體創作區/530/532 平台載具庫 (The Posts)/Threads/20260305-運行NAVI 3.0.md",
+    "500自媒體創作區/530/532 平台載具庫 (The Posts)/Threads/20260306-分享關聯圖.md",
+    "300專案/320進行中 (Active)/AI/openclaw/Get start.md",
+    "300專案/340擱置中 (On-Hold)/330個人金融知識庫/261-6.0第四章：行動策略——實用工具與應用法則.md",
+    "300專案/320進行中 (Active)/AI/openclaw",
+    "200週期紀錄/210規劃與覆盤/2026-W06.md",
+    "200週期紀錄/210規劃與覆盤/30天整合行動計畫-20260301.md",
+    "600支援/690全域附件/Pasted image 20260307022348.png",
+    "600支援/690全域附件/Pasted image 20260307021426.png",
+    "600支援/690全域附件/關聯圖.jpg",
+    "600支援/690全域附件/尚未確認的 269522.crdownload",
+    "600支援/690全域附件/運行NAVI_3.0.jpg",
+    "600支援/690全域附件/尚未確認的 437730.crdownload",
+    "600支援/680腳本工具箱/批次去重併購腳本.py",
+    "600支援/620對話日誌/KB重複內容報告.json",
+    "600支援/680腳本工具箱/KB重複內容掃描器.py",
+    "600支援/620對話日誌/H3原子化待辦報告.json",
+    "600支援/680腳本工具箱/H3原子化預處理器.py",
+    "Traits.jpg",
+    "232-100一人企業 MOC.canvas",
+    "Archetypes & Metatypes.jpg",
+    "Pasted image 20260130222028.jpg",
+    "300專案/340公司/232-1.0執行策略/一人商業模式/一人商業模式全景圖.canvas",
+    "300專案/340公司/232-1.0執行策略/一人商業模式/一人商業模式完整全景圖.canvas",
+    "300專案/340公司/330人生航道/HUMAN 3.0 系統全景圖.excalidraw.svg",
+    "300專案/340公司/232-1.0執行策略/一人商業模式/232-100一人企業 MOC.canvas",
+    "300專案/340公司/232-1.0執行策略/一人商業模式/232-100一人企業 MOC：產品化自己 (Productize Yourself).svg",
+    "300專案/340公司/232-1.0執行策略/一人商業模式/232-100一人企業 MOC：產品化自己 (Productize Yourself)MOC.canvas",
+    "600支援/640excalidraw/Scripts/Downloaded/Set Grid.svg",
+    "400知識/410原子化知識庫/HUMAN 3.0 系統核心全景圖.canvas",
+    "400知識/410原子化知識庫/HUMAN 3.0 系統全景圖-json-canvas.canvas",
+    "300專案/340公司/232-1.0執行策略/一人商業模式/232-110經營憲章-畫布.canvas",
+    "300專案/340公司/232-1.0執行策略/一人商業模式/232-111經營實踐：從價值轉化到系統迭代.canvas",
+    "一人企業節點邏輯分析圖.canvas"
+  ]
+}

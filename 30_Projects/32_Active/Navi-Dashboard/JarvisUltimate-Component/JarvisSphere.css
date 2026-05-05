@@ -1,0 +1,53 @@
+.jarvis-sphere-container {
+  position: relative;
+  width: 251px;
+  height: 81px;
+  background: transparent;
+}
+
+.sphere-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 251px;
+  height: 81px;
+  z-index: 1;
+}
+
+.sphere-core-animated {
+  position: absolute;
+  top: 20px; /* From INI Y=20 */
+  left: 25px; /* From INI X=25 */
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  z-index: 2;
+  filter: drop-shadow(0 0 10px rgba(0, 212, 255, 0.8));
+}
+
+.sphere-overlay {
+  position: absolute;
+  top: 19px; /* From INI Y=19 */
+  left: 17px; /* From INI X=17 */
+  width: 113px;
+  height: 44px;
+  z-index: 3;
+  opacity: 0.8;
+}
+
+.sphere-glow-pulse {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.4) 0%, transparent 70%);
+  animation: corePulse 2s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes corePulse {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.5); opacity: 0.8; }
+}

@@ -1,0 +1,326 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "6a5f01653a8c921e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "685649d79ef804ae",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新分頁"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a71c8a1625de110d",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd6ad2172b26161b",
+        "type": "tabs",
+        "dimension": 33.670033670033675,
+        "children": [
+          {
+            "id": "645ad61097858c13",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜尋"
+            }
+          },
+          {
+            "id": "1364bf78ec7df443",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "30_Projects/32_Active/34_設計人生/產出結果/020_自我認知與定位.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.4769829140582017,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "020_自我認知與定位 的關聯圖"
+            }
+          },
+          {
+            "id": "123eeed01fb575bf",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "關聯圖檢視"
+            }
+          }
+        ]
+      },
+      {
+        "id": "15cd81aeb62591ca",
+        "type": "tabs",
+        "dimension": 66.32996632996633,
+        "children": [
+          {
+            "id": "5bec902d6a23fcf2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "檔案瀏覽器"
+            }
+          },
+          {
+            "id": "6d6f2ed141a7ef30",
+            "type": "leaf",
+            "state": {
+              "type": "notebook-navigator",
+              "state": {},
+              "icon": "notebook-navigator",
+              "title": "筆記本導覽器"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 315
+  },
+  "right": {
+    "id": "7d77eee59c687e8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "f25adc9aab9d2afc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "55bc4d46c850f041",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "30_Projects/32_Active/31_商業模式圖/產出結果/010_理論基礎.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "010_理論基礎 的對外連結"
+            }
+          },
+          {
+            "id": "de728c0da9752a0d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "30_Projects/32_Active/31_商業模式圖/產出結果/010_理論基礎.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "010_理論基礎 的反向連結"
+            }
+          },
+          {
+            "id": "67c8b8d3f58e6076",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "標籤"
+            }
+          },
+          {
+            "id": "e8873d62e5c258d9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": true,
+                "searchQuery": "time"
+              },
+              "icon": "lucide-archive",
+              "title": "所有屬性"
+            }
+          },
+          {
+            "id": "8a4c3cd15bb5cab7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "30_Projects/32_Active/Arena/產出結果/Arena_AI_Agent_JOB_DESC.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Arena_AI_Agent_JOB_DESC 的大綱"
+            }
+          },
+          {
+            "id": "4834443bba0f581a",
+            "type": "leaf",
+            "state": {
+              "type": "gemini-agent-view",
+              "state": {},
+              "icon": "sparkles",
+              "title": "Agent Mode"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 265,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "templates:插入模板": false,
+      "workspaces:管理工作區配置": false,
+      "publish:發佈變動內容": false,
+      "bases:建立新的 base": false,
+      "notebook-navigator:筆記本導覽器": false,
+      "remotely-save:Remotely Save": false,
+      "note-to-red:打开小红书图片预览": false,
+      "templater-obsidian:Templater": false,
+      "callout-manager:Insert Callout": false,
+      "terminal:Open terminal": false,
+      "gemini-scribe:Gemini Scribe: Agent Mode": false,
+      "obsidian-git:Open Git source control": false,
+      "components:AI 對話（新標籤頁）": false,
+      "command-palette:開啟命令面板": false,
+      "tasknotes:打开迷你日历视图": false,
+      "tasknotes:打开日历视图": false,
+      "tasknotes:打开任务视图": false,
+      "tasknotes:打开议程视图": false,
+      "tasknotes:打开看板": false,
+      "tasknotes:打开番茄钟计时器": false,
+      "tasknotes:打开番茄钟统计": false,
+      "tasknotes:创建新任务": false
+    }
+  },
+  "active": "685649d79ef804ae",
+  "lastOpenFiles": [
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/Navi-workspace/vectordb/context/index/default/versions/1774162014495795544/vector_index/index_flat.data",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/Navi-workspace/vectordb/context/index/default/versions/1774161512871615900/vector_index/index_flat.data",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/Navi-workspace/vectordb/context/index/default/versions/1774162014495795544/scalar_index/scalar_index.data",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/Navi-workspace/vectordb/context/index/default/versions/1774161512871615900/scalar_index/scalar_index.data",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/Navi-workspace/vectordb/context/index/default/versions/0/vector_index/index_flat.data",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/Navi-workspace/vectordb/context/index/default/versions/0/scalar_index/scalar_index.data",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/Navi-workspace/vectordb/context/index/default/versions/1774162014495795544/manager_meta.json",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/Navi-workspace/vectordb/context/index/default/versions/1774162014495795544/vector_index",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/Navi-workspace/vectordb/context/index/default/versions/1774162014495795544/scalar_index",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/Navi-workspace/vectordb/context/index/default/versions/1774161512871615900/manager_meta.json",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/Navi-workspace/vectordb/context/index/default/versions/1774161512871615900/vector_index",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/shared/agents/navi.md",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/shared/projects/arena.md",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/shared/agents/larvis.md",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/Navi-workspace/memory/2026-03-27.md",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/Navi-workspace/memory/2026-03-25.md",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/Navi-workspace/memory/2026-03-24.md",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/Navi-workspace/memory/2026-03-23.md",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/Navi-workspace/memory/2026-03-22.md",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/Navi-workspace/memory/2026-03-22-next-step.md",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/Navi-workspace/memory/2026-03-22-discord-access-setup.md",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/Navi-workspace/memory/2026-03-22-1640-session.md",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/Navi-workspace/memory/2026-03-22-0710.md",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/Larvis-workspace/memory/2026-03-24.md",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/文書組/文書組協作流程優化.md",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/shared/facts.md",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/shared/decisions.md",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/Navi-workspace/MEMORY.md",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/OpenViking-記憶檢索系統.md",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/(舊)Navi記憶系統建立指南 1.md",
+    "60-AI-Protocols/61-管理協議/AI-Config/claw-System-DESKTOP-ZenBook/Claude-Mem-Bridge-系統.md",
+    "30_Projects/32_Active/31_偵查/001偵查README.md",
+    "30_Projects/32_Active/31_偵查/EXAMPLE CASE.md",
+    "30_Projects/32_Active/310偵查/EXAMPLE CASE.md",
+    "30_Projects/32_Active/310偵查/001偵查README.md",
+    "30_Projects/32_Active/Arena/Arena框架/090_AI訪談流程.md",
+    "50_Content_Creation/530/533 圖片/Drawing 2026-03-06 00.49.27.excalidraw.svg",
+    "30_Projects/32_Active/31_商業模式圖/產出結果/商業模式畫布.canvas",
+    "30_Projects/32_Active/33_HUMAN_3.0/產出結果/HUMAN_3.0.canvas",
+    "30_Projects/32_Active/32_多AGENTS架構研究/產出結果/agent規劃/lv1_文書組/交易員.png",
+    "30_Projects/32_Active/32_多AGENTS架構研究/產出結果/agent規劃/lv1_文書組/lv4_文字編輯師/ChatGPT Image 2026年3月29日 下午04_16_00.png",
+    "30_Projects/32_Active/32_多AGENTS架構研究/產出結果/agent規劃/lv1_文書組/lv3_文案架構師/專注的數據分析師肖像.png",
+    "30_Projects/32_Active/32_多AGENTS架構研究/產出結果/agent規劃/lv1_文書組/lv2_文書資料分析師/專業數據分析師頭像.png",
+    "30_Projects/32_Active/32_多AGENTS架構研究/產出結果/agent規劃/lv1_文書組/lv1_文書組組長/專業女性角色肖像.png",
+    "600支援/690全域附件/Pasted image 20260327185856.png",
+    "600支援/690全域附件/Pasted image 20260327185839.png",
+    "600支援/690全域附件/Pasted image 20260327184152.png",
+    "30_Projects/32_Active/34_設計人生/產出結果/人生設計概念卡片.canvas",
+    "30_Projects/32_Active/34_設計人生/產出結果/010_理論基礎.canvas",
+    "30_Projects/232-111經營實踐：從價值轉化到系統迭代.canvas",
+    "30_Projects/33_Done/31_設計人生/產出結果/人生設計MOC.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/232-111經營實踐：從價值轉化到系統迭代.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/232-110經營憲章-畫布.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/一人商業模式完整全景圖.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/一人商業模式全景圖.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/232-100一人企業 MOC：產品化自己 (Productize Yourself).svg"
+  ]
+}

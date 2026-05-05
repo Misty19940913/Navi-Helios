@@ -1,0 +1,23 @@
+# Pattern: pat-dfb7816d4c36
+**Tool:** terminal  
+**Type:** tool_error  
+**Count:** 1  
+**Status:** pending  
+**First seen:** 2026-05-03T10:01:36.959126+00:00  
+**Last seen:** 2026-05-03T10:01:36.959126+00:00
+
+## Summary
+Tool error in terminal: {"output": "000捕獲\n300專案\n400知識\nBaiduNetdisk_8.1.6.101.exe\nIMG_5688.JPG\nIMG_5689.JPG\nIMG_5690.JPG\nIdeaverse Lite 1.
+
+## Error hashes
+- 8cc4fef3d3885652
+
+## Last error
+```
+Error Type: tool_error
+Tool Args: {'command': 'ls /mnt/c/Users/安泰/OneDrive/Obsidian/ 2>/dev/null'}
+
+--- Error Output (last 30 lines) ---
+{"output": "000捕獲\n300專案\n400知識\nBaiduNetdisk_8.1.6.101.exe\nIMG_5688.JPG\nIMG_5689.JPG\nIMG_5690.JPG\nIdeaverse Lite 1.5\nIdeaverse Lite 1.5.zip\nNavi Helios\nProjects\nSetFontFamily.zip\nWarArmorSystem\nclaudesidian-main.zip\nclaudian-main.zip\nclient_secret_628482752723-v1afqb9qkr1og67u2q4lvc13tsea5t4i.apps.googleusercontent.com.json\nnode-v24.12.0-x64.msi\nobsidian-example-lifeos-main\nobsidian-example-lifeos-main.zip\nobsidian-skills-main.zip\npara-sample-vault-main.zip\nresearch\nskills\n插件、主題說明書", "exit_code": 0, "error": null}
+
+```

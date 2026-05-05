@@ -1,6 +1,0 @@
-{
-  "artifactType":  "ARTIFACT_TYPE_IMPLEMENTATION_PLAN",
-  "summary":  "實施資料安全防護系統。計畫包含：1. 建立「資料清理與整合防護協議」；2. 將防護邏輯植入 AGENTS.md；3. 更新實作流程以包含「顯式確認環節」。這將確保未來的自動化清理動作具備可預測性與透明度。",
-  "updatedAt":  "2026-02-27T12:52:41.808387500Z",
-  "version":  "3"
-}

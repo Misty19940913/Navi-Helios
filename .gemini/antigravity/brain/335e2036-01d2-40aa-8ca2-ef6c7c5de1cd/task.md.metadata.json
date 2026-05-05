@@ -1,6 +1,0 @@
-{
-  "artifactType":  "ARTIFACT_TYPE_TASK",
-  "summary":  "Updating the task list to include the Gemini refactoring phase with the new Protocols structure. Setting previous tasks to complete and the protocol migration as in-progress.",
-  "updatedAt":  "2026-02-27T07:36:29.510644700Z",
-  "version":  "31"
-}

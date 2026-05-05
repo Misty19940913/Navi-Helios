@@ -1,0 +1,23 @@
+# Pattern: pat-bb6e6d0ee6cb
+**Tool:** mcp_firecrawl_firecrawl_browser_execute  
+**Type:** tool_error  
+**Count:** 1  
+**Status:** pending  
+**First seen:** 2026-05-03T09:19:46.910201+00:00  
+**Last seen:** 2026-05-03T09:19:46.910201+00:00
+
+## Summary
+Tool error in mcp_firecrawl_firecrawl_browser_execute: {"error": "Tool 'firecrawl_browser_execute' execution failed: socket hang up"}
+
+## Error hashes
+- 93a5bd879a8a7259
+
+## Last error
+```
+Error Type: tool_error
+Tool Args: {'code': 'agent-browser open http://172.17.0.1:8765/img_f1fdd640f0d7.jpeg', 'language': 'bash', 'sessionId': '019ded22-2b49-740e-9b82-5661e26ff993'}
+
+--- Error Output (last 30 lines) ---
+{"error": "Tool 'firecrawl_browser_execute' execution failed: socket hang up"}
+
+```

@@ -1,0 +1,149 @@
+{
+    "layers": [
+        {
+            "id": "top-1",
+            "type": "path",
+            "points": [
+                { "x": 250, "y": 90 },
+                { "x": 450, "y": 90 },
+                { "x": 472, "y": 75 },
+                { "x": 556, "y": 75 },
+                { "x": 578, "y": 90 },
+                { "x": 774, "y": 90 }
+            ],
+            "color": "#00D4FF",
+            "cornerRadius": 5,
+            "strokeWidth": 2,
+            "dashArray": "",
+            "flowSpeed": "0s",
+            "opacity": 1
+        },
+        {
+            "id": "top-2",
+            "type": "path",
+            "points": [
+                { "x": 276, "y": 115 },
+                { "x": 754, "y": 115 }
+            ],
+            "color": "#b88159",
+            "cornerRadius": 0,
+            "strokeWidth": 2,
+            "dashArray": "2,8",
+            "flowSpeed": "0s",
+            "opacity": 0.6
+        },
+        {
+            "id": "bot-1",
+            "type": "path",
+            "points": [
+                { "x": 330, "y": 530 },
+                { "x": 480, "y": 530 },
+                { "x": 512, "y": 512 },
+                { "x": 544, "y": 530 },
+                { "x": 694, "y": 530 }
+            ],
+            "color": "#00D4FF",
+            "cornerRadius": 5,
+            "strokeWidth": 2,
+            "dashArray": "",
+            "flowSpeed": "0s",
+            "opacity": 1
+        },
+        {
+            "id": "wing-L2",
+            "type": "path",
+            "points": [
+                { "x": 30, "y": 190 },
+                { "x": 30, "y": 445 }
+            ],
+            "color": "#FF6400",
+            "cornerRadius": 0,
+            "strokeWidth": 1.5,
+            "dashArray": "2,5",
+            "flowSpeed": "0s",
+            "opacity": 0.8
+        },
+        {
+            "id": "wing-R2",
+            "type": "path",
+            "points": [
+                { "x": 994, "y": 445 },
+                { "x": 994, "y": 190 }
+            ],
+            "color": "#FF6400",
+            "cornerRadius": 0,
+            "strokeWidth": 1.5,
+            "dashArray": "2,5",
+            "flowSpeed": "0s",
+            "opacity": 0.8
+        },
+        {
+            "id": "wing-L-bracket",
+            "type": "path",
+            "points": [
+                { "x": 30, "y": 140 },
+                { "x": 400, "y": 140 },
+                { "x": 400, "y": 150 },
+                { "x": 370, "y": 180 }
+            ],
+            "cornerRadius": 3,
+            "strokeWidth": 2,
+            "dashArray": "",
+            "flowSpeed": "0s",
+            "color": "#00D4FF",
+            "opacity": 1
+        },
+        {
+            "id": "wing-R-bracket",
+            "type": "path",
+            "points": [
+                { "x": 654, "y": 180 },
+                { "x": 624, "y": 150 },
+                { "x": 624, "y": 140 },
+                { "x": 994, "y": 140 }
+            ],
+            "cornerRadius": 3,
+            "strokeWidth": 2,
+            "dashArray": "",
+            "flowSpeed": "0s",
+            "color": "#00D4FF",
+            "opacity": 1
+        },
+        {
+            "id": "wing-L-base",
+            "type": "path",
+            "points": [
+                { "x": 50, "y": 525 },
+                { "x": 270, "y": 525 },
+                { "x": 310, "y": 490 },
+                { "x": 400, "y": 490 },
+                { "x": 400, "y": 480 },
+                { "x": 370, "y": 450 }
+            ],
+            "cornerRadius": 3,
+            "strokeWidth": 2,
+            "dashArray": "",
+            "flowSpeed": "0s",
+            "color": "#00D4FF",
+            "opacity": 1
+        },
+        {
+            "id": "wing-R-base",
+            "type": "path",
+            "points": [
+                { "x": 654, "y": 450 },
+                { "x": 624, "y": 480 },
+                { "x": 624, "y": 490 },
+                { "x": 714, "y": 490 },
+                { "x": 754, "y": 525 },
+                { "x": 974, "y": 525 }
+            ],
+            "cornerRadius": 3,
+            "strokeWidth": 2,
+            "dashArray": "",
+            "flowSpeed": "0s",
+            "color": "#00D4FF",
+            "opacity": 1
+        }
+    ]
+}

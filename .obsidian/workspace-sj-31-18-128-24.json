@@ -1,0 +1,355 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e0e6cd617bff2b8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9fec204f21a96648",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "30_Projects/32_Active/Arena/產出結果/Arena_AI_Agent_JOB_DESC.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Arena_AI_Agent_JOB_DESC"
+            }
+          },
+          {
+            "id": "f177e99f3e146bd8",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "發行記錄 1.12.7"
+            }
+          },
+          {
+            "id": "01c921213c38e0e3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10_Inbox/販售兔子食物及飼養兔子周邊商品為主要營業項目電商.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "販售兔子食物及飼養兔子周邊商品為主要營業項目電商"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a71c8a1625de110d",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd6ad2172b26161b",
+        "type": "tabs",
+        "dimension": 41.983122362869196,
+        "children": [
+          {
+            "id": "645ad61097858c13",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "[\"標籤\"]",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜尋"
+            }
+          },
+          {
+            "id": "1364bf78ec7df443",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "30_Projects/32_Active/34_設計人生/產出結果/020_自我認知與定位.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.4769829140582017,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "020_自我認知與定位 的關聯圖"
+            }
+          },
+          {
+            "id": "123eeed01fb575bf",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "關聯圖檢視"
+            }
+          }
+        ]
+      },
+      {
+        "id": "15cd81aeb62591ca",
+        "type": "tabs",
+        "dimension": 58.016877637130804,
+        "children": [
+          {
+            "id": "5bec902d6a23fcf2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "檔案瀏覽器"
+            }
+          },
+          {
+            "id": "6d6f2ed141a7ef30",
+            "type": "leaf",
+            "state": {
+              "type": "notebook-navigator",
+              "state": {},
+              "icon": "notebook-navigator",
+              "title": "筆記本導覽器"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 497
+  },
+  "right": {
+    "id": "7d77eee59c687e8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "f25adc9aab9d2afc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "55bc4d46c850f041",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "對外連結"
+            }
+          },
+          {
+            "id": "de728c0da9752a0d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "200週期紀錄/210規劃與覆盤/2026-W06.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "2026-W06 的反向連結"
+            }
+          },
+          {
+            "id": "67c8b8d3f58e6076",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "標籤"
+            }
+          },
+          {
+            "id": "e8873d62e5c258d9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "所有屬性"
+            }
+          },
+          {
+            "id": "8a4c3cd15bb5cab7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "30_Projects/32_Active/Arena/產出結果/Arena_AI_Agent_JOB_DESC.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Arena_AI_Agent_JOB_DESC 的大綱"
+            }
+          },
+          {
+            "id": "4834443bba0f581a",
+            "type": "leaf",
+            "state": {
+              "type": "gemini-agent-view",
+              "state": {},
+              "icon": "sparkles",
+              "title": "Agent Mode"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 745
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "templates:插入模板": false,
+      "workspaces:管理工作區配置": false,
+      "publish:發佈變動內容": false,
+      "bases:建立新的 base": false,
+      "obsidian-excalidraw-plugin:新建繪圖檔案": false,
+      "notebook-navigator:筆記本導覽器": false,
+      "remotely-save:Remotely Save": false,
+      "note-to-red:打开小红书图片预览": false,
+      "templater-obsidian:Templater": false,
+      "callout-manager:Insert Callout": false,
+      "terminal:Open terminal": false,
+      "gemini-scribe:Gemini Scribe: Agent Mode": false,
+      "obsidian-git:Open Git source control": false,
+      "components:AI 對話（新標籤頁）": false,
+      "tasknotes:Open mini calendar": false,
+      "tasknotes:Open advanced calendar": false,
+      "tasknotes:Open task list": false,
+      "tasknotes:Open agenda": false,
+      "tasknotes:Open kanban board": false,
+      "tasknotes:Open pomodoro": false,
+      "tasknotes:Open pomodoro stats": false,
+      "tasknotes:Create new task": false
+    }
+  },
+  "active": "01c921213c38e0e3",
+  "lastOpenFiles": [
+    "10_Inbox/個人財報.md",
+    "10_Inbox/販售兔子食物及飼養兔子周邊商品為主要營業項目電商.md",
+    "000.捕獲",
+    "10_Inbox/電商販售兔子食物及飼養兔子周邊商品為主要營業項目.md",
+    "30_Projects/32_Active/33_HUMAN_3.0/創建視覺化架構圖.md",
+    "60-AI-Protocols/61-管理協議/claw-System/Larvis-workspace/memory/2026-03-27.md",
+    "60-AI-Protocols/61-管理協議/claw-System/shared/projects/arena.md",
+    "60-AI-Protocols/61-管理協議/claw-System/shared/agents/navi.md",
+    "60-AI-Protocols/61-管理協議/claw-System/shared/agents/larvis.md",
+    "60-AI-Protocols/61-管理協議/claw-System/shared/facts.md",
+    "60-AI-Protocols/61-管理協議/claw-System/shared/decisions.md",
+    "60-AI-Protocols/61-管理協議/claw-System/shared/projects",
+    "60-AI-Protocols/61-管理協議/claw-System/shared/agents",
+    "60-AI-Protocols/61-管理協議/claw-System/shared",
+    "60-AI-Protocols/61-管理協議/claw-System/Navi記憶系統建立指南 1.md",
+    "30_Projects/AI對話紀錄分析與截取/產出結果/Navi記憶系統建立指南.md",
+    "30_Projects/AI對話紀錄分析與截取/產出結果/對話記錄2_ICT交易策略.md",
+    "30_Projects/AI對話紀錄分析與截取/產出結果/結論報告.md",
+    "30_Projects/AI對話紀錄分析與截取/產出結果/對話記錄4_WACC_詳細.md",
+    "30_Projects/AI對話紀錄分析與截取/產出結果/對話記錄2_ICT交易策略_詳細.md",
+    "30_Projects/AI對話紀錄分析與截取/產出結果/洞察報告.md",
+    "60-AI-Protocols/61-管理協議/claw-System/Navi-workspace/lv4_文字編輯師/SOUL.md",
+    "30_Projects/AI對話紀錄分析與截取/產出結果/對話記錄3_PineScript_詳細.md",
+    "60-AI-Protocols/61-管理協議/claw-System/Navi-workspace/lv3_文案架構師/USER.md",
+    "30_Projects/AI對話紀錄分析與截取/產出結果/對話記錄1_兔子食品與蝦皮_詳細.md",
+    "60-AI-Protocols/61-管理協議/claw-System/Navi-workspace/lv4_文字編輯師/USER.md",
+    "60-AI-Protocols/61-管理協議/claw-System/Navi-workspace/lv4_文字編輯師/AGENT.md",
+    "60-AI-Protocols/61-管理協議/claw-System/Navi-workspace/lv4_文字編輯師/TOOLS.md",
+    "60-AI-Protocols/61-管理協議/claw-System/Navi-workspace/lv1_文書組組長/USER.md",
+    "60-AI-Protocols/61-管理協議/claw-System/Navi-workspace/lv3_文案架構師/SOUL.md",
+    "60-AI-Protocols/61-管理協議/claw-System/Larvis-workspace/memory",
+    "60-AI-Protocols/61-管理協議/claw-System/Larvis-workspace",
+    "Clippings",
+    "60-AI-Protocols/61-管理協議/claw-System/Navi-workspace/lv1_文書組組長",
+    "60-AI-Protocols/61-管理協議/claw-System/Navi-workspace/lv4_文字編輯師",
+    "60-AI-Protocols/61-管理協議/claw-System/Navi-workspace/lv3_文案架構師",
+    "30_Projects/32_Active/34_設計人生/產出結果/人生設計概念卡片.canvas",
+    "30_Projects/32_Active/34_設計人生/產出結果/010_理論基礎.canvas",
+    "30_Projects/232-111經營實踐：從價值轉化到系統迭代.canvas",
+    "30_Projects/33_Done/31_設計人生/產出結果/人生設計MOC.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/232-111經營實踐：從價值轉化到系統迭代.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/232-110經營憲章-畫布.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/一人商業模式完整全景圖.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/一人商業模式全景圖.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/232-100一人企業 MOC.canvas",
+    "30_Projects/32_Active/33_HUMAN_3.0/產出結果/HUMAN_3.0.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/232-100一人企業 MOC：產品化自己 (Productize Yourself).svg",
+    "30_Projects/舊資料/330人生航道/HUMAN 3.0 系統全景圖.excalidraw.svg",
+    "30_Projects/舊資料/0315產品研發/產品路線圖.svg",
+    "600支援/儀表板系統/代辦清單.svg",
+    "600支援/690全域附件/Pasted image 20260310025639.png",
+    "600支援/610管理協議/Agent/awesome-llm-apps-main/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/beifong/static/images/ponyo.png",
+    "600支援/610管理協議/Agent/awesome-llm-apps-main/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/web/public/favicon-32x32.png",
+    "600支援/610管理協議/Agent/awesome-llm-apps-main/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/web/public/favicon-16x16.png",
+    "600支援/610管理協議/Agent/awesome-llm-apps-main/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/web/public/apple-touch-icon.png",
+    "600支援/610管理協議/Agent/awesome-llm-apps-main/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/web/public/android-chrome-512x512.png"
+  ]
+}

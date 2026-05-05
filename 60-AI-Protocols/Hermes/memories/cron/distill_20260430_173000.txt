@@ -1,0 +1,53 @@
+=== Session Distillation Report ===
+Timestamp: 20260430_173000
+Total sessions: 153
+Substantive sessions: 153
+Progress: 0 -> 153
+
+=== CONFIRMED FACTS TO WRITE ===
+
+## MEMORY.md (Layer 1) — Append
+---
+## [20260430_173000] Discord auto_thread confirmed OFF
+- **Fact**: `auto_thread: false` in `config.yaml` — user prefers Hermes NOT to create Discord threads automatically
+- **Source**: Session 20260426_004408
+- **Verification**: Checked config.yaml directly
+
+## [20260430_173000] Vault 完整架構確認
+- **Fact**: Vault path = `/mnt/c/Users/安泰/OneDrive/Obsidian/Navi Helios/`
+- **Fact**: Skills moved to `60-AI-Protocols/Hermes/skills/` inside vault
+- **Fact**: `~/.hermes/skills` symlink → vault path
+- **Fact**: GitHub backup 只涵蓋 `60-AI-Protocols/Hermes/` (private repo)
+- **Source**: Sessions 20260426_011907 + 20260426_003829
+
+## [20260430_173000] Google Workspace OAuth WSL2 問題
+- **Fact**: `localhost:1` callback 在 WSL2 環境無法正常運作
+- **Fact**: 用戶使用 personal Google 帳號（不是 Workspace）
+- **Fact**: 所需 scope：Email、Calendar、Drive（已縮減範圍）
+- **Source**: Session 20260425_190327
+
+## user.md (Layer 2) — Update existing
+---
+## [20260430_173000] Discord user handle confirmed
+- **Fact**: Primary Discord user = DreadxMisty
+- **Source**: Multiple sessions
+
+## navi-helios.md (Layer 3) — Append
+---
+## [20260430_173000] Vault path and sync architecture confirmed
+- **Fact**: Vault path: `/mnt/c/Users/安泰/OneDrive/Obsidian/Navi Helios/`
+- **Fact**: Skills location: `60-AI-Protocols/Hermes/skills/`
+- **Fact**: GitHub backup strategy: 只備份 `60-AI-Protocols/Hermes/` (private repo `Misty19940913/navi-helios-vault`)
+- **Fact**: OneDrive sync 覆蓋完整 vault
+- **Source**: Sessions 20260426_011907 + 20260426_003829
+
+## projects.md (Layer 2) — Append
+---
+## [20260430_173000] Discord auto_thread resolved
+- **Fact**: `auto_thread: false` — Hermes 回覆 Discord 訊息時不再自動建立討論串
+- **Source**: 20260426_004408
+
+## [20260430_173000] Vault-Git 架構
+- **Fact**: Vault → OneDrive 即時同步 + GitHub private repo 備份 `60-AI-Protocols/Hermes/`
+- **Fact**: 不要在 OneDrive 資料夾內執行 git init，會造成衝突
+- **Source**: 20260426_011907

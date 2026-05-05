@@ -1,0 +1,285 @@
+{
+  "main": {
+    "id": "045c9e8b9fc1143b",
+    "type": "split",
+    "children": [
+      {
+        "id": "02a80d78ec9da3c4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b0e8e2eac608fc6d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "030項目/東黎有限公司/公司制度.一人公司/一人公司AI整理資料/2.1確定變現領域與核心技能.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2.1確定變現領域與核心技能"
+            }
+          },
+          {
+            "id": "f4e1c7b3fa258a3f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "030項目/東黎有限公司/設計人生.主軸/1.0資料/010人生設計&設計思考基礎.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "010人生設計&設計思考基礎"
+            }
+          },
+          {
+            "id": "b28262186f85acd8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "030項目/東黎有限公司/設計人生.主軸/3.0資料/個人獲利模式結合人生設計1.0.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "個人獲利模式結合人生設計1.0"
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "8bbdcbc3f747b303",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b6ec9a1b71b40205",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "030項目/東黎有限公司/公司制度.一人公司/個人探索階段.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "個人探索階段"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a71c8a1625de110d",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd6ad2172b26161b",
+        "type": "tabs",
+        "dimension": 21.85185185185186,
+        "children": [
+          {
+            "id": "645ad61097858c13",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#自我評估",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜尋"
+            }
+          },
+          {
+            "id": "07346a58080ce9bc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      },
+      {
+        "id": "15cd81aeb62591ca",
+        "type": "tabs",
+        "dimension": 78.14814814814815,
+        "children": [
+          {
+            "id": "5bec902d6a23fcf2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "檔案瀏覽器"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7d77eee59c687e8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "f25adc9aab9d2afc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f80f37e459bbe404",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "000捕獲/ChatGPT - Mia AI, your new best friend and life coach.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "ChatGPT - Mia AI, your new best friend and life coach 的反向链接列表"
+            }
+          },
+          {
+            "id": "55bc4d46c850f041",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "000捕獲/ChatGPT - Mia AI, your new best friend and life coach.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "ChatGPT - Mia AI, your new best friend and life coach 的出链列表"
+            }
+          },
+          {
+            "id": "67c8b8d3f58e6076",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "b06e659f57ca6dd7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "000捕獲/ChatGPT - Mia AI, your new best friend and life coach.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "ChatGPT - Mia AI, your new best friend and life coach 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "command-palette:開啟命令面板": false,
+      "templates:插入模板": false,
+      "zk-prefixer:建立新唯一筆記": false,
+      "workspaces:管理工作區配置": false,
+      "remotely-save:Remotely Save": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "active": "5bec902d6a23fcf2",
+  "lastOpenFiles": [
+    "030項目/東黎有限公司/公司制度.一人公司/一人公司AI整理資料/1.0一人公司個人定位與核心價值.md",
+    "030項目/東黎有限公司/產品研發/產品路線圖.md",
+    "030項目/東黎有限公司/公司制度.一人公司/曦引系統.md",
+    "030項目/東黎有限公司/公司制度.一人公司/一人公司AI整理資料/0.0一人公司變現路徑MOC.md",
+    "020領域/03.03.事業/一人公司定義與特徵.md",
+    "030項目/東黎有限公司/設計人生.主軸/3.0資料/個人獲利模式結合人生設計2.0.md",
+    "030項目/東黎有限公司/設計人生.主軸/3.0資料/個人獲利模式結合人生設計1.0.md",
+    "030項目/東黎有限公司/設計人生.主軸/3.0資料/人生設計3.0.md",
+    "030項目/東黎有限公司/設計人生.主軸/3.0資料/人生設計3.0-110YK-7-109.md",
+    "030項目/東黎有限公司/自媒體內容/品牌起源.md",
+    "030項目/東黎有限公司/產品研發/八域盤點包.md",
+    "030項目/東黎有限公司/設計人生.主軸/1.0資料/010人生設計&設計思考基礎.md",
+    "030項目/東黎有限公司/公司制度.一人公司/一人公司AI整理資料/2.1確定變現領域與核心技能.md",
+    "030項目/東黎有限公司/公司制度.一人公司/個人探索階段.md",
+    "工作.md",
+    "030項目/東黎有限公司/公司制度.一人公司/創作高品質、有價值的内容.md",
+    "030項目/東黎有限公司/設計人生.主軸/1.0資料/000.人生設計總論1.0.md",
+    "030項目/東黎有限公司/公司制度.一人公司/階段一：基礎構建.md",
+    "030項目/東黎有限公司/公司制度.一人公司/案例分析.md",
+    "030項目/東黎有限公司/公司制度.一人公司/核心理念與原則.md",
+    "030項目/東黎有限公司/公司制度.一人公司/公司細節.md",
+    "030項目/東黎有限公司/公司制度.一人公司/公司運營.md",
+    "030項目/東黎有限公司/公司制度.一人公司/階段三：規模化與持續發展.md",
+    "030項目/東黎有限公司/公司制度.一人公司/階段二：受眾增長與產品深化.md",
+    "020領域/03.08.成長/待分類知識/人生指南針.md",
+    "030項目/東黎有限公司/公司制度.一人公司/一人公司AI整理資料/1.2基礎理念.md",
+    "030項目/東黎有限公司/公司制度.一人公司/一人公司AI整理資料/0.0一人公司變現路徑MOC.svg",
+    "030項目/東黎有限公司/公司制度.一人公司/一人公司AI整理資料",
+    "Excalidraw",
+    "未命名.canvas",
+    "030項目/東黎有限公司/設計人生.主軸/1.0資料/知識框架.canvas",
+    "030項目/東黎有限公司/網站/官網資料",
+    "030項目/東黎有限公司/設計人生.主軸/3.0資料",
+    "030項目/東黎有限公司/設計人生.主軸/2.0資料",
+    "030項目/東黎有限公司/設計人生.主軸/1.0資料",
+    "030項目/東黎有限公司/公司制度.一人公司/Dan",
+    "030項目/東黎有限公司/設計人生.主軸/菲利斯.M.泰勒社會創新與設計思維中心",
+    "030項目/東黎有限公司/網站",
+    "030項目/東黎有限公司/產品研發",
+    "030項目/設計人生/1.0資料/知識框架.canvas"
+  ]
+}

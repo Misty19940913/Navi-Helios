@@ -1,5 +1,0 @@
-{
-  "artifactType":  "ARTIFACT_TYPE_OTHER",
-  "summary":  "變更檔案清單 (File Change Log)。詳細列出了在本次 Navi Helios 系統整合過程中，由 AI 新增、修改及刪除的所有檔案與路徑。旨在作為使用者進行 OneDrive 恢復後的比對基準，確保所有新建立的原子化知識與修復後的連結能夠正確歸位。",
-  "updatedAt":  "2026-02-27T12:44:02.972267100Z"
-}

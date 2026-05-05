@@ -1,0 +1,19 @@
+2026-04-17 13:29:54,128 - lightrag - INFO - Gemini LLM Options: {}
+2026-04-17 13:29:56,610 - lightrag - INFO - Embedding config: binding=openai model=text-embedding-3-small embedding_dim=1536 max_token_size=8192
+2026-04-17 13:29:56,610 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1536, has_param=True, binding=openai)
+2026-04-17 13:29:56,610 - lightrag - INFO - Embedding max_token_size: 8192 (from openai provider default)
+2026-04-17 13:29:56,611 - lightrag - INFO - Reranking is disabled
+2026-04-17 13:30:07,284 - lightrag - INFO - [] Created new empty graph file: C:\Users\ghost\OneDrive\Obsidian\Navi Helios\.neural_memory\graph_chunk_entity_relation.graphml
+2026-04-17 13:30:07,558 - lightrag - INFO - WebUI assets mounted at /webui
+2026-04-17 13:30:07,785 - uvicorn.error - INFO - Started server process [37972]
+2026-04-17 13:30:07,785 - uvicorn.error - INFO - Waiting for application startup.
+2026-04-17 13:30:07,787 - lightrag - INFO - [] Process 37972 KV load full_docs with 0 records
+2026-04-17 13:30:07,787 - lightrag - INFO - [] Process 37972 KV load text_chunks with 0 records
+2026-04-17 13:30:07,788 - lightrag - INFO - [] Process 37972 KV load full_entities with 0 records
+2026-04-17 13:30:07,788 - lightrag - INFO - [] Process 37972 KV load full_relations with 0 records
+2026-04-17 13:30:07,789 - lightrag - INFO - [] Process 37972 KV load entity_chunks with 0 records
+2026-04-17 13:30:07,790 - lightrag - INFO - [] Process 37972 KV load relation_chunks with 0 records
+2026-04-17 13:30:07,791 - lightrag - INFO - [] Process 37972 KV load llm_response_cache with 0 records
+2026-04-17 13:30:07,791 - lightrag - INFO - [] Process 37972 doc status load doc_status with 0 records
+2026-04-17 13:30:07,792 - uvicorn.error - INFO - Application startup complete.
+2026-04-17 13:30:07,793 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:9621 (Press CTRL+C to quit)

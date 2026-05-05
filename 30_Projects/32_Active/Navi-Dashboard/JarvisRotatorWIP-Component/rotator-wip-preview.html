@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARVIS Rotator WIP - 60FPS Engineering Preview</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body { margin: 0; background: #010305; color: #fff; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden; font-family: monospace; }
+        .stage { position: relative; width: 800px; height: 800px; display: flex; justify-content: center; align-items: center; }
+        .layer { position: absolute; width: 600px; height: 600px; background-size: contain; background-repeat: no-repeat; background-position: center; mix-blend-mode: screen; filter: drop-shadow(0 0 10px rgba(0,212,255,0.4)); }
+        .center-orb { width: 30px; height: 30px; background: #fff; border-radius: 50%; box-shadow: 0 0 30px #00d4ff; z-index: 10; }
+        .specs { position: absolute; bottom: 40px; left: 40px; color: #00d4ff; font-size: 11px; letter-spacing: 2px; line-height: 1.6; opacity: 0.6; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect, useRef } = React;
+
+        const App = () => {
+            const [rot, setRot] = useState(0);
+            const reqRef = useRef();
+
+            const frame = () => {
+                setRot(p => (p + 0.5) % 360);
+                reqRef.current = requestAnimationFrame(frame);
+            };
+
+            useEffect(() => {
+                reqRef.current = requestAnimationFrame(frame);
+                return () => cancelAnimationFrame(reqRef.current);
+            }, []);
+
+            return (
+                <div className="stage">
+                    {/* WIP Params: JOC(-5), JSP(10), JCE(10), JCC(-10) */}
+                    <div className="layer" style={{ backgroundImage: 'url(assets/JOC.png)', transform: `rotate(${-rot * 0.5}deg)` }} />
+                    <div className="layer" style={{ backgroundImage: 'url(assets/JSP.png)', transform: `rotate(${rot * 1.0}deg)` }} />
+                    <div className="layer" style={{ backgroundImage: 'url(assets/JCE.png)', transform: `rotate(${rot * 1.0}deg)` }} />
+                    <div className="layer" style={{ backgroundImage: 'url(assets/JCC.png)', transform: `rotate(${-rot * 1.0}deg)` }} />
+                    <div className="center-orb" />
+
+                    <div className="specs">
+                        ARRAY_GUID: legion739_D6DOWG2<br/>
+                        MECHANICAL_咬合: WIP_EXPERIMENTAL<br/>
+                        REF_LAYER_01: JOC [CCW_0.5x]<br/>
+                        REF_LAYER_02: JSP [CW_1.0x]<br/>
+                        REF_LAYER_03: JCE [CW_1.0x]<br/>
+                        REF_LAYER_04: JCC [CCW_1.0x]
+                    </div>
+                </div>
+            );
+        };
+
+        ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+    </script>
+</body>
+</html>

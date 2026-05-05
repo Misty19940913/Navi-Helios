@@ -1,0 +1,73 @@
+.jarvis-stats-container {
+  position: relative;
+  width: 300px;
+  background: rgba(0, 20, 40, 0.4);
+  border: 1px solid rgba(0, 148, 255, 0.3);
+  padding: 20px;
+  border-radius: 4px;
+  font-family: 'OCR-A', 'Consolas', monospace;
+  box-shadow: inset 0 0 20px rgba(0, 212, 255, 0.1);
+  overflow: hidden;
+}
+
+.stats-header {
+  color: #00d4ff;
+  font-size: 14px;
+  margin: 0 0 15px 0;
+  letter-spacing: 3px;
+  border-bottom: 2px solid rgba(0, 212, 255, 0.2);
+  padding-bottom: 5px;
+}
+
+.stat-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.stat-label {
+  font-size: 10px;
+  color: #7a8a9a;
+  width: 40px;
+}
+
+.stat-bar-container {
+  flex: 1;
+  height: 10px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.stat-outbar {
+  height: 100%;
+  background-image: url('assets/System/outbar.png');
+  background-size: auto 100%;
+  opacity: 0.3;
+}
+
+.stat-inbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-image: url('assets/System/inbar.png');
+  background-size: auto 100%;
+  filter: drop-shadow(0 0 5px #00d4ff);
+}
+
+.stat-value {
+  font-size: 12px;
+  color: #00d4ff;
+  width: 40px;
+  text-align: right;
+}
+
+.stats-bg-decoration {
+  position: absolute;
+  right: -20px;
+  bottom: -10px;
+  opacity: 0.1;
+  pointer-events: none;
+  transform: rotate(-15deg);
+}

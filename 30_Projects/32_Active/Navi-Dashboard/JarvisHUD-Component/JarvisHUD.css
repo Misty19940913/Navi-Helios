@@ -1,0 +1,84 @@
+/* JarvisHUD Enhanced Styles */
+.jarvis-hud-container {
+  position: relative;
+  background: #000; /* Deep space background */
+  overflow: hidden;
+  box-shadow: 0 0 50px rgba(0, 212, 255, 0.2);
+  border-radius: 8px;
+}
+
+.hud-canvas {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 5px rgba(0, 212, 255, 0.4));
+}
+
+.hud-meter {
+  transition: transform 0.1s linear;
+}
+
+.hud-text {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+}
+
+/* Decorative Animations derived from INI speeds */
+.animate-meteroutterring {
+  animation: rotateClockwise 24s linear infinite; /* Derived from ValueReminder=240 */
+}
+
+.animate-meterinnerring {
+  animation: rotateCounterClockwise 39s linear infinite; /* Derived from ValueReminder=390 */
+}
+
+@keyframes rotateClockwise {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes rotateCounterClockwise {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+/* Premium Visual Effects */
+.hud-vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, transparent 40%, rgba(0,0,0,0.6) 100%);
+  pointer-events: none;
+}
+
+.hud-scanline {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(0, 212, 255, 0.02) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.hud-scanline::after {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0, 212, 255, 0.1),
+    transparent
+  );
+  animation: scanning 8s linear infinite;
+}
+
+@keyframes scanning {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(200%); }
+}

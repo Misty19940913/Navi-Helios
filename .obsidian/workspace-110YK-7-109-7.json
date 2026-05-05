@@ -1,0 +1,293 @@
+{
+  "main": {
+    "id": "045c9e8b9fc1143b",
+    "type": "split",
+    "children": [
+      {
+        "id": "8b25c6b24b5da882",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5344d4c51b364647",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "030項目/032超級個體工作術/02｜怎麼有效學習這堂課？（課程使用說明書）.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "02｜怎麼有效學習這堂課？（課程使用說明書）"
+            }
+          },
+          {
+            "id": "c4c261c36af180d4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "020領域/230事業/231偵查/1140508956.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1140508956"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a71c8a1625de110d",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd6ad2172b26161b",
+        "type": "tabs",
+        "dimension": 40.82125603864735,
+        "children": [
+          {
+            "id": "645ad61097858c13",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:tags",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "07346a58080ce9bc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      },
+      {
+        "id": "15cd81aeb62591ca",
+        "type": "tabs",
+        "dimension": 59.178743961352644,
+        "children": [
+          {
+            "id": "5bec902d6a23fcf2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 235.5
+  },
+  "right": {
+    "id": "7d77eee59c687e8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "968ec4fd228f7c68",
+        "type": "tabs",
+        "dimension": 33.093525179856115,
+        "children": [
+          {
+            "id": "19df9214132accaa",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "de728c0da9752a0d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "030項目/031東黎有限公司/0315產品研發/命格架構包/週度反思模板.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "週度反思模板 的反向链接列表"
+            }
+          },
+          {
+            "id": "d0331795efd34574",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "060支援系統/儀表板系統/代辦清單.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "代辦清單 的大纲"
+            }
+          }
+        ]
+      },
+      {
+        "id": "f25adc9aab9d2afc",
+        "type": "tabs",
+        "dimension": 66.90647482014388,
+        "children": [
+          {
+            "id": "55bc4d46c850f041",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "050資源/510Template/讀書筆記模板.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "讀書筆記模板 的對外連結"
+            }
+          },
+          {
+            "id": "67c8b8d3f58e6076",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "標籤"
+            }
+          },
+          {
+            "id": "f8110ee3863088b1",
+            "type": "leaf",
+            "state": {
+              "type": "note-to-red",
+              "state": {},
+              "icon": "image",
+              "title": "小红书预览"
+            }
+          },
+          {
+            "id": "8b047380cd979681",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "060支援系統/儀表板系統/代辦清單.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "代辦清單"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 343.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:创建新数据库": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "command-palette:打开命令面板": false,
+      "zk-prefixer:创建时间戳笔记": false,
+      "workspaces:管理工作区布局": false,
+      "obligator:Open today's obligator note": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "templates:插入模板": false,
+      "remotely-save:Remotely Save": false,
+      "ledger-obsidian:Add to Ledger": false,
+      "templater-obsidian:Templater": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "5344d4c51b364647",
+  "lastOpenFiles": [
+    "030項目/032超級個體工作術/05｜圖片",
+    "030項目/032超級個體工作術/03｜重新定義財富自由：注意力最貴.md",
+    "030項目/032超級個體工作術/02｜怎麼有效學習這堂課？（課程使用說明書） 1.md",
+    "030項目/032超級個體工作術/02｜怎麼有效學習這堂課？（課程使用說明書）.md",
+    "030項目/032超級個體工作術/032超級個體工作術.md",
+    "030項目/031東黎有限公司/0311公司制度/一人公司AI整理資料/0.0一人公司變現路徑MOC.md",
+    "030項目/032超級個體工作術",
+    "020領域/230事業/231偵查/001公文一覽表.md",
+    "020領域/230事業/231偵查/1130319147.md",
+    "050資源/043components/desktop.ini",
+    "050資源/043components/view",
+    "050資源/043components",
+    "020領域/260財務/知識卡片/desktop.ini",
+    "020領域/230事業/231偵查/1130224288.md",
+    "020領域/230事業/231偵查/1130389623.md",
+    "020領域/230事業/231偵查/1130165776.md",
+    "020領域/230事業/231偵查/1130160678.md",
+    "020領域/230事業/231偵查/1130476630.md",
+    "010夢想筆記/012日誌/2025-08-31.md",
+    "020領域/230事業/231偵查/1130241907.md",
+    "020領域/230事業/231偵查/1130264038.md",
+    "020領域/230事業/231偵查/1130191014.md",
+    "020領域/230事業/231偵查/1120782206.md",
+    "020領域/230事業/231偵查/1130287860.md",
+    "010夢想筆記/Templates/Daily.md",
+    "010夢想筆記/012日誌/2025-08-19.md",
+    "010夢想筆記/Templates/日誌一覽.base",
+    "Untitled 2.md",
+    "Untitled 1.md",
+    "Untitled.md",
+    "010夢想筆記/012日誌/2025-08-20.md",
+    "010夢想筆記/012日誌/2025-08-26.md",
+    "020領域/260財務/指標/小波.pine",
+    "020領域/260財務/指標/小波.mq5",
+    "020領域/260財務/指標",
+    "020領域/260財務/交易策略/第一階段.pine",
+    "060支援系統/儀表板系統/代辦清單.svg",
+    "030項目/031東黎有限公司/0315產品研發/產品路線圖.svg",
+    "030項目/031東黎有限公司-110YK-7-109/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "030項目/031東黎有限公司-110YK-7-109/0311公司制度/一人公司AI整理資料/0.0一人公司變現路徑MOC.svg",
+    "030項目/031東黎有限公司/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "030項目/031東黎有限公司/0311公司制度/一人公司AI整理資料/0.0一人公司變現路徑MOC.svg",
+    "030項目/東黎有限公司/公司制度.一人公司/一人公司AI整理資料/0.0一人公司變現路徑MOC.svg",
+    "未命名.canvas",
+    "030項目/東黎有限公司/設計人生.主軸/1.0資料/知識框架.canvas",
+    "030項目/設計人生/1.0資料/知識框架.canvas"
+  ]
+}

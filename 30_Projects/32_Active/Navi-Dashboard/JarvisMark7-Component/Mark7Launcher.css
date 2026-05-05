@@ -1,0 +1,56 @@
+.mark7-launcher-container {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background: transparent;
+}
+
+.launcher-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.launcher-buttons {
+  position: absolute;
+  top: 136px; /* From X/Y in BT1 */
+  left: 14px;
+  width: 100%;
+  height: 100%;
+}
+
+.launcher-btn-wrapper {
+  position: absolute;
+  transform-origin: 0 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.launcher-btn-img {
+  width: 40px;
+  filter: drop-shadow(0 0 5px rgba(0, 212, 255, 0.5));
+}
+
+.launcher-label {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  color: #fff;
+  font-family: 'Arial Black', sans-serif;
+  font-size: 13px;
+  text-shadow: 0 0 10px #00d4ff;
+  white-space: nowrap;
+}
+
+.launcher-display-name {
+  position: absolute;
+  top: 208px;
+  left: 33px;
+  color: #c5effc;
+  font-family: 'Arial', sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  height: 20px;
+}

@@ -1,0 +1,294 @@
+{
+  "main": {
+    "id": "045c9e8b9fc1143b",
+    "type": "split",
+    "children": [
+      {
+        "id": "04e28dd0d07cb922",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0b3a91eb94fde00b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "200領域/210健康/冰山理論.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "冰山理論"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a71c8a1625de110d",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd6ad2172b26161b",
+        "type": "tabs",
+        "dimension": 40,
+        "children": [
+          {
+            "id": "07346a58080ce9bc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          },
+          {
+            "id": "645ad61097858c13",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜尋"
+            }
+          },
+          {
+            "id": "19df9214132accaa",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "15cd81aeb62591ca",
+        "type": "tabs",
+        "dimension": 60,
+        "children": [
+          {
+            "id": "5bec902d6a23fcf2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "檔案瀏覽器"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 324.5
+  },
+  "right": {
+    "id": "7d77eee59c687e8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "f25adc9aab9d2afc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "55bc4d46c850f041",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "050資源/510Template/讀書筆記模板.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "讀書筆記模板 的對外連結"
+            }
+          },
+          {
+            "id": "67c8b8d3f58e6076",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "標籤"
+            }
+          },
+          {
+            "id": "f8110ee3863088b1",
+            "type": "leaf",
+            "state": {
+              "type": "note-to-red",
+              "state": {},
+              "icon": "image",
+              "title": "小红书预览"
+            }
+          },
+          {
+            "id": "2107f14d47b04da1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "100夢想筆記/012日誌/2025-08-05.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-08-05"
+            }
+          },
+          {
+            "id": "4932c5b9cae871fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "600支援系統/儀表板系統/代辦清單.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "代辦清單"
+            }
+          },
+          {
+            "id": "de728c0da9752a0d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "400創作區/041文章/IG/貼文模板 1.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "貼文模板 1 的反向連結"
+            }
+          },
+          {
+            "id": "a2b12e84ebb1bb2c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "400創作區/041文章/IG/貼文模板 1.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "貼文模板 1 的大綱"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 726.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "command-palette:開啟命令面板": false,
+      "zk-prefixer:建立新唯一筆記": false,
+      "workspaces:管理工作區配置": false,
+      "bases:建立新的 base": false,
+      "obsidian-excalidraw-plugin:新建繪圖檔案": false,
+      "obligator:Open today's obligator note": false,
+      "templates:插入模板": false,
+      "remotely-save:Remotely Save": false,
+      "ledger-obsidian:Add to Ledger": false,
+      "templater-obsidian:Templater": false,
+      "note-to-red:打开小红书图片预览": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "5bec902d6a23fcf2",
+  "lastOpenFiles": [
+    "200領域/280精神/晶片矩陣/舉債致富",
+    "200領域/280精神/晶片矩陣/遊戲式學習",
+    "200領域/280精神/書籍資料/人生管理筆記",
+    "200領域/280精神/原子級知識/晶體級知識",
+    "200領域/280精神/網頁資料",
+    "200領域/280精神/書籍資料",
+    "200領域/280精神/晶片矩陣",
+    "200領域/280精神/影片紀錄",
+    "200領域/260財務/知識卡片",
+    "200領域/280精神/待分類知識",
+    "200領域/280精神/原子級知識",
+    "400創作區/041文章/模板/Instagram 知識分享模板.md",
+    "400創作區/041文章/模板/工具介紹型模板.md",
+    "300項目/320超級個體工作術/032超級個體工作術.md",
+    "200領域/260財務/261個人金融知識庫/財務蓄水池.md",
+    "200領域/260財務/261個人金融知識庫/六罐子理財法.md",
+    "200領域/260財務/261個人金融知識庫/財務自由之路.md",
+    "200領域/260財務/261個人金融知識庫/財富四象限.md",
+    "200領域/260財務/261個人金融知識庫/自由數字.md",
+    "200領域/260財務/261個人金融知識庫/收入管道.md",
+    "300項目/320超級個體工作術/07｜怎麼用好新時代的生產力工作法？（導覽地圖）.md",
+    "300項目/320超級個體工作術/05｜怎麼破解、看懂現代職涯的座標系？.md",
+    "300項目/320超級個體工作術/04｜怎麼培養成長思維？為什麼付費買時間最划算？.md",
+    "300項目/320超級個體工作術/03｜重新定義財富自由：注意力最貴.md",
+    "400創作區/041文章/IG/貼文模板 1.md",
+    "300項目/320超級個體工作術/02｜怎麼有效學習這堂課？（課程使用說明書）.md",
+    "200領域/230事業/231偵查/001公文一覽表.md",
+    "400創作區/041文章/模板/貼文模板.md",
+    "400創作區/041文章/IG/生命之輪-人生平衡評估工具介紹.md",
+    "400創作區/041文章/IG/現金流管理.md",
+    "400創作區/041文章/IG/財富自由.md",
+    "400創作區/041文章/模板/行動指南型模板.md",
+    "400創作區/041文章/模板/社群貼文模板.md",
+    "400創作區/041文章/IG/你覺得多久可以學會理財.md",
+    "400創作區/041文章/模板/方法組合型模板.md",
+    "400創作區/041文章/IG/理財簡述.md",
+    "600支援系統/儀表板系統/代辦清單.svg",
+    "300項目/310東黎有限公司/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "300項目/310東黎有限公司/0311公司制度/一人公司AI整理資料/0.0一人公司變現路徑MOC.svg",
+    "300項目/310東黎有限公司/0315產品研發/產品路線圖.svg",
+    "300項目/320超級個體工作術/05｜圖片/陸地模式.jpg",
+    "300項目/320超級個體工作術/05｜圖片/海洋模式.jpg",
+    "300項目/320超級個體工作術/05｜圖片/陸地模式3特點.jpg",
+    "300項目/320超級個體工作術/05｜圖片/找圈子.jpg",
+    "300項目/320超級個體工作術/05｜圖片/累積能力的方向.jpg",
+    "300項目/320超級個體工作術/05｜圖片/現代職業發展路徑.jpg",
+    "300項目/320超級個體工作術/05｜圖片/海洋模式特點3.jpg",
+    "030項目/031東黎有限公司-110YK-7-109/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "030項目/031東黎有限公司/0313設計人生.主軸/1.0資料/知識框架.canvas",
+    "未命名.canvas",
+    "030項目/東黎有限公司/設計人生.主軸/1.0資料/知識框架.canvas",
+    "030項目/設計人生/1.0資料/知識框架.canvas"
+  ]
+}

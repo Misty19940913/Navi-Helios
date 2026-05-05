@@ -1,0 +1,314 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "542b4337f01c21ec",
+        "type": "tabs",
+        "dimension": 47.73662551440329,
+        "children": [
+          {
+            "id": "ad93911c7415b21c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "80-System/81-Template/知識模板.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "知識模板"
+            }
+          }
+        ]
+      },
+      {
+        "id": "84c97f1a16407867",
+        "type": "tabs",
+        "dimension": 52.2633744855967,
+        "children": [
+          {
+            "id": "e3de2e14fee18d79",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "600支援/+/Do you suffer from note-taking.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Do you suffer from note-taking"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a71c8a1625de110d",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd6ad2172b26161b",
+        "type": "tabs",
+        "dimension": 41.72517552657974,
+        "children": [
+          {
+            "id": "645ad61097858c13",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "防彈筆記",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜尋"
+            }
+          },
+          {
+            "id": "123eeed01fb575bf",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "關聯圖檢視"
+            }
+          }
+        ]
+      },
+      {
+        "id": "15cd81aeb62591ca",
+        "type": "tabs",
+        "dimension": 58.27482447342026,
+        "children": [
+          {
+            "id": "5bec902d6a23fcf2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "檔案瀏覽器"
+            }
+          },
+          {
+            "id": "6d6f2ed141a7ef30",
+            "type": "leaf",
+            "state": {
+              "type": "notebook-navigator",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "notebook-navigator"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 418.5
+  },
+  "right": {
+    "id": "7d77eee59c687e8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "f25adc9aab9d2afc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "55bc4d46c850f041",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "對外連結"
+            }
+          },
+          {
+            "id": "de728c0da9752a0d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "200週期紀錄/210規劃與覆盤/2026-W06.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "2026-W06 的反向連結"
+            }
+          },
+          {
+            "id": "67c8b8d3f58e6076",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "標籤"
+            }
+          },
+          {
+            "id": "e8873d62e5c258d9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "所有屬性"
+            }
+          },
+          {
+            "id": "8a4c3cd15bb5cab7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "30_Projects/32_Active/Arena/產出結果/Arena_AI_Agent_JOB_DESC.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Arena_AI_Agent_JOB_DESC 的大綱"
+            }
+          },
+          {
+            "id": "ecac71cb404e37b2",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "calendar"
+            }
+          },
+          {
+            "id": "c5492c04bd9fd20f",
+            "type": "leaf",
+            "state": {
+              "type": "planner-timeline",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "planner-timeline"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 463.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "templates:插入模板": false,
+      "workspaces:管理工作區配置": false,
+      "publish:發佈變動內容": false,
+      "bases:建立新的 base": false,
+      "command-palette:開啟命令面板": false,
+      "remotely-save:Remotely Save": false,
+      "obsidian-excalidraw-plugin:新建繪圖檔案": false,
+      "templater-obsidian:Templater": false,
+      "components:AI 對話（新標籤頁）": false,
+      "callout-manager:Insert Callout": false,
+      "notebook-navigator:筆記本導覽器": false,
+      "obsidian42-brat:BRAT": false
+    }
+  },
+  "active": "ad93911c7415b21c",
+  "lastOpenFiles": [
+    "80-System/81-Template/FutureLog-Year.md",
+    "80-System/81-Template/FutureLog-5Year.md",
+    "600支援/Efforts/Notes/My Newsletters/LYT Notes 1 (Example).md",
+    "50_Content_Creation/20_創作框架/21_Misty差異化寫作戰術_副本.md",
+    "50_Content_Creation/20_創作框架/25_PSA通用寫作模板_副本.md",
+    "10_Inbox/Life-OS-框架整合報告.md",
+    "40_Knowledge/41_原子知識/K-CONTENT-018_Lean-Writing框架.md",
+    "40_Knowledge/41_原子知識/K-CONTENT-020_主題聚焦策略.md",
+    "40_Knowledge/41_原子知識/K-CONTENT-016_1-3-1段落節奏法.md",
+    "40_Knowledge/41_原子知識/K-CONTENT-014_內容測試漏斗.md",
+    "40_Knowledge/41_原子知識/K-CONTENT-019_自我介紹Bio框架.md",
+    "40_Knowledge/41_原子知識/K-CONTENT-013_標題具體性原則.md",
+    "40_Knowledge/41_原子知識/K-CONTENT-012_社群平台優先於部落格.md",
+    "40_Knowledge/41_原子知識/K-CONTENT-015_轉變故事鈎子框架.md",
+    "40_Knowledge/41_原子知識/K-CONTENT-017_社群排版格式化技巧.md",
+    "60-AI-Protocols/Hermes/skills/llm-wiki/references/three-framework-role-division.md",
+    "60-AI-Protocols/Hermes/skills/llm-wiki/references/knowledge-collision-phase.md",
+    "60-AI-Protocols/Hermes/skills/llm-wiki/references",
+    "10_Inbox/SHIP30-原子-主題聚焦策略.md",
+    "10_Inbox/SHIP30-原子-內容測試漏斗.md",
+    "10_Inbox/SHIP30-原子-轉變故事鈎子.md",
+    "10_Inbox/SHIP30-原子-標題具體性公式.md",
+    "10_Inbox/SHIP30-原子-Lean-Writing框架.md",
+    "10_Inbox/SHIP30-原子-自我介紹Bio框架.md",
+    "10_Inbox/SHIP30-原子-社群排版格式化技巧.md",
+    "10_Inbox/SHIP30-原子-社群寫作優於部落格.md",
+    "10_Inbox/SHIP30-原子-1-3-1段落節奏法.md",
+    "600支援/x/Images/lyt-crafting-mocs-2.jpg",
+    "600支援/x/Images/lyt-crafting-mocs-0.jpg",
+    "600支援/x/Images/flow-zone-channel.jpg",
+    "600支援/x/Images/flow-map.png",
+    "600支援/x/Images/feynman-triangulation-2.png",
+    "600支援/x/Images/feynman-triangulation-1.png",
+    "600支援/x/Images/CleanShot 2023-07-30 at 21.37.43.png",
+    "60-AI-Protocols/Hermes/skills/workflow/vault-bulk-translation",
+    "wiki",
+    "600支援/x/Images/flight-school-hotkey-wide.jpg",
+    "600支援/x/Images/lyt-crafting-mocs-4.jpg",
+    "600支援/x/Images/lyt-note-links-to-other-notes.png",
+    "600支援/Efforts/Sleeping",
+    "600支援/Efforts/Simmering",
+    "600支援/Efforts/Ongoing",
+    "600支援/Efforts/On",
+    "600支援/Efforts/Notes/UCLA Supercharge Course",
+    "600支援/Efforts/Notes/My Newsletters",
+    "600支援/Efforts/Notes",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/一人商業模式完整全景圖.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/一人商業模式全景圖.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/232-111經營實踐：從價值轉化到系統迭代.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/232-110經營憲章-畫布.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/232-100一人企業 MOC：產品化自己 (Productize Yourself)MOC.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/232-100一人企業 MOC.canvas",
+    "30_Projects/33_Done/HUMAN_3.0-DESKTOP-Misty/產出結果/HUMAN_3.0.canvas",
+    "30_Projects/33_Done/設計人生-DESKTOP-Misty/產出結果/人生設計概念卡片.canvas",
+    "30_Projects/33_Done/商業模式圖-DESKTOP-Misty/產出結果/商業模式畫布.canvas",
+    "30_Projects/33_Done/商業模式圖/產出結果/商業模式畫布.canvas"
+  ]
+}

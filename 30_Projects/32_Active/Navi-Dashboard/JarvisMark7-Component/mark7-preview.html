@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARVIS Mark 7 - Native Layout Recreation</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body { margin: 0; background: #020500; font-family: 'Arial', sans-serif; overflow: hidden; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        
+        .desktop-wrapper {
+            position: relative;
+            width: 100vw; 
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .desktop { 
+            position: relative; 
+            width: 717px; 
+            height: 504px; 
+            transform-origin: center;
+            transform: scale(min(calc(100vw / 717), calc(100vh / 504)));
+        }
+
+        .widget-layer { position: absolute; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState } = React;
+
+        // ==========================================
+        // LAUNCHER CONFIGURATION (from Launcher.ini)
+        // ==========================================
+        const LAUNCHER_CONFIG = [
+            { id: 1, name: "My Documents", action: "D:\\My Documents\\", x: 14, y: 136, rot: 9, lx: 55, ly: 148, lrot: -1.76 },
+            { id: 2, name: "Google", action: "http://www.google.com", x: 54, y: 141, rot: -2, lx: 87, ly: 149, lrot: -1.57 },
+            { id: 3, name: "PhotoShop", action: "Photoshop.exe", x: 84, y: 134, rot: -13, lx: 117, ly: 142, lrot: -1.37 },
+            { id: 4, name: "Notepad", action: "notepad.exe", x: 113, y: 121, rot: -24, lx: 146, ly: 129, lrot: -1.18 }
+        ];
+
+        const LauncherWidget = () => {
+            const [hoveredId, setHoveredId] = useState(null);
+            const [clickedId, setClickedId] = useState(null);
+            const hoveredBtn = LAUNCHER_CONFIG.find(b => b.id === hoveredId);
+
+            return (
+                <div className="widget-layer" style={{ left: 0, bottom: 0, width: 360, height: 274 }}>
+                    <img src="assets/Launcher/LauncherBG.PNG" style={{ position: 'absolute', left: 0, top: 0, pointerEvents: 'none' }} />
+                    {LAUNCHER_CONFIG.map(btn => {
+                        let stateImg = 'BTNormal';
+                        if (clickedId === btn.id) stateImg = 'BtRun';
+                        else if (hoveredId === btn.id) stateImg = 'BtOver';
+
+                        return (
+                            <div key={btn.id}>
+                                <img 
+                                    src={`assets/Launcher/${stateImg}.png`}
+                                    style={{ 
+                                        position: 'absolute', left: btn.x, top: btn.y, 
+                                        transform: `rotate(${btn.rot}deg)`, transformOrigin: 'center', cursor: 'pointer' 
+                                    }}
+                                    onMouseEnter={() => setHoveredId(btn.id)}
+                                    onMouseLeave={() => setHoveredId(null)}
+                                    onMouseDown={() => setClickedId(btn.id)}
+                                    onMouseUp={() => setClickedId(null)}
+                                />
+                                {hoveredId === btn.id && (
+                                    <div style={{ position: 'absolute', left: btn.lx, top: btn.ly, color: '#fff', transform: `rotate(${btn.lrot}rad)`, transformOrigin: 'top left', fontFamily: '"Arial Black"', fontSize: 13 }}>
+                                        0{btn.id}x
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    })}
+                    <div style={{ position: 'absolute', left: 33, top: 208, color: '#c5effc', fontSize: 10 }}>
+                        {hoveredBtn ? hoveredBtn.name : ""}
+                    </div>
+                </div>
+            );
+        };
+
+        // ==========================================
+        // USB CONFIGURATION (from USB.ini)
+        // ==========================================
+        const USB_CONFIG = [
+            { id: 1, angle: 25, x: 242, y: 302, drive: "E:", label: "Available", free: 64, total: "16.0 G" },
+            { id: 2, angle: 33, x: 227, y: 328, drive: "F:", label: "Available", free: 88, total: "32.0 G" },
+            { id: 3, angle: 40, x: 209, y: 353, drive: "G:", label: "Available", free: 42, total: "64.0 G" }
+        ];
+
+        const USBWidget = () => {
+            return (
+                <div className="widget-layer" style={{ left: 240, top: 50, position: 'absolute' }}>
+                    <img src="assets/USB_Disk/USBBG.png" style={{ position: 'absolute', left: 0, top: 0, pointerEvents: 'none' }} />
+                    <img src="assets/USB_Disk/USB0.png" style={{ position: 'absolute', left: 177, top: 290, cursor: 'pointer' }} />
+                    
+                    {USB_CONFIG.map(usb => {
+                        const rot = usb.angle;
+                        const textRot = (rot - 4);
+                        
+                        // Cumulative offsets accurately mapped from .ini [r] directives
+                        const btnX = usb.x, btnY = usb.y;
+                        const barX = btnX + 10, barY = btnY + 8; // (if we rendered it)
+                        const nameX = barX + 0, nameY = barY - 10;
+                        const freeX = nameX + 62, freeY = nameY + 29;
+                        const postfixX = freeX + 2, postfixY = freeY + 10;
+                        const labelX = postfixX - 6, labelY = postfixY - 9;
+
+                        return (
+                            <div key={usb.id}>
+                                <img src="assets/USB_Disk/diskbg.png" style={{ position: 'absolute', left: btnX, top: btnY, transform: `rotate(${rot}deg)`, transformOrigin: 'center' }} />
+                                
+                                {/* Dynamic Native Labels mapped via correct accumulated offsets and anchors */}
+                                <div style={{ position: 'absolute', left: nameX, top: nameY, transform: `rotate(${textRot}deg)`, transformOrigin: 'top left', color: '#fff', fontSize: 7, whiteSpace: 'nowrap' }}>
+                                    {usb.label} ({usb.drive}) : {usb.total}
+                                </div>
+                                <div style={{ position: 'absolute', left: freeX, top: freeY, transform: `rotate(${rot}deg) translate(-100%, 0)`, transformOrigin: 'top right', color: '#B90000', fontSize: 11, fontFamily: '"Arial Black", sans-serif' }}>
+                                    {usb.free}
+                                </div>
+                                <div style={{ position: 'absolute', left: labelX, top: labelY, transform: `rotate(${rot}deg)`, transformOrigin: 'top left', color: '#B90000', fontSize: 5 }}>
+                                    {usb.label}
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
+            );
+        };
+
+        // ==========================================
+        // TIME CONFIGURATION (from Time.ini)
+        // ==========================================
+        const TimeWidget = () => {
+            // center offsets X=429, Y=231 based on TimeStyle
+            return (
+                <div className="widget-layer" style={{ position: 'absolute', left: 0, top: 0 }}>
+                    <img src="assets/Time/TimeBG.png" style={{ position: 'absolute', left: 0, top: 0, pointerEvents: 'none' }} />
+                    
+                    <div style={{ position: 'absolute', left: 300, top: 62, color: '#fff', fontSize: 13, fontFamily: '"Arial Black"', transformOrigin: 'top left', transform: 'rotate(-36deg)' }}>12</div>
+                    <div style={{ position: 'absolute', left: 325, top: 43, color: '#fff', fontSize: 13, fontFamily: '"Arial Black"', transformOrigin: 'top left', transform: 'rotate(-27deg)' }}>:</div>
+                    <div style={{ position: 'absolute', left: 337, top: 40, color: '#fff', fontSize: 13, fontFamily: '"Arial Black"', transformOrigin: 'top left', transform: 'rotate(-23deg)' }}>30</div>
+                    
+                    <img src="assets/Time/hour.png" style={{ position: 'absolute', left: 429, top: 231, transformOrigin: 'center', transform: 'translate(-50%, -50%) rotate(0deg)' }} />
+                    <img src="assets/Time/min.png" style={{ position: 'absolute', left: 429, top: 231, transformOrigin: 'center', transform: 'translate(-50%, -50%) rotate(45deg)' }} />
+                    <img src="assets/Time/sec.png" style={{ position: 'absolute', left: 429, top: 231, transformOrigin: 'center', transform: 'translate(-50%, -50%) rotate(90deg)' }} />
+                    <img src="assets/Time/outring.png" style={{ position: 'absolute', left: 429, top: 231, transformOrigin: 'center', transform: 'translate(-50%, -50%) rotate(180deg)', animation: 'spin 10s linear infinite' }} />
+                </div>
+            );
+        };
+
+        // ==========================================
+        // SYSTEM CONFIGURATION
+        // ==========================================
+        const SystemWidget = () => (
+            <div className="widget-layer" style={{ left: 0, top: 0 }}>
+                 <img src="assets/System/SysBG.png" style={{ position: 'absolute', left: 0, top: 0 }} />
+                 <img src="assets/System/IronMan0.png" style={{ position: 'absolute', left: 158, top: 125 }} />
+            </div>
+        );
+
+        // ==========================================
+        // HDD CONFIGURATION
+        // ==========================================
+        const HDDWidget = () => (
+            <div className="widget-layer" style={{ left: 240, top: 40 }}>
+                <img src="assets/HDD/HDDBG.png" style={{ position: 'absolute', left: 0, top: 0 }} />
+                {/* 204, 89 represents Top Left. Using Angle= -0.52057 (-29.8 deg) */}
+                <div style={{ position: 'absolute', left: 204, top: 89, transformOrigin: 'top left', transform: 'rotate(-29.8deg)', color: '#00008C', fontSize: 6 }}>Available (C:)</div>
+                <img src="assets/HDD/Button1.png" style={{ position: 'absolute', left: 290, top: 51 }} />
+            </div>
+        );
+
+        // ==========================================
+        // MAIN DESKTOP RENDERER
+        // ==========================================
+        const App = () => {
+            return (
+                <div className="desktop-wrapper">
+                    <div className="desktop">
+                        <SystemWidget />
+                        <TimeWidget />
+                        <HDDWidget />
+                        <USBWidget />
+                        <LauncherWidget />
+                    </div>
+                </div>
+            );
+        };
+
+        ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+    </script>
+</body>
+</html>

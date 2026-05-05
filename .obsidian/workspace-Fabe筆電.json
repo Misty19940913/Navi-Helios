@@ -1,0 +1,220 @@
+{
+  "main": {
+    "id": "3c4638f25fdebdb1",
+    "type": "split",
+    "children": [
+      {
+        "id": "1d3fff9d8f2910e8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c4fcf3b3d482d466",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "300知識庫/待分類知識/人生指南針.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "人生指南針"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9478431058f74f8d",
+    "type": "split",
+    "children": [
+      {
+        "id": "ca724b8d67419a80",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "72daf20bd944f0c6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "651ee52386d396c6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "3186fba1d747e7cf",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "272d78c2a6ea9143",
+    "type": "split",
+    "children": [
+      {
+        "id": "4e4ed912fd8b991f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "38bef6aaef8f13e9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "300知識庫/待分類知識/人生指南針.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "人生指南針 的反向链接列表"
+            }
+          },
+          {
+            "id": "bdd0618a23948db3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "300知識庫/待分類知識/人生指南針.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "人生指南針 的出链列表"
+            }
+          },
+          {
+            "id": "bbe1ad55cff58581",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "08fe9fb27e2c3b2d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "300知識庫/待分類知識/人生指南針.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "人生指南針 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "c4fcf3b3d482d466",
+  "lastOpenFiles": [
+    "300知識庫/待分類知識/二八法則.md",
+    "200八域項目/230事業/232東黎有限公司/0311公司制度/Dan/33-A Full Guide To Making Your First Profitable Product (Beginners, Take Notes).md",
+    "200八域項目/230事業/232東黎有限公司/0311公司制度/Dan/26-Zero To $1 Million As A One-Person Business (Working 2-4 Hours A Day).md",
+    "200八域項目/230事業/232東黎有限公司/0311公司制度/Dan/25-The One-Person Business Model (How To Productize Yourself Full Guide).md",
+    "200八域項目/230事業/232東黎有限公司/0311公司制度/Dan/22-The Value Creator (A New Internet Career Path For Intelligent People).md",
+    "200八域項目/230事業/232東黎有限公司/0311公司制度/Dan/24-Micro Education Businesses Are The Future & How To Start With Zero Dollars.md",
+    "200八域項目/230事業/232東黎有限公司/0314工作坊/裂痕探索 × 自覺覺察.md",
+    "200八域項目/230事業/232東黎有限公司/0312自媒體內容/自我裂痕覺察.md",
+    "200八域項目/230事業/232東黎有限公司/0312自媒體內容/系統介紹.md",
+    "200八域項目/230事業/232東黎有限公司/0312自媒體內容/文章內容規劃.md",
+    "200八域項目/230事業/232東黎有限公司/0312自媒體內容/品牌起源.md",
+    "200八域項目/230事業/232東黎有限公司/0312自媒體內容/你的人生在哪一格？曦引系統的第一步是自我覺醒.md",
+    "200八域項目/230事業/232東黎有限公司/0312自媒體內容/SEO.md",
+    "200八域項目/230事業/232東黎有限公司/0311公司制度/Dan",
+    "200八域項目/230事業/232東黎有限公司/0314工作坊",
+    "200八域項目/230事業/232東黎有限公司/0312自媒體內容",
+    "200八域項目/230事業/232東黎有限公司/0311公司制度",
+    "200八域項目/230事業/232東黎有限公司",
+    "200八域項目/230事業",
+    "200八域項目/220生活/221超級個體工作術/05｜圖片/陸地模式3特點.jpg",
+    "200八域項目/220生活/221超級個體工作術/05｜圖片/陸地模式.jpg",
+    "200八域項目/220生活/221超級個體工作術/05｜圖片/累積能力的方向.jpg",
+    "200八域項目/220生活/221超級個體工作術/05｜圖片/現代職業發展路徑.jpg",
+    "200八域項目/220生活/221超級個體工作術/05｜圖片/海洋模式特點3.jpg",
+    "200八域項目/220生活/221超級個體工作術/05｜圖片/海洋模式特點2.jpg",
+    "200八域項目/220生活/221超級個體工作術/05｜圖片/海洋模式特點1.jpg",
+    "200八域項目/220生活/221超級個體工作術/05｜圖片/海洋模式.jpg",
+    "200八域項目/220生活/221超級個體工作術/05｜圖片/找圈子.jpg",
+    "200八域項目/220生活/221超級個體工作術/05｜圖片/傳統的職業發展的路徑.jpg",
+    "200八域項目/220生活/興趣管理/index.md",
+    "200八域項目/220生活/221超級個體工作術/05｜怎麼破解、看懂現代職涯的座標系？.md",
+    "200八域項目/220生活/221超級個體工作術/作業二範本.md",
+    "200八域項目/220生活/221超級個體工作術/07｜怎麼用好新時代的生產力工作法？（導覽地圖）.md",
+    "200八域項目/220生活/221超級個體工作術/05｜圖片",
+    "200八域項目/220生活/221超級個體工作術/04｜怎麼培養成長思維？為什麼付費買時間最划算？.md",
+    "200八域項目/220生活/221超級個體工作術/03｜重新定義財富自由：注意力最貴.md",
+    "200八域項目/220生活/221超級個體工作術/032超級個體工作術.md",
+    "200八域項目/220生活/221超級個體工作術/02｜怎麼有效學習這堂課？（課程使用說明書）.md",
+    "200八域項目/220生活/興趣管理",
+    "200八域項目/220生活/index.md",
+    "200八域項目/220生活/221超級個體工作術",
+    "200八域項目/220生活",
+    "200八域項目/280精神/行為層面.md",
+    "200八域項目/280精神/自我評估.md",
+    "200八域項目/280精神/系統智能策略.md",
+    "200八域項目/280精神/天賦挖掘15問-個人運用結果.md"
+  ]
+}

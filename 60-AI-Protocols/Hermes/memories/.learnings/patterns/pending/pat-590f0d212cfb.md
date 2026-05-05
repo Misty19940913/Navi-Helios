@@ -1,0 +1,22 @@
+# Pattern: pat-590f0d212cfb
+**Tool:** terminal  
+**Type:** tool_error  
+**Count:** 1  
+**Status:** pending  
+**First seen:** 2026-05-04T17:39:12.776340+00:00  
+**Last seen:** 2026-05-04T17:39:12.776340+00:00
+
+## Summary
+Tool error in terminal: {"output": "10:- Metadata (name ≤64 chars, description ≤1024 chars) - shown in skills_list\n53:- skills_list: List skill
+
+## Error hashes
+- 15d99e87581495a2
+
+## Last error
+```
+Error Type: tool_error
+Tool Args: {'command': 'grep -n "skills_list\\|skills_list" ~/.hermes/hermes-agent/tools/skills_tool.py | tail -20'}
+
+--- Error Output (last 30 lines) ---
+{"output": "10:- Metadata (name ≤64 chars, description ≤1024 chars) - shown in skills_list\n53:- skills_list: List skills with metadata (progressive disclosure tier 1)\n57:    from tools.skills_tool import skills_list, skill_view, check_skills_requirements\n60:    result = skills_list()\n674:def skills_list(category: str = None, task_id: str = None) -> str:\n996:                    \"hint\": \"Use skills_list to see all available skills\",\n1402:    result = json.loads(skills_list())\n1443:    \"name\": \"skills_list\",\n1465:                \"description\": \"The skill name (use skills_list to see available skills). For plugin-provided skills, use the qualified form 'plugin:skill' (e.g. 'superpowers:writing-plans').\",\n1477:    name=\"skills_list\",\n1480:    handler=lambda args, **kw: skills_list(", "exit_co
+```

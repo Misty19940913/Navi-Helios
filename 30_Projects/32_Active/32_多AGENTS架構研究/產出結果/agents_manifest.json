@@ -1,0 +1,88 @@
+{
+  "agents": [
+    {
+      "id": "taizi_a",
+      "name": "太子A (戰略)",
+      "workspace": "~/.openclaw/workspace-taizi-a",
+      "roles": ["planning", "strategy"],
+      "description": "負責全矩陣戰略規劃與旨意分揀"
+    },
+    {
+      "id": "taizi_b",
+      "name": "太子B (技術)",
+      "workspace": "~/.openclaw/workspace-taizi-b",
+      "roles": ["technology", "architecture"],
+      "description": "負責技術線專案規劃與架構審查"
+    },
+    {
+      "id": "taizi_c",
+      "name": "太子C (營運)",
+      "workspace": "~/.openclaw/workspace-taizi-c",
+      "roles": ["operation", "marketing"],
+      "description": "負責市場營運與對外溝通規劃"
+    },
+    {
+      "id": "zhongshu",
+      "name": "中書省 (起草)",
+      "workspace": "~/.openclaw/workspace-zhongshu",
+      "roles": ["drafting", "coordination"],
+      "description": "負責接收計畫、起草詳細執行方案"
+    },
+    {
+      "id": "menxia",
+      "name": "門下省 (審議)",
+      "workspace": "~/.openclaw/workspace-menxia",
+      "roles": ["review", "audit"],
+      "description": "負責可行性與完整性審查"
+    },
+    {
+      "id": "shangshu",
+      "name": "尚書省 (派發)",
+      "workspace": "~/.openclaw/workspace-shangshu",
+      "roles": ["dispatch", "management"],
+      "description": "負責任務拆解、屬性標註與領取派發"
+    },
+    {
+      "id": "bingbu",
+      "name": "兵部 (開發)",
+      "workspace": "~/.openclaw/workspace-bingbu",
+      "roles": ["code", "development"],
+      "description": "負責核心代碼開發與功能實作"
+    },
+    {
+      "id": "hubu",
+      "name": "戶部 (數據)",
+      "workspace": "~/.openclaw/workspace-hubu",
+      "roles": ["data", "finance"],
+      "description": "負責數據分析、統計與財務模擬"
+    },
+    {
+      "id": "libu_hr",
+      "name": "吏部 (管理)",
+      "workspace": "~/.openclaw/workspace-libu-hr",
+      "roles": ["hr", "agent_management"],
+      "description": "負責 Agent 權限、技能培訓與健康檢查"
+    },
+    {
+      "id": "libu",
+      "name": "禮部 (文書)",
+      "workspace": "~/.openclaw/workspace-libu",
+      "roles": ["writing", "doc"],
+      "description": "負責公關文案、用戶界面與視覺規範"
+    },
+    {
+      "id": "xingbu",
+      "name": "刑部 (質量)",
+      "workspace": "~/.openclaw/workspace-xingbu",
+      "roles": ["qa", "security"],
+      "description": "負責質量審查、安全審核與 Bug 追蹤"
+    },
+    {
+      "id": "gongbu",
+      "name": "工部 (運維)",
+      "workspace": "~/.openclaw/workspace-gongbu",
+      "roles": ["devops", "infrastructure"],
+      "description": "負責部署優化、環境維護與效能監控"
+    }
+  ]
+}

@@ -1,6 +1,0 @@
-# 任務清單：建立原子化拆解與畫布轉化系統
-
-- [x] 建立 [implementation_plan.md](file:///C:/Users/aetna/.gemini/antigravity/brain/978fac20-fe14-4e59-8363-7439bf9a64a3/implementation_plan.md) 並進行最終邏輯校準 <!-- id: 0 -->
-- [/] 優化 `atomize-note`：強制執行 Wikilinks 掃描與互動對齊 <!-- id: 1 -->
-- [ ] 依據新邏輯重新生成 232-111 原子化清單 <!-- id: 2 -->
-- [ ] 執行視覺化建構 <!-- id: 3 -->

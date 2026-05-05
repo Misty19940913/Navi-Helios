@@ -1,0 +1,17 @@
+{
+  "name": "navi-dashboard-backend",
+  "version": "0.1.0",
+  "description": "Navi-Dashboard Backend - Node.js standard library only",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "keywords": ["dashboard", "openclaw", "monitoring"],
+  "author": "Navi",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "global": {
+    "centerX": 429.37,
+    "centerY": 231.46,
+    "bgUrl": "/Preview_mark7.png"
+  },
+  "layers": [
+    {
+      "type": "shape",
+      "radius": 140,
+      "strokeWidth": 5,
+      "startAngle": -50,
+      "endAngle": 360,
+      "segments": 3,
+      "gap": 18.9,
+      "color": "#00FF44",
+      "rotationSpeed": "0s",
+      "pulseSpeed": "0s",
+      "pulseRange": 0,
+      "reverse": false,
+      "opacity": 1,
+      "startSkew": 0,
+      "endSkew": 0,
+      "fillMode": "solid",
+      "hideEdges": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sides": 6,
+      "shapeWidth": 30,
+      "shapeHeight": 30,
+      "shapeRotation": 30,
+      "radiusStep": 0,
+      "arrayMode": "orbital",
+      "iconUrl": ""
+    },
+    {
+      "type": "shape",
+      "radius": 373,
+      "strokeWidth": 5,
+      "startAngle": 248,
+      "endAngle": 360,
+      "segments": 10,
+      "gap": 5.7,
+      "color": "#00FF44",
+      "rotationSpeed": "0s",
+      "pulseSpeed": "0s",
+      "pulseRange": 0,
+      "reverse": false,
+      "opacity": 1,
+      "startSkew": 0,
+      "endSkew": 0,
+      "fillMode": "solid",
+      "hideEdges": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sides": 6,
+      "shapeWidth": 30,
+      "shapeHeight": 71,
+      "shapeRotation": 0,
+      "iconUrl": ""
+    }
+  ]
+}

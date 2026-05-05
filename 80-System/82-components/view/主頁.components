@@ -1,0 +1,1325 @@
+{
+  "components": [
+    {
+      "id": "cb8bee17-a1df-4ae2-950a-5d487637c6c1",
+      "type": "multi",
+      "titleAlign": "center",
+      "tabTitle": "",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showShadow": false,
+      "createAt": "2024-12-13T04:16:25.409Z",
+      "updateAt": "2026-04-26T17:49:45.885Z",
+      "components": [
+        {
+          "componentId": "bdb75922",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 0,
+              "w": 4,
+              "h": 4
+            },
+            "laptop": {
+              "x": 0,
+              "y": 0,
+              "w": 12,
+              "h": 2
+            }
+          }
+        },
+        {
+          "componentId": "7c3415b5",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 0,
+              "w": 4,
+              "h": 10
+            },
+            "laptop": {
+              "x": 0,
+              "y": 2,
+              "w": 3,
+              "h": 7
+            }
+          }
+        },
+        {
+          "componentId": "area-career",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 10,
+              "w": 4,
+              "h": 5
+            },
+            "laptop": {
+              "x": 3,
+              "y": 11,
+              "w": 1,
+              "h": 3
+            }
+          }
+        },
+        {
+          "componentId": "area-finance",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 15,
+              "w": 4,
+              "h": 5
+            },
+            "laptop": {
+              "x": 2,
+              "y": 11,
+              "w": 1,
+              "h": 3
+            }
+          }
+        },
+        {
+          "componentId": "area-health",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 20,
+              "w": 4,
+              "h": 5
+            },
+            "laptop": {
+              "x": 4,
+              "y": 11,
+              "w": 1,
+              "h": 3
+            }
+          }
+        },
+        {
+          "componentId": "area-relation",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 25,
+              "w": 4,
+              "h": 5
+            },
+            "laptop": {
+              "x": 5,
+              "y": 11,
+              "w": 1,
+              "h": 3
+            }
+          }
+        },
+        {
+          "componentId": "area-growth",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 30,
+              "w": 4,
+              "h": 5
+            },
+            "laptop": {
+              "x": 6,
+              "y": 11,
+              "w": 1,
+              "h": 3
+            }
+          }
+        },
+        {
+          "componentId": "dp-year",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 35,
+              "w": 4,
+              "h": 5
+            },
+            "laptop": {
+              "x": 3,
+              "y": 2,
+              "w": 1,
+              "h": 7
+            }
+          }
+        },
+        {
+          "componentId": "dp-quarter",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 40,
+              "w": 4,
+              "h": 5
+            },
+            "laptop": {
+              "x": 4,
+              "y": 2,
+              "w": 1,
+              "h": 7
+            }
+          }
+        },
+        {
+          "componentId": "dp-month",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 45,
+              "w": 4,
+              "h": 5
+            },
+            "laptop": {
+              "x": 5,
+              "y": 2,
+              "w": 1,
+              "h": 7
+            }
+          }
+        },
+        {
+          "componentId": "dp-week",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 50,
+              "w": 4,
+              "h": 5
+            },
+            "laptop": {
+              "x": 6,
+              "y": 2,
+              "w": 1,
+              "h": 7
+            }
+          }
+        },
+        {
+          "componentId": "dp-day",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 55,
+              "w": 4,
+              "h": 5
+            },
+            "laptop": {
+              "x": 7,
+              "y": 2,
+              "w": 1,
+              "h": 7
+            }
+          }
+        },
+        {
+          "componentId": "cf1f5eb3",
+          "layout": {
+            "mobile": {
+              "x": 2,
+              "y": 46,
+              "w": 1,
+              "h": 4
+            },
+            "laptop": {
+              "x": 0,
+              "y": 11,
+              "w": 1,
+              "h": 4
+            }
+          }
+        },
+        {
+          "componentId": "32c8fb52",
+          "layout": {
+            "mobile": {
+              "x": 3,
+              "y": 50,
+              "w": 1,
+              "h": 4
+            },
+            "laptop": {
+              "x": 0,
+              "y": 15,
+              "w": 1,
+              "h": 4
+            }
+          }
+        },
+        {
+          "componentId": "56284bb4",
+          "layout": {
+            "mobile": {
+              "x": 2,
+              "y": 50,
+              "w": 1,
+              "h": 4
+            },
+            "laptop": {
+              "x": 1,
+              "y": 11,
+              "w": 1,
+              "h": 4
+            }
+          }
+        },
+        {
+          "componentId": "40f41571",
+          "layout": {
+            "mobile": {
+              "x": 3,
+              "y": 46,
+              "w": 1,
+              "h": 4
+            },
+            "laptop": {
+              "x": 1,
+              "y": 15,
+              "w": 1,
+              "h": 4
+            }
+          }
+        },
+        {
+          "componentId": "cd-30days",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 7,
+              "w": 2,
+              "h": 2
+            },
+            "laptop": {
+              "x": 0,
+              "y": 21,
+              "w": 2,
+              "h": 7
+            }
+          }
+        },
+        {
+          "componentId": "cd-exam",
+          "layout": {
+            "mobile": {
+              "x": 2,
+              "y": 7,
+              "w": 2,
+              "h": 2
+            },
+            "laptop": {
+              "x": 4,
+              "y": 21,
+              "w": 2,
+              "h": 7
+            }
+          }
+        },
+        {
+          "componentId": "cd-weekend",
+          "layout": {
+            "mobile": {
+              "x": 4,
+              "y": 7,
+              "w": 2,
+              "h": 2
+            },
+            "laptop": {
+              "x": 2,
+              "y": 21,
+              "w": 2,
+              "h": 7
+            }
+          }
+        },
+        {
+          "componentId": "goals-tracker",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 9,
+              "w": 4,
+              "h": 2
+            },
+            "laptop": {
+              "x": 0,
+              "y": 19,
+              "w": 8,
+              "h": 2
+            }
+          }
+        },
+        {
+          "componentId": "arena-tracker",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 9,
+              "w": 4,
+              "h": 2
+            },
+            "laptop": {
+              "x": 8,
+              "y": 28,
+              "w": 4,
+              "h": 2
+            }
+          }
+        },
+        {
+          "componentId": "week-mits",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 11,
+              "w": 4,
+              "h": 2
+            },
+            "laptop": {
+              "x": 8,
+              "y": 2,
+              "w": 4,
+              "h": 26
+            }
+          }
+        },
+        {
+          "componentId": "678291bd",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 14,
+              "w": 4,
+              "h": 4
+            },
+            "laptop": {
+              "x": 0,
+              "y": 9,
+              "w": 8,
+              "h": 2
+            }
+          }
+        },
+        {
+          "componentId": "ae33fc72",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 18,
+              "w": 4,
+              "h": 4
+            },
+            "laptop": {
+              "x": 6,
+              "y": 16,
+              "w": 2,
+              "h": 2
+            }
+          }
+        },
+        {
+          "componentId": "07c5af35",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 22,
+              "w": 4,
+              "h": 4
+            },
+            "laptop": {
+              "x": 2,
+              "y": 14,
+              "w": 2,
+              "h": 2
+            }
+          }
+        },
+        {
+          "componentId": "db2c1468",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 26,
+              "w": 4,
+              "h": 4
+            },
+            "laptop": {
+              "x": 4,
+              "y": 14,
+              "w": 2,
+              "h": 2
+            }
+          }
+        },
+        {
+          "componentId": "c427e89f",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 30,
+              "w": 4,
+              "h": 4
+            },
+            "laptop": {
+              "x": 2,
+              "y": 16,
+              "w": 2,
+              "h": 2
+            }
+          }
+        },
+        {
+          "componentId": "6a989e83",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 34,
+              "w": 4,
+              "h": 4
+            },
+            "laptop": {
+              "x": 4,
+              "y": 16,
+              "w": 2,
+              "h": 2
+            }
+          }
+        },
+        {
+          "componentId": "245e6141",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 38,
+              "w": 4,
+              "h": 4
+            },
+            "laptop": {
+              "x": 6,
+              "y": 14,
+              "w": 2,
+              "h": 2
+            }
+          }
+        },
+        {
+          "componentId": "d7759490",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 42,
+              "w": 4,
+              "h": 4
+            },
+            "laptop": {
+              "x": 0,
+              "y": 30,
+              "w": 12,
+              "h": 23
+            }
+          }
+        }
+      ],
+      "layoutType": "grid",
+      "locked": false,
+      "layoutOptions": {}
+    },
+    {
+      "id": "bdb75922",
+      "type": "card",
+      "titleAlign": "center",
+      "tabTitle": "導航",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showShadow": false,
+      "createAt": "2024-12-27T05:12:50.842Z",
+      "updateAt": "2025-11-18T08:05:00.445Z",
+      "title": "導航",
+      "description": "",
+      "coverFit": "cover",
+      "coverPosition": "left",
+      "clickAction": {
+        "type": "None",
+        "id": "47ee9b62-252d-47db-9767-8bf2eedd4ce3",
+        "options": {}
+      },
+      "icon": "ListTree",
+      "backgroundColor": "#b1b1b126"
+    },
+    {
+      "id": "7c3415b5",
+      "type": "time",
+      "titleAlign": "center",
+      "tabTitle": "时间",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": true,
+      "createAt": "2024-12-27T04:29:33.281Z",
+      "updateAt": "2025-11-18T08:04:35.898Z",
+      "showLunar": false,
+      "hideDateInfo": false,
+      "hideSeconds": true,
+      "hideProgress": true,
+      "backgroundImage": {
+        "url": "",
+        "fit": "contains"
+      },
+      "fontColor": "#f5e9e9",
+      "backgroundColor": "#6afff7",
+      "semanticTime": false
+    },
+    {
+      "id": "area-career",
+      "type": "card",
+      "titleAlign": "center",
+      "tabTitle": "💼 職業發展",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2026-04-08T12:00:00.000Z",
+      "updateAt": "2026-04-09T03:18:18.666Z",
+      "title": "職業發展",
+      "description": "",
+      "coverFit": "cover",
+      "coverPosition": "left",
+      "clickAction": {
+        "type": "OpenFile",
+        "id": "area-career-action",
+        "options": {
+          "filePath": "20_Life_Planning/22_Area/職業發展.md",
+          "openPageIn": "split"
+        }
+      },
+      "icon": ""
+    },
+    {
+      "id": "area-finance",
+      "type": "card",
+      "titleAlign": "center",
+      "tabTitle": "💰 財務自由",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2026-04-08T12:00:00.000Z",
+      "updateAt": "2026-04-09T03:19:24.055Z",
+      "title": "財務自由",
+      "description": "",
+      "coverFit": "cover",
+      "coverPosition": "left",
+      "clickAction": {
+        "type": "OpenFile",
+        "id": "area-finance-action",
+        "options": {
+          "filePath": "20_Life_Planning/22_Area/財務自由.md",
+          "openPageIn": "split"
+        }
+      },
+      "icon": ""
+    },
+    {
+      "id": "area-health",
+      "type": "card",
+      "titleAlign": "center",
+      "tabTitle": "❤️ 身心健康",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2026-04-08T12:00:00.000Z",
+      "updateAt": "2026-04-09T03:19:38.797Z",
+      "title": "身心健康",
+      "description": "",
+      "coverFit": "cover",
+      "coverPosition": "left",
+      "clickAction": {
+        "type": "OpenFile",
+        "id": "area-health-action",
+        "options": {
+          "filePath": "20_Life_Planning/22_Area/身心健康.md",
+          "openPageIn": "split"
+        }
+      },
+      "icon": ""
+    },
+    {
+      "id": "area-relation",
+      "type": "card",
+      "titleAlign": "center",
+      "tabTitle": "👥 關係家庭",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2026-04-08T12:00:00.000Z",
+      "updateAt": "2026-04-09T03:19:45.635Z",
+      "title": "關係家庭",
+      "description": "",
+      "coverFit": "cover",
+      "coverPosition": "left",
+      "clickAction": {
+        "type": "OpenFile",
+        "id": "area-relation-action",
+        "options": {
+          "filePath": "20_Life_Planning/22_Area/關係家庭.md",
+          "openPageIn": "split"
+        }
+      },
+      "icon": ""
+    },
+    {
+      "id": "area-growth",
+      "type": "card",
+      "titleAlign": "center",
+      "tabTitle": "🌱 自我成長",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2026-04-08T12:00:00.000Z",
+      "updateAt": "2026-04-09T03:21:25.578Z",
+      "title": "自我成長",
+      "description": "",
+      "coverFit": "cover",
+      "coverPosition": "left",
+      "clickAction": {
+        "type": "OpenFile",
+        "id": "area-growth-action",
+        "options": {
+          "filePath": "20_Life_Planning/22_Area/自我成長.md",
+          "openPageIn": "split"
+        }
+      },
+      "icon": ""
+    },
+    {
+      "id": "dp-year",
+      "type": "dateProgress",
+      "titleAlign": "center",
+      "tabTitle": "今年",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2026-04-08T12:00:00.000Z",
+      "updateAt": "2026-04-09T03:17:59.867Z",
+      "progressType": "year",
+      "title": "今年",
+      "showDateIndicator": true,
+      "showProgressIndicator": false,
+      "uiType": "ring",
+      "startDateTimeType": "$startOfYear",
+      "endDateTimeType": "$endOfYear"
+    },
+    {
+      "id": "dp-quarter",
+      "type": "dateProgress",
+      "titleAlign": "center",
+      "tabTitle": "本季",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2026-04-08T12:00:00.000Z",
+      "updateAt": "2026-04-09T03:20:23.061Z",
+      "progressType": "quarter",
+      "title": "本季",
+      "startDateTimeType": "$startOfQuarter",
+      "endDateTimeType": "$endOfQuarter",
+      "uiType": "ring"
+    },
+    {
+      "id": "dp-month",
+      "type": "dateProgress",
+      "titleAlign": "center",
+      "tabTitle": "本月",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2026-04-08T12:00:00.000Z",
+      "updateAt": "2026-04-09T03:20:38.151Z",
+      "progressType": "month",
+      "title": "本月",
+      "uiType": "ring",
+      "startDateTimeType": "$startOfMonth",
+      "endDateTimeType": "$endOfWeek"
+    },
+    {
+      "id": "dp-week",
+      "type": "dateProgress",
+      "titleAlign": "center",
+      "tabTitle": "本週",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2026-04-08T12:00:00.000Z",
+      "updateAt": "2026-04-09T03:20:52.724Z",
+      "progressType": "week",
+      "title": "本週",
+      "startDateTimeType": "$startOfWeek",
+      "endDateTimeType": "$endOfWeek",
+      "uiType": "ring"
+    },
+    {
+      "id": "dp-day",
+      "type": "dateProgress",
+      "titleAlign": "center",
+      "tabTitle": "今日",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2026-04-08T12:00:00.000Z",
+      "updateAt": "2026-04-09T03:21:06.629Z",
+      "progressType": "day",
+      "title": "今日",
+      "startDateTimeType": "$startOfToday",
+      "endDateTimeType": "$endOfToday",
+      "uiType": "ring"
+    },
+    {
+      "id": "cf1f5eb3",
+      "type": "count",
+      "titleAlign": "center",
+      "tabTitle": "✉️ 收件箱",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-05-13T07:05:10.363Z",
+      "updateAt": "2026-04-09T03:25:06.019Z",
+      "contentPrefix": "",
+      "contentSuffix": "",
+      "countType": "number",
+      "query": {
+        "valueType": "totalRecords",
+        "value": 100,
+        "filter": {
+          "id": "31feadb5-42e6-46c0-a58e-6362527cff4f",
+          "type": "group",
+          "operator": "and",
+          "conditions": [
+            {
+              "id": "cffbd581-ecd3-4bd4-84d2-ef0576ca28e3",
+              "type": "filter",
+              "operator": "contains",
+              "property": "${file.parent}",
+              "value": "10_Inbox",
+              "conditions": []
+            }
+          ]
+        },
+        "sort": {
+          "orders": []
+        }
+      },
+      "totalQuery": {
+        "valueType": "totalRecords",
+        "value": 100,
+        "filter": {
+          "id": "7d5f15af-6159-4a7d-92de-cef84b97c27a",
+          "type": "group",
+          "operator": "and",
+          "conditions": []
+        },
+        "sort": {
+          "orders": []
+        }
+      },
+      "title": "收件箱",
+      "darkBorderColor": "#fcb900",
+      "precision": 0
+    },
+    {
+      "id": "32c8fb52",
+      "type": "count",
+      "titleAlign": "center",
+      "tabTitle": "🚀 知識庫\n",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-05-13T07:05:02.166Z",
+      "updateAt": "2026-04-09T03:24:29.010Z",
+      "contentPrefix": "",
+      "contentSuffix": "",
+      "countType": "number",
+      "query": {
+        "valueType": "totalRecords",
+        "value": 100,
+        "filter": {
+          "id": "31feadb5-42e6-46c0-a58e-6362527cff4f",
+          "type": "group",
+          "operator": "and",
+          "conditions": [
+            {
+              "id": "2e5dbd69-c9fc-4df8-95a2-571cc239682f",
+              "type": "filter",
+              "operator": "contains",
+              "property": "${file.path}",
+              "value": "40_Knowledge/41_原子知識",
+              "conditions": []
+            }
+          ]
+        },
+        "sort": {
+          "orders": []
+        }
+      },
+      "totalQuery": {
+        "valueType": "constant",
+        "value": 100,
+        "filter": {
+          "id": "7d5f15af-6159-4a7d-92de-cef84b97c27a",
+          "type": "group",
+          "operator": "and",
+          "conditions": []
+        }
+      },
+      "title": "知識庫\n",
+      "precision": 0
+    },
+    {
+      "id": "56284bb4",
+      "type": "count",
+      "titleAlign": "center",
+      "tabTitle": "🔥 項目",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-05-13T07:05:04.421Z",
+      "updateAt": "2026-04-09T03:25:23.960Z",
+      "contentPrefix": "",
+      "contentSuffix": "",
+      "countType": "number",
+      "query": {
+        "valueType": "query",
+        "value": 100,
+        "filter": {
+          "id": "31feadb5-42e6-46c0-a58e-6362527cff4f",
+          "type": "group",
+          "operator": "and",
+          "conditions": [
+            {
+              "id": "e38138b3-373e-4eda-b1b7-c33319514940",
+              "type": "filter",
+              "operator": "contains",
+              "property": "tags",
+              "value": "project",
+              "conditions": []
+            }
+          ]
+        }
+      },
+      "totalQuery": {
+        "valueType": "constant",
+        "value": 100,
+        "filter": {
+          "id": "7d5f15af-6159-4a7d-92de-cef84b97c27a",
+          "type": "group",
+          "operator": "and",
+          "conditions": []
+        }
+      },
+      "title": "項目",
+      "darkBackgroundColor": "#12495e",
+      "precision": 0
+    },
+    {
+      "id": "40f41571",
+      "type": "count",
+      "titleAlign": "center",
+      "tabTitle": "✅ 代辦事項",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-05-13T07:05:02.166Z",
+      "updateAt": "2026-04-09T03:23:39.253Z",
+      "contentPrefix": "",
+      "contentSuffix": "",
+      "countType": "number",
+      "query": {
+        "valueType": "totalRecords",
+        "value": 100,
+        "filter": {
+          "id": "31feadb5-42e6-46c0-a58e-6362527cff4f",
+          "type": "group",
+          "operator": "and",
+          "conditions": [
+            {
+              "id": "dee1e30b-39cb-4a93-89f8-9e1b2f0345cd",
+              "type": "filter",
+              "operator": "contains",
+              "property": "${file.tags}",
+              "value": "#tasks",
+              "conditions": []
+            }
+          ]
+        },
+        "sort": {
+          "orders": []
+        },
+        "aggregationType": "uncompletedTasks"
+      },
+      "totalQuery": {
+        "valueType": "constant",
+        "value": 100,
+        "filter": {
+          "id": "7d5f15af-6159-4a7d-92de-cef84b97c27a",
+          "type": "group",
+          "operator": "and",
+          "conditions": []
+        }
+      },
+      "title": "代辦事項",
+      "countValueAlign": "center",
+      "backgroundColor": "#ff6c6c",
+      "countValueStyle": "plain",
+      "precision": 0
+    },
+    {
+      "id": "cd-30days",
+      "type": "countdown",
+      "titleAlign": "center",
+      "tabTitle": "30天行動",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2026-04-08T12:00:00.000Z",
+      "updateAt": "2026-04-09T03:22:09.769Z",
+      "targetDate": "2026-04-29",
+      "title": "30天行動",
+      "timeTextPattern": "ydHms",
+      "showEndDateTime": false,
+      "pictureFit": "cover",
+      "picturePosition": "background",
+      "pictureBlurDegree": "0"
+    },
+    {
+      "id": "cd-exam",
+      "type": "countdown",
+      "titleAlign": "center",
+      "tabTitle": "AI考試",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2026-04-08T12:00:00.000Z",
+      "updateAt": "2026-04-08T12:00:00.000Z",
+      "targetDate": "2026-05-16",
+      "title": "AI考試"
+    },
+    {
+      "id": "cd-weekend",
+      "type": "countdown",
+      "titleAlign": "center",
+      "tabTitle": "本週覆盤",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2026-04-08T12:00:00.000Z",
+      "updateAt": "2026-04-09T03:25:45.824Z",
+      "targetDate": "2026-04-12",
+      "title": "本週覆盤",
+      "showEndDateTime": false
+    },
+    {
+      "id": "goals-tracker",
+      "type": "markdown",
+      "titleAlign": "left",
+      "tabTitle": "🎯 Goals 追蹤",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2026-04-08T12:00:00.000Z",
+      "updateAt": "2026-04-08T12:00:00.000Z",
+      "maxHeight": 400,
+      "contentAlign": "left",
+      "markdownsSource": "content",
+      "markdownValue": "## 🎯 目前目標\n\n```dataview\nTABLE status, 計劃編號, 進度\nFROM \"20_Life_Planning/23_Goal\"\nWHERE status = \"active\"\nSORT 進度 DESC\n```\n\n---\n\n## 📅 即將到來\n\n```dataview\nTABLE 截止日期\nFROM \"20_Life_Planning/23_Goal\"\nWHERE 截止日期 < 2026-05-01 AND 截止日期 >= 2026-04-08\nSORT 截止日期 ASC\nLIMIT 3\n```"
+    },
+    {
+      "id": "arena-tracker",
+      "type": "markdown",
+      "titleAlign": "left",
+      "tabTitle": "🧠 Arena 進化",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2026-04-14T14:00:00.000Z",
+      "updateAt": "2026-04-14T14:00:00.000Z",
+      "maxHeight": 400,
+      "contentAlign": "left",
+      "markdownsSource": "content",
+      "markdownValue": "## 🧠 Arena 進化追蹤\n\n### 四維度現況\n\n```dataview\nTABLE WITHOUT ID file.link AS 維度, 等級, 分數\nFROM \"20_Life_Planning/24_Arena-Integration\"\nWHERE contains(tags, \"arena/evolution-card\")\nLIMIT 1\n```\n\n---\n\n### Arena 進化卡片\n\n```dataview\nTABLE WITHOUT ID file.link AS 日期, Mind, Body, Spirit, Vocation\nFROM \"20_Life_Planning/24_Arena-Integration\"\nWHERE contains(tags, \"arena/evolution-card\")\nSORT date(file.ctime) DESC\nLIMIT 5\n```\n\n---\n\n### Arena MOC\n\n[[24_Arena-Integration/Arena-進化追蹤|開啟 Arena 進化追蹤 →]]\n\n[[30_Projects/32_Active/Arena/Arena_MOC_new|開啟 Arena MOC →]]"
+    },
+    {
+      "id": "week-mits",
+      "type": "markdown",
+      "titleAlign": "left",
+      "tabTitle": "⚡ 本週重點",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2026-04-08T12:00:00.000Z",
+      "updateAt": "2026-04-08T12:00:00.000Z",
+      "maxHeight": 400,
+      "contentAlign": "left",
+      "markdownsSource": "content",
+      "markdownValue": "## ⚡ 本週最重要的事\n\n```dataview\nTABLE WITHOUT ID file.link AS 任務, 象限, 狀態\nFROM \"TaskNotes\"\nWHERE status = \"in-progress\" OR status = \"todo\"\nLIMIT 5\n```\n\n---\n\n## 🔥 明日待辦\n\n```dataview\nTASK\nFROM \"20_Life_Planning/21_Journsal\"\nWHERE contains(file.name, 2026-04-{{date:MM}})\nLIMIT 3\n```"
+    },
+    {
+      "id": "678291bd",
+      "type": "card",
+      "titleAlign": "center",
+      "tabTitle": "功能欄",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": true,
+      "createAt": "2024-12-27T05:12:50.842Z",
+      "updateAt": "2025-11-18T08:04:35.898Z",
+      "title": "功能欄",
+      "description": "",
+      "coverFit": "cover",
+      "coverPosition": "left",
+      "clickAction": {
+        "type": "None",
+        "id": "47ee9b62-252d-47db-9767-8bf2eedd4ce3",
+        "options": {}
+      },
+      "icon": "ListTree"
+    },
+    {
+      "id": "ae33fc72",
+      "type": "card",
+      "titleAlign": "center",
+      "tabTitle": "新建項目",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-12-13T04:18:15.532Z",
+      "updateAt": "2025-11-18T08:04:35.899Z",
+      "title": "新建項目",
+      "description": "",
+      "coverFit": "cover",
+      "coverPosition": "left",
+      "clickAction": {
+        "type": "CreateFile",
+        "id": "349e556d-ad8c-4e54-bd91-f1a942563945",
+        "options": {
+          "commandId": "daily-notes",
+          "commandName": "日记: 打开/创建今天的日记",
+          "templateFilePath": "600支援/620Template/項目模板.md",
+          "fileName": "{{(\"value\")}}",
+          "targetFolder": "300專案",
+          "openPageIn": "split"
+        }
+      },
+      "icon": "LaptopMinimal"
+    },
+    {
+      "id": "07c5af35",
+      "type": "card",
+      "titleAlign": "center",
+      "tabTitle": "新建日记",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-12-13T04:18:15.532Z",
+      "updateAt": "2025-11-18T08:07:21.415Z",
+      "title": "新建日記",
+      "description": "",
+      "coverFit": "cover",
+      "coverPosition": "left",
+      "clickAction": {
+        "type": "CallCommand",
+        "id": "349e556d-ad8c-4e54-bd91-f1a942563945",
+        "options": {
+          "commandId": "daily-notes",
+          "commandName": "日记: 打开/创建今天的日记"
+        }
+      },
+      "icon": "CalendarPlus"
+    },
+    {
+      "id": "db2c1468",
+      "type": "card",
+      "titleAlign": "center",
+      "tabTitle": "新建知識",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-12-13T04:18:15.532Z",
+      "updateAt": "2025-11-18T08:08:52.286Z",
+      "title": "新建知識",
+      "description": "",
+      "coverFit": "cover",
+      "coverPosition": "left",
+      "clickAction": {
+        "type": "CreateFile",
+        "id": "349e556d-ad8c-4e54-bd91-f1a942563945",
+        "options": {
+          "commandId": "daily-notes",
+          "commandName": "日记: 打开/创建今天的日记",
+          "templateFilePath": "600支援/620Template/知識模板.md",
+          "targetFolder": "400知識",
+          "fileName": "",
+          "openPageIn": "split"
+        }
+      },
+      "icon": "ArchiveRestore"
+    },
+    {
+      "id": "c427e89f",
+      "type": "card",
+      "titleAlign": "center",
+      "tabTitle": "新建任務",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-12-13T04:18:15.532Z",
+      "updateAt": "2025-11-18T08:11:36.266Z",
+      "title": "新建任務",
+      "description": "",
+      "coverFit": "cover",
+      "coverPosition": "left",
+      "clickAction": {
+        "type": "CreateFile",
+        "id": "349e556d-ad8c-4e54-bd91-f1a942563945",
+        "options": {
+          "commandId": "daily-notes",
+          "commandName": "日记: 打开/创建今天的日记",
+          "templateFilePath": "600支援/620Template/任務模板.md",
+          "targetFolder": "200週期紀錄/230任務池",
+          "fileName": "",
+          "openPageIn": "split"
+        }
+      },
+      "icon": "ClipboardCopy"
+    },
+    {
+      "id": "6a989e83",
+      "type": "card",
+      "titleAlign": "center",
+      "tabTitle": "新建閱讀",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-12-13T04:18:15.532Z",
+      "updateAt": "2025-11-18T08:12:52.193Z",
+      "title": "新建閱讀",
+      "description": "",
+      "coverFit": "cover",
+      "coverPosition": "left",
+      "clickAction": {
+        "type": "CreateFile",
+        "id": "349e556d-ad8c-4e54-bd91-f1a942563945",
+        "options": {
+          "commandId": "daily-notes",
+          "commandName": "日记: 打开/创建今天的日记",
+          "templateFilePath": "600支援/620Template/讀書筆記模板.md",
+          "targetFolder": "400知識/420書籍資料",
+          "fileName": "",
+          "openPageIn": "split"
+        }
+      },
+      "icon": "BookUp"
+    },
+    {
+      "id": "245e6141",
+      "type": "card",
+      "titleAlign": "center",
+      "tabTitle": "新建捕獲",
+      "maxWidthRatio": -1,
+      "showBorder": true,
+      "showShadow": false,
+      "createAt": "2024-12-13T04:18:15.532Z",
+      "updateAt": "2025-11-18T08:04:35.905Z",
+      "title": "新建捕獲",
+      "description": "",
+      "coverFit": "cover",
+      "coverPosition": "left",
+      "clickAction": {
+        "type": "CreateFile",
+        "id": "349e556d-ad8c-4e54-bd91-f1a942563945",
+        "options": {
+          "commandId": "app:toggle-right-sidebar",
+          "commandName": "折叠/展开右侧边栏",
+          "expression": "switchLightDark()",
+          "templateFilePath": "resource/template/inbox.md",
+          "fileName": "{{date: YYYYMMDD}}",
+          "targetFolder": "000捕獲",
+          "openPageIn": "tab"
+        }
+      },
+      "icon": "Inbox"
+    },
+    {
+      "id": "d7759490",
+      "type": "dynamicDataView",
+      "titleAlign": "center",
+      "tabTitle": "",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showShadow": false,
+      "createAt": "2025-11-12T05:36:49.035Z",
+      "updateAt": "2025-11-18T08:04:35.898Z",
+      "viewType": "calendar",
+      "newPageNameFormat": "{{date: YYYY-MM-DD}}",
+      "properties": [
+        {
+          "id": "__componentsTitleProperty_0x7c00",
+          "name": "文件名",
+          "type": "text",
+          "isShow": true,
+          "wrap": false,
+          "options": {}
+        }
+      ],
+      "templates": [],
+      "groups": [],
+      "colorfulGroups": false,
+      "viewOptions": {
+        "openPageIn": "split",
+        "openPageAfterCreate": true,
+        "itemSize": "components--page-card-medium",
+        "showPropertyName": false,
+        "showAllProperties": false,
+        "items": [],
+        "cover": {
+          "type": "none",
+          "source": "default",
+          "fit": "contains",
+          "layout": "components--page-card-cover-landscape",
+          "position": "top"
+        },
+        "pinFiltersToMenuBar": false,
+        "showGrid": false,
+        "heightType": "auto",
+        "heightValue": 600,
+        "dateProperty": "time_start",
+        "firstDayOfWeek": 7,
+        "calendarViewType": "month",
+        "endDateProperty": "time_done"
+      },
+      "groupStates": {
+        "sort": "nameAsc",
+        "statics": [],
+        "orders": [],
+        "hiddens": [],
+        "collapseds": []
+      },
+      "filter": {
+        "id": "fd8a1108-f618-4cce-a06b-ef1b55f45504",
+        "type": "group",
+        "operator": "and",
+        "conditions": [
+          {
+            "id": "3b21e186-9765-479d-a19c-6e51dd2662fb",
+            "type": "filter",
+            "operator": "contains",
+            "property": "${file.tags}",
+            "value": "#系統/夢想/任務",
+            "conditions": []
+          }
+        ]
+      },
+      "showTitle": false,
+      "title": "数据视图"
+    }
+  ],
+  "rootComponentId": "cb8bee17-a1df-4ae2-950a-5d487637c6c1",
+  "version": 3.1
+}

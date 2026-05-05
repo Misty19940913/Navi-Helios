@@ -1,0 +1,52 @@
+.jarvis-core-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 148, 255, 0.05) 0%, transparent 70%);
+}
+
+.rotator-layer {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  mix-blend-mode: screen;
+  transition: transform 0.1s linear;
+  filter: drop-shadow(0 0 5px rgba(0, 148, 255, 0.4));
+}
+
+.layer-joc { background-image: url('assets/RotatorX/JOC.png'); }
+.layer-jsp { background-image: url('assets/RotatorX/JSP.png'); }
+.layer-jce { background-image: url('assets/RotatorX/JCE.png'); }
+.layer-jcc { background-image: url('assets/RotatorX/JCC.png'); }
+.layer-rng { background-image: url('assets/RotatorX/RNG.png'); }
+.layer-static-jarvis { 
+  background-image: url('assets/RotatorX/JARVIS.png'); 
+  z-index: 5;
+}
+
+.central-sphere-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+}
+
+.core-global-glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.1) 0%, transparent 60%);
+  animation: globalPulse 4s infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes globalPulse {
+  from { opacity: 0.3; transform: scale(0.95); }
+  to { opacity: 0.7; transform: scale(1.05); }
+}

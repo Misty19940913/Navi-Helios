@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "500資源/510Template",
+  "templates_folder": "80-System/81-Template",
   "templates_pairs": [
     [
       "",
@@ -11,7 +11,7 @@
   "auto_jump_to_cursor": false,
   "enable_system_commands": false,
   "shell_path": "",
-  "user_scripts_folder": "600支援/620Template",
+  "user_scripts_folder": "80-System/81-Template",
   "enable_folder_templates": true,
   "folder_templates": [
     {

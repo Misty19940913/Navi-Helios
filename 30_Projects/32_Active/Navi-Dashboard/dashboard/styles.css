@@ -1,0 +1,1618 @@
+/* ============================================
+   NAVI DASHBOARD — JARVIS EDITION
+   深空黑底 + 青藍光暈 + 科技感
+   ============================================ */
+
+/* CSS Variables — Theme */
+:root {
+  --bg-primary: #050810;
+  --bg-secondary: #0a0e17;
+  --bg-panel: rgba(10, 20, 40, 0.85);
+  
+  --color-cyan: #00d4ff;
+  --color-cyan-dim: #0099cc;
+  --color-cyan-glow: rgba(0, 212, 255, 0.4);
+  --color-cyan-subtle: rgba(0, 212, 255, 0.1);
+  
+  --color-gold: #ffd700;
+  --color-gold-glow: rgba(255, 215, 0, 0.3);
+  
+  --color-red: #ff3333;
+  --color-green: #00ff88;
+  --color-orange: #ff9900;
+  
+  --text-primary: #e0e6ed;
+  --text-secondary: #7a8a9a;
+  --text-dim: #4a5a6a;
+  
+  --font-mono: 'Consolas', 'Monaco', 'Lucida Console', monospace;
+  --font-tech: 'OCR-A', 'Agency FB', sans-serif;
+}
+
+/* Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Background Grid Effect */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Scanline Effect */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.1) 2px,
+    rgba(0, 0, 0, 0.1) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.3;
+}
+
+/* ============================================
+   EDIT BAR — 編輯模式工具列
+   ============================================ */
+#edit-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(180deg, rgba(0, 20, 40, 0.95), rgba(0, 10, 20, 0.9));
+  border-bottom: 1px solid var(--color-cyan-dim);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 20px rgba(0, 212, 255, 0.2);
+}
+
+.edit-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* DRAWING TOOLBAR SPECIFICS */
+.toolbar-group {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.toolbar-group.hidden {
+  display: none;
+}
+
+.draw-tool, .boolean-tool {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  font-size: 14px;
+}
+
+.draw-tool:hover, .boolean-tool:hover {
+  background: rgba(0, 212, 255, 0.2);
+  color: #fff;
+}
+
+.draw-tool.active {
+  background: rgba(0, 212, 255, 0.4);
+  border-color: var(--color-cyan);
+  color: #fff;
+  box-shadow: 0 0 10px var(--color-cyan-glow);
+}
+
+.sys-mode-btn {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--color-cyan-dim);
+  padding: 5px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.sys-mode-btn:hover {
+  background: rgba(0, 212, 255, 0.2);
+  color: #fff;
+}
+
+.sys-mode-btn.active {
+  background: var(--color-cyan-dim);
+  border-color: var(--color-cyan);
+  color: #fff;
+  box-shadow: 0 0 12px var(--color-cyan-glow);
+}
+
+.tool-separator {
+  color: rgba(255, 255, 255, 0.2);
+  margin: 0 5px;
+}
+
+.edit-title {
+  color: var(--color-cyan);
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.edit-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+
+.toggle input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-cyan);
+}
+
+#edit-bar button {
+  background: transparent;
+  border: 1px solid var(--color-cyan-dim);
+  color: var(--color-cyan);
+  padding: 6px 14px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#edit-bar button:hover {
+  background: var(--color-cyan-subtle);
+  box-shadow: 0 0 10px var(--color-cyan-glow);
+}
+
+/* ============================================
+   DASHBOARD CANVAS — 畫板區域
+   ============================================ */
+#dashboard-canvas {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding-top: 60px;
+  z-index: 1;
+}
+
+/* ============================================
+   WIDGETS — 視窗元件（可拖曳調整大小）
+   ============================================ */
+.widget {
+  position: absolute;
+  background: var(--bg-panel);
+  border: none;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.widget.editable {
+  border: 1px dashed rgba(0, 212, 255, 0.4);
+  cursor: move;
+}
+
+.widget.editable:hover {
+  border: 1px dashed rgba(0, 212, 255, 0.8);
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
+}
+
+.widget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: linear-gradient(90deg, rgba(0, 212, 255, 0.08), transparent);
+  border-bottom: none;
+}
+
+.widget-title {
+  font-family: var(--font-tech);
+  font-size: 11px;
+  color: var(--color-cyan);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.widget-status {
+  font-size: 10px;
+}
+
+.widget-status.online { color: var(--color-green); }
+.widget-status.active { color: var(--color-cyan); }
+.widget-status.healthy { color: var(--color-green); }
+.widget-status.warning { color: var(--color-orange); }
+.widget-status.error { color: var(--color-red); }
+
+.widget-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 35px);
+}
+
+.stat-large {
+  font-family: var(--font-tech);
+  font-size: 42px;
+  font-weight: bold;
+  color: var(--text-primary);
+  text-shadow: 0 0 20px var(--color-cyan-glow);
+  line-height: 1;
+}
+
+.stat-large.healthy { color: var(--color-green); }
+.stat-large.warning { color: var(--color-orange); }
+.stat-large.error { color: var(--color-red); }
+
+.stat-label {
+  font-size: 10px;
+  color: var(--text-secondary);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.widget-delete, .item-delete {
+  background: rgba(255, 50, 50, 0.2);
+  border: 1px solid rgba(255, 50, 50, 0.5);
+  color: var(--color-red);
+  font-size: 10px;
+  cursor: pointer;
+  opacity: 0;
+  padding: 2px 6px;
+  border-radius: 3px;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  z-index: 10;
+}
+
+.widget.editable .widget-delete,
+.element.editable .item-delete { opacity: 1; }
+
+.widget-delete:hover, .item-delete:hover {
+  background: rgba(255, 50, 50, 0.5);
+}
+
+/* ============================================
+   ELEMENTS — 視覺元素（裝飾性/數據展示）
+   ============================================ */
+/* DRAWING LAYER */
+.drawing-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Only activated during specific drawing modes */
+  z-index: 900; /* Above items, below modals */
+}
+
+.drawing-layer.active {
+  pointer-events: all;
+  cursor: crosshair;
+}
+
+.svg-shape-container {
+  position: absolute;
+  overflow: visible !important;
+}
+
+.svg-shape-inner {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.svg-shape-inner path, .svg-shape-inner rect, .svg-shape-inner circle, .svg-shape-inner polygon {
+  transition: fill 0.3s, stroke 0.3s, filter 0.3s;
+  vector-effect: non-scaling-stroke;
+}
+
+/* Edit Mode styling for drawn shapes */
+.svg-shape-container.editable:hover {
+  outline: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+.svg-shape-container.selected-item {
+  outline: 2px solid var(--color-gold) !important;
+  box-shadow: none !important; /* SVG dropshadow handled separately if needed */
+}
+
+.svg-shape-container.selected-item .svg-shape-inner {
+  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+}
+
+.element {
+  position: absolute;
+  background: transparent;
+  border: none;
+  overflow: visible;
+}
+
+.element.editable {
+  border: 1px dashed rgba(0, 212, 255, 0.4);
+  cursor: move;
+}
+
+.element.editable:hover {
+  border: 1px dashed rgba(0, 212, 255, 0.8);
+}
+
+.element-delete {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: rgba(255, 50, 50, 0.8);
+  border: none;
+  color: white;
+  font-size: 10px;
+  cursor: pointer;
+  opacity: 0;
+  padding: 2px 5px;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  line-height: 14px;
+  text-align: center;
+}
+
+.element.editable .element-delete { opacity: 1; }
+
+/* ============================================
+   RESIZE HANDLE
+   ============================================ */
+.resize-handle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  cursor: se-resize;
+  opacity: 0;
+}
+
+.resize-handle::before {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid var(--color-cyan);
+  border-bottom: 2px solid var(--color-cyan);
+}
+
+.widget.editable .resize-handle { opacity: 1; }
+
+/* ============================================
+   GAUGE — 環形進度表
+   ============================================ */
+.gauge-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gauge-svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.gauge-bg {
+  fill: none;
+  stroke: rgba(0, 212, 255, 0.15);
+  stroke-width: 6;
+}
+
+.gauge-fill {
+  fill: none;
+  stroke: var(--color-cyan);
+  stroke-width: 6;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 4px var(--color-cyan-glow));
+}
+
+.gauge-value {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-tech);
+  font-size: 18px;
+  color: var(--color-cyan);
+}
+
+.gauge-label {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 9px;
+  color: var(--text-secondary);
+  letter-spacing: 1px;
+}
+
+/* ============================================
+   MINI BARS — 小型進度條
+   ============================================ */
+.element-header {
+  font-family: var(--font-tech);
+  font-size: 10px;
+  color: var(--color-cyan);
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.mini-bars-v {
+  width: 100%;
+}
+
+.mb-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.mb-label {
+  font-size: 9px;
+  color: var(--text-dim);
+  width: 30px;
+  letter-spacing: 1px;
+}
+
+.mb-bar {
+  flex: 1;
+  height: 6px;
+  background: rgba(0, 212, 255, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.mb-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-cyan), var(--color-cyan-dim));
+  border-radius: 3px;
+  box-shadow: 0 0 6px var(--color-cyan-glow);
+}
+
+/* ============================================
+   WAVEFORM — 波形圖
+   ============================================ */
+.waveform-container {
+  width: 100%;
+  height: 40px;
+  background: rgba(0, 212, 255, 0.05);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.waveform-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+/* ============================================
+   HUD — JARVIS HUD 背景元素
+   ============================================ */
+.hud-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background: rgba(0, 20, 40, 0.4);
+  border: 1px solid var(--color-cyan-dim);
+}
+
+.hud-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('hud-base.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  mix-blend-mode: screen;
+}
+
+/* ============================================
+   RADAR — 雷達掃描
+   ============================================ */
+.radar-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radar-ring {
+  position: absolute;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  border-radius: 50%;
+  background: transparent;
+}
+
+.radar-ring.outer { width: 100%; height: 100%; }
+.radar-ring.middle { width: 70%; height: 70%; }
+.radar-ring.inner { width: 40%; height: 40%; border-color: rgba(0, 212, 255, 0.5); }
+
+.radar-sweep {
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-cyan), transparent);
+  top: 50%;
+  left: 50%;
+  transform-origin: left center;
+  animation: radar-sweep 3s linear infinite;
+}
+
+@keyframes radar-sweep {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.radar-center {
+  width: 8px;
+  height: 8px;
+  background: var(--color-cyan);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--color-cyan);
+}
+
+/* ============================================
+   CORNER BRACKETS — 角落裝飾框
+   ============================================ */
+.corner-bracket {
+  pointer-events: none;
+}
+
+.corner-tl, .corner-tr, .corner-bl, .corner-br {
+  width: 100%;
+  height: 100%;
+}
+
+.corner-tl {
+  border-left: 2px solid var(--color-cyan);
+  border-top: 2px solid var(--color-cyan);
+}
+
+.corner-tr {
+  border-right: 2px solid var(--color-cyan);
+  border-top: 2px solid var(--color-cyan);
+}
+
+.corner-bl {
+  border-left: 2px solid var(--color-cyan);
+  border-bottom: 2px solid var(--color-cyan);
+}
+
+.corner-br {
+  border-right: 2px solid var(--color-cyan);
+  border-bottom: 2px solid var(--color-cyan);
+}
+
+/* ============================================
+   HEXAGON — 六邊形面板
+   ============================================ */
+.hex-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hex-inner {
+  width: 70%;
+  height: 80%;
+  background: var(--bg-panel);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.hex-value {
+  font-family: var(--font-tech);
+  font-size: 24px;
+  color: var(--color-cyan);
+}
+
+.hex-label {
+  font-size: 8px;
+  color: var(--text-secondary);
+  letter-spacing: 1px;
+}
+
+/* ============================================
+   SCAN LINE — 掃描線
+   ============================================ */
+.scanline-h {
+  background: transparent;
+  overflow: visible;
+}
+
+.scanline-fill {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, var(--color-cyan), transparent);
+  opacity: 0.5;
+  animation: scanline-move 2s linear infinite;
+}
+
+@keyframes scanline-move {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
+}
+
+/* ============================================
+   VERTICAL DATA STRIP — 垂直數據條
+   ============================================ */
+.vdata-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.vdata-label {
+  font-family: var(--font-tech);
+  font-size: 10px;
+  color: var(--color-cyan);
+}
+
+.vdata-marks {
+  position: relative;
+  flex: 1;
+  width: 100%;
+}
+
+.vmark {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 1px;
+  background: var(--color-cyan);
+  opacity: 0.5;
+}
+
+/* ============================================
+   ARC — 弧形進度
+   ============================================ */
+.arc-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.arc-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.arc-bg {
+  fill: none;
+  stroke: rgba(0, 212, 255, 0.2);
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.arc-fill {
+  fill: none;
+  stroke: var(--color-cyan);
+  stroke-width: 4;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 4px var(--color-cyan-glow));
+}
+
+.arc-value {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-tech);
+  font-size: 14px;
+  color: var(--color-cyan);
+}
+
+/* ============================================
+   DONUT — 甜甜圈圖
+   ============================================ */
+.donut-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donut-svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.donut-bg {
+  fill: none;
+  stroke: rgba(0, 212, 255, 0.15);
+  stroke-width: 6;
+}
+
+.donut-fill {
+  fill: none;
+  stroke: var(--color-cyan);
+  stroke-width: 6;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 4px var(--color-cyan-glow));
+}
+
+.donut-value {
+  position: absolute;
+  font-family: var(--font-tech);
+  font-size: 12px;
+  color: var(--color-cyan);
+}
+
+/* ============================================
+   CORE — 核心裝飾
+   ============================================ */
+.core-visual {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.core-ring-1, .core-ring-2, .core-ring-3 {
+  position: absolute;
+  border: 2px solid var(--color-gold);
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.core-ring-1 {
+  width: 100%;
+  height: 100%;
+  animation: core-spin 10s linear infinite;
+}
+
+.core-ring-2 {
+  width: 75%;
+  height: 75%;
+  animation: core-spin 7s linear infinite reverse;
+}
+
+.core-ring-3 {
+  width: 50%;
+  height: 50%;
+  animation: core-spin 4s linear infinite;
+}
+
+@keyframes core-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.core-center {
+  width: 20%;
+  height: 20%;
+  background: var(--color-gold);
+  border-radius: 50%;
+  box-shadow: 0 0 20px var(--color-gold);
+}
+
+.core-text {
+  font-family: var(--font-tech);
+  font-size: 12px;
+  color: var(--color-gold);
+  letter-spacing: 6px;
+  text-align: center;
+  text-shadow: 0 0 10px var(--color-gold-glow);
+}
+
+/* ============================================
+   TEXT LABEL — 文字標籤
+   ============================================ */
+.text-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: rgba(0, 212, 255, 0.05);
+  border-left: 2px solid var(--color-cyan);
+}
+
+.tl-prefix {
+  color: var(--color-cyan);
+  font-family: var(--font-tech);
+}
+
+.tl-text {
+  font-size: 12px;
+  color: var(--text-secondary);
+  letter-spacing: 1px;
+}
+
+/* ============================================
+   BATTERY — 電量指示
+   ============================================ */
+.battery-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+}
+
+.battery-body {
+  width: 70px;
+  height: 24px;
+  border: 2px solid var(--color-green);
+  border-radius: 4px;
+  padding: 3px;
+  background: rgba(0, 255, 136, 0.1);
+}
+
+.battery-fill {
+  height: 100%;
+  background: var(--color-green);
+  border-radius: 2px;
+  box-shadow: 0 0 8px rgba(0, 255, 136, 0.5);
+}
+
+.battery-tip {
+  width: 4px;
+  height: 12px;
+  background: var(--color-green);
+  border-radius: 0 2px 2px 0;
+}
+
+.battery-value {
+  font-family: var(--font-tech);
+  font-size: 12px;
+  color: var(--color-green);
+}
+
+/* ============================================
+   CLOCK — 時鐘
+   ============================================ */
+.clock-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 8px;
+}
+
+.clock-time {
+  font-family: var(--font-tech);
+  font-size: 24px;
+  color: var(--color-cyan);
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px var(--color-cyan-glow);
+}
+
+.clock-date {
+  font-size: 10px;
+  color: var(--text-secondary);
+  letter-spacing: 1px;
+}
+
+/* ============================================
+   PLACEHOLDER TEXT
+   ============================================ */
+.placeholder-text {
+  color: var(--text-dim);
+  font-size: 12px;
+  text-align: center;
+}
+
+/* ============================================
+   MODAL — 新增元件彈窗
+   ============================================ */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal.hidden { display: none; }
+
+.modal-content {
+  background: var(--bg-secondary);
+  border: 1px solid var(--color-cyan);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 40px var(--color-cyan-glow);
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-content h3 {
+  color: var(--color-cyan);
+  font-family: var(--font-tech);
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-section {
+  margin-bottom: 20px;
+}
+
+.modal-section h4 {
+  color: var(--text-secondary);
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.widget-options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.widget-option {
+  background: var(--bg-panel);
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  padding: 12px 8px;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  border-radius: 4px;
+  font-size: 11px;
+}
+
+.widget-option:hover {
+  background: var(--color-cyan-subtle);
+  border-color: var(--color-cyan);
+  box-shadow: 0 0 15px var(--color-cyan-glow);
+}
+
+.option-icon {
+  font-size: 20px;
+}
+
+.modal-close {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--color-cyan-dim);
+  color: var(--color-cyan);
+  padding: 10px;
+  font-family: var(--font-mono);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+  margin-top: 15px;
+}
+
+.modal-close:hover {
+  background: var(--color-cyan-subtle);
+}
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-secondary); }
+::-webkit-scrollbar-thumb { background: var(--color-cyan-dim); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-cyan); }
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  #edit-bar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  #dashboard-canvas { padding-top: 120px; }
+  
+  .widget, .element {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    margin-bottom: 15px;
+  }
+  
+  .widget-options { grid-template-columns: repeat(2, 1fr); }
+}
+/* ============================================
+   CORE V2 — 進階核心反應部
+   ============================================ */
+.core-v2-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c2-ring {
+  position: absolute;
+  border: 1px solid var(--color-cyan);
+  border-radius: 50%;
+  box-shadow: 0 0 15px var(--color-cyan-glow);
+}
+
+.c2-ring-1 { width: 80%; height: 80%; border: 3px double var(--color-cyan); animation: rotate 15s linear infinite; }
+.c2-ring-2 { width: 60%; height: 60%; border: 1px dashed var(--color-cyan-dim); animation: rotate 10s linear infinite reverse; }
+.c2-ring-3 { 
+  width: 95%; height: 95%; 
+  border-left: 5px solid var(--color-gold); 
+  border-right: 5px solid var(--color-gold);
+  border-top: transparent;
+  border-bottom: transparent;
+  animation: rotate 20s ease-in-out infinite; 
+}
+
+.c2-center {
+  width: 40%;
+  height: 40%;
+  background: radial-gradient(circle, var(--color-cyan), transparent);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 30px var(--color-cyan);
+  z-index: 5;
+}
+
+.c2-label { font-family: var(--font-tech); font-size: 18px; color: #fff; text-shadow: 0 0 10px #000; }
+.c2-sub { font-size: 8px; color: var(--color-gold); letter-spacing: 2px; }
+
+.c2-data {
+  position: absolute;
+  font-family: var(--font-tech);
+  font-size: 10px;
+  color: var(--color-cyan);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2px 5px;
+  border: 1px solid var(--color-cyan-dim);
+}
+
+.c2-data-tl { top: 0; left: 0; }
+.c2-data-tr { top: 0; right: 0; }
+.c2-data-bl { bottom: 0; left: 0; }
+.c2-data-br { bottom: 0; right: 0; }
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ============================================
+   SCANNING GRID — 掃描網格
+   ============================================ */
+.scanning-grid-container {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 212, 255, 0.03);
+  border: 1px solid var(--color-cyan-dim);
+  position: relative;
+  overflow: hidden;
+}
+
+.sg-grid {
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(0, 212, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 255, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.sg-line {
+  position: absolute;
+  background: var(--color-cyan);
+  box-shadow: 0 0 10px var(--color-cyan);
+}
+
+.sg-line-h {
+  width: 100%;
+  height: 1px;
+  top: 0;
+  animation: scan-h 4s linear infinite;
+}
+
+.sg-line-v {
+  width: 1px;
+  height: 100%;
+  left: 0;
+  animation: scan-v 6s linear infinite;
+}
+
+@keyframes scan-h {
+  0% { top: 0; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+@keyframes scan-v {
+  0% { left: 0; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { left: 100%; opacity: 0; }
+}
+
+.sg-marker {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: var(--color-gold);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--color-gold);
+  animation: pulse 1s infinite;
+}
+
+/* ============================================
+   AGENT LOG — AGENT 日誌
+   ============================================ */
+.agent-log-container {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-panel);
+  border-left: 3px solid var(--color-cyan);
+  display: flex;
+  flex-direction: column;
+}
+
+.al-header {
+  padding: 8px;
+  font-family: var(--font-tech);
+  font-size: 11px;
+  color: var(--color-cyan);
+  background: rgba(0, 212, 255, 0.1);
+  letter-spacing: 2px;
+}
+
+.al-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  font-size: 10px;
+}
+
+.al-item {
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 4px;
+}
+
+.al-time { color: var(--text-dim); margin-right: 5px; }
+.al-msg { color: var(--text-primary); }
+.al-item.warning .al-msg { color: var(--color-orange); }
+.al-item.success .al-msg { color: var(--color-green); }
+
+/* ============================================
+   HUD MASTER — 系統總控 HUD
+   ============================================ */
+.hud-center-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hc-outer-glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle, transparent 60%, var(--color-cyan-glow) 100%);
+  animation: pulse 4s infinite;
+}
+
+.hc-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid var(--color-cyan-dim);
+}
+
+.hc-ring-1 { width: 90%; height: 90%; border-width: 2px; border-style: double; animation: rotate 30s linear infinite; }
+.hc-ring-2 { width: 70%; height: 70%; border-style: dashed; animation: rotate 20s linear infinite reverse; }
+.hc-ring-3 { width: 50%; height: 50%; border-color: var(--color-gold); animation: rotate 10s linear infinite; }
+
+.hc-arc-path {
+  fill: none;
+  stroke: var(--color-cyan);
+  stroke-width: 10;
+  stroke-dasharray: 125;
+  stroke-dashoffset: 25;
+  filter: drop-shadow(0 0 5px var(--color-cyan));
+  animation: arc-pulse 3s ease-in-out infinite;
+}
+
+@keyframes arc-pulse {
+  0%, 100% { opacity: 0.8; stroke-width: 10; }
+  50% { opacity: 0.4; stroke-width: 12; }
+}
+
+.hc-core {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.hc-core-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--color-cyan);
+  border-radius: 50%;
+  box-shadow: 0 0 30px var(--color-cyan);
+  opacity: 0.6;
+}
+
+.hc-core-text {
+  font-family: var(--font-tech);
+  font-size: 12px;
+  color: #fff;
+  z-index: 11;
+  letter-spacing: 2px;
+}
+
+.hc-metrics {
+  position: absolute;
+  font-family: var(--font-tech);
+  font-size: 10px;
+  color: var(--color-gold);
+  text-shadow: 0 0 5px var(--color-gold-glow);
+}
+
+/* ============================================
+   HUD ARC — 動態弧形段
+   ============================================ */
+.hud-arc-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ha-bg { fill: none; stroke: rgba(0, 212, 255, 0.1); stroke-width: 15; stroke-linecap: round; }
+.ha-fill { 
+  fill: none; 
+  stroke: var(--color-cyan); 
+  stroke-width: 15; 
+  stroke-linecap: round; 
+  stroke-dasharray: 63;
+  stroke-dashoffset: 40; /* 模擬數值 */
+  filter: drop-shadow(0 0 5px var(--color-cyan));
+}
+
+.ha-label {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  translate: -50% 0;
+  font-family: var(--font-tech);
+  font-size: 10px;
+  color: var(--text-secondary);
+}
+
+.ha-value {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  translate: -50% 0;
+  font-family: var(--font-tech);
+  font-size: 12px;
+  color: var(--color-cyan);
+}
+
+/* ============================================
+   HUD TAG — HUD 數據標籤
+   ============================================ */
+.hud-tag-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.ht-line {
+  width: 40px;
+  height: 1px;
+  background: var(--color-cyan);
+  position: relative;
+}
+
+.ht-line::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--color-cyan);
+  border-radius: 50%;
+  left: -2px;
+  top: -2px;
+  box-shadow: 0 0 5px var(--color-cyan);
+}
+
+.ht-box {
+  background: rgba(0, 212, 255, 0.1);
+  border: 1px solid var(--color-cyan-dim);
+  padding: 4px 10px;
+  display: flex;
+  flex-direction: column;
+  border-left: 3px solid var(--color-cyan);
+}
+
+.ht-title { font-size: 8px; color: var(--text-dim); letter-spacing: 1px; }
+.ht-val { font-family: var(--font-tech); font-size: 10px; color: var(--color-cyan); }
+
+/* ============================================
+   PROPERTY SIDEBAR — 組件設計師
+   ============================================ */
+.property-sidebar {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 300px;
+  height: calc(100vh - 60px);
+  background: rgba(0, 15, 30, 0.95);
+  backdrop-filter: blur(15px);
+  border-left: 1px solid var(--color-cyan-dim);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.property-sidebar.hidden {
+  transform: translateX(100%);
+}
+
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-header h3 {
+  margin: 0;
+  color: var(--color-cyan);
+  font-family: var(--font-tech);
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+#close-sidebar {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.sidebar-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.prop-group {
+  margin-bottom: 20px;
+}
+
+.prop-group label {
+  display: block;
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.prop-group input, .prop-group select {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  color: #fff;
+  padding: 10px;
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+.prop-group input:focus {
+  border-color: var(--color-cyan);
+  outline: none;
+}
+
+.sidebar-footer {
+  padding: 20px;
+  border-top: 1px solid rgba(0, 212, 255, 0.2);
+}
+/* Isolated Studio Stage */
+#studio-stage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  pointer-events: all;
+  cursor: crosshair;
+}
+
+#studio-stage.hidden {
+  display: none !important;
+}
+
+#studio-stage .element {
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+.btn-primary-mini {
+  background: var(--color-cyan);
+  color: black;
+  border: none;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.btn-primary-mini:hover {
+  background: white;
+  box-shadow: 0 0 15px var(--color-cyan-glow);
+}
+
+#btn-undo {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+#btn-undo:hover {
+  background: rgba(0, 212, 255, 0.2);
+}
+.btn-primary {
+  width: 100%;
+  background: var(--color-cyan);
+  color: #000;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 15px var(--color-cyan-glow);
+  transition: all 0.2s;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.2);
+  transform: translateY(-2px);
+}
+
+/* Selected Highlight */
+.selected-item {
+  outline: 2px solid var(--color-gold) !important;
+  box-shadow: 0 0 20px var(--color-gold-glow) !important;
+  z-index: 99 !important;
+}
+
+.drawing-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 100; /* Must be above #studio-stage (50) */
+}
+
+.drawing-layer.active {
+  pointer-events: all;
+}

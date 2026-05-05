@@ -1,13 +1,13 @@
 {
-  "apiKey": "AIzaSyAaeb_7sH1HnMrbMCuxC-hxshqVW7jDd2g",
-  "chatModelName": "gemini-flash-latest",
-  "summaryModelName": "gemini-flash-latest",
+  "apiKeySecretName": "gemini",
+  "chatModelName": "gemini-2.5-flash",
+  "summaryModelName": "gemini-2.5-pro",
   "completionsModelName": "gemini-flash-latest",
-  "imageModelName": "gemini-3-pro-preview",
-  "summaryFrontmatterKey": "summary",
+  "imageModelName": "gemini-3.1-flash-image-preview",
+  "summaryFrontmatterKey": "總結",
   "userName": "Misty",
   "chatHistory": true,
-  "historyFolder": "600支援/610管理協議/Agent",
+  "historyFolder": "60-AI-Protocols/61-管理協議/Agent",
   "debugMode": true,
   "maxRetries": 3,
   "initialBackoffDelay": 1000,
@@ -15,10 +15,10 @@
   "modelDiscovery": {
     "enabled": true,
     "autoUpdateInterval": 24,
-    "lastUpdate": 1773193255422,
+    "lastUpdate": 1777425215864,
     "fallbackToStatic": true
   },
-  "allowSystemPromptOverride": true,
+  "allowSystemPromptOverride": false,
   "temperature": 0.7,
   "topP": 1,
   "stopOnToolError": true,
@@ -26,15 +26,25 @@
   "loopDetectionThreshold": 3,
   "loopDetectionTimeWindowSeconds": 30,
   "alwaysAllowReadWrite": false,
-  "hasSeenV4Welcome": true,
-  "lastSeenVersion": "4.4.0",
+  "toolPolicy": {
+    "activePreset": "cautious",
+    "toolPermissions": {}
+  },
+  "lastSeenVersion": "4.7.0",
   "ragIndexing": {
-    "enabled": false,
-    "fileSearchStoreName": null,
+    "enabled": true,
+    "fileSearchStoreName": "fileSearchStores/obsidiannavihelios-yw5ozh2zqbhm",
     "excludeFolders": [],
     "autoSync": true,
-    "includeAttachments": false
+    "includeAttachments": true
   },
+  "mcpEnabled": false,
+  "mcpServers": [],
+  "contextCompactionThreshold": 25,
+  "showTokenUsage": true,
+  "alwaysShowDiffView": false,
+  "logToolExecution": true,
+  "hasSeenV4Welcome": true,
   "modelDiscoveryCache": {
     "models": [
       {
@@ -105,23 +115,6 @@
           "countTokens",
           "createCachedContent",
           "batchGenerateContent"
-        ],
-        "temperature": 1,
-        "topP": 0.95,
-        "topK": 40,
-        "maxTemperature": 2
-      },
-      {
-        "name": "models/gemini-2.0-flash-exp-image-generation",
-        "version": "2.0",
-        "displayName": "Gemini 2.0 Flash (Image Generation) Experimental",
-        "description": "Gemini 2.0 Flash (Image Generation) Experimental",
-        "inputTokenLimit": 1048576,
-        "outputTokenLimit": 8192,
-        "supportedGenerationMethods": [
-          "generateContent",
-          "countTokens",
-          "bidiGenerateContent"
         ],
         "temperature": 1,
         "topP": 0.95,
@@ -291,25 +284,6 @@
         "maxTemperature": 1
       },
       {
-        "name": "models/gemini-2.5-flash-lite-preview-09-2025",
-        "version": "2.5-preview-09-25",
-        "displayName": "Gemini 2.5 Flash-Lite Preview Sep 2025",
-        "description": "Preview release (Septempber 25th, 2025) of Gemini 2.5 Flash-Lite",
-        "inputTokenLimit": 1048576,
-        "outputTokenLimit": 65536,
-        "supportedGenerationMethods": [
-          "generateContent",
-          "countTokens",
-          "createCachedContent",
-          "batchGenerateContent"
-        ],
-        "temperature": 1,
-        "topP": 0.95,
-        "topK": 64,
-        "maxTemperature": 2,
-        "thinking": true
-      },
-      {
         "name": "models/gemini-3-pro-preview",
         "version": "3-pro-preview-11-2025",
         "displayName": "Gemini 3 Pro Preview",
@@ -386,6 +360,25 @@
         "thinking": true
       },
       {
+        "name": "models/gemini-3.1-flash-lite-preview",
+        "version": "3.1-flash-lite-preview-03-2026",
+        "displayName": "Gemini 3.1 Flash Lite Preview",
+        "description": "Gemini 3.1 Flash Lite Preview",
+        "inputTokenLimit": 1048576,
+        "outputTokenLimit": 65536,
+        "supportedGenerationMethods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "temperature": 1,
+        "topP": 0.95,
+        "topK": 64,
+        "maxTemperature": 2,
+        "thinking": true
+      },
+      {
         "name": "models/gemini-3-pro-image-preview",
         "version": "3.0",
         "displayName": "Nano Banana Pro",
@@ -422,6 +415,24 @@
         "thinking": true
       },
       {
+        "name": "models/gemini-3.1-flash-tts-preview",
+        "version": "3.1-flash-tts-preview",
+        "displayName": "Gemini 3.1 Flash TTS Preview",
+        "description": "Gemini 3.1 Flash TTS Preview",
+        "inputTokenLimit": 8192,
+        "outputTokenLimit": 16384,
+        "supportedGenerationMethods": [
+          "generateContent",
+          "countTokens",
+          "batchGenerateContent"
+        ],
+        "temperature": 1,
+        "topP": 0.95,
+        "topK": 64,
+        "maxTemperature": 2,
+        "thinking": true
+      },
+      {
         "name": "models/gemini-robotics-er-1.5-preview",
         "version": "1.5-preview",
         "displayName": "Gemini Robotics-ER 1.5 Preview",
@@ -431,6 +442,25 @@
         "supportedGenerationMethods": [
           "generateContent",
           "countTokens"
+        ],
+        "temperature": 1,
+        "topP": 0.95,
+        "topK": 64,
+        "maxTemperature": 2,
+        "thinking": true
+      },
+      {
+        "name": "models/gemini-robotics-er-1.6-preview",
+        "version": "1.6-preview",
+        "displayName": "Gemini Robotics-ER 1.6 Preview",
+        "description": "Gemini Robotics-ER 1.6 Preview",
+        "inputTokenLimit": 131072,
+        "outputTokenLimit": 65536,
+        "supportedGenerationMethods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
         ],
         "temperature": 1,
         "topP": 0.95,
@@ -456,7 +486,7 @@
         "thinking": true
       }
     ],
-    "lastUpdated": 1772121703131,
+    "lastUpdated": 1777221005908,
     "success": true
   }
 }

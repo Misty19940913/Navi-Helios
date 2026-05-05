@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "path:600支援/610管理協議  ",
+  "search": "line:(\"自我認知\")",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -17,6 +17,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.1676800712063565,
+  "scale": 0.0608489799243146,
   "close": true
 }

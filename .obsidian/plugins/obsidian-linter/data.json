@@ -32,7 +32,7 @@
     },
     "insert-yaml-attributes": {
       "enabled": true,
-      "text-to-insert": "tags: \nstatus:  \ntime_create: \ntime_modifie: \nrelated:\nparent:"
+      "text-to-insert": "tags: \nstatus:  \ntime_created: \ntime_modified: \nrelated:\nparent:"
     },
     "move-tags-to-yaml": {
       "enabled": false,
@@ -53,17 +53,17 @@
     },
     "yaml-key-sort": {
       "enabled": true,
-      "yaml-key-priority-sort-order": "tags: \nstatus:  \ntime_create: \ntime_modifie: \nrelated:\nparent:",
+      "yaml-key-priority-sort-order": "tags: \nstatus:  \ntime_created: \ntime_modified: \nrelated:\nparent:",
       "priority-keys-at-start-of-yaml": true,
       "yaml-sort-order-for-other-keys": "None"
     },
     "yaml-timestamp": {
       "enabled": true,
       "date-created": true,
-      "date-created-key": "time_create",
+      "date-created-key": "time_created",
       "date-created-source-of-truth": "file system",
       "date-modified": true,
-      "date-modified-key": "time_modifie",
+      "date-modified-key": "time_modified",
       "date-modified-source-of-truth": "file system",
       "format": "YYYY-MM-DD",
       "convert-to-utc": false,
@@ -278,6 +278,7 @@
   "lintOnFileChange": false,
   "displayLintOnFileChangeNotice": false,
   "settingsConvertedToConfigKeyValues": true,
+  "additionalFileExtensions": [],
   "foldersToIgnore": [],
   "filesToIgnore": [],
   "linterLocale": "zh-tw",

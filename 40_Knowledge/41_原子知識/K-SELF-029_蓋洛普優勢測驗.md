@@ -1,0 +1,65 @@
+---
+version: 0.1.0
+time_created: 2026-04-18
+time_modified: 2026-04-18
+author: doc-editor
+owner: DreadxMisty
+type: content
+status: ready
+tags:
+  - 人生設計
+  - 自我認知
+  - 工具
+description: 蓋洛普優勢測驗識別你的天賦與優勢，幫助你發揮所長。
+parent: null
+related: []
+sources: []
+used_in: []
+contradictions: []
+---
+
+# 蓋洛普優勢測驗
+
+> [!abstract] 核心洞見 (Insight)
+> 蓋洛普優勢測驗（CliftonStrengths）識別你的天賦與優勢，幫助你發揮所長。
+
+### 定義與機制 (What & How)
+- **核心定義**：優勢識別工具
+- **34種才幹主題**，分為四個領域：
+  - **執行力 (Executing)**：如何完成事情
+  - **影響力 (Influencing)**：如何影響他人
+  - **關鍵建立 (Relationship Building)**：如何建立關係
+  - **策略思維 (Strategic Thinking)**：如何思考與決策
+
+### 實踐與案例 (Action & Proof)
+- **在人生設計中的應用**：
+  - 職業發展方向
+  - 團隊角色定位
+  - 個人品牌建立
+- **限制**：
+  - 付費測驗
+  - 結果可能隨時間變化
+  - 應結合其他工具使用
+
+### 知識網絡 (Connection)
+- **關聯脈絡**：MBTI、大五人格的補充工具
+
+---
+
+## 應用紀錄
+
+### Input Notes
+
+| Plan | Phase | Purpose |
+|------|-------|---------|
+
+### Output Notes
+
+| Note | Type | Created In |
+|------|------|-----------|
+
+## 關聯知識 (Related)
+
+- [[K-SELF-025_MBTI性格測驗]]
+- [[K-SELF-027_大五人格測驗]]
+- [[L30_設計人生MOC]]

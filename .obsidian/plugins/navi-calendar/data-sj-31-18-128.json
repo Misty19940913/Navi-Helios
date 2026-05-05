@@ -1,0 +1,48 @@
+{
+  "journalFolder": "20_Life_Planning/21_Journsal/",
+  "journalTemplatePath": "80-System/81-Template/Daily",
+  "taskFolder": "20_Life_Planning/Task/",
+  "taskTemplatePath": "",
+  "noteFolder": "20_Life_Planning/Task/",
+  "defaultView": "dayGridMonth",
+  "firstDayOfWeek": 0,
+  "showWeekends": true,
+  "showWeekNumbers": true,
+  "showScheduled": true,
+  "showDue": true,
+  "showRecurring": true,
+  "priorityHighColor": "#e53e3e",
+  "priorityMediumColor": "#dd6b20",
+  "priorityLowColor": "#38a169",
+  "priorityUrgentColor": "#805ad5",
+  "overdueColor": "#e53e3e",
+  "blockedColor": "#a0aec0",
+  "enableModalSplitLayout": true,
+  "defaultExpanded": true,
+  "timeblockColor": "#3182ce",
+  "openDirection": "replace",
+  "miniCalendarEnabled": true,
+  "miniCalendarSidebar": "right",
+  "statusConfig": {
+    " ": {
+      "symbol": " ",
+      "label": "Todo"
+    },
+    "x": {
+      "symbol": "x",
+      "label": "Done"
+    },
+    "-": {
+      "symbol": "-",
+      "label": "Cancelled"
+    },
+    ">": {
+      "symbol": ">",
+      "label": "In Progress"
+    },
+    "!": {
+      "symbol": "!",
+      "label": "Important"
+    }
+  }
+}

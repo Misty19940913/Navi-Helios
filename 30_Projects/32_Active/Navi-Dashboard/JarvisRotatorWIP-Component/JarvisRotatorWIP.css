@@ -1,0 +1,39 @@
+.rotator-wip-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.05) 0%, transparent 70%);
+}
+
+.wip-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  mix-blend-mode: screen;
+  transition: transform 0.05s linear;
+  filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.4));
+}
+
+.layer-joc { background-image: url('assets/JOC.png'); }
+.layer-jsp { background-image: url('assets/JSP.png'); }
+.layer-jce { background-image: url('assets/JCE.png'); }
+.layer-jcc { background-image: url('assets/JCC.png'); }
+
+.wip-central-orb {
+  width: 10%;
+  height: 10%;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #fff, 0 0 40px #00d4ff;
+  z-index: 10;
+  animation: orbPulse 2s ease-in-out infinite;
+}
+
+@keyframes orbPulse {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; }
+}

@@ -1,0 +1,278 @@
+{
+  "components": [
+    {
+      "id": "610b5b06-9891-47c8-bc49-eb65a97c823f",
+      "type": "multi",
+      "titleAlign": "center",
+      "tabTitle": "",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showShadow": false,
+      "createAt": "2025-11-12T07:52:39.121Z",
+      "updateAt": "2026-04-27T03:11:54.151Z",
+      "components": [
+        {
+          "componentId": "251fb25e-82eb-475d-bfe9-e7968517cd25",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 0,
+              "w": 4,
+              "h": 4
+            },
+            "laptop": {
+              "x": 0,
+              "y": 0,
+              "w": 6,
+              "h": 9
+            }
+          }
+        },
+        {
+          "componentId": "cac4f4e3-c04f-4501-9e87-ced1356aaf52",
+          "layout": {
+            "mobile": {
+              "x": 0,
+              "y": 4,
+              "w": 4,
+              "h": 4
+            },
+            "laptop": {
+              "x": 6,
+              "y": 0,
+              "w": 6,
+              "h": 9
+            }
+          }
+        }
+      ],
+      "layoutType": "grid",
+      "locked": false,
+      "layoutOptions": {}
+    },
+    {
+      "id": "251fb25e-82eb-475d-bfe9-e7968517cd25",
+      "type": "dynamicDataView",
+      "titleAlign": "center",
+      "tabTitle": "今日新增任務",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showShadow": false,
+      "createAt": "2025-11-12T07:55:27.050Z",
+      "updateAt": "2026-02-07T13:39:00.026Z",
+      "viewType": "table",
+      "newPageNameFormat": "{{value]]",
+      "properties": [
+        {
+          "id": "__componentsTitleProperty_0x7c00",
+          "name": "文件名",
+          "type": "text",
+          "isShow": true,
+          "wrap": false,
+          "options": {}
+        },
+        {
+          "id": "03a90335-8ba7-4f23-bbb6-d8934f2302cd",
+          "name": "status",
+          "isShow": true,
+          "type": "multiSelect",
+          "options": {}
+        }
+      ],
+      "templates": [
+        {
+          "id": "39014d2b-ae0f-40f4-b201-da563cef384d",
+          "path": "600支援/620Template/任務模板.md",
+          "name": "任務模板.md",
+          "type": "normal"
+        }
+      ],
+      "groups": [],
+      "colorfulGroups": false,
+      "viewOptions": {
+        "openPageIn": "tab",
+        "openPageAfterCreate": true,
+        "itemSize": "components--page-card-large",
+        "showPropertyName": false,
+        "showAllProperties": false,
+        "items": [],
+        "cover": {
+          "type": "textContent",
+          "source": "default",
+          "fit": "contains",
+          "layout": "components--page-card-cover-landscape",
+          "position": "top"
+        },
+        "pinFiltersToMenuBar": false,
+        "showGrid": false,
+        "heightType": "auto",
+        "heightValue": 600
+      },
+      "groupStates": {
+        "sort": "nameAsc",
+        "format": "none",
+        "statics": [],
+        "orders": [],
+        "hiddens": [],
+        "collapseds": []
+      },
+      "filter": {
+        "id": "fd8a1108-f618-4cce-a06b-ef1b55f45504",
+        "type": "group",
+        "operator": "and",
+        "conditions": [
+          {
+            "id": "dcd1d662-1758-479c-aac5-f802f32095b0",
+            "type": "filter",
+            "operator": "equals",
+            "property": "${file.path}",
+            "value": "200週期紀錄/240任務池",
+            "conditions": []
+          },
+          {
+            "id": "ff19bc08-d81c-4ebc-8e58-796190b214ca",
+            "type": "filter",
+            "operator": "not_contains",
+            "property": "status",
+            "value": "DONE",
+            "conditions": []
+          }
+        ]
+      },
+      "sort": {
+        "orders": []
+      },
+      "showTitle": false
+    },
+    {
+      "id": "cac4f4e3-c04f-4501-9e87-ced1356aaf52",
+      "type": "dynamicDataView",
+      "titleAlign": "center",
+      "tabTitle": "",
+      "maxWidthRatio": -1,
+      "showBorder": false,
+      "showShadow": false,
+      "createAt": "2025-11-12T08:32:02.267Z",
+      "updateAt": "2025-11-16T02:10:19.225Z",
+      "viewType": "calendar",
+      "newPageNameFormat": "{{date: YYYY-MM-DD}}",
+      "properties": [
+        {
+          "id": "__componentsTitleProperty_0x7c00",
+          "name": "文件名",
+          "type": "text",
+          "isShow": true,
+          "wrap": false,
+          "options": {
+            "width": "337"
+          }
+        },
+        {
+          "id": "1503f0ec-faba-48e8-bb82-84f273eaefa4",
+          "name": "status",
+          "isShow": true,
+          "type": "multiSelect",
+          "options": {
+            "width": "79"
+          }
+        },
+        {
+          "id": "d7cb8add-c015-4f7e-bfc4-ca0a42b93a63",
+          "name": "time_start",
+          "isShow": true,
+          "type": "date",
+          "options": {
+            "width": "117"
+          }
+        },
+        {
+          "id": "e6a9ccc5-2abf-4c41-80f5-4f13e3718e2b",
+          "name": "time_done",
+          "isShow": true,
+          "type": "date",
+          "options": {
+            "width": "126"
+          }
+        }
+      ],
+      "templates": [],
+      "groups": [],
+      "colorfulGroups": false,
+      "viewOptions": {
+        "openPageIn": "split",
+        "openPageAfterCreate": false,
+        "itemSize": "components--page-card-medium",
+        "showPropertyName": false,
+        "showAllProperties": false,
+        "items": [],
+        "cover": {
+          "type": "textContent",
+          "source": "default",
+          "fit": "contains",
+          "layout": "components--page-card-cover-landscape",
+          "position": "top"
+        },
+        "pinFiltersToMenuBar": false,
+        "showGrid": true,
+        "heightType": "auto",
+        "heightValue": 600,
+        "dateProperty": "time_start",
+        "endDateProperty": "time_done",
+        "cardColorFrom": "property",
+        "calendarViewType": "week",
+        "cardColorProperty": "time_done",
+        "hideHeaderMenu": true,
+        "firstDayOfWeek": "7"
+      },
+      "groupStates": {
+        "sort": "nameAsc",
+        "statics": [],
+        "orders": [],
+        "hiddens": [],
+        "collapseds": []
+      },
+      "filter": {
+        "id": "fd8a1108-f618-4cce-a06b-ef1b55f45504",
+        "type": "group",
+        "operator": "and",
+        "conditions": [
+          {
+            "id": "f77a0b3f-d5b1-4f03-81f3-c100db8391c5",
+            "type": "filter",
+            "operator": "contains",
+            "property": "${file.tags}",
+            "value": "#tasks",
+            "conditions": []
+          },
+          {
+            "id": "1886fdf8-e578-43a8-85cb-a20c888c7855",
+            "type": "filter",
+            "operator": "contains",
+            "property": "${file.tags}",
+            "value": "#系統/夢想/任務",
+            "conditions": []
+          },
+          {
+            "id": "2dcf867d-66a7-448c-8a81-c310d9db6ed9",
+            "type": "filter",
+            "operator": "not_contains",
+            "property": "status",
+            "value": "DONE",
+            "conditions": []
+          },
+          {
+            "id": "894574f7-ddd4-451e-b7ae-76f1b1d9a6df",
+            "type": "jsQuery",
+            "operator": "contains",
+            "property": "${file.tags}",
+            "value": "$item.frontmatter.time_done <= $parentFile.frontmatter.time_created",
+            "conditions": []
+          }
+        ]
+      },
+      "showTitle": false
+    }
+  ],
+  "rootComponentId": "610b5b06-9891-47c8-bc49-eb65a97c823f",
+  "version": 3.1
+}

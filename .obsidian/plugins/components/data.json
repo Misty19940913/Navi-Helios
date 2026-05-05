@@ -1,13 +1,13 @@
 {
   "createComponentSilent": false,
   "receiveBetaVersion": true,
-  "folder": "600支援/630components/view",
-  "scriptFolder": "600支援/630components/scripts",
+  "folder": "80-System/82-components/view",
+  "scriptFolder": "80-System/82-components/cripts",
   "enableDebug": false,
-  "debugLogOutputFolder": "600支援/630components/view/ogs",
+  "debugLogOutputFolder": "80-System/82-components/view/ogs",
   "aiBaseFolder": "600支援/630components/AI",
   "homepage": {
-    "path": null,
+    "path": "Home.md",
     "mobilePath": null,
     "showOnStartup": true,
     "showOnEmpty": true,
@@ -15,26 +15,29 @@
   },
   "aiProviders": [
     {
-      "id": "provider-custom-1768547501150",
-      "vendor": "gemini",
+      "id": "provider-custom-1773915118014",
+      "vendor": "custom",
       "protocol": "gemini",
-      "name": "Google Gemini",
-      "apiUrl": "https://generativelanguage.googleapis.com/v1",
-      "apiKey": "AIzaSyD0FSyOJwRT9f8b_HTQ8767U9QcNukSBRk",
+      "name": "GEMINI",
+      "apiUrl": "https://www.google.com",
+      "apiKey": "AIzaSyDBvFkcgW_JX4v8mvzFsKSXAK_EbmIqlcc",
       "models": [
         {
-          "enableThinking": true,
+          "enableThinking": false,
           "capabilities": [
             "tool_use"
           ],
-          "id": "5ac58432-40cb-4517-946f-e78a3fe0b7f0",
-          "name": "Gemini",
+          "id": "2c7287d1-07eb-4466-b805-3f87fea0da83",
+          "name": "GEMINI",
           "type": "text"
         }
       ],
       "stream": true
     }
   ],
+  "aiDefaultModels": {
+    "text": "5ac58432-40cb-4517-946f-e78a3fe0b7f0"
+  },
   "formFolder": "03.資源/02.components/form",
   "fileEntrypoints": {},
   "composerSettings": {

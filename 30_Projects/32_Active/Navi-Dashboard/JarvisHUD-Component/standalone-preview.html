@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarvis HUD Standalone Preview</title>
+    <!-- React & Babel CDNs -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #050810;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        .info-panel {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0, 212, 255, 0.1);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            padding: 15px;
+            border-radius: 4px;
+            pointer-events: none;
+            z-index: 100;
+        }
+
+        .info-panel h1 {
+            font-size: 14px;
+            color: #00d4ff;
+            margin: 0 0 5px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .info-panel p {
+            font-size: 11px;
+            margin: 0;
+            opacity: 0.7;
+        }
+
+        /* 注入 JarvisHUD.css 內容 */
+        .jarvis-hud-container {
+            position: relative;
+            background: rgba(0,0,0,0.3);
+            overflow: hidden;
+            box-shadow: 0 0 50px rgba(0, 212, 255, 0.1);
+            border-radius: 50%; /* Make it round for better focus */
+        }
+
+        .hud-canvas {
+            width: 100%;
+            height: 100%;
+            filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.5));
+        }
+
+        .hud-meter {
+            transition: transform 0.1s linear;
+            transform-box: fill-box;
+            transform-origin: center;
+        }
+
+        .hud-text {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            pointer-events: none;
+            user-select: none;
+        }
+
+        .animate-rotate-cw {
+            animation: rotateCW 24s linear infinite;
+        }
+
+        .animate-rotate-ccw {
+            animation: rotateCCW 39s linear infinite;
+        }
+
+        @keyframes rotateCW {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes rotateCCW {
+            from { transform: rotate(360deg); }
+            to { transform: rotate(0deg); }
+        }
+
+        .hud-vignette {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle, transparent 50%, rgba(0,0,0,0.4) 100%);
+            pointer-events: none;
+        }
+
+        .hud-scanline {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, transparent 50%, rgba(0, 212, 255, 0.02) 50%);
+            background-size: 100% 4px;
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+        .hud-scanline::after {
+            content: '';
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, rgba(0, 212, 255, 0.1), transparent);
+            animation: scanning 10s linear infinite;
+        }
+
+        @keyframes scanning {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(200%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="info-panel">
+        <h1>Jarvis HUD React Preview</h1>
+        <p>Status: Synchronizing with Date()...</p>
+    </div>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect, useMemo } = React;
+
+        // Migrated Config
+        const JARVIS_CONFIG = {
+            metadata: {
+                viewBox: "0 0 720 505",
+                center: { x: 521, y: 323 }
+            },
+            meters: [
+                { name: "Background", type: "IMAGE", x: 0, y: 0, imageName: "assets/TimeBG.png" },
+                { name: "MeterTime1", type: "STRING", x: 300, y: 62, measureName: "hours", angle: -0.6283, style: { color: '#FFFFFF', fontSize: 13 } },
+                { name: "MeterTime2", type: "STRING", x: 325, y: 43, text: ":", angle: -0.4712, style: { color: '#FFFFFF', fontSize: 13 } },
+                { name: "MeterTime3", type: "STRING", x: 337, y: 40, measureName: "minutes", angle: -0.4014, style: { color: '#FFFFFF', fontSize: 13 } },
+                { name: "MeterHour", type: "ROTATOR", x: 429, y: 231, offsetX: 92, offsetY: 92, imageName: "assets/hour.png", rotationAngle: 6.2832, valueReminder: 43200 },
+                { name: "MeterMinute", type: "ROTATOR", x: 429, y: 231, offsetX: 92, offsetY: 92, imageName: "assets/min.png", rotationAngle: 6.2832, valueReminder: 3600 },
+                { name: "MeterSecond", type: "ROTATOR", x: 429, y: 231, offsetX: 92, offsetY: 92, imageName: "assets/sec.png", rotationAngle: 6.2832, valueReminder: 60 },
+                { name: "MeterOutterRing", type: "ROTATOR", x: 429, y: 231, offsetX: 92, offsetY: 92, imageName: "assets/outring.png", rotationAngle: 6.2832, valueReminder: 240, isDecorative: true },
+                { name: "MeterInnerRing", type: "ROTATOR", x: 429, y: 231, offsetX: 92, offsetY: 92, imageName: "assets/inring.png", rotationAngle: -6.2832, valueReminder: 390, isDecorative: true }
+            ]
+        };
+
+        const JarvisHUD = ({ size = 800 }) => {
+            const [time, setTime] = useState(new Date());
+
+            useEffect(() => {
+                const timer = setInterval(() => setTime(new Date()), 100);
+                return () => clearInterval(timer);
+            }, []);
+
+            const getRotation = (meter) => {
+                if (meter.isDecorative) return null;
+                const s = time.getSeconds(); const m = time.getMinutes(); const h = time.getHours(); const ms = time.getMilliseconds();
+                let totalSec = 0;
+                if (meter.name === "MeterSecond") totalSec = s + ms / 1000;
+                else if (meter.name === "MeterMinute") totalSec = m * 60 + s;
+                else if (meter.name === "MeterHour") totalSec = (h % 12) * 3600 + m * 60 + s;
+                return (totalSec / meter.valueReminder) * (meter.rotationAngle * (180 / Math.PI));
+            };
+
+            return (
+                <div className="jarvis-hud-container" style={{ width: size, height: (size * 505) / 720 }}>
+                    <svg viewBox={JARVIS_CONFIG.metadata.viewBox} className="hud-canvas">
+                        {JARVIS_CONFIG.meters.map(m => {
+                            const isRot = m.type === 'ROTATOR';
+                            if (m.type === 'IMAGE' || isRot) {
+                                const cx = m.x + (m.offsetX || 0); const cy = m.y + (m.offsetY || 0);
+                                const rot = getRotation(m);
+                                const rotationalTransform = isRot && !m.isDecorative ? `rotate(${rot}deg)` : 'initial';
+                                const isBg = m.name === "Background";
+                                
+                                return (
+                                    <image 
+                                        key={m.name} 
+                                        href={m.imageName} 
+                                        x={m.x} y={m.y} 
+                                        width={isBg ? 720 : 184} 
+                                        height={isBg ? 505 : 184}
+                                        className={isBg ? "" : `hud-meter ${m.isDecorative ? (m.name.includes('Outter') ? 'animate-rotate-cw' : 'animate-rotate-ccw') : ''}`}
+                                        style={isBg ? {} : { transform: rotationalTransform }}
+                                    />
+                                );
+                            }
+                            if (m.type === 'STRING') {
+                                const val = m.measureName === 'hours' ? time.getHours().toString().padStart(2, '0') : m.measureName === 'minutes' ? time.getMinutes().toString().padStart(2, '0') : m.text;
+                                return (
+                                    <text key={m.name} x={m.x} y={m.y} fill={m.style.color} fontSize={m.style.fontSize} transform={`rotate(${m.angle * (180 / Math.PI)}, ${m.x}, ${m.y})`} className="hud-text">
+                                        {val}
+                                    </text>
+                                );
+                            }
+                        })}
+                    </svg>
+                    <div className="hud-vignette"></div>
+                    <div className="hud-scanline"></div>
+                </div>
+            );
+        };
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<JarvisHUD size={700} />);
+    </script>
+</body>
+</html>

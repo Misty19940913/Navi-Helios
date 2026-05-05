@@ -1,0 +1,292 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "0732220bd2f1069f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5a6b385e566eaa25",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "30_Projects/32_Active/Arena/我的知識整理/自我評估.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "自我評估"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a71c8a1625de110d",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd6ad2172b26161b",
+        "type": "tabs",
+        "dimension": 34.766493699036324,
+        "children": [
+          {
+            "id": "645ad61097858c13",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜尋"
+            }
+          },
+          {
+            "id": "123eeed01fb575bf",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "關聯圖檢視"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "15cd81aeb62591ca",
+        "type": "tabs",
+        "dimension": 65.23350630096367,
+        "children": [
+          {
+            "id": "5bec902d6a23fcf2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "檔案瀏覽器"
+            }
+          },
+          {
+            "id": "6d6f2ed141a7ef30",
+            "type": "leaf",
+            "state": {
+              "type": "notebook-navigator",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "notebook-navigator"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 306.5
+  },
+  "right": {
+    "id": "7d77eee59c687e8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "f25adc9aab9d2afc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "55bc4d46c850f041",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "對外連結"
+            }
+          },
+          {
+            "id": "de728c0da9752a0d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "200週期紀錄/210規劃與覆盤/2026-W06.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "2026-W06 的反向連結"
+            }
+          },
+          {
+            "id": "67c8b8d3f58e6076",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "標籤"
+            }
+          },
+          {
+            "id": "e8873d62e5c258d9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "所有屬性"
+            }
+          },
+          {
+            "id": "8a4c3cd15bb5cab7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "30_Projects/32_Active/Arena/產出結果/Arena_AI_Agent_JOB_DESC.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Arena_AI_Agent_JOB_DESC 的大綱"
+            }
+          },
+          {
+            "id": "ecac71cb404e37b2",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "calendar"
+            }
+          },
+          {
+            "id": "c5492c04bd9fd20f",
+            "type": "leaf",
+            "state": {
+              "type": "planner-timeline",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "planner-timeline"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 463.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "templates:插入模板": false,
+      "workspaces:管理工作區配置": false,
+      "publish:發佈變動內容": false,
+      "bases:建立新的 base": false,
+      "command-palette:開啟命令面板": false,
+      "remotely-save:Remotely Save": false,
+      "obsidian-excalidraw-plugin:新建繪圖檔案": false,
+      "templater-obsidian:Templater": false,
+      "components:AI 對話（新標籤頁）": false,
+      "callout-manager:Insert Callout": false,
+      "notebook-navigator:筆記本導覽器": false,
+      "obsidian42-brat:BRAT": false
+    }
+  },
+  "active": "123eeed01fb575bf",
+  "lastOpenFiles": [
+    "30_Projects/32_Active/Arena/我的知識整理/自我評估.md",
+    "80-System/85-Markdown規範/搜尋語法.md",
+    "80-System/87-SystemDocs/README.md",
+    "80-System/87-SystemDocs/navi-life-os-SPEC.md",
+    "80-System/87-SystemDocs/人生OS使用手冊.md",
+    "80-System/81-Template/README模板.md",
+    "80-System/81-Template/MOC模板.md",
+    "80-System/81-Template/讀書筆記模板.md",
+    "80-System/81-Template/項目模板.md",
+    "80-System/81-Template/知識模板.md",
+    "80-System/81-Template/季度複習模板.md",
+    "80-System/81-Template/任務模板.md",
+    "80-System/81-Template/公文處理專案.md",
+    "80-System/81-Template/反思模板.md",
+    "600支援/610管理協議/Agent/Prompts/example-expert.md",
+    "30_Projects/32_Active/Arena/教材/Arena_S1_認識自己.md",
+    "30_Projects/32_Active/Arena/我的知識整理",
+    "30_Projects/32_Active/Arena/Arena框架/010_六商維度定義.md",
+    "30_Projects/32_Active/Arena/Arena_MOC_new.md",
+    "30_Projects/32_Active/Life-OS/system-design.md",
+    "40_Knowledge/log",
+    "40_Knowledge/_archive",
+    "40_Knowledge/queries",
+    "40_Knowledge/comparisons",
+    "40_Knowledge/concepts",
+    "40_Knowledge/entities",
+    "40_Knowledge/raw/refs",
+    "40_Knowledge/raw/assets",
+    "40_Knowledge/raw/transcripts",
+    "60-AI-Protocols/Hermes/skills/knowledge-management/vault-folder-reorganization/references/life-os-kce-spaces.md",
+    "60-AI-Protocols/Hermes/skills/research/llm-wiki/references/win4r-v3-delta.md",
+    "60-AI-Protocols/Hermes/skills/navi-obsidian-editing/references/patch-pitfalls.md",
+    "30_Projects/32_Active/Life-OS/task_plan.md",
+    "60-AI-Protocols/Hermes/AGENTS.md",
+    "60-AI-Protocols/Hermes/SOUL.md",
+    "60-AI-Protocols/雷蒙claudecode教學/pro-kit/images/pro-kit-01-demo-interview.jpg",
+    "60-AI-Protocols/雷蒙claudecode教學/pro-kit/images/pro-kit-01-demo-result.jpg",
+    "600支援/x/Images/CleanShot 2023-07-30 at 21.37.43.png",
+    "600支援/x/Images/flight-school-hotkey-wide.jpg",
+    "600支援/x/Images/lyt-crafting-mocs-4.jpg",
+    "600支援/x/Images/lyt-note-links-to-other-notes.png",
+    "600支援/x/Images/lyt-crafting-mocs-1.jpg",
+    "600支援/x/Images/lyt-mode-graphic-1.jpg",
+    "600支援/x/Images/mckie-ship-and-sea-mid-narrow-.jpg",
+    "600支援/x/Images/feynman-triangulation-2.png",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/一人商業模式完整全景圖.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/一人商業模式全景圖.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/232-111經營實踐：從價值轉化到系統迭代.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/232-110經營憲章-畫布.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/232-100一人企業 MOC：產品化自己 (Productize Yourself)MOC.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/232-100一人企業 MOC.canvas",
+    "30_Projects/33_Done/HUMAN_3.0-DESKTOP-Misty/產出結果/HUMAN_3.0.canvas",
+    "30_Projects/33_Done/設計人生-DESKTOP-Misty/產出結果/人生設計概念卡片.canvas",
+    "30_Projects/33_Done/商業模式圖-DESKTOP-Misty/產出結果/商業模式畫布.canvas",
+    "30_Projects/33_Done/商業模式圖/產出結果/商業模式畫布.canvas"
+  ]
+}
