@@ -18,10 +18,6 @@ triggers:
   - "如何決定優先建哪個 skill"
   - "建了沒用到怎麼辦"
   - "哪些重複工作值得自動化"
-required_primitives:
-  - 01_flow-planning
-  - 05_content-generation
-  - 08_logging
 sources:
   - SRC-001_雷蒙skill-creator-bootstrap（Claude Code教學，pro-kit 02-skill-creator-bootstrap.md）
   - SRC-002_Hermes-skill-authoring（Hermes Skill 創作實戰手冊）
@@ -201,3 +197,56 @@ consumed_by:
 - [ ] 迭代文化已告知用戶
 - [ ] 候選清單已寫入 `skill-candidates.md`
 - [ ] 銜接到建構流程的選項已提供
+
+---
+
+## Steps
+
+### 1. Clarify intent (required first step)
+
+Do not skip the three-question interview. Confirm what type of repeatable work the user is trying to automate.
+
+### 2. Identify operation type
+
+| What you need | Tool |
+|---------------|------|
+| Find the first skill to build | This entire skill — run the 3-question interview |
+| Build the skill after selection | → delegate to `skill-authoring` |
+| Track candidate list | Write to `skill-candidates.md` |
+
+### 3. Execute the interview
+
+Use `clarify` tool to send all three questions at once. Do not proceed to Step 4 until all three are answered.
+
+### 4. Produce recommendations
+
+Output: 1 most recommended + 2 alternatives, each with name suggestion, description, rationale, and estimated time.
+
+### 5. Confirm iteration culture
+
+Tell the user: build 1 per week, use for 1 week before deciding on next, delete or revise if not triggered within a week.
+
+### 6. Document and transition
+
+Write to `skill-candidates.md` and ask if they want to proceed to `skill-authoring`.
+
+---
+
+## Common Pitfalls
+
+- ❌ **Skipping the 3-question interview** — going straight to "you should build X" without understanding the actual repeat pattern
+- ❌ **Recommending a skill with low frequency** — if "monthly" was answered, flag that it might be too slow to validate; suggest a placeholder note instead of full skill
+- ❌ **Forgetting to mention iteration culture** — user may expect perfect first attempt, then abandon the skill system
+- ❌ **Confusing skill-finder with skill-authoring** — this skill finds direction; skill-authoring writes SKILL.md. Do not write SKILL.md content here.
+- ❌ **Starting with "other" option without reverse挖掘** — always attempt the two fallback questions before concluding it's something new
+- ❌ **Not checking existing skills** — before recommending a new skill, verify it's not already covered by an existing skill in `hermes-skills-inventory`
+
+---
+
+## Verification
+
+- [ ] Three questions answered in full
+- [ ] 1 recommendation + 2 alternatives produced with all fields (name, description, rationale, estimated time)
+- [ ] Iteration culture communicated (1-week trial, delete/revise if not triggered)
+- [ ] `skill-candidates.md` updated
+- [ ] Transition offered to `skill-authoring`

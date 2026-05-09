@@ -7,7 +7,6 @@ tags:
   - socratic-questioning
   - coaching-techniques
   - awareness-growth
-  - H3.0
 time_created: 2026-04-30
 time_modified: 2026-04-30
 description: 蘇格拉底式訪談法 (Socratic Interviewing)——定義 Arena 進化體系的底層提問語法。透過澄清問題、假設探查、證據檢驗、隱含探索與多維視角切換，協助用戶識別未被檢視的偏見、穿透語言偽裝，並在衝突中觸發元認知的「覺察 (XQ)」躍遷。旨在將 AI 從「回答者」轉化為「智慧產婆」。

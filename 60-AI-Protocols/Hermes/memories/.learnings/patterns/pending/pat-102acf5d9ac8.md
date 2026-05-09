@@ -3,14 +3,14 @@
 **Type:** api_error  
 **Count:** 1  
 **Status:** pending  
-**First seen:** 2026-05-03T11:17:18.113471+00:00  
-**Last seen:** 2026-05-03T11:17:18.113471+00:00
+**First seen:** 2026-05-09T05:22:09.685878+00:00  
+**Last seen:** 2026-05-09T05:22:09.685878+00:00
 
 ## Summary
 API error in skill_view: {"success": true, "name": "vault-bulk-translation", "description": "批次翻譯 Obsidian vault 資料夾（英文→繁體中文）的工作流 — 包含語言偵測、優先級分類、
 
 ## Error hashes
-- 62ead89df9a49777
+- 10ade7380f752e64
 
 ## Last error
 ```

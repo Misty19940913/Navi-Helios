@@ -92,3 +92,58 @@ Each result has multiple formats under `.media_formats`:
 - URL-encode the query: spaces as `+`, special chars as `%XX`
 - For sending in chat, `tinygif` URLs are lighter weight
 - GIF URLs can be used directly in markdown: `![alt](url)`
+
+---
+
+## Steps
+
+### 1. Verify setup
+
+```bash
+echo "TENOR_API_KEY set: $([ -n "$TENOR_API_KEY" ] && echo YES || echo NO)"
+command -v jq > /dev/null && echo "jq: OK" || echo "jq: MISSING"
+command -v curl > /dev/null && echo "curl: OK" || echo "curl: MISSING"
+```
+
+If `TENOR_API_KEY` missing → add to `~/.hermes/.env`. If `jq` missing → `apt install jq` or `brew install jq`.
+
+### 2. Search for GIFs
+
+```bash
+curl -s "https://tenor.googleapis.com/v2/search?q=$(echo "YOUR_QUERY" | tr ' ' '+')&limit=5&key=${TENOR_API_KEY}" | jq -r '.results[].media_formats.gif.url'
+```
+
+Replace `YOUR_QUERY` with URL-encoded search term. Use `limit` to control number of results (1-50).
+
+### 3. Pick and download
+
+```bash
+# Get tinygif (lighter) or gif (full quality)
+URL=$(curl -s "https://tenor.googleapis.com/v2/search?q=celebration&limit=1&key=${TENOR_API_KEY}" | jq -r '.results[0].media_formats.tinygif.url')
+curl -sL "$URL" -o /tmp/celebration.gif
+```
+
+### 4. Deliver
+
+Use `MEDIA:/path/to/file.gif` in Discord — the platform delivers it as a native attachment.
+
+---
+
+## Verification
+
+| Step | How to verify |
+|------|---------------|
+| API key works | `curl -s "...&key=${TENOR_API_KEY}"` returns JSON, not 403 |
+| Search returns results | `jq -r '.results | length'` > 0 |
+| Download succeeds | File exists and `file <path>` shows GIF image |
+| GIF plays | `file <path>` shows `GIF`; size > 0 bytes |
+
+---
+
+## Common Pitfalls
+
+- ❌ **No API key** — Tenor returns 403 without `TENOR_API_KEY`. Get free key at https://developers.google.com/tenor/guides/quickstart
+- ❌ **Spaces in query not encoded** — use `+` or URL-encode; `curl` fails with bare spaces in URL
+- ❌ **Using full `gif` for chat previews** — `tinygif` is smaller and faster; full GIF can be 10MB+
+- ❌ **Rate limiting** — Tenor has rate limits; if seeing empty results, pause and retry
+- ❌ **Not setting `Content-Type`** for download — Tenor redirects; `-L` follows redirects, `-sL` silences output

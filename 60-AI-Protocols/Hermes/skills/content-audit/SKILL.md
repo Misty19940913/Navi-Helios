@@ -3,7 +3,6 @@ name: content-audit
 description: 自媒體文章稽核技能 - 透過三階段掃描框架診斷文案品質，輸出量化評分與改善方向（不含重寫）
 triggers: [//audit, 審核文案, 稽核文章, 文章診斷]
 category: content
-required_primitives: [01_flow-planning, 02_data-retrieval, 04_format-validation, 05_content-generation, 08_logging]
 ---
 
 # 自媒體文章稽核技能

@@ -15,11 +15,6 @@ metadata:
     tags: [Reminders, tasks, todo, macOS, Apple]
 prerequisites:
   commands: [remindctl]
-required_primitives:
-  - "01_flow-planning"
-  - "05_content-generation"
-  - "06_file-operations"
-  - "08_logging"
 ---
 
 # Apple Reminders

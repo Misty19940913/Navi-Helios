@@ -44,16 +44,22 @@ hermes gateway start
 systemctl --user restart hermes-gateway
 ```
 
+### Step 3b: Clear stale update-check cache (prevents false "behind" report)
+```bash
+rm -f ~/.hermes/.update_check
+```
+
 ### Step 4: Verify
 ```bash
-systemctl --user status hermes-gateway
-# Should show: active (running), started <time>
+hermes update  # should show 0 commits behind
+systemctl --user status hermes-gateway  # active (running)
 ```
 
 ## Key Files
 - `~/.hermes/gateway.pid` — PID file, check if matches running process
-- `~/.hermes/.update_check` — caches behind count, delete to clear stale value
+- `~/.hermes/.update_check` — caches behind count; delete after git pull for accurate status
 - `~/.config/systemd/user/hermes-gateway.service` — systemd service definition
+- `~/.hermes/hermes-agent/` — git working directory (where git pull runs)
 
 ## Important Note
 `hermes gateway start` calls `gateway run --replace` which replaces existing gateway if one is running. So after git pull, simply running `hermes gateway start` should be sufficient to pick up new code. No manual kill needed.

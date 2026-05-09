@@ -114,6 +114,171 @@ GitHub: handles version history and offsite backup (separate from OneDrive)
 
 **Key principle**: Vault is the brain. OneDrive syncs it. GitHub backs up selected parts. They serve different purposes and must not overlap.
 
+## §A Symlink Management (WSL/NTFS)
+
+> 詳細標準程序見原 skill：`hermes-asset-symlink-mgmt`（已吸收至此）
+
+### 典型場景
+將 Hermes 資產從舊路徑迁移到新 canonical 路徑後，需重建 `~/.hermes/` 下的所有 symlinks。
+
+### Step A0: 確認新舊路徑
+```bash
+NEW_CANONICAL="/mnt/c/Users/安泰/OneDrive/Obsidian/Navi Helios/60-AI-Protocols/Hermes/"
+ls "$NEW_CANONICAL/SOUL.md"
+ls "$NEW_CANONICAL/memories/"
+ls "$NEW_CANONICAL/skills/"
+```
+
+### Step A1: 備份現有 symlinks 狀態
+```bash
+ls -la ~/.hermes/ | grep -E "SOUL|memories|skills"
+```
+
+### Step A2: 刪除舊 symlinks（⚠️ NTFS gotcha）
+WSL 中 `rm symlink` 在 NTFS mount 上可能追蹤到目標並刪除之。**刪除後立即驗證目標是否存在**。
+```bash
+rm -v ~/.hermes/SOUL.md ~/.hermes/memories ~/.hermes/skills
+ls "$NEW_CANONICAL/SOUL.md"    # must still exist — 驗證目標還在
+```
+
+### Step A3: 重新建立 symlinks
+```bash
+ln -sv "$NEW_CANONICAL/SOUL.md"   ~/.hermes/SOUL.md
+ln -sv "$NEW_CANONICAL/memories"  ~/.hermes/memories
+ln -sv "$NEW_CANONICAL/skills"    ~/.hermes/skills
+```
+
+### Step A4: 驗證
+```bash
+file ~/.hermes/SOUL.md
+ls -la ~/.hermes/ | grep -E "SOUL|memories|skills"
+wc -l ~/.hermes/SOUL.md
+```
+
+### 常見故障
+| 症狀 | 原因 | 修復 |
+|------|------|------|
+| `ln: failed to create symbolic link: File exists` | stub 殘留 | `rm -v /path/to/stub` 確認刪乾淨 |
+| `memories/memories` 巢狀 symlink | memories 是目錄又在內建 symlink | `file ~/.hermes/memories` 確認 |
+| AGENTS.md 更新後行為沒變 | CWD 發現機制，vault 版本被 hermes-agent/ 覆蓋 | 見 §A5 |
+
+### §A5 AGENTS.md CWD 陷阱
+`AGENTS.md` 從 **gateway CWD** 發現，不是從 `HERMES_HOME`。Gateway CWD = `~/.hermes/hermes-agent/`，剛好有 Hermes 自己的開發指南（35KB），**覆蓋 vault 版本**。
+
+驗證：
+```bash
+head -3 ~/.hermes/hermes-agent/AGENTS.md
+# "Hermes Agent - Development Guide" → 錯（讀到 Hermes 自己的）
+# "協調者身份" → 對（vault 版本）
+```
+
+修復：每次更新 vault 版本後，必須同步到 hermes-agent/：
+```bash
+cp "/mnt/c/Users/安泰/OneDrive/Obsidian/Navi Helios/60-AI-Protocols/Hermes/AGENTS.md" \
+   ~/.hermes/hermes-agent/AGENTS.md
+```
+
+## §B Gateway Autostart (WSL2/systemd)
+
+> 詳細標準程序見原 skill：`hermes-gateway-autostart`（已吸收至此）
+
+WSL2 啟用 systemd（`/etc/wsl.conf` 有 `systemd=true`）後，可將 Hermes Gateway 註冊為 systemd user service 開機自動啟動。
+
+### Step B1: 建立 systemd user 目錄
+```bash
+mkdir -p ~/.config/systemd/user
+```
+
+### Step B2: 建立 service file
+寫入 `~/.config/systemd/user/hermes-gateway.service`：
+```ini
+[Unit]
+Description=Hermes Gateway - Discord/Telegram/Messaging
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/home/misty/.local/bin/hermes gateway run --replace
+WorkingDirectory=/home/misty
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target
+```
+
+**關鍵：使用 `--replace` flag**，否則舊的手動啟動进程會導致 service 退出。
+
+### Step B3: 啟用
+```bash
+systemctl --user daemon-reload
+systemctl --user enable hermes-gateway
+systemctl --user start hermes-gateway
+```
+
+### Step B4: 驗證
+```bash
+systemctl --user status hermes-gateway
+tail ~/.hermes/logs/agent.log | grep -i discord
+```
+
+### 管理指令
+```bash
+systemctl --user status hermes-gateway   # 檢查狀態
+systemctl --user stop hermes-gateway     # 停止
+systemctl --user restart hermes-gateway # 重啟
+journalctl --user -u hermes-gateway -f   # 追蹤日誌
+```
+
+### 故障排除
+- **Service 失敗「Gateway already running」**：舊的手動进程殘留，用 `--replace` 解決
+- **tmux 衝突**：先 `tmux kill-session -t hermes-gateway`
+- **WSL 關閉後 service 掛掉**：確認 `/etc/wsl.conf` 有 `systemd=true`，然後 `wsl --shutdown`
+
+## §C Safety Configuration
+
+> 詳細安全機制見原 skill：`hermes-safety-suite`（已吸收至此）
+
+### 威脅模型
+| 威脅類型 | 說明 | 現有防御 |
+|:--|:--|:--|
+| 誤刪檔案 | `rm -rf` 打錯字 | `rm` → `trash` alias |
+| 危險指令 | `git reset --hard`、`dd` | approval.py DANGEROUS_PATTERNS |
+| 自我終止 | `pkill hermes` | approval.py 已有保護 |
+| 內容攻擊 | prompt injection | `skills_guard.py` 掃描 |
+| SSRF | 請求雲端元資料端點 | `url_safety.py` 封鎖 169.254.169.254 |
+
+### 第一層：rm → trash
+```bash
+alias rm='trash'      # 誤刪可還原（WSL: gio trash）
+alias rm!='/bin/rm'   # 真的永久刪除
+```
+
+### 第二層：危險指令黑名單
+`approval.py` 的 `DANGEROUS_PATTERNS` 已涵蓋刪除類、磁碟類、Git 破壞類、Shell 執行類、自毀類、SQL 破壞類。
+
+### 第三層：確認模式
+| 模式 | 行為 |
+|:--|:--|
+| `Accept Edits`（推薦）| 檔案操作直接做，終端指令問 |
+| `Default` | 所有操作都問 |
+| `Plan` | 只規劃不執行 |
+| `Bypass` | 除了黑名單都不問 |
+
+### 安全架構地圖
+```
+Hermes 安全架構
+├── approval.py — 危險指令偵測
+├── skills_guard.py — skill 安裝前掃描
+├── tirith_security.py — 內容安全掃描
+├── url_safety.py — SSRF 保護
+├── path_security.py — 路徑跳脫檢查
+└── terminal_tool.py — 執行環境隔離
+```
+
 ## Setup Steps
 
 ### Step 1: Backup

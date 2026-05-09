@@ -158,8 +158,36 @@ search_files("variable_name\\s*=", path="src/", file_glob="*.py")
 - [ ] Evidence gathered (logs, state, data flow)
 - [ ] Problem isolated to specific component/code
 - [ ] Root cause hypothesis formed
+- [ ] **Delegated action verified independently** — if task was delegated (cron, subagent, LLM automation), the claimed output has been physically confirmed on disk/state before accepting it as true
 
 **STOP:** Do not proceed to Phase 2 until you understand WHY it's happening.
+
+---
+
+## Phase 1.5: Delegated-Output Trap (Pitfall)
+
+When a task is delegated — via cron job, subagent, or any automated pipeline — the delegator's claim of "done" is NOT evidence the side effect occurred.
+
+**The false-confidence pattern:**
+1. Cron/agent says "T14 complete" after analysis
+2. `current_index` advances in progress file
+3. But the actual file write FAILED (path, permission, OneDrive sync lag, or LLM's context truncation)
+4. Progress file shows T14=done, but vault has no T14 file
+5. Next run starts at T15 → now TWO groups are "done" but unverified
+
+**Verification must be physical, not rhetorical:**
+- ❌ "The agent reported success" → unverified
+- ✅ `os.path.exists()` confirmed the file exists at the expected path
+- ✅ `ls` shows the file with non-zero size
+- ✅ File content starts with expected header
+
+**Before investigating any "completed but nothing happened" issue:**
+1. Read the progress/state file to see what was claimed
+2. Physically verify the expected output exists
+3. Compare the claimed output path/name with what actually exists
+4. Check for filename mismatches (e.g., agent wrote `T14_PULSE_Daemon.md` but expected `T14_PULSE.md`)
+
+This trap is especially dangerous in WSL/OneDrive environments where filesystem writes may lag or fail silently.
 
 ---
 
@@ -286,6 +314,7 @@ This is NOT a failed hypothesis — this is a wrong architecture.
 ## Red Flags — STOP and Follow Process
 
 If you catch yourself thinking:
+- "The agent reported it completed successfully" → **ALWAYS physically verify before accepting**
 - "Quick fix for now, investigate later"
 - "Just try changing X and see if it works"
 - "Add multiple changes, run tests"

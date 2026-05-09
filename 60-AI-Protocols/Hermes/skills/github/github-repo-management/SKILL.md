@@ -1,10 +1,9 @@
 ---
 name: github-repo-management
 description: "Clone/create/fork repos; manage remotes, releases."
-version: 1.1.0
+version: 1.2.0
 author: Hermes Agent
 license: MIT
-required_primitives: [01_flow-planning, 02_data-retrieval, 05_content-generation, 06_file-operations]
 triggers:
   - "clone repo"
   - "create repo"
@@ -22,6 +21,12 @@ triggers:
   - "rerun ci"
   - "branch protection"
   - "github gist"
+  - "push vault to github"
+  - "large file"
+  - "rewrite git history"
+  - "remove files from history"
+  - "filter-branch"
+  - "git lfs"
 
 metadata:
   hermes:
@@ -68,6 +73,53 @@ REMOTE_URL=$(git remote get-url origin)
 OWNER_REPO=$(echo "$REMOTE_URL" | sed -E 's|.*github\.com[:/]||; s|\.git$||')
 OWNER=$(echo "$OWNER_REPO" | cut -d/ -f1)
 REPO=$(echo "$OWNER_REPO" | cut -d/ -f2)
+```
+
+---
+
+## Steps
+
+### 1. Identify the operation type
+
+| What you need | Use this |
+|---------------|----------|
+| Clone a remote repo | Section 1 — Cloning |
+| Create a new repo | Section 2 — Creating |
+| Fork someone else's repo | Section 3 — Forking |
+| View/edit repo settings | Section 5 — Settings |
+| Manage branch protection | Section 6 — Branch Protection |
+| Handle secrets / env vars | Section 7 — Secrets |
+| Create a release | Section 8 — Releases |
+| Trigger / rerun CI | Section 9 — Actions |
+| Push large files | Section 11 — Large Files |
+
+### 2. Choose interface
+
+- **`gh`** — preferred if `gh` is installed and authenticated (`gh auth status`)
+- **`git + curl`** — fallback when `gh` is unavailable
+
+### 3. Execute
+
+Run the relevant command block from the chosen section.
+
+### 4. Verify
+
+| Operation | Verification |
+|-----------|--------------|
+| Clone | `ls <target-dir>` shows expected files |
+| Create | `gh repo view <owner/repo>` returns 200 |
+| Fork | URL changes from `owner/repo` to `$GH_USER/repo` |
+| Push | `git log --oneline -1` matches your commit |
+| Secrets | `gh secret list` shows the key (no value) |
+| Release | `gh release list` shows the tag |
+
+### 5. Sync collaborators (if needed)
+
+After force-push or history rewrite:
+```bash
+git fetch upstream
+git rebase upstream/main
+git push --force origin main
 ```
 
 ---
@@ -532,3 +584,112 @@ for g in json.load(sys.stdin):
 | List workflows | `gh workflow list` | `curl GET /repos/o/r/actions/workflows` |
 | Rerun CI | `gh run rerun ID` | `curl POST /repos/o/r/actions/runs/ID/rerun` |
 | Set secret | `gh secret set KEY` | `curl PUT /repos/o/r/actions/secrets/KEY` (+ encryption) |
+
+---
+
+## 11. Large Files & History Rewriting
+
+### GitHub File Size Limits
+
+| Limit Type | Size |
+|------------|------|
+| Hard limit (rejected) | 100 MB |
+| Soft warning | 50 MB |
+| Recommended max | 50 MB |
+
+Files exceeding 100 MB are **rejected** at push and cannot enter the repo history.
+
+### Detecting Large Files in History
+
+```bash
+# Find large files in git history (by object size)
+git rev-list --all --objects | \
+  while read sha path; do
+    size=$(git cat-file -s "$sha" 2>/dev/null || echo 0)
+    [ "$size" -gt 50000000 ] && echo "$size $path"
+  done | sort -rn | head -20
+
+# Or search by filename pattern
+git rev-list --all --objects | grep -i "XAUUSD\|parquet\|\.zip"
+```
+
+### Removing Large Files from History (git filter-branch)
+
+**Critical prerequisite: Clean working tree.**
+`git filter-branch` fails with "Cannot rewrite branches: You have unstaged changes" if the working tree is dirty.
+
+```bash
+# Always clean first
+git add -A && git commit -m "chore: clean before history rewrite"
+
+# Then rewrite
+FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch --force \
+  --index-filter 'git rm -rf --cached --ignore-unmatch \
+    "path/to/large-file.csv" \
+    "path/to/another.big.zip"' \
+  --prune-empty --tag-name-filter cat -- --all
+```
+
+Flags: `--force` (allow rewrite even if refs exist), `--prune-empty` (remove empty commits), `--tag-name-filter cat` (rewrites tags as-is), `-- --all` (all refs).
+
+### After Rewriting
+
+```bash
+# Verify size reduction
+git count-objects -vH
+
+# Force push the rewritten history
+git push --force origin main
+```
+
+**⚠️ Force-push rewrites remote history** — coordinate with collaborators first.
+
+### Adding .gitignore After the Fact
+
+```bash
+echo "*.csv" >> .gitignore
+echo "*.parquet" >> .gitignore
+echo "*.zip" >> .gitignore
+git add .gitignore && git commit -m "chore: ignore large binary files" && git push
+```
+
+### Git LFS Alternative
+
+```bash
+git lfs install
+git lfs track "*.csv"
+git lfs track "*.parquet"
+git add .gitattributes && git commit -m "chore: track large files with LFS" && git push
+```
+
+### Common Pitfalls
+
+- ❌ **`git filter-branch` on dirty tree** — always `git add -A && git commit` first
+- ❌ **Assuming .gitignore removes files already tracked** — must rewrite history
+- ❌ **`git push` without `--force`** after rewriting history — old refs still exist remotely
+- ❌ **Large file in committed history** — push fails after slow upload; 100MB is the hard ceiling
+- ❌ **Creating a repo that already exists** — `gh repo create` fails if name is taken; use `--confirm` or check first with `gh repo list`
+- ❌ **Fork without adding upstream** — fork stops syncing with original; always add `git remote add upstream`
+- ❌ **Using wrong auth token** — `gh auth status` shows who you're authenticated as; wrong account = 403 on private repos
+- ❌ **Force-push to shared branches without coordination** — rewrites history for everyone; announce in advance
+
+---
+
+## Verification
+
+After any operation, confirm success:
+
+| Operation | How to verify |
+|-----------|--------------|
+| Clone | `ls <dir>` shows files; `git log --oneline -1` shows latest commit |
+| Create | `gh repo view owner/repo` succeeds without error |
+| Fork | `git remote -v` shows `origin` pointing to your fork |
+| Push | `git log` shows your commit; remote reflects it on `gh repo view` |
+| Secret set | `gh secret list` shows the name (value is never visible) |
+| Release created | `gh release list` shows the tag with correct date |
+| Branch protection | `gh repo view` shows protection rules in settings |
+| Force-push completed | GitHub UI shows rewritten history; collaborators must re-clone or rebase |
+
+---
+
+## Quick Reference Table

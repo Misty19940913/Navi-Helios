@@ -5,9 +5,6 @@ version: 1.0.0
 author: Orchestra Research
 license: MIT
 dependencies: [lm-eval, transformers, vllm]
-required_primitives:
-  - 01_flow-planning
-  - 06_file-operations
 trigger:
   when:
     - Benchmarking an LLM on academic tasks

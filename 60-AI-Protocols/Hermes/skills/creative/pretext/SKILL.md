@@ -25,7 +25,7 @@ metadata:
       - text layout
       - DOM-free text measurement
       - chenglou pretext
-      - @chenglou/pretext
+      - "@chenglou/pretext"
     required_primitives:
       - prepare
       - layout

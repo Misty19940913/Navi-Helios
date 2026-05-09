@@ -3,20 +3,17 @@
 **Type:** tool_error  
 **Count:** 1  
 **Status:** pending  
-**First seen:** 2026-05-05T15:04:14.652391+00:00  
-**Last seen:** 2026-05-05T15:04:14.652391+00:00
+**First seen:** 2026-05-09T07:36:29.645658+00:00  
+**Last seen:** 2026-05-09T07:36:29.645658+00:00
 
 ## Summary
 Tool error in skill_manage: {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n 
 
 ## Error hashes
-- 4662434915119aee
+- 6de291f07a2104e6
 
 ## Last error
 ```
 Error Type: tool_error
-Tool Args: {'action': 'patch', 'name': 'vault-folder-reorganization', 'new_string': '## 相關參考文檔\n\n- `references/life-os-kce-spaces.md` — Life-OS KCE 空間歸屬矛盾案例（跨文件審查lesson）', 'old_string': '## Related Skills'}
-
---- Error Output (last 30 lines) ---
-{"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n 147| ---\n 148| \n 149| ## 吸收的相關 Skills\n 150| \n 151| 以下技能已被整合進本傘狀技能，作為 references/ 下的支撐檔案：\n---\n 165| - **不應該**作為 skill 安裝到 `~/.hermes/skills/`\n 166| \n 167| **Hermes Skill**：\n 168| - 存在於 `~/.hermes/skills/` 目錄\n 169| - 是可執行程序，包含步驟、判斷條件、交付標準\n---\n 157| | ~~`planning-with-files-vault-pattern`~~ | ~~已移除~~ | ⚠️ 該文檔為 vault 內部約定，非 Hermes 可執行技能。詳見下方「Vault Pattern vs Skill 辨別原則」|\n 158| \n 159| ## Vault Pattern vs Skill 辨別原則（2026-05-05 新增）\n 160| \n 161| **Vault Pattern（例如 `planning-with-files-vault-pattern.md`）**：", "file_preview": "---\nname: vault-folder-reorganization\ndescription: Obsidian vault 資料夾重
+Tool Args: {'action': 'patch', 'name': 'writing-plans', 'new_string': '## Location Convention (2026-05-09 established)\n\nUser\'s vault plans go to: `30_Projects/32_Active/<project>/`\n\nDo NOT use `.hermes/plans/` — that is the fallback location only.\n\n---\n\n## Session 2026-05-09 Corrections (Real Errors to Learn From)\n\n### Error 1: Wrong Skill Selected\nUser asked to plan a new trading system. I used `writing-plans` (single flat plan file) instead of `planning-with-files` (3-file system with task_plan.md + findings.md + progress.md). The user had to explicitly correct me.\n\n**Fix**: For multi-phase tasks requiring 5+ tool calls, always use `planning-with-files`.\n\n### Error 2: Wrong Save Location\nI saved the plan as `30_Projects/32_Active/新建交易系統_計畫.md` (single flat file). User said "計畫資料夾要放在30_Projects/32_Active" — meaning the plan should be in a subfolder with task_plan.md + findings.md + progress.md, not a single _計畫.md file.\n\n**Correct pattern**:\n
 ```

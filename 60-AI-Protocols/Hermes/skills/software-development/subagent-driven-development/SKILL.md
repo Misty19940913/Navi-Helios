@@ -254,6 +254,51 @@ For navi-calendar-style plugin development:
 
 **If the orchestrator skips this gate:** Bugs reach production, users notice, rework required. The user's direct complaint (2026-04-27): "在提交任務成果之前你應該就要有一個審查，而不是寫完代碼就直接交出來"
 
+## Pitfall: Delegated File-Output Tasks Need Physical Verification
+
+When delegating tasks that produce file outputs (research reports, generated documents, batch analysis), the **orchestrator MUST physically verify file existence** before marking complete — not trust the subagent's self-report.
+
+**The silent-failure pattern (observed 2026-05-08, PAI Research session):**
+```
+1. LLM subagent analyzes source files, writes report, claims "complete"
+2. Progress tracker (progress.json) updates to "done"
+3. Actual file write FAILED (unquoted path with spaces → shell command failed silently)
+4. Progress shows done, vault has no file
+5. Next batch starts from wrong index → duplicated work or gaps
+```
+
+**Root cause**: The delegation prompt didn't include a verification step. The subagent reported success based on its internal write attempt, not actual filesystem state.
+
+**Required verification protocol for any delegated file-output task:**
+
+```python
+# After subagent reports completion:
+# 1. Verify file exists at expected path
+result = terminal(f'ls -la "{expected_path}"')
+assert result.exit_code == 0, "File not found"
+
+# 2. Verify non-zero size
+size = int(result.stdout.split()[4])
+assert size > 500, f"File too small: {size} bytes"
+
+# 3. Verify header matches expected content
+content = read_file(expected_path)
+assert content.startswith(expected_header), "Wrong file content"
+```
+
+**Special case — WSL + OneDrive paths with spaces:**
+- Always quote paths in shell commands: `"$path"` not `$path`
+- Verify both existence AND content — a zero-byte file will `ls` fine but is invalid
+- OneDrive sync can lag — if write succeeds but sync hasn't propagated, `ls` may show stale state
+
+**Orchestrator review gate for file-output tasks now includes:**
+- [ ] Read the actual output file (not just subagent's summary)
+- [ ] Confirm file size > minimum threshold (typically 500 bytes)
+- [ ] Confirm file starts with expected header/magic bytes
+- [ ] For batch tasks: verify progress tracker matches actual files on disk
+
+---
+
 ## Red Flags — Never Do These
 
 - Start implementation without a plan

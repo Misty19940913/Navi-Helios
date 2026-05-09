@@ -10,9 +10,6 @@ trigger:
   - "確認 task_plan 的 Phase 結構"
   - "Life OS 系統建構"
   - "日誌系統 任務系統 目標系統"
-required_primitives:
-  - 01_flow-planning
-  - 06_file-operations
 produces:
   - 重組後的 vault 資料夾結構（已整理的檔案分類）
   - 蒸餾後的 MOC 內容（精煉要點合併至目標 MOC）
@@ -91,12 +88,45 @@ delegate_task（leaf）讀取所有檔案的 frontmatter + 前 20 行
 
 ---
 
+## MOC 內部章節 vs. 獨立檔案判斷標準
+
+當一個 MOC 涵蓋多個子領域時，用以下標準判斷該用哪種方式：
+
+### 做法 B（推薦）：同一 MOC + 內部章節
+用於滿足以下**全部條件**的情況：
+- 子領域內容 **< 80 行**
+- 子領域**不會被其他 MOC 單獨引用**
+- 子領域**沒有自己的子 MOC**
+- 子領域沒有獨立的維護責任人
+
+### 做法 A（需要時才用）：獨立檔案 + parent 鏈接
+用於滿足以下**任一條件**的情況：
+- 子領域內容 **> 150 行**
+- 子領域**會被其他 MOC 直接引用**
+- 子領域**有自己的子 MOC**
+- 子領域有獨立的維護責任人
+
+**⚠️ 邏輯陷阱（2026-05-09 教訓）**：描述做法 B 時，不要說「同一檔案分段落」然後提出「兩個檔案 + parent 鏈接」作為實作——這是自相矛盾。做法 B 就是讓子領域內容**直接內嵌在 MOC 內**，不需要獨立成另一個檔案。
+
+### 執行方式：做法 B 內嵌章節
+```
+K-AI_人工智慧系統_MOC.md  ← 單一檔案
+  ## SKILL 系統
+  ## Agent 系統      ← 直接內嵌，不需要獨立檔案
+  ## 插件系統
+```
+每個子領域是 MOC 內的 `## 二級標題`，不需要另外建立檔案。
+
+---
+
 ## 陷阱與解法
 - **OneDrive 刪除後還原**：刪除後立即 `ls` 確認，發現還原立即重新刪除
 - **wikilink 指向資料夾而非檔案**：Obsidian wikilink `[[folder]]` 無法解析，須改用路徑文字 `folder/`
 - **parent 連結指向已刪除 MOC**：這類 frontmatter 問題需逐檔修正，列為 TODO 逐項處理
 - **品牌混雜**：同一資料夾內多個品牌系統的檔案，必須讀取內容才能發現
 - **wikilink 含冒號截斷**：`[[標題：副標題]]` 寫入時冒號後可能被截斷，寫入 wikilink 時始終使用完整標題
+- **obsidian-cli 需 API key**：若無 `OBSIDIAN_API_KEY` 環境變數，CLI 不可用。 vault 為 `/mnt/c/Users/安泰/OneDrive/Obsidian/Navi Helios/`，可用 direct file ops 替代 CLI
+- **wikilink 命名不一致**：MOC 內的 wikilink（如 `H3.0-*`、`010_*`、`B2.1_*`）可能已存在於 atomic notes 但命名不同。修復前必須先搜尋 atomic dir 確認 target 存在，再用映射表替換
 - **❗ 未確認現有 vault 結構就創建新的**：最大錯誤——在 `32_Active/` 已存在 `Life-OS/` 且包含完整 `task_plan.md`/`system-design.md`/`findings.md`/`progress.md` 四文件的情況下，仍錯誤創建 `Life-OS-New/`。正確做法：**先 `find` 確認目標資料夾是否已存在**，已存在的 vault 應直接更新而非另起爐灶
 
 ## 用戶決策風格
@@ -156,6 +186,8 @@ Misty 偏好**果斷明確**方案。面對複雜整理任務時：
 | `vault-file-restore-from-git` | `references/vault-file-restore-from-git.md` | 從 vault-git 備份還原被刪除或未同步的檔案 |
 | `life-os-kce-spaces` | `references/life-os-kce-spaces.md` | 跨文件 KCE 空間歸屬審查（圖vs文、口述vs圖示不一致） |
 | ~~`planning-with-files-vault-pattern`~~ | ~~已移除~~ | ⚠️ 該文檔為 vault 內部約定，非 Hermes 可執行技能。詳見下方「Vault Pattern vs Skill 辨別原則」|
+| `232-series-distillation` | `references/232-series-distillation.md` | 232 系列蒸餾實際案例記錄（2026-05-09）|
+| `wikilink-fix-mapping` | `references/wikilink-fix-mapping.md` | MOC wikilink 失效映射修復流程，含 H3.0/Arena/B2.0 案例 |
 
 ## Vault Pattern vs Skill 辨別原則（2026-05-05 新增）
 

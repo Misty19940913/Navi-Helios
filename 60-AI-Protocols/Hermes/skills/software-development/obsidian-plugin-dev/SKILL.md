@@ -5,8 +5,6 @@ trigger:
   - "plugin 開發"
   - "做一個 obsidian plugin"
   - "開發 plugin"
-required_primitives:
-  - 01_flow-planning
 produces:
   - Obsidian Plugin 程式碼（main.js、manifest.json、Release assets）
   - Plugin 發布成品（BRAT 可識別的 release download URL）

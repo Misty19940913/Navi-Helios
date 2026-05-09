@@ -2,7 +2,6 @@
 name: webhook-subscriptions
 description: "Webhook subscriptions: event-driven agent runs."
 version: 1.1.0
-required_primitives: [01_flow-planning, 02_data-retrieval, 03_format-parsing, 04_format-validation, 05_content-generation, 08_logging]
 metadata:
   hermes:
     tags: [webhook, events, automation, integrations, notifications, push]

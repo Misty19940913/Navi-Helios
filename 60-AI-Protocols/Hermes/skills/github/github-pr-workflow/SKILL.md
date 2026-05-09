@@ -19,10 +19,6 @@ metadata:
   hermes:
     tags: [GitHub, Pull-Requests, CI/CD, Git, Automation, Merge]
     related_skills: [github-auth, github-code-review]
-required_primitives:
-  - 01_flow-planning
-  - 06_file-operations
-  - 08_logging
 ---
 
 # GitHub Pull Request Workflow

@@ -2,13 +2,6 @@
 name: heartmula
 description: "HeartMuLa: Suno-like song generation from lyrics + tags."
 version: 1.0.0
-required_primitives:
-  - 01_flow-planning
-  - 02_data-retrieval
-  - 03_format-parsing
-  - 05_content-generation
-  - 06_file-operations
-  - 08_logging
 metadata:
   hermes:
     tags: [music, audio, generation, ai, heartmula, heartcodec, lyrics, songs]

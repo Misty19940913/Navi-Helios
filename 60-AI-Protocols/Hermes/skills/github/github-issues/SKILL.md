@@ -4,7 +4,6 @@ description: "Create, triage, label, assign GitHub issues via gh or REST."
 version: 1.1.0
 author: Hermes Agent
 license: MIT
-required_primitives: [02_data-retrieval, 05_content-generation]
 triggers:
   - "github issue"
   - "gh issue"

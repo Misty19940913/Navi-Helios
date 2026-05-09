@@ -17,6 +17,15 @@
 
 Chinese characters in multiline strings passed to `patch`'s `old_string` parameter must be byte-exact. Use `python3 -c "repr(line)"` via terminal to get the exact string before patching.
 
-## 3. `str.count()` is not a reliable replacement counter
+## 4. Mass ID refactoring — execute_code, not patch chains
 
-If a pattern appears multiple times with slight variations, `str.count()` before replacement will give the wrong count. Always print before/after line numbers when iterating over multiple replacements.
+**Trigger**: 5+ replacements across a file (e.g. T6.1→T1, T6.2→T2, T4.3→T7, etc.)
+
+**Correct approach**:
+1. `read_file` full content
+2. `execute_code` with `str.replace` loop or dict-mapping — all replacements in one Python call
+3. `write_file` — single write back to disk
+
+**Why not patch chains**: each patch reads from current disk state (not the in-memory state from the previous patch). After 3-4 patches the disk state diverges from expectations, causing mismatches or overwrite corruption. The file shown in this session developed duplicate YAML frontmatter and `>` prefix artifacts after a chain of partial reads + patches.
+
+**Verification**: use `content.count(new_id)` spot-checks after write to confirm all replacements landed correctly.

@@ -73,6 +73,37 @@ time_modified: 2026-04-26T12:00:00Z
 - **60 資料夾：** `60-AI-Protocols/`
 - **62 資料夾：** `62-學習區/`
 
+## 吸收的參考技能
+
+本技能的「立場與行動一致性預檢」邏輯，源自獨立的 `document-consistency-check` skill。該 skill 的完整內容已保存至 `references/document-consistency-check.md`，可直接查閱。
+
 ## 陷阱記錄
 
 - `references/patch-pitfalls.md` — patch tool 的截斷問題、編碼陷阱、替換計數陷阱（每次燒到時間後更新）
+- `references/refactor-workflow.md` — 大規模 ID 重構時，write_file 優先於多次 patch
+
+## 大規模重構工作流
+
+> **觸發條件**：同時變更 5 個以上的 ID、術語或跨文件結構時，必須使用此流程。
+
+### 正確流程（read → replace → write_file）
+
+1. **read_file 完整讀取** 目標檔案
+2. **記憶體中替換**（str.replace 或正規表達式一次性置換）
+3. **write_file** 一次寫回
+
+### 錯誤流程（不要用）
+
+- 連續多次 `patch` 操作試圖完成大規模替換
+- 每次 patch 只改一處，依序執行
+
+### 為什麼
+
+多次 patch 的累積問題：
+- 每個 patch 都以當前磁碟狀態為準（不是上次 patch 後的狀態）
+- 執行到一半時，磁碟內容與預期不符，導致後續 patch 失敗或錯誤匹配
+- 一旦出錯，修復成本高過重新開始
+
+### 驗證
+
+重構後用計數確認（`content.count(new_id)`），確保沒有殘留舊 ID，也沒有錯誤覆蓋不應覆蓋的地方。

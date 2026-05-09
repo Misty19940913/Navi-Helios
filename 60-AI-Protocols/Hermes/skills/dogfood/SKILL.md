@@ -2,7 +2,6 @@
 name: dogfood
 description: "Exploratory QA of web apps: find bugs, evidence, reports."
 version: 1.0.0
-required_primitives: [01_flow-planning, 05_content-generation, 06_file-operations, 08_logging]
 metadata:
   hermes:
     tags: [qa, testing, browser, web, dogfood]

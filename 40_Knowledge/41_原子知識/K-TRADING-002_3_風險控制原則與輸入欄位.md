@@ -36,8 +36,8 @@ contradictions: []
 
 ## 關聯知識 (Related)
 
-- [[K-TRADING-002-1]]
-- [[K-TRADING-002-2]]
+- [[K-TRADING-002_1_三層部位分類]]
+- [[K-TRADING-002_2_風險計算核心邏輯]]
 
 ---
 

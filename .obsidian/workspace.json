@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0732220bd2f1069f",
+        "id": "bdb262ce9c5ad5b2",
         "type": "tabs",
         "children": [
           {
-            "id": "5a6b385e566eaa25",
+            "id": "e607ceaa56f4c0a7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "30_Projects/32_Active/Arena/我的知識整理/自我評估.md",
+                "file": "30_Projects/32_Active/34_AI應用規劃師講義閱讀筆記/人工智慧基礎概論.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "自我評估"
+              "title": "人工智慧基礎概論"
             }
           }
         ]
@@ -41,7 +41,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "file:010",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -62,8 +62,7 @@
               "title": "關聯圖檢視"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "15cd81aeb62591ca",
@@ -97,7 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 306.5
+    "width": 396.5
   },
   "right": {
     "id": "7d77eee59c687e8e",
@@ -113,11 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "600支援/Atlas/Maps/Games.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "對外連結"
+              "title": "Games 的對外連結"
             }
           },
           {
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "200週期紀錄/210規劃與覆盤/2026-W06.md",
+                "file": "600支援/Atlas/Maps/Games.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +136,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "2026-W06 的反向連結"
+              "title": "Games 的反向連結"
             }
           },
           {
@@ -174,37 +174,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "30_Projects/32_Active/Arena/產出結果/Arena_AI_Agent_JOB_DESC.md",
+                "file": "600支援/Atlas/Maps/Games.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Arena_AI_Agent_JOB_DESC 的大綱"
-            }
-          },
-          {
-            "id": "ecac71cb404e37b2",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
-            }
-          },
-          {
-            "id": "c5492c04bd9fd20f",
-            "type": "leaf",
-            "state": {
-              "type": "planner-timeline",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "planner-timeline"
+              "title": "Games 的大綱"
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "horizontal",
@@ -213,6 +192,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:新建繪圖檔案": false,
       "switcher:開啟快速切換": false,
       "graph:查看關聯圖": false,
       "canvas:建立新畫布": false,
@@ -223,7 +203,6 @@
       "bases:建立新的 base": false,
       "command-palette:開啟命令面板": false,
       "remotely-save:Remotely Save": false,
-      "obsidian-excalidraw-plugin:新建繪圖檔案": false,
       "templater-obsidian:Templater": false,
       "components:AI 對話（新標籤頁）": false,
       "callout-manager:Insert Callout": false,
@@ -231,43 +210,44 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "123eeed01fb575bf",
+  "active": "e607ceaa56f4c0a7",
   "lastOpenFiles": [
-    "30_Projects/32_Active/Arena/我的知識整理/自我評估.md",
-    "80-System/85-Markdown規範/搜尋語法.md",
-    "80-System/87-SystemDocs/README.md",
-    "80-System/87-SystemDocs/navi-life-os-SPEC.md",
-    "80-System/87-SystemDocs/人生OS使用手冊.md",
-    "80-System/81-Template/README模板.md",
-    "80-System/81-Template/MOC模板.md",
-    "80-System/81-Template/讀書筆記模板.md",
-    "80-System/81-Template/項目模板.md",
-    "80-System/81-Template/知識模板.md",
-    "80-System/81-Template/季度複習模板.md",
-    "80-System/81-Template/任務模板.md",
-    "80-System/81-Template/公文處理專案.md",
-    "80-System/81-Template/反思模板.md",
-    "600支援/610管理協議/Agent/Prompts/example-expert.md",
-    "30_Projects/32_Active/Arena/教材/Arena_S1_認識自己.md",
-    "30_Projects/32_Active/Arena/我的知識整理",
-    "30_Projects/32_Active/Arena/Arena框架/010_六商維度定義.md",
-    "30_Projects/32_Active/Arena/Arena_MOC_new.md",
-    "30_Projects/32_Active/Life-OS/system-design.md",
-    "40_Knowledge/log",
-    "40_Knowledge/_archive",
-    "40_Knowledge/queries",
-    "40_Knowledge/comparisons",
-    "40_Knowledge/concepts",
-    "40_Knowledge/entities",
-    "40_Knowledge/raw/refs",
-    "40_Knowledge/raw/assets",
-    "40_Knowledge/raw/transcripts",
-    "60-AI-Protocols/Hermes/skills/knowledge-management/vault-folder-reorganization/references/life-os-kce-spaces.md",
-    "60-AI-Protocols/Hermes/skills/research/llm-wiki/references/win4r-v3-delta.md",
-    "60-AI-Protocols/Hermes/skills/navi-obsidian-editing/references/patch-pitfalls.md",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/templates/implementation-guide.md",
+    "30_Projects/32_Active/新建交易系統/task_plan.md",
     "30_Projects/32_Active/Life-OS/task_plan.md",
-    "60-AI-Protocols/Hermes/AGENTS.md",
-    "60-AI-Protocols/Hermes/SOUL.md",
+    "30_Projects/32_Active/新建交易系統/findings.md",
+    "30_Projects/32_Active/新建交易系統/progress.md",
+    "30_Projects/32_Active/Arena/Arena框架/010_六商維度定義.md",
+    "600支援/Atlas/Dots/Things/The ACE Folder Framework Flexes For You.md",
+    "40_Knowledge/41_原子知識/K-TRADING-002_1_三層部位分類.md",
+    "40_Knowledge/41_原子知識/K-ARENA-006_蘇格拉底式訪談法.md",
+    "60-AI-Protocols/Hermes/skills/software-development/writing-plans/references/when-to-use-which.md",
+    "60-AI-Protocols/Hermes/skills/software-development/writing-plans/references",
+    "60-AI-Protocols/Hermes/skills/knowledge-management/vault-folder-reorganization/references/wikilink-fix-mapping.md",
+    "30_Projects/32_Active/新建交易系統",
+    "40_Knowledge/41_原子知識/K-ARENA-005_AI驅動評估機制.md",
+    "40_Knowledge/41_原子知識/K-ARENA-005_AI 驅動評估機制：自適應進化引擎 (AI-Driven Assessment Engine).md",
+    "40_Knowledge/41_原子知識/K-AI-007_RAG×MCP技術串接架構.md",
+    "40_Knowledge/41_原子知識/K-AI-001_3_Antigravity差異與Vault設計.md",
+    "40_Knowledge/41_原子知識/K-AI-003_2_核心功能模組.md",
+    "40_Knowledge/41_原子知識/K-000-價值觀探索.md",
+    "40_Knowledge/41_原子知識/K-000-生命之輪.md",
+    "60-AI-Protocols/Hermes/skills/_primitives/01_flow-planning/SKILL.md",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/scripts/sync-ide-folders.py",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/scripts/session-catchup.py",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/scripts/check-continue.sh",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/scripts/init-session.sh",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/scripts/init-session.ps1",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/scripts/check-complete.sh",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/scripts/check-complete.ps1",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/scripts",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/templates/task_plan.md",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/templates/progress.md",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/templates/analytics_task_plan.md",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/templates/findings.md",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/templates/analytics_findings.md",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/SKILL.md",
+    "60-AI-Protocols/Hermes/skills/software-development/writing-plans/SKILL.md",
     "60-AI-Protocols/雷蒙claudecode教學/pro-kit/images/pro-kit-01-demo-interview.jpg",
     "60-AI-Protocols/雷蒙claudecode教學/pro-kit/images/pro-kit-01-demo-result.jpg",
     "600支援/x/Images/CleanShot 2023-07-30 at 21.37.43.png",

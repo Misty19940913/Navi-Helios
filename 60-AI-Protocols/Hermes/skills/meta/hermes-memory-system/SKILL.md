@@ -23,9 +23,17 @@ required_primitives:
 
 > `AGENTS.md`（上下文文件，engine auto-loads）是記憶紀律的**權威來源**。本 skill 是**執行程序**的詳細文件。當兩者不一致，以 `AGENTS.md` 為準。
 
+## 五個 Step 的研究結論（2026-05-08）
+
+- **honcho-self-hosted**：本地深度用戶模型，可自架或用 honcho.dev 雲端
+- **hindsight**：✅ 已啟用並驗證正常
+- **plur vs self_learner**：兩者功能重疊，PLUR 更成熟但尚未測試；self_learner 假陽性問題嚴重，詳見 `references/self-learner-vs-plur.md`
+- **flowstate-qmd**：項目文檔主動預加载，與用戶反饋迴圈無關，兩者不競爭
+
 **相關參考文檔：**
 - `references/vault-symlink-flip.md` — WSL/Windows 跨環境 memory symlink 翻轉技術（2026-04-30）
 - `references/session-jsonl-format.md` — Session JSONL 格式解析、entry 結構、tool call 收集模式（2026-04-30）
+- `references/self-learner-vs-plur.md` — Self-Learner 與 PLUR 功能對比（2026-05-08）
 
 ## 啟動時的兩個必讀文件
 
@@ -47,6 +55,33 @@ required_primitives:
 
 > **注意**：三省六部比喻已於 2026-05-05 移除，不再是參考框架。
 
+## 記憶疊加路线图（Step 1–5）
+
+> **重要：每個 Step 必須先研究系統實質，確認定義後再行動。不可未經驗證就PRESENT路线图，否則是盲目處理。**（2026-05-08 修正）
+
+路線图用於將多套記憶系統逐步疊加，彼此分工而非重複。以下為五個 Step 及其實質定義：
+
+| Step | 記憶系統 | 核心功能 | 現況 |
+|------|---------|---------|------|
+| Step 1 | MEMORY.md/USER.md | 靜態持久事實，session 啟動時自動 injection | ✅ 完成 |
+| Step 2 | honcho-self-hosted | Agent 主動推斷用戶模型（Dialectic reasoning），基於 honcho.dev 雲端或自架 | ❌ 未設定（無 `honcho.json`） |
+| Step 3 | hindsight | 語意搜尋增強，跨 session 語意覆蓋 | ✅ 已啟用。`auto_recall: true` 每 turn 前自動預取；`hindsight_reflect` 跨記憶合成是獨有能力 |
+| Step 4 | plur | 用戶對 Agent 的持續糾正持久化（YAML），多 Agent 共享 | ❌ 未研究 |
+| Step 5 | flowstate-qmd | 項目文檔（ADR/RFC/變更日誌）主動預加載，與用戶反饋無關 | ❌ 未研究 |
+
+**重要限制（2026-05-08 新增）**：
+
+**驗證觸發條件：**
+
+- **Step 2 完成定義：** 存在 `~/.honcho/config.json` 或 `~/.hermes/honcho.json`，且 `hermes memory status` 顯示 honcho 為 active provider
+- **Step 4 完成定義：** `plur.ai` 帳號已設定且 Agent 已安裝 plur memory plugin
+- **Step 5 完成定義：** `flowstate-qmd` 已透過 `qmd init --target hermes` 初始化
+
+**疊加邏輯：**
+- Step 2 處理「Agent 主動建模用戶」——與 Step 4（用户被動糾正）正交
+- Step 4 與 self_learner 插件功能重疊——若 self_learner 修復後穩定，Step 4 可跳過
+- Step 5 覆蓋項目定點記憶，與用戶反饋迴圈無關——兩者不競爭
+
 ## 三層記憶結構
 
 | Layer | 位置 | 大小上限 | Session injection |
@@ -63,7 +98,23 @@ required_primitives:
 
 ### Step 0：讀 SOUL.md + AGENTS.md（身份 + 流程）
 
+**先做同步檢查，再讀取內容：**
+
+```bash
+# 檢查 vault AGENTS.md vs hermes-agent 目錄版本
+vault_time=$(stat -c %Y "/mnt/c/Users/安泰/OneDrive/Obsidian/Navi Helios/60-AI-Protocols/Hermes/AGENTS.md")
+agent_time=$(stat -c %Y ~/.hermes/hermes-agent/AGENTS.md)
+# vault 時間戳 > agent 時間戳 → 需要同步
+[[ $vault_time > $agent_time ]] && cp "/mnt/c/Users/安泰/OneDrive/Obsidian/Navi Helios/60-AI-Protocols/Hermes/AGENTS.md" ~/.hermes/hermes-agent/AGENTS.md
 ```
+
+同步命令（手動）：
+```bash
+cp "/mnt/c/Users/安泰/OneDrive/Obsidian/Navi Helios/60-AI-Protocols/Hermes/AGENTS.md" ~/.hermes/hermes-agent/AGENTS.md
+```
+
+然後讀取：
+```bash
 cat ~/.hermes/SOUL.md && cat ~/.hermes/AGENTS.md
 ```
 
@@ -71,17 +122,51 @@ cat ~/.hermes/SOUL.md && cat ~/.hermes/AGENTS.md
 - **AGENTS.md 次之**：混合執行模式、委派時機判斷表、溝通風格
 - 這兩個檔案每次 session 都讀，不能跳過
 
-### Step 1：讀 Layer 1
+### Step 1：驗證記憶系統正常運作（在報告任何狀態之前）
+
+**⚠️ 驗證先於分析——這是强制順序。**
+
+收到任務後，**絕對不要**在確認三層記憶正常運作之前就直接報告「體檢結果」或提出優化方案。順序必須是：
+
+```
+驗證記憶系統正常
+    ↓
+報告驗證結果（正常 / 有問題）
+    ↓
+只有在「正常運作」的情況下才能進入分析和規劃
+```
+
+**驗證清單（每次都要做）：**
+
+| 檢查項 | 正常訊號 | 異常訊號 |
+|--------|---------|---------|
+| Layer 1 injection | MEMORY.md 有內容，gateway 啟動時有載入 | MEMORY.md 空白或不存在 |
+| AGENTS.md 同步 | vault 版本時間戳 ≤ `~/.hermes/hermes-agent/AGENTS.md` | vault 版本較新（未同步）|
+| Layer 2 可讀 | `MOC/_index.md` + 各 MOC 檔存在 | 檔案不存在或空白 |
+| Layer 3 可讀 | `areas/*.md` 存在 | 全部或大部分不存在 |
+
+**驗證結果的報告方式：**
+
+正常 → 直接進入任務報告：
+> 三層記憶驗證完畢，正常運作。可以開始處理。
+
+異常 → 報告問題，**停在這裡**，等待用户確認修復順序：
+> 發現問題：AGENTS.md vault 版本 (May 8) 比 hermes-agent 目錄版本 (May 5) 還新。需要先同步才能確保 gateway 讀到正確版本。修復順序：...
+
+**為什麼這個順序不能顛倒：**
+- 如果跳過驗證直接分析，你會基於「你以為的狀態」給出報告，而那是錯的
+- 用戶會說「你應該要先確認你有正常在運用這個三層記憶」——這句話已經在真實 session 發生過一次（2026-05-08）
+
+### Step 2：讀 Layer 1
 ```bash
 cat ~/.hermes/memories/MEMORY.md
 ```
 
-### Step 2：讀 Layer 2 總索引
+### Step 3：讀 Layer 2 總索引
 ```bash
 cat ~/.hermes/memories/MOC/_index.md
 ```
-
-### Step 3：依 topic 讀 Layer 2 具體 MOC + Layer 3 domain
+### Step 4：依 topic 讀 Layer 2 具體 MOC + Layer 3 domain
 
 | 話題 | MOC 檔 | Layer 3 檔 |
 |------|--------|------------|
@@ -108,6 +193,8 @@ cat ~/.hermes/memories/MOC/_index.md
 | **只看標題/檔名就判定內容** | **必須 read_file 實際讀取內容**，再下結論 |
 | **只看 symlink 存在就判定正常** | `ls -la` 或 `file` 只能確認 symlink 存在，無法確認目標內容是否為預期版本 |
 | **AGENTS.md 寫對了位置但 engine 讀不到** | AGENTS.md 從 CWD 發現，不是從 HERMES_HOME。Gateway CWD = `~/.hermes/hermes-agent/`。檢查該目錄下的 AGENTS.md 是否為預期內容 |
+| **跳過驗證直接進入分析/規劃** | **先驗證記憶系統正常，確認無異常後才能進入任務處理** — 驗證是强制順序 |
+| **報告體檢結果前未驗證 Layer 2/3** | 涉及用戶偏好、專案狀態的報告，必須先確認 Layer 2/3 可讀且已讀 |
 
 ## ⚠️ AGENTS.md CWD 發現陷阱（2026-05-05 實測）
 

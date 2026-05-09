@@ -11,6 +11,14 @@ trigger:
   - "break down the feature"
   - "step by step implementation"
   - "create a plan"
+  - "/plan"
+  - "寫計畫"
+  - "做計畫"
+  - "訂定計畫"
+  - "制定計畫"
+  - "implement"
+  - "規劃一下"
+  - "幫我規劃"
 metadata:
   hermes:
     tags: [planning, design, implementation, workflow, documentation]
@@ -199,13 +207,19 @@ Check:
 - [ ] No missing context
 - [ ] DRY, YAGNI, TDD principles applied
 
-### Step 7: Save the Plan
+## Save Location
+
+**CRITICAL**: For this user's vault, plans go to `30_Projects/32_Active/` NOT `docs/plans/`. Always use:
+
+> **Confused about which planning skill to use?** See `references/when-to-use-which.md`
+
+- Primary: `30_Projects/32_Active/<slug>_計畫.md`
+- Git commit under vault root: `/mnt/c/Users/安泰/OneDrive/Obsidian/Navi Helios/`
 
 ```bash
-mkdir -p docs/plans
-# Save plan to docs/plans/YYYY-MM-DD-feature-name.md
-git add docs/plans/
-git commit -m "docs: add implementation plan for [feature]"
+# Save plan to vault's active projects
+git add 30_Projects/32_Active/<slug>_計畫.md
+git commit -m "docs: add [feature] implementation plan"
 ```
 
 ## Principles
@@ -288,7 +302,11 @@ When executing, use the `subagent-driven-development` skill:
 - Code quality review after spec passes
 - Proceed only when both reviews approve
 
-## Remember
+**CRITICAL — Plan Title Must Be Specific**:
+- ❌ Bad: "知識整理計畫", "筆記重建計畫"
+- ✅ Good: "新建交易系統_計畫", "K-TRADING-002風險管理系統"
+- The title must capture the **actual deliverable**, not a generic process description
+- If you write a generic title, the user will catch it (as happened in session 2026-05-09)
 
 ```
 Bite-sized tasks (2-5 min each)
@@ -301,3 +319,27 @@ Frequent commits
 ```
 
 **A good plan makes implementation obvious.**
+
+---
+
+## Real Session Errors (2026-05-09)
+
+These are not theoretical — they actually happened. Learn from them.
+
+### Error: Wrong Skill = Wrong Output Format
+User asked to plan a new trading system. I used `writing-plans` (single flat plan) when the user actually needed `planning-with-files` (3-file system). The user said "沒有使用技能對吧?" — they knew I had the wrong skill before I did.
+
+**When this happens**: User says things like "怎麼沒有task_plan.md" or "計畫資料夾要放在30_Projects/32_Active" — these are signs you picked the wrong planning skill.
+
+### Error: Flat File Instead of Project Subfolder
+I saved `新建交易系統_計畫.md` as a single file at `30_Projects/32_Active/`. User said "計畫資料夾要放在30_Projects/32_Active" — they wanted a subfolder with task_plan.md + findings.md + progress.md inside.
+
+### Error: Importing Old System as New System Knowledge
+I referenced K-TRADING-002 series as knowledge base. User said "K-TRADING-002系列的原子筆記根本不是知識，而是之前的系統資料". ADI and ATR were not used in the new system. I carried forward old assumptions.
+
+**Rule**: When user says "全新系統", treat as clean slate. Ask "有哪些 vault 檔案與新系統相關？" rather than assuming existing notes apply.
+
+### Error: Inventing Concepts That Don't Exist
+I assumed "最大錯誤次數" existed because it was in old system docs. User replied "首先我不清楚你指的錯誤是指什麼?" — the concept didn't exist in the new system.
+
+**Rule**: Verify any concept from old documentation with the user before treating it as fact.

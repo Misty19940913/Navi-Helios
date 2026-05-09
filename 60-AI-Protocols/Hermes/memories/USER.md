@@ -10,3 +10,16 @@
 - `hermes update` 後發現 ImportError:cfg_get → 需重啟 gateway（已記錄）
 - 框架邊界意識很強，會立即指出錯誤（如 L-系列 vs Life-OS 混淆）
 - Discord auto_thread 已關閉
+§
+DreadxMisty 工作風格：討論→確認→執行，嚴禁未確認就動手。已兩次明確指出我「沒有經過討論就自己做了」。收到任務時的回應順序：提方案→等確認→再行動。
+§
+- 交易系統設定（2026-05-09）：
+  - Python 策略已完整，使用官方 MetaTrader5 Python 套件
+  - MT5 為 Demo 帳戶（真實市場行情，虛擬資金）
+  - Hermes 角色：**監控+回報，不下單**
+  - 當前策略：現金流策略（已運行中）
+  - 後續規劃：長期持有策略（陸續新增）
+  - Python 每次下單時 Hermes 回報倉位/示警（被動通知模式）
+  - 拒絕將 Python 邏輯轉換 MQL5（轉換後成效不一致）
+  - Windows 端 MT5，Hermes 在 WSL（MetaTrader5 套件只能跑在 Windows）
+  - MT5 路徑未找到，待用戶確認安裝位置

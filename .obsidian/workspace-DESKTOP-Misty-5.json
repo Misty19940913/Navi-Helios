@@ -1,0 +1,307 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "bdb262ce9c5ad5b2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a989199a2ab0e764",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "600支援/Atlas/Dots/Things/The ACE Folder Framework Flexes For You.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "The ACE Folder Framework Flexes For You"
+            }
+          },
+          {
+            "id": "e607ceaa56f4c0a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "30_Projects/32_Active/新建交易系統/task_plan.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "task_plan"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "2a5470a6c9e9427b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f6e6a7ba817b6690",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "40_Knowledge/41_原子知識/K-TRADING-002_1_三層部位分類.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "K-TRADING-002_1_三層部位分類"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a71c8a1625de110d",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd6ad2172b26161b",
+        "type": "tabs",
+        "dimension": 34.766493699036324,
+        "children": [
+          {
+            "id": "645ad61097858c13",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜尋"
+            }
+          },
+          {
+            "id": "123eeed01fb575bf",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "關聯圖檢視"
+            }
+          }
+        ]
+      },
+      {
+        "id": "15cd81aeb62591ca",
+        "type": "tabs",
+        "dimension": 65.23350630096367,
+        "children": [
+          {
+            "id": "5bec902d6a23fcf2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "檔案瀏覽器"
+            }
+          },
+          {
+            "id": "6d6f2ed141a7ef30",
+            "type": "leaf",
+            "state": {
+              "type": "notebook-navigator",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "notebook-navigator"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 396.5
+  },
+  "right": {
+    "id": "7d77eee59c687e8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "f25adc9aab9d2afc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "55bc4d46c850f041",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "600支援/Atlas/Maps/Games.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "Games 的對外連結"
+            }
+          },
+          {
+            "id": "de728c0da9752a0d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "600支援/Atlas/Maps/Games.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Games 的反向連結"
+            }
+          },
+          {
+            "id": "67c8b8d3f58e6076",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "標籤"
+            }
+          },
+          {
+            "id": "e8873d62e5c258d9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "所有屬性"
+            }
+          },
+          {
+            "id": "8a4c3cd15bb5cab7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "600支援/Atlas/Maps/Games.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Games 的大綱"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 463.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-excalidraw-plugin:新建繪圖檔案": false,
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "templates:插入模板": false,
+      "workspaces:管理工作區配置": false,
+      "publish:發佈變動內容": false,
+      "bases:建立新的 base": false,
+      "command-palette:開啟命令面板": false,
+      "remotely-save:Remotely Save": false,
+      "templater-obsidian:Templater": false,
+      "components:AI 對話（新標籤頁）": false,
+      "callout-manager:Insert Callout": false,
+      "notebook-navigator:筆記本導覽器": false,
+      "obsidian42-brat:BRAT": false
+    }
+  },
+  "active": "645ad61097858c13",
+  "lastOpenFiles": [
+    "40_Knowledge/41_原子知識/K-TRADING-002_1_三層部位分類.md",
+    "30_Projects/32_Active/新建交易系統/task_plan.md",
+    "30_Projects/32_Active/新建交易系統/progress.md",
+    "30_Projects/32_Active/新建交易系統/findings.md",
+    "40_Knowledge/41_原子知識/K-ARENA-006_蘇格拉底式訪談法.md",
+    "60-AI-Protocols/Hermes/skills/software-development/writing-plans/references/when-to-use-which.md",
+    "60-AI-Protocols/Hermes/skills/software-development/writing-plans/references",
+    "60-AI-Protocols/Hermes/skills/knowledge-management/vault-folder-reorganization/references/wikilink-fix-mapping.md",
+    "30_Projects/32_Active/新建交易系統",
+    "40_Knowledge/41_原子知識/K-ARENA-005_AI驅動評估機制.md",
+    "40_Knowledge/41_原子知識/K-ARENA-005_AI 驅動評估機制：自適應進化引擎 (AI-Driven Assessment Engine).md",
+    "40_Knowledge/41_原子知識/K-AI-007_RAG×MCP技術串接架構.md",
+    "40_Knowledge/41_原子知識/K-AI-001_3_Antigravity差異與Vault設計.md",
+    "40_Knowledge/41_原子知識/K-AI-003_2_核心功能模組.md",
+    "40_Knowledge/41_原子知識/K-000-價值觀探索.md",
+    "40_Knowledge/41_原子知識/K-000-生命之輪.md",
+    "60-AI-Protocols/Hermes/skills/_primitives/01_flow-planning/SKILL.md",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/scripts/sync-ide-folders.py",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/scripts/session-catchup.py",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/scripts/check-continue.sh",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/scripts/init-session.sh",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/scripts/init-session.ps1",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/scripts/check-complete.sh",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/scripts/check-complete.ps1",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/scripts",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/templates/task_plan.md",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/templates/progress.md",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/templates/analytics_task_plan.md",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/templates/findings.md",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/templates/analytics_findings.md",
+    "60-AI-Protocols/Hermes/skills/workflow/planning-with-files/SKILL.md",
+    "60-AI-Protocols/Hermes/skills/software-development/writing-plans/SKILL.md",
+    "60-AI-Protocols/Hermes/skills/knowledge-management/vault-folder-reorganization/references/232-series-distillation.md",
+    "40_Knowledge/41_原子知識/K-BIZ-047_一人公司增長策略.md",
+    "40_Knowledge/41_原子知識/K-BIZ-046_策略執行與心理調適.md",
+    "40_Knowledge/41_原子知識/K-CAREER-046_通才者優勢.md",
+    "60-AI-Protocols/雷蒙claudecode教學/pro-kit/images/pro-kit-01-demo-interview.jpg",
+    "60-AI-Protocols/雷蒙claudecode教學/pro-kit/images/pro-kit-01-demo-result.jpg",
+    "600支援/x/Images/CleanShot 2023-07-30 at 21.37.43.png",
+    "600支援/x/Images/flight-school-hotkey-wide.jpg",
+    "600支援/x/Images/lyt-crafting-mocs-4.jpg",
+    "600支援/x/Images/lyt-note-links-to-other-notes.png",
+    "600支援/x/Images/lyt-crafting-mocs-1.jpg",
+    "600支援/x/Images/lyt-mode-graphic-1.jpg",
+    "600支援/x/Images/mckie-ship-and-sea-mid-narrow-.jpg",
+    "600支援/x/Images/feynman-triangulation-2.png",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/一人商業模式完整全景圖.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/一人商業模式全景圖.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/232-111經營實踐：從價值轉化到系統迭代.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/232-110經營憲章-畫布.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/232-100一人企業 MOC：產品化自己 (Productize Yourself)MOC.canvas",
+    "30_Projects/舊資料/232-1.0執行策略/一人商業模式/232-100一人企業 MOC.canvas",
+    "30_Projects/33_Done/HUMAN_3.0-DESKTOP-Misty/產出結果/HUMAN_3.0.canvas",
+    "30_Projects/33_Done/設計人生-DESKTOP-Misty/產出結果/人生設計概念卡片.canvas",
+    "30_Projects/33_Done/商業模式圖-DESKTOP-Misty/產出結果/商業模式畫布.canvas",
+    "30_Projects/33_Done/商業模式圖/產出結果/商業模式畫布.canvas"
+  ]
+}

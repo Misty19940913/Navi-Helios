@@ -4,7 +4,7 @@ description: 所有 MOC 的目錄，42_MOC 的入口
 type: moc
 status: active
 time_created: 2026-04-26
-time_modified: '2026-04-27'
+time_modified: '2026-05-09'
 parent: null
 ---
 
@@ -18,10 +18,9 @@ parent: null
 | MOC 檔案 | 描述 |
 |---|---|
 | [[Arena_課程產品_MOC]] | Arena 課程產品主框架 MOC |
-| [[AI_Agent_MOC]] | AI Agent 系統概覽 |
 | [[B2.0_商業模式畫布原子化知識-MOC]] | 商業模式畫布原子化知識 |
 | [[H3.0_元系統_MOC]] | H3.0 元系統整合 MOC |
-| [[K-AI_人工智慧系統_MOC]] | 人工智慧系統 MOC |
+| [[K-AI_人工智慧系統_MOC]] | 人工智慧系統 MOC（含 Agent 系統章節）|
 | [[K-BIZ_商業與電商_MOC]] | 商業與電商 MOC |
 | [[K-CAREER_職業生涯_MOC]] | 職業生涯 MOC |
 | [[K-CONTENT_內容創作_MOC]] | 內容創作 MOC |
@@ -39,4 +38,5 @@ parent: null
 
 ## 最近更新
 
+- **2026-05-09**：232 系列（10個）蒸餾至 41_原子知識；AI_Agent_MOC 內容整合至 K-AI_人工智慧系統_MOC；index.md 同步更新
 - **2026-04-27**：重整 MOC index，移除 vault 根目錄誤創資料夾，修復 type: MOC → moc，搬遷「人生設計知識矩陣」至 42_MOC 並更正 type: moc。搬遷 Arena_MOC_new.md 至 42_MOC/Arena_課程產品_MOC.md，Arena 框架全面升級為六商系統

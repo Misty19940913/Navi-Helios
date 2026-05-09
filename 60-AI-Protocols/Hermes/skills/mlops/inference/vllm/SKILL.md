@@ -1,7 +1,13 @@
 ---
 name: serving-llms-vllm
 description: "vLLM: high-throughput LLM serving, OpenAI API, quantization."
-trigger: "deploy vllm", "serve model with vllm", "vllm server", "vllm inference", "openai compatible inference", "high throughput LLM serving"
+trigger:
+  - "deploy vllm"
+  - "serve model with vllm"
+  - "vllm server"
+  - "vllm inference"
+  - "openai compatible inference"
+  - "high throughput LLM serving"
 version: 1.0.0
 author: Orchestra Research
 license: MIT

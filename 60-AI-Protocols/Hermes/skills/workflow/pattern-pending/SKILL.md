@@ -1,4 +1,5 @@
 ---
+name: pattern-pending
 version: 1.0.0
 created: 2026-04-29T10:30:00Z
 updated: 2026-04-29T10:30:00Z

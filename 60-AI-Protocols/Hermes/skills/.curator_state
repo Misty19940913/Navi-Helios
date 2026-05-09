@@ -1,8 +1,8 @@
 {
-  "last_report_path": "/home/misty/.hermes/logs/curator/20260430-100628",
-  "last_run_at": "2026-04-30T10:06:28.475510+00:00",
-  "last_run_duration_seconds": 1046.168809,
-  "last_run_summary": "auto: no changes; llm: ---\n\n## Umbrella-Building Consolidation — Final Report\n\n### Summary by Numbers\n- **Original agent-created skills:** 47\n- **After consolidation:** 23 active, 24 archived → **51% archive rate** ✅\n- **New umbrellas created:** 0 (existing umbre…",
+  "last_report_path": "/home/misty/.hermes/logs/curator/20260507-193234",
+  "last_run_at": "2026-05-07T19:32:34.894639+00:00",
+  "last_run_duration_seconds": 265.243402,
+  "last_run_summary": "auto: no changes; llm: ## Consolidation Summary\n\n### Clusters Processed\n\n**Cluster 1 — `hermes-*` Ops** (symlink + gateway + safety)\n- Members: `hermes-asset-symlink-mgmt`, `hermes-gateway-autostart`, `hermes-safety-suite`\n- Method: **CREATE NEW UMBRELLA** → `her…",
   "paused": false,
-  "run_count": 1
+  "run_count": 2
 }

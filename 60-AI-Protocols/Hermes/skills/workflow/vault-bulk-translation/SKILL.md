@@ -8,11 +8,6 @@ trigger:
   - "批次翻譯"
   - "全部翻成中文"
   - "600支援"
-required_primitives:
-  - 02_data-retrieval
-  - 03_format-parsing
-  - 06_file-operations
-  - delegate_task
 produces:
   - 翻譯完成的檔案（in-place 覆寫）
   - 翻譯狀態報告

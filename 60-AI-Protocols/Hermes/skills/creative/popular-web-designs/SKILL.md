@@ -15,7 +15,6 @@ triggers:
   - landing page
   - dashboard design
   - website styled like
-required_primitives: [01_flow-planning, 05_content-generation, 06_file-operations]
 ---
 
 # Popular Web Designs
